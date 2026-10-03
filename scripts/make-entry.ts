@@ -13,7 +13,8 @@ import {parse} from 'yaml';
 import {readJson, root} from './lib';
 
 const args = process.argv.slice(2);
-const [inspirationId, entryId] = args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--awesome');
+const [inspirationId, entryId] = args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--awesome' && args[i - 1] !== '--direction');
+const direction = args.includes('--direction') ? args[args.indexOf('--direction') + 1] : 'Follow the inspiration\'s genres and domains.';
 const awesome = args.includes('--awesome') ? args[args.indexOf('--awesome') + 1] : undefined;
 const dryRun = args.includes('--dry-run');
 if (!inspirationId || !entryId) throw new Error('Usage: pnpm make-entry <inspiration-id> <new-entry-id> [--awesome <checkout>] [--dry-run]');
@@ -40,10 +41,12 @@ if (awesome && String(record.id).startsWith('ao-')) {
   }
 }
 
-const prompt = `${readFileSync(path.join(root, 'prompts', 'make-entry.md'), 'utf8')}\n\nENTRY_ID: ${entryId}\nINSPIRATION: ${JSON.stringify(record, null, 2)}\nREFERENCE FRAMES: ${existsSync(refDir) ? path.relative(root, refDir) : 'none'}\n`;
+const prompt = `${readFileSync(path.join(root, 'prompts', 'make-entry.md'), 'utf8')}\n\nENTRY_ID: ${entryId}\nINSPIRATION: ${JSON.stringify(record, null, 2)}\nREFERENCE FRAMES: ${existsSync(refDir) ? path.relative(root, refDir) : 'none'}\nDIRECTION: ${direction}\n`;
 if (dryRun) {
   console.log(prompt);
   process.exit(0);
 }
-const result = spawnSync('claude', ['-p', prompt, '--permission-mode', 'acceptEdits', '--allowedTools', 'Read,Write,Edit,Glob,Grep,Bash(pnpm:*),Bash(npx:*),Bash(ffmpeg:*),Bash(ls:*)'], {cwd: root, stdio: 'inherit'});
+// The core entries in a sibling viralaunch-local checkout are the quality bar (read-only).
+const core = path.join(root, '..', 'viralaunch-local', 'packages', 'remotion', 'library', 'entries');
+const result = spawnSync('claude', ['-p', prompt, '--permission-mode', 'acceptEdits', ...(existsSync(core) ? ['--add-dir', core] : []), '--allowedTools', 'Read,Write,Edit,Glob,Grep,Bash(pnpm:*),Bash(npx:*),Bash(ffmpeg:*),Bash(ls:*)'], {cwd: root, stdio: 'inherit'});
 process.exit(result.status ?? 1);

@@ -521,6 +521,8 @@ export const LookCaptions: React.FC<{media: Media; hold?: number; until?: number
   const landscape = width > height;
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
+      {/* Soft scrim in the look's background colour: captions read over any template content. */}
+      <AbsoluteFill style={{background: `linear-gradient(0deg, ${alpha(look.palette.bg, 0.88)} 0%, ${alpha(look.palette.bg, 0.6)} ${c.bottom * 100}%, transparent ${(c.bottom + 0.2) * 100}%)`}} />
       {timeline.map(t => (
         <Sequence key={t.index} from={t.from} durationInFrames={t.durationInFrames} layout="none">
           <div style={{position: 'absolute', left: landscape ? '12%' : '7%', right: landscape ? '12%' : '7%', bottom: height * c.bottom}}>

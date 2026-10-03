@@ -22,7 +22,9 @@
     "new-entry": "tsx scripts/new-entry.ts",
     "still-sheet": "tsx scripts/still-sheet.ts",
     "sync-kit": "tsx scripts/sync-kit.ts",
-    "sequence-preview": "tsx scripts/sequence-preview.ts"
+    "sequence-preview": "tsx scripts/sequence-preview.ts",
+    "plan-batch": "tsx scripts/plan-batch.ts",
+    "make-batch": "tsx scripts/make-batch.ts"
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.0.0",

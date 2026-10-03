@@ -1,0 +1,92 @@
+[
+  {
+    "inspirationId": "ao-alexalbert__-274839",
+    "entryId": "documentary-archival-street",
+    "direction": "Primary subject domain: history. Genre: documentary. An archival/period documentary template: old-photo or illustrated street scenes with period grading, date stamps and parallax depth (works for any historical place or event). Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "history",
+      "genre": "documentary"
+    }
+  },
+  {
+    "inspirationId": "ao-mellow_neet2000-834408",
+    "entryId": "timeline-deep-time",
+    "direction": "Primary subject domain: history. Genre: timeline. A deep-time timeline: travel across eras/epochs (geology, prehistory, dynasties) with an animated era ruler, scale changes and era cards. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "history",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "ao-gigabit_million-959719",
+    "entryId": "news-roundup-cards",
+    "direction": "Primary subject domain: culture-entertainment. Genre: news-recap. A fast news roundup: N headline cards with category chips, dates and a one-line takeaway each (games, films, tech, any beat). Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "news-recap"
+    }
+  },
+  {
+    "inspirationId": "ao-aakashbuildsai-121079",
+    "entryId": "timeline-company-history",
+    "direction": "Primary subject domain: business. Genre: timeline. A company or product history over decades: milestone years, product shots/logos as user images, growth stats. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "business",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "ao-riku720720-063144",
+    "entryId": "story-pixel-arcade",
+    "direction": "Primary subject domain: culture-entertainment. Genre: story-narrative. A pixel-art arcade storytelling template: a pixel character, levels as scenes, score/lives HUD; for gaming, retro, kids and science-for-kids stories. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "ao-lcslates-988559",
+    "entryId": "documentary-mosaic-reveal",
+    "direction": "Primary subject domain: religion-myth. Genre: documentary. An art-history/mythology template: mosaic or stained-glass tiles assemble into each scene image, gold leaf highlights, captions as museum labels. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "religion-myth",
+      "genre": "documentary"
+    }
+  },
+  {
+    "inspirationId": "ao-alarcon7a-765420",
+    "entryId": "map-country-tour",
+    "direction": "Primary subject domain: geography. Genre: map-journey. A country/city tour: stops on a stylised map with pins, route line, place cards with one fact each. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "map-journey"
+    }
+  },
+  {
+    "inspirationId": "ao-oxpsats-369282",
+    "entryId": "explainer-money-story",
+    "direction": "Primary subject domain: finance. Genre: explainer. A finance story explainer: a money concept told in illustrated beats with a price/value line that reacts to the story. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "finance",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "ao-zhu185178-255661",
+    "entryId": "story-rain-mood",
+    "direction": "Primary subject domain: nature. Genre: story-narrative. A moody 2D illustrated short: layered parallax scenes, weather (rain/fog/snow) particles, calm captions; for nature, travel and reflective stories. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "nature",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "ao-ryzoft-887481",
+    "entryId": "story-cartoon-explainer",
+    "direction": "Primary subject domain: science. Genre: explainer. A cartoon explainer for science/kids: simple SVG characters and props acting out each step, playful motion. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "science",
+      "genre": "explainer"
+    }
+  }
+]

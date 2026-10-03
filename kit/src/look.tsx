@@ -183,3 +183,11 @@ export function mix(a: string, b: string, t: number): string {
   const [x, y] = [p(a), p(b)];
   return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
 }
+
+/**
+ * Fraction of the frame height, from the bottom, that shared captions own in look mode. Keep
+ * key content above it (the kit also draws a soft scrim there so captions always read).
+ */
+export function captionSafeBottom(look: FullLook | null): number {
+  return look ? Math.min(0.6, look.captions.bottom + 0.13) : 0;
+}

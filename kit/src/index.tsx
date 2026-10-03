@@ -25,7 +25,7 @@ import {
 } from 'remotion';
 import {z} from 'zod';
 export {ICON_NAMES, type IconName} from './icon-names';
-export {LOOKS, LookProvider, LookSchema, FullLookSchema, mix, resolveLook, useLook, type ActiveLook, type FullLook, type FontKey, type Look} from './look';
+export {LOOKS, LookProvider, LookSchema, FullLookSchema, captionSafeBottom, mix, resolveLook, useLook, type ActiveLook, type FullLook, type FontKey, type Look} from './look';
 
 export const CaptionSchema = z.object({
   text: z.string(),
