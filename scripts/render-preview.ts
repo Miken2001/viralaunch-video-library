@@ -6,7 +6,7 @@ import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
 import {copyFileSync, mkdirSync, existsSync, rmSync, statSync} from 'node:fs';
 import path from 'node:path';
-import {entryIds, entriesDir, exampleMedia, kitAliases, readExample, readMeta, root, writeEntryRoot, entryFiles} from './lib';
+import {entryIds, entriesDir, exampleMedia, kitAliases, readExample, readMeta, root, writeEntryRoot, entryFiles, recordPreview} from './lib';
 
 const args = process.argv.slice(2);
 const aspectFlag = args.indexOf('--aspect');
@@ -58,6 +58,7 @@ for (const id of ids) {
     const suffix = aspect ? `-${aspect.replace(':', 'x')}` : '';
     await renderMedia({composition, serveUrl, codec: 'h264', outputLocation: path.join(out, `${id}${suffix}.mp4`), inputProps, browserExecutable, chromiumOptions: {gl: 'swiftshader'}, timeoutInMilliseconds: 180000, concurrency: Number(process.env.PREVIEW_CONCURRENCY ?? 4), onBrowserLog: l => l.type === 'error' && console.error(`[${id}] ${l.text}`)});
     await renderStill({composition, serveUrl, frame: Math.floor(composition.durationInFrames * 0.4), output: path.join(out, `${id}${suffix}.jpg`), imageFormat: 'jpeg', inputProps, browserExecutable, chromiumOptions: {gl: 'swiftshader'}, timeoutInMilliseconds: 180000});
+    if (!suffix) recordPreview(id);
     console.log(`ok   ${id}${suffix} (${composition.width}x${composition.height}, ${(composition.durationInFrames / composition.fps).toFixed(1)}s) in ${((Date.now() - started) / 1000).toFixed(1)}s`);
   } catch (e) {
     failures++;

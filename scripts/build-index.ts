@@ -9,7 +9,9 @@ import {existsSync, readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {z} from 'zod';
-import {entriesDir, entryIds, readJson, readMeta, root, sha256, treeHash} from './lib';
+import {entriesDir, entryIds, readJson, readMeta, readPreviewManifest, root, sha256, treeHash} from './lib';
+
+const previews = readPreviewManifest();
 
 const config = readJson<{repo: string; ref: string; previewRelease: string; rawBase: string; previewBase: string}>(path.join(root, 'library.config.json'));
 const taxonomy = readJson<{version: number; genre: Record<string, string>; domain: Record<string, string>}>(path.join(root, 'taxonomy.json'));
@@ -28,15 +30,10 @@ for (const id of entryIds()) {
   } else if (existsSync(path.join(dir, 'props.schema.json'))) {
     propsSchema = readJson(path.join(dir, 'props.schema.json'));
   }
-  const previewFile = path.join(root, 'previews', `${id}.mp4`);
-  const preview = existsSync(previewFile)
-    ? {
-        file: `${id}.mp4`,
-        poster: `${id}.jpg`,
-        sha256: sha256(readFileSync(previewFile)),
-        url: config.previewBase.replace('{repo}', config.repo).replace('{release}', config.previewRelease).replace('{file}', `${id}.mp4`),
-      }
-    : null;
+  const record = previews[id];
+  const localFile = path.join(root, 'previews', `${id}.mp4`);
+  if (record && existsSync(localFile) && sha256(readFileSync(localFile)) !== record.sha256) console.warn(`warn: previews/${id}.mp4 differs from previews/manifest.json (run \`pnpm preview ${id}\` to record it)`);
+  const preview = record ? {...record, url: config.previewBase.replace('{repo}', config.repo).replace('{release}', config.previewRelease).replace('{file}', record.file)} : null;
   entries.push({...meta, sha256: hash, files, propsSchema, preview});
 }
 

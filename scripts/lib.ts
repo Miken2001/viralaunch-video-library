@@ -135,3 +135,23 @@ export function writeEntryRoot(entryDir: string, outDir: string): string {
 }
 
 export const isDir = (p: string) => existsSync(p) && statSync(p).isDirectory();
+
+/**
+ * previews/manifest.json — committed record of each entry's published preview (the MP4s and
+ * posters themselves are release assets, gitignored here). The index reads this, so
+ * `pnpm index --check` gives the same answer on any machine, CI included.
+ */
+export type PreviewRecord = {file: string; poster: string; sha256: string};
+const manifestFile = () => path.join(root, 'previews', 'manifest.json');
+export function readPreviewManifest(): Record<string, PreviewRecord> {
+  return existsSync(manifestFile()) ? (JSON.parse(readFileSync(manifestFile(), 'utf8')) as Record<string, PreviewRecord>) : {};
+}
+/** Records (or refreshes) an entry's preview from previews/<id>.mp4 after it is rendered. */
+export function recordPreview(id: string) {
+  const file = path.join(root, 'previews', `${id}.mp4`);
+  if (!existsSync(file)) return;
+  const manifest = readPreviewManifest();
+  manifest[id] = {file: `${id}.mp4`, poster: `${id}.jpg`, sha256: sha256(readFileSync(file))};
+  const sorted = Object.fromEntries(Object.keys(manifest).sort().map(k => [k, manifest[k]]));
+  writeFileSync(manifestFile(), JSON.stringify(sorted, null, 2) + '\n');
+}

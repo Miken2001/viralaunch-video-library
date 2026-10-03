@@ -4,3 +4,4 @@ out/
 previews/*.mp4
 previews/*.jpg
 *.log
+!previews/manifest.json
