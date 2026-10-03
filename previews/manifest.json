@@ -1,0 +1,52 @@
+{
+  "comparison-split": {
+    "file": "comparison-split.mp4",
+    "poster": "comparison-split.jpg",
+    "sha256": "ac08af53635be6dea4c5cf98b43a08ecc084025c2c125871a3629781a4d9e7d8"
+  },
+  "data-story-bars": {
+    "file": "data-story-bars.mp4",
+    "poster": "data-story-bars.jpg",
+    "sha256": "69a1b00ed8b41f1ccd1d36d48474f5c09821d171a8f4fc0b8bd07760327742db"
+  },
+  "explainer-steps-diagram": {
+    "file": "explainer-steps-diagram.mp4",
+    "poster": "explainer-steps-diagram.jpg",
+    "sha256": "6ea344408e6b68038c868986b9a0ce9d9609fe26ac5d0b68a28990ffe9176186"
+  },
+  "listicle-countdown": {
+    "file": "listicle-countdown.mp4",
+    "poster": "listicle-countdown.jpg",
+    "sha256": "9e1bf2f23e539cf1a1ed306725d9e56d823605c05b804d5fc8fcdeec3da1c123"
+  },
+  "match-recap-scoreboard": {
+    "file": "match-recap-scoreboard.mp4",
+    "poster": "match-recap-scoreboard.jpg",
+    "sha256": "775533dcb61d6f5d73f5005a17207cbb7fb33fa24593d2ad080e602614dfad5d"
+  },
+  "news-headline-highlight": {
+    "file": "news-headline-highlight.mp4",
+    "poster": "news-headline-highlight.jpg",
+    "sha256": "bd586f2f9762893505d20197e3283d1c252e9008bf68a55ab9fa03ff736d09bf"
+  },
+  "quote-kinetic-serif": {
+    "file": "quote-kinetic-serif.mp4",
+    "poster": "quote-kinetic-serif.jpg",
+    "sha256": "b3a782dca9a0372967c30985ad6684c62f34f192f14aca1a1c670c224a72fcb6"
+  },
+  "space-scale-ladder": {
+    "file": "space-scale-ladder.mp4",
+    "poster": "space-scale-ladder.jpg",
+    "sha256": "a880878dbea04ece0db94a460ab07bc9a49339506622eb276b23e89c464a34fe"
+  },
+  "story-chat-thread": {
+    "file": "story-chat-thread.mp4",
+    "poster": "story-chat-thread.jpg",
+    "sha256": "532499c504f567f200804db22a90c34b1a5001c126257a3ec6c62022dafd67b0"
+  },
+  "timeline-eras": {
+    "file": "timeline-eras.mp4",
+    "poster": "timeline-eras.jpg",
+    "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0"
+  }
+}
