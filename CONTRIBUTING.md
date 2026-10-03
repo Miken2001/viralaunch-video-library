@@ -7,6 +7,9 @@
    defaults and comments, so a small model can fill it from `brief.md` alone.
 4. Tag it honestly. A product-launch structure is never `domain: generic`. Use `generic`
    for templates that fit any subject; otherwise list up to 6 specific domains.
+   Set `roles` to the beats it can show inside a longer multi-template video, `segmentable:
+   false` for whole-film formats (a launch film with its own arc), and `look`. Use
+   `media.accent` (when set) for the main highlight color so the entry matches its neighbours.
 5. `pnpm typecheck && pnpm validate <id> && pnpm preview <id>`, then look at the frames.
 6. `pnpm index`, then open a PR with the preview attached.
 

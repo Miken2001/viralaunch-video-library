@@ -16,6 +16,11 @@
     "business",
     "generic"
   ],
+  "roles": [
+    "explanation"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
   "adWeave": [
     "end-card",
     "sponsor-mention",

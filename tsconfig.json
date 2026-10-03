@@ -14,5 +14,5 @@
     "baseUrl": ".",
     "paths": {"@viralaunch/kit": ["kit/src/index.tsx"], "@viralaunch/kit/root": ["kit/src/root.tsx"], "@viralaunch/kit/fx": ["kit/src/fx.tsx"]}
   },
-  "include": ["kit/src", "entries/*/src", "scripts"]
+  "include": ["kit/src", "kit/node", "entries/*/src", "scripts"]
 }

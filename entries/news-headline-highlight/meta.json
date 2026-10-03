@@ -16,6 +16,12 @@
     "history",
     "generic"
   ],
+  "roles": [
+    "context",
+    "hook"
+  ],
+  "segmentable": true,
+  "look": "light",
   "adWeave": [
     "end-card",
     "sponsor-mention",

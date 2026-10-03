@@ -21,7 +21,7 @@ const Typing: React.FC<{color: string; dot: string}> = ({color, dot}) => {
 const ChatThread: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, height, durationInFrames} = useVideoConfig();
-  const th = THEMES[props.theme];
+  const th = {...THEMES[props.theme], me: media.accent ?? THEMES[props.theme].me}; /* shared sequence accent */
   const start = Math.round(0.6 * fps);
   // Longer messages get more time: allocate the body of the video by text length.
   const weights = props.messages.map(m => 1 + m.text.length / 40);

@@ -39,6 +39,7 @@ fits:
 | **genre** (what kind of video) | documentary, map-journey, timeline, explainer, listicle, data-story, comparison, product-launch, news-recap, story-narrative, quote-kinetic… |
 | **domain** (what it is about) | history, geography, science, space, sports, finance, tech, religion-myth, culture-entertainment, generic… |
 | **adWeave** (how a sponsor may appear) | native-integrated, end-card, mid-roll-card, sponsor-mention, none-pure-brand |
+| **roles** (which beat of a longer video it can show) | hook, context, evidence, explanation, payoff, closer — plus `segmentable` and `look` (dark/light/adaptive) |
 | technique · aspect · tier · minModel · renderCost | kinetic-type, maps, charts… · 9:16 · fill/fork · small/mid/frontier |
 
 - `index/index.json` — every entry's metadata, props JSON Schema, content hash and file list (no code)
@@ -50,6 +51,24 @@ fits:
 
 A history video: filter `domain=history`, then `genre=documentary|timeline|map-journey`.
 Product-launch templates never show up for that query.
+
+## Combining templates (sequences)
+
+A longer video can switch templates per narrative beat — a cinematic hook, fact cards for the
+numbers, a line-art diagram for the mechanism, a documentary close — under one continuous
+narration. Each segment renders as its own composition; `kit/node/sequence.ts` cross-fades the
+clips with ffmpeg and lays the audio underneath, and every segment gets the same `media.accent`
+so highlights match.
+
+```bash
+pnpm sequence-preview examples/sequences/malaria.json   # → out/sequences/malaria.mp4
+```
+
+A spec is a normal example (`media`, `scenes`) plus `accent`, `transition`
+(`light-leak-dissolve` | `whip` | `zoom` | `cut`) and 2–4 `segments`
+(`{templateId, role, fromScene, toScene, props}`) covering every scene in order. Pick templates
+whose `roles` include the beat, keep one `look`, and never use a `segmentable: false` entry.
+Templates outside `entries/` (e.g. ViraLaunch's bundled ones) are read from `CORE_DIR`.
 
 ## Entry layout
 
@@ -87,6 +106,7 @@ pnpm preview <id> [--aspect 16:9]         # render previews/<id>.mp4 + .jpg
 pnpm index                                # rebuild index/ (pnpm index --check in CI)
 pnpm inspiration <awesome-list checkout>  # rebuild inspiration/inspiration.json
 pnpm contact-sheet                        # out/contact-sheet.html for batch QA
+pnpm sequence-preview <spec.json>         # render a multi-template sequence → out/sequences/
 pnpm make-entry <inspiration-id> <new-id> --awesome <checkout>   # headless agent pipeline
 pnpm sync-kit ../viralaunch-local         # copy kit + catalog into ViraLaunch
 ```

@@ -15,6 +15,12 @@
     "business",
     "generic"
   ],
+  "roles": [
+    "hook",
+    "closer"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
   "adWeave": [
     "end-card",
     "sponsor-mention",

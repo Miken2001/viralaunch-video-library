@@ -15,7 +15,7 @@ const QuoteKinetic: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const content = useContentFrames(media);
-  const p = PALETTES[props.palette];
+  const p = {...PALETTES[props.palette], accent: media.accent ?? PALETTES[props.palette].accent}; /* shared sequence accent */
   const words = props.quote.split(/\s+/).filter(Boolean).map(w => ({text: w.replace(/\*/g, ''), key: /^\*.*\*[.,;:!?"]*$/.test(w) || /^\*/.test(w)}));
   // Reveal all words over the first ~65% of the video; then hold for reading + attribution.
   const revealEnd = Math.max(fps, content * 0.65);

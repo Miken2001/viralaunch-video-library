@@ -488,3 +488,6 @@ export function useUnit() {
 }
 
 export {LineIcon, iconNames, type IconName} from './icons';
+
+/** Widens an `as const` palette to plain strings, so entries can override a colour (e.g. media.accent). */
+export type Widen<T> = {[K in keyof T]: T[K] extends string ? string : T[K] extends readonly string[] ? readonly string[] : T[K]};

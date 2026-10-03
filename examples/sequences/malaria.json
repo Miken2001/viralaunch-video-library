@@ -1,0 +1,31 @@
+{
+  "accent": "#FFB703",
+  "transition": "light-leak-dissolve",
+  "media": {"aspectRatio": "9:16", "adWeave": "end-card", "brand": {"name": "Lumen Tutor", "tagline": "Science that clicks", "cta": "Start learning"}},
+  "scenes": [
+    {"text": "It is smaller than a grain of rice, and it is the deadliest animal on Earth.", "durationSeconds": 4.5, "asset": "samples/mosquito-albimanus.jpg"},
+    {"text": "In 2024, malaria infected an estimated 282 million people.", "durationSeconds": 4, "asset": "samples/mosquito-stephensi.jpg"},
+    {"text": "It killed about 610,000 of them.", "durationSeconds": 3.2},
+    {"text": "Ninety five percent of those deaths were in Africa.", "durationSeconds": 3.4},
+    {"text": "And three in four of them were children under five.", "durationSeconds": 3.6},
+    {"text": "It starts with a bite from a female Anopheles mosquito, which carries a parasite.", "durationSeconds": 4.5},
+    {"text": "The parasite multiplies in the liver, then invades red blood cells.", "durationSeconds": 4.2},
+    {"text": "For centuries, the cure came from tree bark: cinchona, and later quinine.", "durationSeconds": 4.4},
+    {"text": "In 1972, Tu Youyou discovered artemisinin. In 2021, the first malaria vaccine was recommended.", "durationSeconds": 5.4},
+    {"text": "The fight is not over, but it can be won.", "durationSeconds": 4.2}
+  ],
+  "props": {},
+  "segments": [
+    {"templateId": "cinematic-broll", "role": "hook", "fromScene": 0, "toScene": 1, "props": {"title": "The *deadliest* animal", "kicker": "Malaria · 2024", "grade": "teal-orange", "captionStyle": "pop", "hudLabel": "Malaria"}},
+    {"templateId": "facts-cards-3d", "role": "payoff", "fromScene": 2, "toScene": 4, "props": {"title": "Malaria by the numbers", "palette": "midnight", "stamp": "WHO 2024", "facts": [
+      {"headline": "About *610,000* deaths", "detail": "Estimated malaria deaths worldwide in 2024.", "icon": "heart", "stat": {"value": 610000, "unit": "deaths"}},
+      {"headline": "*95%* of deaths in Africa", "detail": "The WHO African Region carries the heaviest burden.", "icon": "globe", "stat": {"value": 95, "unit": "percent"}},
+      {"headline": "*3 in 4* were young children", "detail": "Children under 5 were about 75% of deaths in the Region.", "icon": "people", "stat": {"value": 75, "unit": "percent"}}
+    ]}},
+    {"templateId": "lineart-explainer", "role": "explanation", "fromScene": 5, "toScene": 6, "props": {"title": "How malaria spreads", "paper": "chalkboard", "steps": [
+      {"label": "The bite", "title": "A female Anopheles bites", "icon": "drop", "flowTo": "person", "note": "carries Plasmodium", "color": "yellow"},
+      {"label": "The attack", "title": "Liver, then blood", "icon": "heart", "flowTo": "drop", "note": "red blood cells", "color": "red"}
+    ]}},
+    {"templateId": "documentary-ken-burns", "role": "context", "fromScene": 7, "toScene": 9, "props": {"title": "Four centuries of cures", "subtitle": "From tree bark to vaccines", "chapters": ["", "1972 · 2021", "Today"], "grade": "sepia", "landscape": "plains", "letterbox": true}}
+  ]
+}

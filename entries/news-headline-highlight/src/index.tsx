@@ -41,6 +41,7 @@ const Marked: React.FC<{text: string; highlights: string[]; progress: number[]; 
 const NewsHighlight: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
+  const marker = media.accent ?? props.marker; /* shared sequence accent */
   const enter = spring({frame, fps, config: {damping: 18, stiffness: 100}});
   const whyAt = props.whyItMatters ? Math.round(durationInFrames * 0.72) : durationInFrames;
   const hlStart = Math.round(1.2 * fps);
@@ -55,18 +56,18 @@ const NewsHighlight: React.FC<EntryProps<Props>> = ({media, props}) => {
         <div style={{fontFamily: SERIF, fontSize: 64, fontWeight: 700, textAlign: 'center', letterSpacing: '0.04em', borderBottom: '3px double #222', paddingBottom: 14}}>{props.masthead}</div>
         {props.dateline ? <div style={{fontFamily: SANS, fontSize: 22, letterSpacing: '0.2em', textTransform: 'uppercase', textAlign: 'center', color: '#555', padding: '12px 0', borderBottom: '1px solid #222'}}>{props.dateline}</div> : null}
         <div style={{fontFamily: SERIF, fontSize: height > width ? 76 : 70, fontWeight: 800, lineHeight: 1.08, marginTop: 36, color: '#111'}}>
-          <Marked text={props.headline} highlights={props.highlights} progress={progress} color={props.marker} />
+          <Marked text={props.headline} highlights={props.highlights} progress={progress} color={marker} />
         </div>
         {props.body ? (
           <div style={{fontFamily: SERIF, fontSize: 34, lineHeight: 1.45, color: '#2b2b2b', marginTop: 30, columnCount: height > width ? 1 : 2, columnGap: 40}}>
-            <Marked text={props.body} highlights={props.highlights} progress={progress} color={props.marker} />
+            <Marked text={props.body} highlights={props.highlights} progress={progress} color={marker} />
           </div>
         ) : null}
         {props.source ? <div style={{fontFamily: SANS, fontSize: 22, color: '#777', marginTop: 26}}>{props.source}</div> : null}
       </div>
       {props.whyItMatters ? (
         <div style={{position: 'absolute', left: '8%', right: '8%', bottom: height * 0.18, background: '#111', color: '#fff', borderRadius: 18, padding: '34px 40px', fontFamily: SANS, opacity: whyT, transform: `translateY(${(1 - whyT) * 80}px)`}}>
-          <div style={{fontSize: 24, fontWeight: 800, letterSpacing: '0.2em', color: props.marker, marginBottom: 12}}>WHY IT MATTERS</div>
+          <div style={{fontSize: 24, fontWeight: 800, letterSpacing: '0.2em', color: marker, marginBottom: 12}}>WHY IT MATTERS</div>
           <div style={{fontSize: 46, fontWeight: 800, lineHeight: 1.2}}>{props.whyItMatters}</div>
         </div>
       ) : null}

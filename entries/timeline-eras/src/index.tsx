@@ -15,7 +15,7 @@ const formatYear = (y: number) => (y < 0 ? `${Math.abs(Math.round(y))} BC` : `${
 const TimelineEras: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
-  const p = PALETTES[props.palette];
+  const p = {...PALETTES[props.palette], accent: media.accent ?? PALETTES[props.palette].accent}; /* shared sequence accent */
   const timeline = useSceneTimeline(media);
   const items = props.milestones;
   const portrait = height >= width;

@@ -81,7 +81,7 @@ const MatchRecap: React.FC<EntryProps<Props>> = ({media, props}) => {
         ? timeline.map(t => (
             <Sequence key={t.index} from={t.from} durationInFrames={t.durationInFrames}>
               <AbsoluteFill style={{justifyContent: 'flex-end', padding: '0 7% 7%'}}>
-                <Captions scene={t.scene} style={{fontFamily: FONT, fontSize: 56}} highlight="#ffd60a" />
+                <Captions scene={t.scene} style={{fontFamily: FONT, fontSize: 56}} highlight={media.accent ?? '#ffd60a'} />
               </AbsoluteFill>
             </Sequence>
           ))

@@ -17,6 +17,12 @@
     "religion-myth",
     "generic"
   ],
+  "roles": [
+    "evidence",
+    "context"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
   "adWeave": [
     "end-card",
     "sponsor-mention",

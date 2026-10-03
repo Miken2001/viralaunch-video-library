@@ -13,7 +13,7 @@ const PALETTES = {
 const StepsDiagram: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
-  const p = PALETTES[props.palette];
+  const p = {...PALETTES[props.palette], active: media.accent ?? PALETTES[props.palette].active}; /* shared sequence accent */
   const timeline = useSceneTimeline(media);
   const n = props.steps.length;
   const portrait = height >= width;

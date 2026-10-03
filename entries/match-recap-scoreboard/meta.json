@@ -12,6 +12,12 @@
   "domains": [
     "sports"
   ],
+  "roles": [
+    "evidence",
+    "context"
+  ],
+  "segmentable": true,
+  "look": "dark",
   "adWeave": [
     "end-card",
     "sponsor-mention",

@@ -70,7 +70,7 @@ const ListicleCountdown: React.FC<EntryProps<Props>> = ({media, props}) => {
         ? timeline.map(t => (
             <Sequence key={t.index} from={t.from} durationInFrames={t.durationInFrames}>
               <AbsoluteFill style={{justifyContent: 'flex-end', padding: '0 7% 8%'}}>
-                <Captions scene={t.scene} style={{fontSize: 50}} />
+                <Captions scene={t.scene} style={{fontSize: 50}} highlight={media.accent ?? '#FFD60A'} />
               </AbsoluteFill>
             </Sequence>
           ))

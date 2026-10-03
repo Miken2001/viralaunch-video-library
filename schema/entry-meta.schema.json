@@ -23,7 +23,10 @@
     "location",
     "source",
     "license",
-    "status"
+    "status",
+    "roles",
+    "segmentable",
+    "look"
   ],
   "properties": {
     "schemaVersion": {
@@ -251,6 +254,34 @@
       "type": "boolean",
       "default": true,
       "description": "false only for legacy entries that import the renderer's legacy component tree."
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "hook",
+          "context",
+          "evidence",
+          "explanation",
+          "payoff",
+          "closer"
+        ]
+      },
+      "description": "What this template is good for as one beat inside a multi-template sequence."
+    },
+    "segmentable": {
+      "type": "boolean",
+      "description": "false for whole-film formats that should never be a segment of a sequence."
+    },
+    "look": {
+      "enum": [
+        "dark",
+        "light",
+        "adaptive"
+      ],
+      "description": "Overall brightness; adaptive = chosen by a palette/theme prop."
     }
   },
   "definitions": {

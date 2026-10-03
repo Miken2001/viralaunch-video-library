@@ -82,7 +82,7 @@ const ScaleLadder: React.FC<EntryProps<Props>> = ({media, props}) => {
         ? timeline.map(tl => (
             <Sequence key={tl.index} from={tl.from} durationInFrames={tl.durationInFrames}>
               <AbsoluteFill style={{justifyContent: 'flex-end', padding: '0 7% 6%'}}>
-                <Captions scene={tl.scene} style={{fontSize: 44}} highlight="#7dd3fc" />
+                <Captions scene={tl.scene} style={{fontSize: 44}} highlight={media.accent ?? '#7dd3fc'} />
               </AbsoluteFill>
             </Sequence>
           ))

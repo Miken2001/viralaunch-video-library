@@ -21,7 +21,8 @@
     "check": "pnpm typecheck && pnpm validate && pnpm index --check",
     "new-entry": "tsx scripts/new-entry.ts",
     "still-sheet": "tsx scripts/still-sheet.ts",
-    "sync-kit": "tsx scripts/sync-kit.ts"
+    "sync-kit": "tsx scripts/sync-kit.ts",
+    "sequence-preview": "tsx scripts/sequence-preview.ts"
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.0.0",

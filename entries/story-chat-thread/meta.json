@@ -15,6 +15,12 @@
     "education",
     "generic"
   ],
+  "roles": [
+    "context",
+    "hook"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
   "adWeave": [
     "end-card",
     "sponsor-mention",

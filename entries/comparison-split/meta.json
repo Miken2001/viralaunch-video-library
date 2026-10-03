@@ -16,6 +16,11 @@
     "finance",
     "generic"
   ],
+  "roles": [
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "dark",
   "adWeave": [
     "end-card",
     "sponsor-mention",

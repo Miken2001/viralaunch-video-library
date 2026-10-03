@@ -64,6 +64,11 @@ export const MediaSchema = z.object({
   brand: BrandSchema.prefault({}),
   /** How the user's product may appear. Entries must honour it (see AdWeave below). */
   adWeave: z.enum(['native-integrated', 'end-card', 'mid-roll-card', 'sponsor-mention', 'none-pure-brand']).default('end-card'),
+  /**
+   * Shared accent colour (hex). Set by multi-template sequences so every segment uses the same
+   * highlight colour; entries use it in place of their palette accent when present.
+   */
+  accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
   /** Mandatory disclosure text for sponsored placements; render it whenever non-empty. */
   disclosure: z.string().default(''),
   /**

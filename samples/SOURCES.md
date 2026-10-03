@@ -23,3 +23,5 @@ Public-domain images used to render template previews. Not part of any entry and
 | sun-xray.jpg | [Sun in X-Ray.png](https://commons.wikimedia.org/wiki/File:Sun_in_X-Ray.png) | Public domain |
 | sun.jpg | [The Sun by the Atmospheric Imaging Assembly of NASA&#x27;s Solar Dynamics Observatory - 20100819.jpg](https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg) | Public domain |
 | washington-delaware.jpg | [Washington Crossing the Delaware by Emanuel Leutze, MMA-NYC, 1851.jpg](https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg) | Public domain |
+| mosquito-stephensi.jpg | [Anopheles stephensi.jpeg](https://commons.wikimedia.org/wiki/File:Anopheles_stephensi.jpeg) | Public domain (CDC) |
+| mosquito-albimanus.jpg | [Anopheles albimanus mosquito.jpg](https://commons.wikimedia.org/wiki/File:Anopheles_albimanus_mosquito.jpg) | Public domain (CDC) |

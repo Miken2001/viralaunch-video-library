@@ -16,6 +16,12 @@
     "education",
     "history"
   ],
+  "roles": [
+    "payoff",
+    "hook"
+  ],
+  "segmentable": true,
+  "look": "dark",
   "adWeave": [
     "end-card",
     "mid-roll-card",

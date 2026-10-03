@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "genre": {
     "product-launch": "Announces a product, feature or release. Hype structure: hook, reveal, benefits, CTA.",
     "product-demo": "Shows a product being used: UI walkthroughs, before/after, feature tours.",
@@ -55,7 +55,11 @@
     "camera-motion": "Pans, zooms, parallax, Ken Burns.",
     "audio-reactive": "Visuals react to audio amplitude/frequency."
   },
-  "aspect": ["9:16", "1:1", "16:9"],
+  "aspect": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
   "tier": {
     "fill": "Fill tier: a model only returns JSON props that validate against the entry's schema. Works with small/local models and unattended background jobs.",
     "fork": "Fork tier: an agent with file tools copies the entry and edits the code. Requires a frontier coding agent."
@@ -75,5 +79,18 @@
     "user-images": "One image/video asset per scene supplied by the user or imported.",
     "llm.structured": "A structured-output model must prepare a spec before render.",
     "music": "A music track improves the result."
+  },
+  "roles": {
+    "hook": "Opens the video and earns the next 3 seconds: a striking image, claim, question or punchline.",
+    "context": "Sets the scene or tells the story: who, where, when, what happened.",
+    "evidence": "Shows proof with data, a comparison, a map or a timeline.",
+    "explanation": "Shows how something works: steps, a process, a mechanism.",
+    "payoff": "Delivers the takeaways: facts, a list, a ranking.",
+    "closer": "Ends the video: a memorable line, the lesson, or the call to action."
+  },
+  "look": {
+    "dark": "Mostly dark frames.",
+    "light": "Mostly light frames.",
+    "adaptive": "Brightness comes from a palette/theme prop."
   }
 }

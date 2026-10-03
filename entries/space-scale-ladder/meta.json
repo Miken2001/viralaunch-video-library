@@ -16,6 +16,12 @@
     "geography",
     "generic"
   ],
+  "roles": [
+    "evidence",
+    "explanation"
+  ],
+  "segmentable": true,
+  "look": "dark",
   "adWeave": [
     "end-card",
     "sponsor-mention",

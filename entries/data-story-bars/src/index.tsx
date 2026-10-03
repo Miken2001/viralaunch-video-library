@@ -14,7 +14,7 @@ const fmt = (v: number, d: number) => v.toLocaleString('en-US', {minimumFraction
 const DataStoryBars: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
-  const p = PALETTES[props.palette];
+  const p = {...PALETTES[props.palette], hi: media.accent ?? PALETTES[props.palette].hi}; /* shared sequence accent */
   const timeline = useSceneTimeline(media);
   const portrait = height >= width;
 

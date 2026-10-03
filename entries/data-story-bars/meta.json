@@ -17,6 +17,11 @@
     "science",
     "generic"
   ],
+  "roles": [
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
   "adWeave": [
     "end-card",
     "sponsor-mention",
