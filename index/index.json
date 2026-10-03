@@ -1,0 +1,1641 @@
+{
+ "version": 1,
+ "taxonomyVersion": 1,
+ "repo": "Miken2001/viralaunch-video-library",
+ "ref": "main",
+ "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
+ "count": 10,
+ "entries": [
+  {
+   "schemaVersion": 1,
+   "id": "comparison-split",
+   "name": "Versus Split Screen",
+   "version": "1.0.0",
+   "summary": "A vs B: the screen splits into two colored halves, each side gets a name and image, then stat rows race head-to-head with a winner marker per row and a verdict. For rivalries, products, eras, countries, athletes.",
+   "genres": [
+    "comparison",
+    "data-story"
+   ],
+   "domains": [
+    "sports",
+    "tech",
+    "history",
+    "geography",
+    "finance",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "charts",
+    "stock-footage",
+    "transitions"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "ae572fa9cfeef57731b40b7cbb445d7c56691975b01dba50502271137e0b57e6",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "f3fd03f7da61b399e6a790d83b3cdf8b3fb2f1d2e76951280e4233cfc274a858",
+     "bytes": 1100
+    },
+    {
+     "path": "meta.json",
+     "sha256": "1a35d1cf497e441de9537f4d97af0c7ca215db75de3bc159bdf1ca34d6a4cdf1",
+     "bytes": 1083
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "6f5e26158616e210070f197794040c87dc3f17ad5e54ffd5ff8c1ba184ea805b",
+     "bytes": 924
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "20d4f09986b909aa80cc23f386d91410ec4403cea6b5ed96c92fc69cd1d20409",
+     "bytes": 5773
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "c145cd1457b3f44f2a2386c520067b3c16a81d356b628a05bf6dff7cd52f8b8b",
+     "bytes": 731
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "default": "",
+      "type": "string",
+      "maxLength": 60
+     },
+     "left": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 24
+       },
+       "subtitle": {
+        "default": "",
+        "type": "string",
+        "maxLength": 40
+       },
+       "color": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+       }
+      },
+      "required": [
+       "name",
+       "color"
+      ]
+     },
+     "right": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 24
+       },
+       "subtitle": {
+        "default": "",
+        "type": "string",
+        "maxLength": 40
+       },
+       "color": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+       }
+      },
+      "required": [
+       "name",
+       "color"
+      ]
+     },
+     "stats": {
+      "minItems": 2,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28
+        },
+        "left": {
+         "type": "number"
+        },
+        "right": {
+         "type": "number"
+        },
+        "suffix": {
+         "default": "",
+         "type": "string",
+         "maxLength": 8
+        },
+        "lowerIsBetter": {
+         "default": false,
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "label",
+        "left",
+        "right"
+       ]
+      }
+     },
+     "verdict": {
+      "default": "",
+      "type": "string",
+      "maxLength": 80
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "left",
+     "right",
+     "stats"
+    ]
+   },
+   "preview": {
+    "file": "comparison-split.mp4",
+    "poster": "comparison-split.jpg",
+    "sha256": "ac08af53635be6dea4c5cf98b43a08ecc084025c2c125871a3629781a4d9e7d8",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/comparison-split.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "data-story-bars",
+   "name": "Data Story: Animated Bars",
+   "version": "1.0.0",
+   "summary": "Numbers tell the story: a headline stat counts up, then labelled bars grow and re-sort while a takeaway line lands. For country comparisons, prices, records, survey results, market share.",
+   "genres": [
+    "data-story",
+    "comparison",
+    "news-recap"
+   ],
+   "domains": [
+    "finance",
+    "geography",
+    "business",
+    "sports",
+    "science",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "charts",
+    "kinetic-type",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [
+    {
+     "url": "https://www.remotion.dev/prompts/bar-line-chart-combined",
+     "collection": "remotion-prompts",
+     "inspirationId": "rp-bar-line-chart-combined"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "cbd8514d12986ce3b47d622ac2fc5e3a72cdd4c1f554a36018a74e2e83763042",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "38e6e8093a22f65fd64329470a62f3d1749112599c6b90ee90df91e9680f60ec",
+     "bytes": 1213
+    },
+    {
+     "path": "meta.json",
+     "sha256": "129b5b3237782291317067220333fbc46d8fc1c9824f5fe7693c0f240621d5b8",
+     "bytes": 1251
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "e6c867d87249efd243df51ea95b5c8a351843abf072bdbf5cbb577ba03f44820",
+     "bytes": 986
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "3aabd45cd220004019fae092c74da0d38b4e64e08af5b3679af487e8e204a504",
+     "bytes": 5183
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "6a414a9e87518865d47ef90f8f8ad202d51f81a836781cb910b2cc278ee71210",
+     "bytes": 1041
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 70
+     },
+     "headline": {
+      "type": "object",
+      "properties": {
+       "value": {
+        "type": "number"
+       },
+       "unit": {
+        "default": "",
+        "type": "string",
+        "maxLength": 30
+       },
+       "label": {
+        "default": "",
+        "type": "string",
+        "maxLength": 70
+       }
+      },
+      "required": [
+       "value"
+      ]
+     },
+     "bars": {
+      "minItems": 3,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 24
+        },
+        "value": {
+         "type": "number",
+         "minimum": 0
+        },
+        "highlight": {
+         "default": false,
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "label",
+        "value"
+       ]
+      }
+     },
+     "valueSuffix": {
+      "default": "",
+      "type": "string",
+      "maxLength": 12
+     },
+     "decimals": {
+      "default": 0,
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2
+     },
+     "takeaway": {
+      "default": "",
+      "type": "string",
+      "maxLength": 90
+     },
+     "source": {
+      "default": "",
+      "type": "string",
+      "maxLength": 80
+     },
+     "palette": {
+      "default": "graphite",
+      "type": "string",
+      "enum": [
+       "graphite",
+       "paper",
+       "midnight"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "headline",
+     "bars"
+    ]
+   },
+   "preview": {
+    "file": "data-story-bars.mp4",
+    "poster": "data-story-bars.jpg",
+    "sha256": "69a1b00ed8b41f1ccd1d36d48474f5c09821d171a8f4fc0b8bd07760327742db",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/data-story-bars.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "explainer-steps-diagram",
+   "name": "Step-by-Step Diagram Explainer",
+   "version": "1.0.0",
+   "summary": "Explains a process as connected step cards that draw themselves: numbered nodes, arrows that animate between them, the active step highlighted while narration covers it. For how things work, scientific processes, workflows, tutorials.",
+   "genres": [
+    "explainer",
+    "tutorial"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "education",
+    "health",
+    "business",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 150
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [
+    "@remotion/paths"
+   ],
+   "sha256": "880f59b0f3bf84e6df4bcf4062a0082f12fa29513abb910ba8eed16b54a4f9c5",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "6d0b07eb5b8883911a2db036a25d34ede2a8664f8d436422d88699dca13b1d37",
+     "bytes": 1138
+    },
+    {
+     "path": "meta.json",
+     "sha256": "68bc8fa8b7c08c73b86af146a66d167bf5bd20c0a19ccafee2751560add4f2c3",
+     "bytes": 1170
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "86fa8221ba9bcc9b4f22d3ed35c5c8d748164c360ce3aea8adde7c958652ed58",
+     "bytes": 1026
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "4754e13081da129d9411879d3b5be1eab97f0ce2fd100863e8ea3c9d7d137aad",
+     "bytes": 6345
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "750cfc8d2e6e83de52ef9298c2c9d78a804b2363c4671d2b1b80b618dd7d0232",
+     "bytes": 774
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+     },
+     "steps": {
+      "minItems": 2,
+      "maxItems": 7,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28
+        },
+        "detail": {
+         "default": "",
+         "type": "string",
+         "maxLength": 90
+        },
+        "symbol": {
+         "default": "",
+         "type": "string",
+         "maxLength": 5
+        }
+       },
+       "required": [
+        "label"
+       ]
+      }
+     },
+     "cycle": {
+      "default": false,
+      "type": "boolean"
+     },
+     "palette": {
+      "default": "blueprint",
+      "type": "string",
+      "enum": [
+       "blueprint",
+       "chalkboard",
+       "clean"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "explainer-steps-diagram.mp4",
+    "poster": "explainer-steps-diagram.jpg",
+    "sha256": "6ea344408e6b68038c868986b9a0ce9d9609fe26ac5d0b68a28990ffe9176186",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-steps-diagram.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "listicle-countdown",
+   "name": "Countdown Listicle",
+   "version": "1.0.0",
+   "summary": "Top-N countdown: a giant rank number crashes in, then the item title and one-line why, over the scene image or a bold color field. For rankings, facts, tips, 'N things you didn't know'.",
+   "genres": [
+    "listicle",
+    "comparison"
+   ],
+   "domains": [
+    "generic",
+    "nature",
+    "sports",
+    "culture-entertainment",
+    "education",
+    "history"
+   ],
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "transitions",
+    "stock-footage",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "07658a95ad86fe8ce7d39f08009336d585d410ce2083948962141f911fdee282",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "e8279d337c6d161743bf57447ddda8828cd316471f607019f7144feb2802b306",
+     "bytes": 1225
+    },
+    {
+     "path": "meta.json",
+     "sha256": "bc98b86f82ba849b1c0a3e3c29d650796cc666982347755629e2a679a49f8061",
+     "bytes": 1085
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "3746b8afb6069ce7449ac9cb6e4ada6123eca08baacdab7a7b6e9fa2769dc7c5",
+     "bytes": 1114
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "296e8009c51e65782c78c420d0c5fe59e57b0e3abb80b9bbe907d8f43be2d08f",
+     "bytes": 4597
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "683a4c306249be722b2362dd76adc4b42fb8d37f347199b5af556b8a9d4491a0",
+     "bytes": 601
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+     },
+     "items": {
+      "minItems": 3,
+      "maxItems": 10,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "title": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 40
+        },
+        "why": {
+         "default": "",
+         "type": "string",
+         "maxLength": 90
+        }
+       },
+       "required": [
+        "title"
+       ]
+      }
+     },
+     "palette": {
+      "default": "heat",
+      "type": "string",
+      "enum": [
+       "heat",
+       "ocean",
+       "forest",
+       "mono"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "items"
+    ]
+   },
+   "preview": {
+    "file": "listicle-countdown.mp4",
+    "poster": "listicle-countdown.jpg",
+    "sha256": "9e1bf2f23e539cf1a1ed306725d9e56d823605c05b804d5fc8fcdeec3da1c123",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/listicle-countdown.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "match-recap-scoreboard",
+   "name": "Match Recap Scoreboard",
+   "version": "1.0.0",
+   "summary": "Broadcast-style match recap: score bug slams in, a minute-by-minute event ticker (goals, cards, subs) drives the score, then key stats compare both teams. For football, basketball, any scored sport.",
+   "genres": [
+    "news-recap",
+    "data-story",
+    "timeline"
+   ],
+   "domains": [
+    "sports"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "charts",
+    "captions-voiceover",
+    "transitions"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "seed",
+   "inspiredBy": [
+    {
+     "url": "viralaunch://skills/sportvideo/Scoreboard",
+     "collection": "viralaunch"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "308a0c95f1618de431e718215eaed3490566ba70971775f91f39e2734e0cf682",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "66681b8c5ae03e26d4652b1e950affeac5297fb7ba2f81c6991fff61998ba130",
+     "bytes": 1192
+    },
+    {
+     "path": "meta.json",
+     "sha256": "6398b1e3fe29317ff75205decb701da9912231037be580c7f4ca03f156cbc7ef",
+     "bytes": 1103
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "c4932664aa6ac2824d2917c8e632c2b1a73a1c4387259294e29a055685edfc95",
+     "bytes": 1405
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "dd674513729a843e8bbd6dc71a52e3d8f64479fea9adb16bf95ad53ff0c51211",
+     "bytes": 6595
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "ffbf8789fbd4259c39b7c6a9a314cfeefb86fe2fe0d30a83c8d1a490a1ac59c3",
+     "bytes": 1051
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "competition": {
+      "default": "",
+      "type": "string",
+      "maxLength": 40
+     },
+     "stage": {
+      "default": "",
+      "type": "string",
+      "maxLength": 30
+     },
+     "home": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 24
+       },
+       "short": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 4
+       },
+       "color": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+       }
+      },
+      "required": [
+       "name",
+       "short",
+       "color"
+      ]
+     },
+     "away": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 24
+       },
+       "short": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 4
+       },
+       "color": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+       }
+      },
+      "required": [
+       "name",
+       "short",
+       "color"
+      ]
+     },
+     "events": {
+      "minItems": 1,
+      "maxItems": 12,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "minute": {
+         "type": "string",
+         "maxLength": 8
+        },
+        "side": {
+         "type": "string",
+         "enum": [
+          "home",
+          "away"
+         ]
+        },
+        "kind": {
+         "type": "string",
+         "enum": [
+          "score",
+          "card",
+          "sub",
+          "chance",
+          "note"
+         ]
+        },
+        "text": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 50
+        },
+        "points": {
+         "default": 1,
+         "type": "integer",
+         "minimum": 1,
+         "maximum": 7
+        }
+       },
+       "required": [
+        "minute",
+        "side",
+        "kind",
+        "text"
+       ]
+      }
+     },
+     "stats": {
+      "default": [],
+      "maxItems": 5,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "maxLength": 22
+        },
+        "home": {
+         "type": "number"
+        },
+        "away": {
+         "type": "number"
+        },
+        "suffix": {
+         "default": "",
+         "type": "string",
+         "maxLength": 4
+        }
+       },
+       "required": [
+        "label",
+        "home",
+        "away"
+       ]
+      }
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "home",
+     "away",
+     "events"
+    ]
+   },
+   "preview": {
+    "file": "match-recap-scoreboard.mp4",
+    "poster": "match-recap-scoreboard.jpg",
+    "sha256": "775533dcb61d6f5d73f5005a17207cbb7fb33fa24593d2ad080e602614dfad5d",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/match-recap-scoreboard.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "news-headline-highlight",
+   "name": "News Headline Highlighter",
+   "version": "1.0.0",
+   "summary": "A newspaper-style article card slides in, the camera pushes toward the headline and a marker highlights key phrases one by one, then a 'why it matters' card. For news recaps, announcements, studies, historical front pages.",
+   "genres": [
+    "news-recap",
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "business",
+    "finance",
+    "science",
+    "history",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "camera-motion",
+    "ui-mockup"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 6,
+    "max": 60
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://www.remotion.dev/prompts/news-article-headline-highlight",
+     "author": "Remotion",
+     "collection": "remotion-prompts",
+     "inspirationId": "rp-news-article-headline-highlight"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "b0c27f1af4ad7013135bb31bb7260f9d2f419833d5fa4c1c230f73d30ffa8273",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "8d99e012c2c18ec55d78cc0c638323e99e05de29a2610c40369c54f90051cb97",
+     "bytes": 1119
+    },
+    {
+     "path": "meta.json",
+     "sha256": "44bb8c804fd485751f0d262b23bd1ab3804505b630d7637a684ab8aca45ad84f",
+     "bytes": 1315
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "37713f03ed481cdffb98efcf2c14da7491f2d55e65526ab8c653d9bfb2a265e6",
+     "bytes": 981
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "49178db8659f874771c34f3ffab454c96c1beb41bec9f6681b3e0bc793c8d984",
+     "bytes": 4848
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "831610dd0f758dcb78cc0c531a0a251864449529f2464b0d2290e72f3de84c7f",
+     "bytes": 805
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "masthead": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+     },
+     "dateline": {
+      "default": "",
+      "type": "string",
+      "maxLength": 40
+     },
+     "headline": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 110
+     },
+     "highlights": {
+      "default": [],
+      "maxItems": 4,
+      "type": "array",
+      "items": {
+       "type": "string",
+       "minLength": 2,
+       "maxLength": 60
+      }
+     },
+     "body": {
+      "default": "",
+      "type": "string",
+      "maxLength": 360
+     },
+     "whyItMatters": {
+      "default": "",
+      "type": "string",
+      "maxLength": 120
+     },
+     "source": {
+      "default": "",
+      "type": "string",
+      "maxLength": 80
+     },
+     "marker": {
+      "default": "#ffe066",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+     }
+    },
+    "required": [
+     "masthead",
+     "headline"
+    ]
+   },
+   "preview": {
+    "file": "news-headline-highlight.mp4",
+    "poster": "news-headline-highlight.jpg",
+    "sha256": "bd586f2f9762893505d20197e3283d1c252e9008bf68a55ab9fa03ff736d09bf",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/news-headline-highlight.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "quote-kinetic-serif",
+   "name": "Kinetic Quote",
+   "version": "1.0.0",
+   "summary": "A quote or bold statement revealed word by word in large editorial serif type, with the key words highlighted and the attribution signed at the end. For famous quotes, scripture, philosophy, hot takes.",
+   "genres": [
+    "quote-kinetic"
+   ],
+   "domains": [
+    "history",
+    "religion-myth",
+    "culture-entertainment",
+    "education",
+    "business",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "none-pure-brand",
+    "native-integrated"
+   ],
+   "techniques": [
+    "kinetic-type"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 5,
+    "max": 40
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "e952b169478efc381a32e35899d5c1e2b16b1466890b96dc503b21db5985b03c",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "c298944c34f4bd31085a8d516f2b6aae54d261aaece29fb8fefaf5bdb620c325",
+     "bytes": 1038
+    },
+    {
+     "path": "meta.json",
+     "sha256": "a4cc1d5f541b8250a01f75e666f88b4932749299110b23a53b013b4341f83541",
+     "bytes": 1004
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "ebb86b67124fe1dfb66c81e0af47bf4f9fd71e8a046a546414f06270a0300942",
+     "bytes": 592
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "81ff1c50cae83021a4be4f492f6735cecd735c0ee9bd796ce93b4d4cc7430a0b",
+     "bytes": 3335
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "b56a5e85ff5f2af4c8b7b89a84abab755bca40126b222b0a43cc49f849cc15d0",
+     "bytes": 496
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "quote": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 320
+     },
+     "author": {
+      "default": "",
+      "type": "string",
+      "maxLength": 60
+     },
+     "context": {
+      "default": "",
+      "type": "string",
+      "maxLength": 70
+     },
+     "palette": {
+      "default": "ivory",
+      "type": "string",
+      "enum": [
+       "ivory",
+       "night",
+       "oxblood",
+       "sage"
+      ]
+     }
+    },
+    "required": [
+     "quote"
+    ]
+   },
+   "preview": {
+    "file": "quote-kinetic-serif.mp4",
+    "poster": "quote-kinetic-serif.jpg",
+    "sha256": "b3a782dca9a0372967c30985ad6684c62f34f192f14aca1a1c670c224a72fcb6",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/quote-kinetic-serif.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "space-scale-ladder",
+   "name": "Cosmic Scale Ladder",
+   "version": "1.0.0",
+   "summary": "Bodies of wildly different sizes appear side by side while the camera pulls back by orders of magnitude over a starfield, with a size readout. For 'how big is X': planets, cells, buildings.",
+   "genres": [
+    "comparison",
+    "explainer"
+   ],
+   "domains": [
+    "space",
+    "science",
+    "nature",
+    "education",
+    "geography",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "particles",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "seed",
+   "inspiredBy": [
+    {
+     "url": "viralaunch://skills/spacevideo/ScaleLadder",
+     "collection": "viralaunch"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "59bbf4b5f0e49bf695036556c2ff0dde763214fe1b3b1c431fc3fcb02bd4f10d",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "b7bf7828c0b7de0e0b516fd29b4af7f1995b41b36eb7d80f5d6651030e41aa0e",
+     "bytes": 1107
+    },
+    {
+     "path": "meta.json",
+     "sha256": "d78a1dafdbb56cd3c8b86aa2cc7146ad7790a7947b37e0dbca8f45bff698fa6d",
+     "bytes": 1158
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "3d2e998616e3477a613b9f050e7a058009f68bf58417762027ce328cf068d125",
+     "bytes": 947
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "5de711653ee75aeafc1849f76d9680da48f46569d2600e1301d90fd63f6ae7d8",
+     "bytes": 5361
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "11cf3327a7dc8d63bc8957beb1aeeb74cef5dbe3397d0c1609bb9f8dc58f7c3e",
+     "bytes": 636
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+     },
+     "objects": {
+      "minItems": 3,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28
+        },
+        "size": {
+         "type": "number",
+         "exclusiveMinimum": 0
+        },
+        "sizeLabel": {
+         "type": "string",
+         "maxLength": 28
+        },
+        "color": {
+         "type": "string",
+         "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "rings": {
+         "default": false,
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "name",
+        "size",
+        "sizeLabel",
+        "color"
+       ]
+      }
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "objects"
+    ]
+   },
+   "preview": {
+    "file": "space-scale-ladder.mp4",
+    "poster": "space-scale-ladder.jpg",
+    "sha256": "a880878dbea04ece0db94a460ab07bc9a49339506622eb276b23e89c464a34fe",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/space-scale-ladder.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-chat-thread",
+   "name": "Chat Thread Story",
+   "version": "1.0.0",
+   "summary": "A story told as a phone chat: bubbles pop in with typing indicators, timestamps and a twist message at the end. For relatable stories, dialogues, historical 'what if they texted', customer stories.",
+   "genres": [
+    "story-narrative",
+    "meme-reaction"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "history",
+    "business",
+    "education",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "ui-mockup",
+    "kinetic-type"
+   ],
+   "aspects": [
+    "9:16"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 75
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "662a4f4e3405fcdeda28497b307fa0855866e20881aa52e9167a87dfd97844d2",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "4027e0b3d4d06c41e864dba2e371a7ceb4e7b6982a9b8577268318ab47e703f6",
+     "bytes": 1208
+    },
+    {
+     "path": "meta.json",
+     "sha256": "7b6e1f44f07669ba6dfed58f530dffc3de9a7a7b9237cc44a1d542ddbc1a6f0f",
+     "bytes": 998
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "d757bdc93a5504f16ceb4ffacfa2bdff1a8c0130fa89ad83e18b4d4a784aa745",
+     "bytes": 987
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "91b6ccf32b3c6cc1c2c84c7ea87f026b629a39643049cf7bc7050783077a0edf",
+     "bytes": 4693
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "93d0d1c2d58fdb7d4f80cb5431616001f13f331330c44fdcf41b6953dfd4ec76",
+     "bytes": 725
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "contact": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+     },
+     "status": {
+      "default": "online",
+      "type": "string",
+      "maxLength": 30
+     },
+     "messages": {
+      "minItems": 2,
+      "maxItems": 16,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "from": {
+         "type": "string",
+         "enum": [
+          "me",
+          "them"
+         ]
+        },
+        "text": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 140
+        },
+        "time": {
+         "default": "",
+         "type": "string",
+         "maxLength": 8
+        }
+       },
+       "required": [
+        "from",
+        "text"
+       ]
+      }
+     },
+     "theme": {
+      "default": "dark",
+      "type": "string",
+      "enum": [
+       "light",
+       "dark"
+      ]
+     },
+     "label": {
+      "default": "",
+      "type": "string",
+      "maxLength": 40
+     }
+    },
+    "required": [
+     "contact",
+     "messages"
+    ]
+   },
+   "preview": {
+    "file": "story-chat-thread.mp4",
+    "poster": "story-chat-thread.jpg",
+    "sha256": "532499c504f567f200804db22a90c34b1a5001c126257a3ec6c62022dafd67b0",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-chat-thread.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "timeline-eras",
+   "name": "Scrolling Timeline of Eras",
+   "version": "1.0.0",
+   "summary": "A vertical timeline that scrolls through dated milestones: year counter, era bands, milestone cards with one-line facts. For history of X, evolution of a technology, eras of a civilization.",
+   "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+   ],
+   "domains": [
+    "history",
+    "science",
+    "space",
+    "tech",
+    "religion-myth",
+    "generic"
+   ],
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover",
+    "svg-illustration"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 150
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "original",
+   "inspiredBy": [],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "a9f2998afed74092d028865880451ea367f0f98e899b72dd4c84bd2ee3405b76",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "af24a94d8c18d2658de360ee347dd2a7e3a0322660eb88b356626e80db9d4c92",
+     "bytes": 1314
+    },
+    {
+     "path": "meta.json",
+     "sha256": "23248b6c14023c9cd58ae4c5efa68116714a5a19d68651ad4d5cb7e564a1682d",
+     "bytes": 1102
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "036cdbae1aed80a8373040f243f8f7a59963d212266613e8c07bd2bb982dcbe4",
+     "bytes": 1184
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "d69794f7cdf3c31de86a0b8d29eaff6fd23ff03851ff7f1db4e36d5630f42eff",
+     "bytes": 5753
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "6d5e7fa458ef725f32caefaf7fa833240f20a6147279e1e190e0d96a4b912117",
+     "bytes": 800
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+     },
+     "milestones": {
+      "minItems": 3,
+      "maxItems": 14,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "when": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 16
+        },
+        "year": {
+         "type": "number"
+        },
+        "title": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 48
+        },
+        "fact": {
+         "default": "",
+         "type": "string",
+         "maxLength": 110
+        },
+        "era": {
+         "default": "",
+         "type": "string",
+         "maxLength": 28
+        }
+       },
+       "required": [
+        "when",
+        "year",
+        "title"
+       ]
+      }
+     },
+     "palette": {
+      "default": "ink",
+      "type": "string",
+      "enum": [
+       "ink",
+       "chalk",
+       "neon",
+       "parchment"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "milestones"
+    ]
+   },
+   "preview": {
+    "file": "timeline-eras.mp4",
+    "poster": "timeline-eras.jpg",
+    "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-eras.mp4"
+   }
+  }
+ ]
+}

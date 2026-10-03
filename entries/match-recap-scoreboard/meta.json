@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "match-recap-scoreboard",
+  "name": "Match Recap Scoreboard",
+  "version": "1.0.0",
+  "summary": "Broadcast-style match recap: score bug slams in, a minute-by-minute event ticker (goals, cards, subs) drives the score, then key stats compare both teams. For football, basketball, any scored sport.",
+  "genres": [
+    "news-recap",
+    "data-story",
+    "timeline"
+  ],
+  "domains": [
+    "sports"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "charts",
+    "captions-voiceover",
+    "transitions"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "seed",
+  "inspiredBy": [
+    {
+      "url": "viralaunch://skills/sportvideo/Scoreboard",
+      "collection": "viralaunch"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

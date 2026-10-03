@@ -1,0 +1,7 @@
+{
+  "repo": "Miken2001/viralaunch-video-library",
+  "ref": "main",
+  "previewRelease": "previews-v1",
+  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
+  "previewBase": "https://github.com/{repo}/releases/download/{release}/{file}"
+}

@@ -1,0 +1,296 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://viralaunch.ai/schemas/library/entry-meta.v1.json",
+  "title": "ViraLaunch video library entry metadata (authored meta.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "version",
+    "summary",
+    "genres",
+    "domains",
+    "adWeave",
+    "techniques",
+    "aspects",
+    "durationSeconds",
+    "tiers",
+    "minModel",
+    "renderCost",
+    "requires",
+    "location",
+    "source",
+    "license",
+    "status"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 64,
+      "description": "Also the Remotion composition id."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 240,
+      "description": "One sentence an agent reads in the catalog to decide whether to open the brief."
+    },
+    "genres": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/genre"
+      }
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/domain"
+      }
+    },
+    "adWeave": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "native-integrated",
+          "end-card",
+          "mid-roll-card",
+          "sponsor-mention",
+          "none-pure-brand"
+        ]
+      }
+    },
+    "techniques": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "kinetic-type",
+          "maps",
+          "3d",
+          "charts",
+          "captions-voiceover",
+          "stock-footage",
+          "svg-illustration",
+          "particles",
+          "ui-mockup",
+          "transitions",
+          "camera-motion",
+          "audio-reactive"
+        ]
+      }
+    },
+    "aspects": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "9:16",
+          "1:1",
+          "16:9"
+        ]
+      }
+    },
+    "durationSeconds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 1
+        },
+        "max": {
+          "type": "number",
+          "maximum": 600
+        }
+      }
+    },
+    "tiers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "fill",
+          "fork"
+        ]
+      }
+    },
+    "minModel": {
+      "enum": [
+        "small",
+        "mid",
+        "frontier"
+      ]
+    },
+    "renderCost": {
+      "enum": [
+        "low",
+        "med",
+        "high"
+      ]
+    },
+    "requires": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "voiceover",
+          "user-images",
+          "llm.structured",
+          "music"
+        ]
+      }
+    },
+    "location": {
+      "enum": [
+        "core",
+        "remote"
+      ],
+      "description": "core = bundled with viralaunch-local and usable offline; remote = fetched on demand."
+    },
+    "source": {
+      "enum": [
+        "original",
+        "legacy",
+        "recreation",
+        "seed"
+      ],
+      "description": "legacy = ported short-video-maker style; recreation = original code inspired by a third-party post; seed = ported from ViraLaunch's own video projects."
+    },
+    "inspiredBy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "collection"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "author": {
+            "type": "string"
+          },
+          "collection": {
+            "enum": [
+              "awesome-opus-5.5-video-prompts",
+              "remotion-prompts",
+              "viralaunch"
+            ]
+          },
+          "inspirationId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "license": {
+      "const": "MIT"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "approved"
+      ]
+    },
+    "authoredBy": {
+      "type": "string",
+      "description": "Human or model that wrote the code, e.g. claude-opus-5-5."
+    },
+    "remotionPackages": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "@remotion/transitions",
+          "@remotion/shapes",
+          "@remotion/paths",
+          "@remotion/noise",
+          "@remotion/layout-utils",
+          "@remotion/animation-utils",
+          "@remotion/media-utils",
+          "@remotion/three",
+          "three",
+          "@react-three/fiber"
+        ]
+      }
+    },
+    "portable": {
+      "type": "boolean",
+      "default": true,
+      "description": "false only for legacy entries that import the renderer's legacy component tree."
+    }
+  },
+  "definitions": {
+    "genre": {
+      "enum": [
+        "product-launch",
+        "product-demo",
+        "explainer",
+        "documentary",
+        "story-narrative",
+        "listicle",
+        "data-story",
+        "map-journey",
+        "timeline",
+        "quote-kinetic",
+        "showreel",
+        "comparison",
+        "tutorial",
+        "news-recap",
+        "meme-reaction",
+        "music-visual"
+      ]
+    },
+    "domain": {
+      "enum": [
+        "tech",
+        "business",
+        "history",
+        "geography",
+        "science",
+        "space",
+        "religion-myth",
+        "sports",
+        "finance",
+        "health",
+        "culture-entertainment",
+        "nature",
+        "education",
+        "generic"
+      ]
+    }
+  }
+}

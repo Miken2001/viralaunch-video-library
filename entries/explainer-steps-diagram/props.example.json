@@ -1,0 +1,20 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Lumen Tutor", "tagline": "Science that clicks", "cta": "Start learning"}},
+  "scenes": [
+    {"text": "The Sun heats oceans and lakes, and water evaporates.", "durationSeconds": 4},
+    {"text": "The vapor rises, cools and condenses into clouds.", "durationSeconds": 4},
+    {"text": "Droplets grow heavy and fall as rain or snow.", "durationSeconds": 4},
+    {"text": "Rivers and groundwater carry it back to the sea.", "durationSeconds": 4}
+  ],
+  "props": {
+    "title": "The Water Cycle",
+    "steps": [
+      {"label": "Evaporation", "detail": "Sunlight turns surface water into vapor.", "symbol": "H2O"},
+      {"label": "Condensation", "detail": "Rising vapor cools into cloud droplets.", "symbol": "2"},
+      {"label": "Precipitation", "detail": "Heavy droplets fall as rain or snow.", "symbol": "3"},
+      {"label": "Collection", "detail": "Runoff returns water to oceans and lakes.", "symbol": "4"}
+    ],
+    "cycle": true,
+    "palette": "blueprint"
+  }
+}

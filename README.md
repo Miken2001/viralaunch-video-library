@@ -1,0 +1,111 @@
+# ViraLaunch Video Library
+
+A free, open library of **Remotion video templates** for coding agents and humans. Every
+template ships **working code**, a **preview video**, a **brief written for agents**, and a
+**props schema** simple enough for a small local model to fill.
+
+Prompt galleries show you what an AI made. This library gives you the code it would take,
+already parameterized: a weaker model can fill a template's props, and a frontier agent can
+fork the code and push it further.
+
+It powers [ViraLaunch](https://viralaunch.ai) (which fetches templates on demand), but it
+stands alone: clone it, pick a template, render.
+
+## Templates
+
+| Template | Kind | Good for |
+|---|---|---|
+| `timeline-eras` | timeline | history of X, milestones, eras |
+| `listicle-countdown` | listicle | top-N, rankings, "N things you didn't know" |
+| `data-story-bars` | data story | comparisons, prices, records — with a sourced hero number |
+| `quote-kinetic-serif` | kinetic quote | famous quotes, scripture, bold statements |
+| `comparison-split` | comparison | A vs B: athletes, empires, products |
+| `space-scale-ladder` | comparison / explainer | "how big is X" across orders of magnitude |
+| `match-recap-scoreboard` | news recap | verified sports match recaps |
+| `story-chat-thread` | story | stories told as a phone chat (labelled dramatizations) |
+| `explainer-steps-diagram` | explainer | processes and cycles, step by step |
+| `news-headline-highlight` | news recap | headlines with marker highlights + "why it matters" |
+
+Previews: see the [`previews-v1` release](../../releases/tag/previews-v1) (one MP4 + poster
+per template). More templates are added in batches; the goal is 100+.
+
+## Finding the right template fast
+
+Every entry is tagged on independent axes (`taxonomy.json`), so an agent only looks at what
+fits:
+
+| axis | examples |
+|---|---|
+| **genre** (what kind of video) | documentary, map-journey, timeline, explainer, listicle, data-story, comparison, product-launch, news-recap, story-narrative, quote-kinetic… |
+| **domain** (what it is about) | history, geography, science, space, sports, finance, tech, religion-myth, culture-entertainment, generic… |
+| **adWeave** (how a sponsor may appear) | native-integrated, end-card, mid-roll-card, sponsor-mention, none-pure-brand |
+| technique · aspect · tier · minModel · renderCost | kinetic-type, maps, charts… · 9:16 · fill/fork · small/mid/frontier |
+
+- `index/index.json` — every entry's metadata, props JSON Schema, content hash and file list (no code)
+- `index/index.by-genre.json`, `index/index.by-domain.json` — precomputed buckets
+- `inspiration/inspiration.json` — 359 real videos made with coding agents (from
+  [awesome-opus-5.5-video-prompts](https://github.com/Li-Evan/awesome-opus-5.5-video-prompts)
+  and [remotion.dev/prompts](https://www.remotion.dev/prompts)) as **links only**, tagged the
+  same way: ideas for new templates.
+
+A history video: filter `domain=history`, then `genre=documentary|timeline|map-journey`.
+Product-launch templates never show up for that query.
+
+## Entry layout
+
+```
+entries/<id>/
+  meta.json            taxonomy, tiers, attribution (schema/entry-meta.schema.json)
+  brief.md             when to use it, how to fill it, placement, fork ideas
+  props.example.json   example narration scenes + props (used for the preview)
+  src/schema.ts        export const Props = z.object(...)
+  src/index.tsx        export default defineEntry({id, schema: Props, component})
+```
+
+Each entry receives `{media, props}`:
+- `media` comes from the `@viralaunch/kit` runtime in `kit/`. It holds narration audio, word
+  captions, per-scene images, brand and placement mode, and the output size.
+- `props` is the entry's own validated data.
+
+The kit's premium layer (`kit/src/fx.tsx`, `@viralaunch/kit/fx`) provides:
+- bundled OFL fonts and easing presets;
+- kinetic typography and word-caption styles;
+- narration-locked scene transitions and camera moves;
+- light leaks, grain, particles and editorial HUD framing;
+- self-drawing line icons.
+
+Everything renders offline, deterministically, in software Chrome.
+
+## Commands
+
+```bash
+pnpm install
+pnpm new-entry my-entry "My Entry"        # scaffold
+pnpm validate [id...]                     # the gate every entry passes
+pnpm still-sheet <id> [--aspect 16:9]     # fast 6-frame design check → out/sheets/
+pnpm preview <id> [--aspect 16:9]         # render previews/<id>.mp4 + .jpg
+pnpm index                                # rebuild index/ (pnpm index --check in CI)
+pnpm inspiration <awesome-list checkout>  # rebuild inspiration/inspiration.json
+pnpm contact-sheet                        # out/contact-sheet.html for batch QA
+pnpm make-entry <inspiration-id> <new-id> --awesome <checkout>   # headless agent pipeline
+pnpm sync-kit ../viralaunch-local         # copy kit + catalog into ViraLaunch
+```
+
+`ENTRIES_DIR=<folder>` points the tooling at entries stored elsewhere.
+
+## Using a template in ViraLaunch
+
+```bash
+viralaunch library search --domain history
+viralaunch library fetch timeline-eras     # verified against index/index.json hashes
+viralaunch library fork timeline-eras my-timeline --project <id>
+```
+
+## Licensing
+
+Code, briefs and metadata are MIT. `samples/` holds public-domain images used only to render
+previews (`samples/SOURCES.md`). `inspiration/inspiration.json` reuses titles and descriptions
+from awesome-opus-5.5-video-prompts under CC BY 4.0, with attribution in the file. The
+prompts, videos and thumbnails it lists belong to their creators and are **not**
+redistributed; each record links to the original post. See `NOTICE.md`. Rendering with
+Remotion is subject to the [Remotion license](https://remotion.dev/license).

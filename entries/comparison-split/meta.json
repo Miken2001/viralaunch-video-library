@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "comparison-split",
+  "name": "Versus Split Screen",
+  "version": "1.0.0",
+  "summary": "A vs B: the screen splits into two colored halves, each side gets a name and image, then stat rows race head-to-head with a winner marker per row and a verdict. For rivalries, products, eras, countries, athletes.",
+  "genres": [
+    "comparison",
+    "data-story"
+  ],
+  "domains": [
+    "sports",
+    "tech",
+    "history",
+    "geography",
+    "finance",
+    "generic"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "charts",
+    "stock-footage",
+    "transitions"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "original",
+  "inspiredBy": [],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

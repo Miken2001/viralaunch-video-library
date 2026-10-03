@@ -1,0 +1,21 @@
+{
+  "media": {"adWeave": "end-card", "narration": false, "brand": {"name": "Pastcast", "tagline": "History you can binge", "cta": "Listen free"}},
+  "scenes": [
+    {"text": "A fictional chat, 1928.", "durationSeconds": 4},
+    {"text": "Something grew on the dishes.", "durationSeconds": 5},
+    {"text": "And it changed medicine.", "durationSeconds": 5}
+  ],
+  "props": {
+    "contact": "Lab Assistant",
+    "status": "London, Sept 1928",
+    "label": "Dramatized — not a real conversation",
+    "messages": [
+      {"from": "them", "text": "Back from holiday yet?", "time": "09:12"},
+      {"from": "me", "text": "Just walked in. I left the staph cultures out...", "time": "09:14"},
+      {"from": "me", "text": "There's mould on one plate and the bacteria around it are gone.", "time": "09:15"},
+      {"from": "them", "text": "Bin it?", "time": "09:15"},
+      {"from": "me", "text": "Absolutely not. I'm calling it penicillin.", "time": "09:16"}
+    ],
+    "theme": "dark"
+  }
+}

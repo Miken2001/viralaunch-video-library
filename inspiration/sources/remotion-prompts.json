@@ -1,0 +1,156 @@
+{
+ "source": "https://www.remotion.dev/prompts",
+ "note": "Index of titles, prompt authors and model names only, collected 2026-10-02. Prompts and videos are not copied; follow the link.",
+ "entries": [
+  {
+   "slug": "3d-retro-pixel-font",
+   "title": "3D retro pixel font",
+   "author": "GogHeng",
+   "model": "Opus4.6"
+  },
+  {
+   "slug": "apple-style-device-rise-animation",
+   "title": "Apple style device rise animation",
+   "author": "gaucho_booleano",
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "audio-spectrum-visualizer",
+   "title": "Audio spectrum visualizer",
+   "author": null,
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "bar-line-chart-combined",
+   "title": "Bar line chart combined",
+   "author": null,
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "bms-active-cell-balancing-animation-8s1p-pack-with-energy-flow-visualization",
+   "title": "BMS active cell balancing animation 8S1P pack with energy flow visualization",
+   "author": null,
+   "model": "Opus 4.6"
+  },
+  {
+   "slug": "cinematic-tech-intro",
+   "title": "Cinematic tech intro",
+   "author": "tiw_ari_ayu",
+   "model": "k2.5"
+  },
+  {
+   "slug": "cursor-agent-skills-announcement",
+   "title": "Cursor agent skills announcement",
+   "author": "edwinarbus",
+   "model": null
+  },
+  {
+   "slug": "glitch-effect-html-in-canvas",
+   "title": "Glitch effect html in canvas",
+   "author": "remotion",
+   "model": null
+  },
+  {
+   "slug": "html-in-canvas-magnifying-glass",
+   "title": "HTML in canvas magnifying glass",
+   "author": "JNYBGR",
+   "model": "Opus 4.7 xhigh"
+  },
+  {
+   "slug": "launch-video-on-x",
+   "title": "Launch video on X",
+   "author": "ghumare64",
+   "model": "Opus 4.6"
+  },
+  {
+   "slug": "music-cd-store-promo",
+   "title": "Music cd store promo",
+   "author": null,
+   "model": "Kimi K2.5"
+  },
+  {
+   "slug": "news-article-headline-highlight",
+   "title": "News article headline highlight",
+   "author": "Remotion",
+   "model": "Claude Code"
+  },
+  {
+   "slug": "product-demo-for-presscut",
+   "title": "Product demo for presscut",
+   "author": "Shpigford",
+   "model": "Claude Opus 4.5"
+  },
+  {
+   "slug": "promotion-video-for-vvterm",
+   "title": "Promotion video for vvterm",
+   "author": "wiedymi",
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "real-estate-investing",
+   "title": "Real estate investing",
+   "author": null,
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "rocket-launches-timeline",
+   "title": "Rocket launches timeline",
+   "author": "crispynotfound",
+   "model": null
+  },
+  {
+   "slug": "shape-to-words-transformation",
+   "title": "Shape to words transformation",
+   "author": "tiw_ari_ayu",
+   "model": "k2.5"
+  },
+  {
+   "slug": "solar-system-orbit-animation",
+   "title": "Solar system orbit animation",
+   "author": "GogHeng",
+   "model": "Opus4.6"
+  },
+  {
+   "slug": "spinning-glitching-svg-logo-turned-3d",
+   "title": "Spinning glitching svg logo turned 3D",
+   "author": "Remotion",
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "strava-run-visualized",
+   "title": "Strava run visualized",
+   "author": "JNYBGR",
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "the-kinetic-marketing",
+   "title": "The kinetic marketing",
+   "author": "tiw_ari_ayu",
+   "model": "k2.5"
+  },
+  {
+   "slug": "threejs-top-20-games-sold-ranking-1",
+   "title": "Three.js top 20 games sold ranking",
+   "author": "DilumSanjaya",
+   "model": null
+  },
+  {
+   "slug": "transparent-call-to-action-overlay",
+   "title": "Transparent call to action overlay",
+   "author": "Remotion",
+   "model": "Claude Code"
+  },
+  {
+   "slug": "travel-route-on-map-with-3d-landmarks",
+   "title": "Travel route on map with 3D landmarks",
+   "author": "JNYBGR",
+   "model": "Opus 4.5"
+  },
+  {
+   "slug": "vintage-screen-effect-html-in-canvas",
+   "title": "Vintage screen effect html in canvas",
+   "author": "JNYBGR",
+   "model": "Opus 4.7"
+  }
+ ]
+}

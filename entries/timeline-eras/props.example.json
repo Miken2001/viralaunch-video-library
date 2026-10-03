@@ -1,0 +1,19 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Orbitly", "tagline": "Track every launch", "cta": "Get the app"}},
+  "scenes": [
+    {"text": "In twelve years, humanity went from orbit to the Moon.", "durationSeconds": 4},
+    {"text": "Sputnik, Gagarin, then a race nobody was sure could be won.", "durationSeconds": 5},
+    {"text": "And in July 1969, two people walked on another world.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "The Space Race",
+    "milestones": [
+      {"when": "1957", "year": 1957, "title": "Sputnik 1", "fact": "The first artificial satellite beeps from orbit.", "era": "Soviet lead"},
+      {"when": "1961", "year": 1961, "title": "Yuri Gagarin", "fact": "First human in space, 108 minutes in orbit.", "era": "Soviet lead"},
+      {"when": "1962", "year": 1962, "title": "John Glenn orbits", "fact": "The US puts an astronaut in orbit.", "era": "The race"},
+      {"when": "1968", "year": 1968, "title": "Apollo 8", "fact": "First crew to orbit the Moon.", "era": "The race"},
+      {"when": "1969", "year": 1969, "title": "Apollo 11", "fact": "Armstrong and Aldrin land on the Moon.", "era": "Moon"}
+    ],
+    "palette": "neon"
+  }
+}

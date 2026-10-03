@@ -1,0 +1,51 @@
+{
+ "product-launch": [],
+ "product-demo": [],
+ "explainer": [
+  "explainer-steps-diagram",
+  "news-headline-highlight",
+  "space-scale-ladder",
+  "timeline-eras"
+ ],
+ "documentary": [
+  "timeline-eras"
+ ],
+ "story-narrative": [
+  "story-chat-thread"
+ ],
+ "listicle": [
+  "listicle-countdown"
+ ],
+ "data-story": [
+  "comparison-split",
+  "data-story-bars",
+  "match-recap-scoreboard"
+ ],
+ "map-journey": [],
+ "timeline": [
+  "match-recap-scoreboard",
+  "timeline-eras"
+ ],
+ "quote-kinetic": [
+  "quote-kinetic-serif"
+ ],
+ "showreel": [],
+ "comparison": [
+  "comparison-split",
+  "data-story-bars",
+  "listicle-countdown",
+  "space-scale-ladder"
+ ],
+ "tutorial": [
+  "explainer-steps-diagram"
+ ],
+ "news-recap": [
+  "data-story-bars",
+  "match-recap-scoreboard",
+  "news-headline-highlight"
+ ],
+ "meme-reaction": [
+  "story-chat-thread"
+ ],
+ "music-visual": []
+}

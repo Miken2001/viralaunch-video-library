@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "story-chat-thread",
+  "name": "Chat Thread Story",
+  "version": "1.0.0",
+  "summary": "A story told as a phone chat: bubbles pop in with typing indicators, timestamps and a twist message at the end. For relatable stories, dialogues, historical 'what if they texted', customer stories.",
+  "genres": [
+    "story-narrative",
+    "meme-reaction"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "history",
+    "business",
+    "education",
+    "generic"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "ui-mockup",
+    "kinetic-type"
+  ],
+  "aspects": [
+    "9:16"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 75
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "original",
+  "inspiredBy": [],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

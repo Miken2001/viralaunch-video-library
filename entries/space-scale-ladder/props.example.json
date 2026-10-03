@@ -1,0 +1,18 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Skyguide", "tagline": "Know what you're looking at", "cta": "Try it tonight"}},
+  "scenes": [
+    {"text": "Start with the Moon, three and a half thousand kilometers across.", "durationSeconds": 4},
+    {"text": "Earth is almost four times wider.", "durationSeconds": 3},
+    {"text": "Jupiter could line up eleven Earths across its face.", "durationSeconds": 4},
+    {"text": "And the Sun is about ten times wider than Jupiter.", "durationSeconds": 4}
+  ],
+  "props": {
+    "title": "How big is the Sun, really?",
+    "objects": [
+      {"name": "Moon", "size": 3474, "sizeLabel": "3,474 km", "color": "#c9c9c9"},
+      {"name": "Earth", "size": 12742, "sizeLabel": "12,742 km", "color": "#3b82f6"},
+      {"name": "Jupiter", "size": 139820, "sizeLabel": "139,820 km", "color": "#d6a77a"},
+      {"name": "Sun", "size": 1392700, "sizeLabel": "1,392,700 km", "color": "#ffb703"}
+    ]
+  }
+}

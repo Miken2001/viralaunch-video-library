@@ -1,0 +1,84 @@
+{
+ "tech": [
+  "comparison-split",
+  "explainer-steps-diagram",
+  "news-headline-highlight",
+  "timeline-eras"
+ ],
+ "business": [
+  "data-story-bars",
+  "explainer-steps-diagram",
+  "news-headline-highlight",
+  "quote-kinetic-serif",
+  "story-chat-thread"
+ ],
+ "history": [
+  "comparison-split",
+  "listicle-countdown",
+  "news-headline-highlight",
+  "quote-kinetic-serif",
+  "story-chat-thread",
+  "timeline-eras"
+ ],
+ "geography": [
+  "comparison-split",
+  "data-story-bars",
+  "space-scale-ladder"
+ ],
+ "science": [
+  "data-story-bars",
+  "explainer-steps-diagram",
+  "news-headline-highlight",
+  "space-scale-ladder",
+  "timeline-eras"
+ ],
+ "space": [
+  "space-scale-ladder",
+  "timeline-eras"
+ ],
+ "religion-myth": [
+  "quote-kinetic-serif",
+  "timeline-eras"
+ ],
+ "sports": [
+  "comparison-split",
+  "data-story-bars",
+  "listicle-countdown",
+  "match-recap-scoreboard"
+ ],
+ "finance": [
+  "comparison-split",
+  "data-story-bars",
+  "news-headline-highlight"
+ ],
+ "health": [
+  "explainer-steps-diagram"
+ ],
+ "culture-entertainment": [
+  "listicle-countdown",
+  "quote-kinetic-serif",
+  "story-chat-thread"
+ ],
+ "nature": [
+  "listicle-countdown",
+  "space-scale-ladder"
+ ],
+ "education": [
+  "explainer-steps-diagram",
+  "listicle-countdown",
+  "quote-kinetic-serif",
+  "space-scale-ladder",
+  "story-chat-thread"
+ ],
+ "generic": [
+  "comparison-split",
+  "data-story-bars",
+  "explainer-steps-diagram",
+  "listicle-countdown",
+  "news-headline-highlight",
+  "quote-kinetic-serif",
+  "space-scale-ladder",
+  "story-chat-thread",
+  "timeline-eras"
+ ]
+}

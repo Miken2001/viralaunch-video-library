@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-steps-diagram",
+  "name": "Step-by-Step Diagram Explainer",
+  "version": "1.0.0",
+  "summary": "Explains a process as connected step cards that draw themselves: numbered nodes, arrows that animate between them, the active step highlighted while narration covers it. For how things work, scientific processes, workflows, tutorials.",
+  "genres": [
+    "explainer",
+    "tutorial"
+  ],
+  "domains": [
+    "science",
+    "tech",
+    "education",
+    "health",
+    "business",
+    "generic"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 150
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "original",
+  "inspiredBy": [],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": [
+    "@remotion/paths"
+  ]
+}

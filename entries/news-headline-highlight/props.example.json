@@ -1,0 +1,18 @@
+{
+  "media": {"adWeave": "sponsor-mention", "brand": {"name": "Briefly", "tagline": "The news in 60 seconds"}},
+  "scenes": [
+    {"text": "On July 20th, 1969, the front pages all said the same thing.", "durationSeconds": 4},
+    {"text": "Men had walked on the Moon, and a quarter of humanity watched it live.", "durationSeconds": 5},
+    {"text": "It's still the only time people have walked on another world.", "durationSeconds": 4}
+  ],
+  "props": {
+    "masthead": "THE EVENING CHRONICLE",
+    "dateline": "Monday, July 21, 1969",
+    "headline": "Men walk on the Moon as millions watch live",
+    "highlights": ["walk on the Moon", "millions watch live"],
+    "body": "Astronauts Neil Armstrong and Edwin Aldrin stepped onto the lunar surface last night, while Michael Collins orbited above in the command module.",
+    "whyItMatters": "Five more crewed landings followed. None since 1972.",
+    "source": "Recreated front page (illustrative)",
+    "marker": "#ffe066"
+  }
+}

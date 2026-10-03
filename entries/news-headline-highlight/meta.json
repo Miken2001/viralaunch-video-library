@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "news-headline-highlight",
+  "name": "News Headline Highlighter",
+  "version": "1.0.0",
+  "summary": "A newspaper-style article card slides in, the camera pushes toward the headline and a marker highlights key phrases one by one, then a 'why it matters' card. For news recaps, announcements, studies, historical front pages.",
+  "genres": [
+    "news-recap",
+    "explainer"
+  ],
+  "domains": [
+    "tech",
+    "business",
+    "finance",
+    "science",
+    "history",
+    "generic"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "camera-motion",
+    "ui-mockup"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 6,
+    "max": 60
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://www.remotion.dev/prompts/news-article-headline-highlight",
+      "author": "Remotion",
+      "collection": "remotion-prompts",
+      "inspirationId": "rp-news-article-headline-highlight"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

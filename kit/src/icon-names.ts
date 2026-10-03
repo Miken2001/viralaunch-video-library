@@ -1,0 +1,3 @@
+/** Names of the bundled line icons (kit/src/icons.tsx). Safe to import from schemas. */
+export const ICON_NAMES = ["sun", "cloud", "rain", "globe", "gear", "person", "people", "bulb", "chart", "bars", "book", "rocket", "heart", "lock", "search", "phone", "money", "clock", "leaf", "drop", "flask", "atom", "building", "house", "car", "check", "cross", "arrow", "cycle", "star", "flag", "mountain", "wave", "fire", "brain", "chip", "shield", "chat", "mail", "camera", "music", "trophy", "ball", "planet", "map", "pin", "target", "spark", "code", "cart", "calendar"] as const;
+export type IconName = (typeof ICON_NAMES)[number];

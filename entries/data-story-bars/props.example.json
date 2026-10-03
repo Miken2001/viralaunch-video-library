@@ -1,0 +1,24 @@
+{
+  "media": {"adWeave": "sponsor-mention", "brand": {"name": "Ledgerly", "tagline": "Budgeting that adds up"}},
+  "scenes": [
+    {"text": "Coffee costs very different amounts around the world.", "durationSeconds": 4},
+    {"text": "Here is what a cappuccino cost in a few big cities, in US dollars.", "durationSeconds": 5},
+    {"text": "Illustrative numbers for this demo only.", "durationSeconds": 3}
+  ],
+  "props": {
+    "title": "What a cappuccino costs",
+    "headline": {"value": 6.2, "unit": "US dollars", "label": "the priciest city in this sample"},
+    "bars": [
+      {"label": "Zurich", "value": 6.2, "highlight": true},
+      {"label": "New York", "value": 5.4},
+      {"label": "London", "value": 4.3},
+      {"label": "Paris", "value": 4.1},
+      {"label": "Mexico City", "value": 2.6}
+    ],
+    "valueSuffix": " $",
+    "decimals": 1,
+    "takeaway": "Same cup. More than twice the price.",
+    "source": "Illustrative sample data",
+    "palette": "graphite"
+  }
+}

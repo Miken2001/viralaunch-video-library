@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "genre": {
+    "product-launch": "Announces a product, feature or release. Hype structure: hook, reveal, benefits, CTA.",
+    "product-demo": "Shows a product being used: UI walkthroughs, before/after, feature tours.",
+    "explainer": "Teaches one idea step by step with diagrams, labels and narration.",
+    "documentary": "Narrated non-fiction about real events, people or places; archival or illustrated look, calm pacing.",
+    "story-narrative": "Tells a story with characters, tension and a payoff (Reddit stories, fables, case stories).",
+    "listicle": "Numbered facts, tips or rankings ('5 things...').",
+    "data-story": "Numbers and charts carry the narrative: counters, bars, maps of values.",
+    "map-journey": "Geography-driven: routes, borders, zooms between places, territorial change.",
+    "timeline": "Events ordered in time: eras, milestones, history of X.",
+    "quote-kinetic": "A quote, statement or hook rendered as animated typography.",
+    "showreel": "Fast montage / sizzle reel showing range rather than one message.",
+    "comparison": "A versus B: side-by-side, scale ladders, pros and cons.",
+    "tutorial": "How-to: numbered steps the viewer can follow.",
+    "news-recap": "Short recap of current events or updates with headlines and sources.",
+    "meme-reaction": "Humor format: meme templates, reaction cuts, punchlines.",
+    "music-visual": "Visuals driven by audio: beat-synced motion, visualizers, lyric videos."
+  },
+  "domain": {
+    "tech": "Software, AI, gadgets, the internet.",
+    "business": "Companies, startups, marketing, careers, productivity.",
+    "history": "The past: civilizations, wars, inventions, historical figures.",
+    "geography": "Countries, cities, borders, maps, travel, demographics.",
+    "science": "Physics, chemistry, biology, how things work.",
+    "space": "Astronomy, planets, cosmology, spaceflight.",
+    "religion-myth": "Religions, mythology, belief systems (presented neutrally).",
+    "sports": "Matches, players, teams, tournaments, records.",
+    "finance": "Money, investing, economics, prices.",
+    "health": "Fitness, nutrition, medicine, mental health (no medical advice).",
+    "culture-entertainment": "Film, music, games, celebrities, internet culture.",
+    "nature": "Animals, plants, climate, the environment.",
+    "education": "Learning, language, study skills, general knowledge.",
+    "generic": "Works for any subject; the content carries the domain."
+  },
+  "adWeave": {
+    "native-integrated": "The user's product IS the subject or appears inside the story naturally (direct campaigns).",
+    "end-card": "The video stays fully on-topic; a branded end card closes it.",
+    "mid-roll-card": "A short sponsor card interrupts once near the middle, then the topic resumes.",
+    "sponsor-mention": "A one-line 'brought to you by' lower third or caption; no visual takeover.",
+    "none-pure-brand": "No product placement (control items, pure audience building)."
+  },
+  "technique": {
+    "kinetic-type": "Animated typography is the main visual.",
+    "maps": "Map shapes, routes or geographic projections.",
+    "3d": "Three.js / CSS 3D scenes.",
+    "charts": "Bar, line, pie or counter visualizations.",
+    "captions-voiceover": "Narration with word-synced captions.",
+    "stock-footage": "Uses user-supplied or imported video/image assets per scene.",
+    "svg-illustration": "Hand-built SVG drawings and diagrams.",
+    "particles": "Particle systems, starfields, noise fields.",
+    "ui-mockup": "Browser/phone/app chrome mockups.",
+    "transitions": "Scene-to-scene transitions are a key part of the look.",
+    "camera-motion": "Pans, zooms, parallax, Ken Burns.",
+    "audio-reactive": "Visuals react to audio amplitude/frequency."
+  },
+  "aspect": ["9:16", "1:1", "16:9"],
+  "tier": {
+    "fill": "Fill tier: a model only returns JSON props that validate against the entry's schema. Works with small/local models and unattended background jobs.",
+    "fork": "Fork tier: an agent with file tools copies the entry and edits the code. Requires a frontier coding agent."
+  },
+  "minModel": {
+    "small": "7-14B local models can fill the props reliably.",
+    "mid": "Needs a mid-size model (30B+ / fast hosted model) to fill props well.",
+    "frontier": "Needs a frontier model (Claude / GPT class) to use well."
+  },
+  "renderCost": {
+    "low": "Under ~1 minute of render per 30 s of video on a laptop.",
+    "med": "1-3 minutes per 30 s.",
+    "high": "More than 3 minutes per 30 s (3D, heavy effects)."
+  },
+  "requires": {
+    "voiceover": "Narration audio (local Kokoro TTS or user audio).",
+    "user-images": "One image/video asset per scene supplied by the user or imported.",
+    "llm.structured": "A structured-output model must prepare a spec before render.",
+    "music": "A music track improves the result."
+  }
+}

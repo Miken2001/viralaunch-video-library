@@ -1,0 +1,25 @@
+{
+  "media": {"adWeave": "sponsor-mention", "brand": {"name": "Kickstat", "tagline": "Live scores, zero ads"}},
+  "scenes": [
+    {"text": "The 2022 World Cup final in Lusail. Argentina against France.", "durationSeconds": 4},
+    {"text": "Messi from the spot, Di María on the break, then Mbappé struck twice in two minutes.", "durationSeconds": 6},
+    {"text": "Messi again in extra time, Mbappé's hat trick, and Argentina won on penalties.", "durationSeconds": 6},
+    {"text": "Three all after one hundred and twenty minutes.", "durationSeconds": 3}
+  ],
+  "props": {
+    "competition": "FIFA World Cup 2022",
+    "stage": "Final",
+    "home": {"name": "Argentina", "short": "ARG", "color": "#3f8fd2"},
+    "away": {"name": "France", "short": "FRA", "color": "#1f2a6b"},
+    "events": [
+      {"minute": "23'", "side": "home", "kind": "score", "text": "Messi (pen)"},
+      {"minute": "36'", "side": "home", "kind": "score", "text": "Di María"},
+      {"minute": "80'", "side": "away", "kind": "score", "text": "Mbappé (pen)"},
+      {"minute": "81'", "side": "away", "kind": "score", "text": "Mbappé"},
+      {"minute": "108'", "side": "home", "kind": "score", "text": "Messi"},
+      {"minute": "118'", "side": "away", "kind": "score", "text": "Mbappé (pen)"},
+      {"minute": "PENS", "side": "home", "kind": "note", "text": "Argentina win 4–2 on penalties"}
+    ],
+    "stats": []
+  }
+}

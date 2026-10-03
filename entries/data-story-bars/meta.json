@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "data-story-bars",
+  "name": "Data Story: Animated Bars",
+  "version": "1.0.0",
+  "summary": "Numbers tell the story: a headline stat counts up, then labelled bars grow and re-sort while a takeaway line lands. For country comparisons, prices, records, survey results, market share.",
+  "genres": [
+    "data-story",
+    "comparison",
+    "news-recap"
+  ],
+  "domains": [
+    "finance",
+    "geography",
+    "business",
+    "sports",
+    "science",
+    "generic"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "charts",
+    "kinetic-type",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "original",
+  "inspiredBy": [
+    {
+      "url": "https://www.remotion.dev/prompts/bar-line-chart-combined",
+      "collection": "remotion-prompts",
+      "inspirationId": "rp-bar-line-chart-combined"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "viralaunch-video-library",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Open library of Remotion video templates (code + preview + brief) that any coding agent or local LLM can search, fill and fork.",
+  "packageManager": "pnpm@11.18.0",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validate.ts",
+    "index": "tsx scripts/build-index.ts",
+    "inspiration": "tsx scripts/ingest-inspiration.ts",
+    "preview": "tsx scripts/render-preview.ts",
+    "studio": "tsx scripts/studio.ts",
+    "contact-sheet": "tsx scripts/contact-sheet.ts",
+    "make-entry": "tsx scripts/make-entry.ts",
+    "check": "pnpm typecheck && pnpm validate && pnpm index --check",
+    "new-entry": "tsx scripts/new-entry.ts",
+    "still-sheet": "tsx scripts/still-sheet.ts",
+    "sync-kit": "tsx scripts/sync-kit.ts"
+  },
+  "dependencies": {
+    "@fontsource/archivo-black": "^5.0.0",
+    "@fontsource/barlow-condensed": "^5.0.0",
+    "@fontsource/bebas-neue": "^5.0.0",
+    "@fontsource/caveat": "^5.0.0",
+    "@fontsource/dm-serif-display": "^5.0.0",
+    "@fontsource/ibm-plex-mono": "^5.0.0",
+    "@fontsource/inter": "^5.0.0",
+    "@fontsource/jetbrains-mono": "^5.0.0",
+    "@fontsource/playfair-display": "^5.0.0",
+    "@fontsource/space-grotesk": "^5.0.0",
+    "@remotion/animation-utils": "4.0.532",
+    "@remotion/bundler": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "@remotion/layout-utils": "4.0.532",
+    "@remotion/media-utils": "4.0.532",
+    "@remotion/noise": "4.0.532",
+    "@remotion/paths": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "@remotion/shapes": "4.0.532",
+    "@remotion/transitions": "4.0.532",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "4.0.532",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.11",
+    "@types/react": "^19.2.14",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "yaml": "^2.8.1"
+  }
+}

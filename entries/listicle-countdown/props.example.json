@@ -1,0 +1,22 @@
+{
+  "media": {"adWeave": "mid-roll-card", "brand": {"name": "Wildpass", "tagline": "Safari trips, planned by AI"}},
+  "scenes": [
+    {"text": "Five animals more dangerous than sharks.", "durationSeconds": 3},
+    {"text": "Hippos are fiercely territorial and surprisingly fast.", "durationSeconds": 3},
+    {"text": "Saltwater crocodiles ambush from the water's edge.", "durationSeconds": 3},
+    {"text": "Snakes kill tens of thousands of people every year.", "durationSeconds": 3},
+    {"text": "Dogs spread rabies, the deadliest disease on this list.", "durationSeconds": 3},
+    {"text": "And number one: the mosquito.", "durationSeconds": 3}
+  ],
+  "props": {
+    "title": "Deadlier than sharks",
+    "items": [
+      {"title": "Hippo", "why": "Territorial, fast, and enormous."},
+      {"title": "Crocodile", "why": "Ambush predators at the water's edge."},
+      {"title": "Snakes", "why": "Tens of thousands of deaths a year."},
+      {"title": "Dogs", "why": "Through rabies, mostly unvaccinated."},
+      {"title": "Mosquito", "why": "Malaria and dengue make it #1."}
+    ],
+    "palette": "heat"
+  }
+}

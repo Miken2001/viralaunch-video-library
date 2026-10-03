@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "quote-kinetic-serif",
+  "name": "Kinetic Quote",
+  "version": "1.0.0",
+  "summary": "A quote or bold statement revealed word by word in large editorial serif type, with the key words highlighted and the attribution signed at the end. For famous quotes, scripture, philosophy, hot takes.",
+  "genres": [
+    "quote-kinetic"
+  ],
+  "domains": [
+    "history",
+    "religion-myth",
+    "culture-entertainment",
+    "education",
+    "business",
+    "generic"
+  ],
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "none-pure-brand",
+    "native-integrated"
+  ],
+  "techniques": [
+    "kinetic-type"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 5,
+    "max": 40
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "original",
+  "inspiredBy": [],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

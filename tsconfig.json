@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {"@viralaunch/kit": ["kit/src/index.tsx"], "@viralaunch/kit/root": ["kit/src/root.tsx"], "@viralaunch/kit/fx": ["kit/src/fx.tsx"]}
+  },
+  "include": ["kit/src", "entries/*/src", "scripts"]
+}
