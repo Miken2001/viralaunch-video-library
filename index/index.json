@@ -29,6 +29,8 @@
    ],
    "segmentable": true,
    "look": "dark",
+   "lookPreset": "cinematic",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -64,7 +66,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "7556951593e124e68b05494d6b19ab8abf826b0cbe704c2fcc5ee552f53deb71",
+   "sha256": "4298dafa12d6b210260cf987eae7f5c14f63750b78c0950c20bf37dd191d7130",
    "files": [
     {
      "path": "brief.md",
@@ -73,8 +75,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "b7be2283a50171348dc32a1f07fa604506e5a7bec56f6c21e98a413e2c9f8d32",
-     "bytes": 1157
+     "sha256": "1d08e7b1fcfa9c119bd362da934851d34c1c4d88269857b1991c81bf07d5450d",
+     "bytes": 1207
     },
     {
      "path": "props.example.json",
@@ -83,8 +85,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "d24620b790f7eef72819e46ced42e90b2a9d0a54708d55525bc27a904cc4eb21",
-     "bytes": 5811
+     "sha256": "a3ed07e91d4396043ba97f0069c3d840ccd4af2356a436674b545ca86386d787",
+     "bytes": 5905
     },
     {
      "path": "src/schema.ts",
@@ -229,6 +231,8 @@
    ],
    "segmentable": true,
    "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -269,7 +273,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "8bf6b707d1533f61eb75cb1cf79fcca6397bc68362177e82750bce787b60d99e",
+   "sha256": "30f258485c3e25e0c497d6935c0bd2e724d2275940bc363d08ed8f916bfd7053",
    "files": [
     {
      "path": "brief.md",
@@ -278,8 +282,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "cc3c6d437fa7e1506411eb6ca40959ee92ce8f492bd0ecf5c3ca20a46a48be7d",
-     "bytes": 1329
+     "sha256": "72d970d0301335b0d7d916b19c0748f0e2dd051a5adee2172f1b96c7b5ba60f5",
+     "bytes": 1378
     },
     {
      "path": "props.example.json",
@@ -288,8 +292,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "1d8e33d5d3ee71a4ccf06bfc5bbbfaaaaf55838067b1674405f96f8092b7394a",
-     "bytes": 5265
+     "sha256": "52b6bb7647601e1099ddd259537a59f1bc61efb68f0a0c339fd22d840e7e342f",
+     "bytes": 5582
     },
     {
      "path": "src/schema.ts",
@@ -425,6 +429,8 @@
    ],
    "segmentable": true,
    "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -462,7 +468,7 @@
    "remotionPackages": [
     "@remotion/paths"
    ],
-   "sha256": "586119646d2573815df9c5a38223b0b433a95f32d84e12f0652f29451d84faa1",
+   "sha256": "fd2bf4cb876ff93f12693e643a181b3a28e1f0d7804a98e5433ef8cf0c6ecca2",
    "files": [
     {
      "path": "brief.md",
@@ -471,8 +477,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "79dc20083324eb76e5823b5e4645a29075a07acb05c8838276e4d4cfed7251b6",
-     "bytes": 1251
+     "sha256": "ede432c811911bf69b0aba64b9c847ffed835e4b8c21f0baf20c9ad3ae3b3016",
+     "bytes": 1297
     },
     {
      "path": "props.example.json",
@@ -481,8 +487,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "c97adcf0a36b648f8530137d138870e434fa4332ef7cea05552114635e6660f1",
-     "bytes": 6435
+     "sha256": "3e3b959c40dfee1a28979f05874cb6950067cfb88c7b26697181b5d820d4d101",
+     "bytes": 6786
     },
     {
      "path": "src/schema.ts",
@@ -581,6 +587,8 @@
    ],
    "segmentable": true,
    "look": "dark",
+   "lookPreset": "cinematic",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "mid-roll-card",
@@ -616,7 +624,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "04fba2d15edfde05f48697591cee10a209a8286bf2f5e0f2f7299273606ef110",
+   "sha256": "d68979974b945fa09642c712542cd637ce11b05bc7fe71595f1e9d9ab5455a14",
    "files": [
     {
      "path": "brief.md",
@@ -625,8 +633,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "549f5db9af5a6cd35930d9eb6cfe423afde3b5b16d977354a6b71bad8959b9f2",
-     "bytes": 1169
+     "sha256": "97bd48507b4705c8753a14dec202ae185217597ff8a19b136ae2a8d55e7417f0",
+     "bytes": 1219
     },
     {
      "path": "props.example.json",
@@ -635,8 +643,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "1f02de0295db65631c2562c8d10f2ddc818f786d5c5c8af3209060960fcc3752",
-     "bytes": 4635
+     "sha256": "8ccbdb620cc09eaa0f2ad522cf75c1ee8ce890f450118ee66021dcc97348f3e4",
+     "bytes": 5130
     },
     {
      "path": "src/schema.ts",
@@ -723,6 +731,8 @@
    ],
    "segmentable": true,
    "look": "dark",
+   "lookPreset": "broadcast",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -762,7 +772,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "5291789f90baf5462a37ea81559157cf9584c2114189e7d0b3a7d86fdcc411a6",
+   "sha256": "2b7c06dc703f8d85d1ee1f239969d3e20ca086ba975e2f1f835a54eb4312f730",
    "files": [
     {
      "path": "brief.md",
@@ -771,8 +781,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "401778ea6212f67fa4c52426773377c2a2677e04c11b5ad3bf742d9d1a19301f",
-     "bytes": 1192
+     "sha256": "f09bcef68a218128491f02c165823892a0dd7ff31e798c93cd19087e0bb47001",
+     "bytes": 1242
     },
     {
      "path": "props.example.json",
@@ -781,8 +791,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "9e22a32a7380360a4c6dc7d469d9ed233a6a81c647a2d100a646d0838bebf2e3",
-     "bytes": 6613
+     "sha256": "e7e1c3918da9393b01894ce3744e86b436f918259fbdcca3f4b1439e859c8b65",
+     "bytes": 6783
     },
     {
      "path": "src/schema.ts",
@@ -972,6 +982,8 @@
    ],
    "segmentable": true,
    "look": "light",
+   "lookPreset": "paper",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -1013,7 +1025,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "338ea30c514b799cf193ea87c3829c9f14c075290bf4abbb85ed048db910d824",
+   "sha256": "7b3bd2522d2b54d1f98acf0390aacfb26080b93a90bc208f609a5bf02c3eeb82",
    "files": [
     {
      "path": "brief.md",
@@ -1022,8 +1034,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "de961012cba26ea698891ffb774057b2ba3f98fa3719eaab98af7a7c0da66d55",
-     "bytes": 1401
+     "sha256": "49441892ba37d83eff70649a5a12e9fd8db418ec68641c0f47810dd0f137d0f5",
+     "bytes": 1447
     },
     {
      "path": "props.example.json",
@@ -1032,8 +1044,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "9460a388cd29c54feb0792a48e94665c880f15c8aa08fd132a9a37822492488c",
-     "bytes": 4906
+     "sha256": "289dec4be43c248bd2b39eb030fef4305e1f839b3b5f53e91e9fb667196ea2fb",
+     "bytes": 5078
     },
     {
      "path": "src/schema.ts",
@@ -1126,6 +1138,8 @@
    ],
    "segmentable": true,
    "look": "adaptive",
+   "lookPreset": "documentary",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -1157,7 +1171,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "3dda253994ada7fc8dbc083b5aa7a19a493533c12a9ac8ae06ee4511f2a0c6f2",
+   "sha256": "c961206aec9af11bc737af231aee1cb8dbf101d083e85067a36442a0796a99f5",
    "files": [
     {
      "path": "brief.md",
@@ -1166,8 +1180,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "3f38d75f92e7857fbfced9174c9ec2951a5470708af85e0bb9ef5b2ba0a0b466",
-     "bytes": 1092
+     "sha256": "4395dd07aac743cfce1ab9202a258d4299305c76e36802c22330d577a9abf40a",
+     "bytes": 1144
     },
     {
      "path": "props.example.json",
@@ -1176,8 +1190,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "fe829482bc25578804dc5ddf9ef54d57a9328cbfa7207e069b119aa795eee576",
-     "bytes": 3425
+     "sha256": "3174101cd2bcd785f8134bc08fd706d31b482f897231ecd7af2a0b82d84f17e6",
+     "bytes": 3707
     },
     {
      "path": "src/schema.ts",
@@ -1250,6 +1264,8 @@
    ],
    "segmentable": true,
    "look": "dark",
+   "lookPreset": "midnight",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -1289,7 +1305,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "85e3b453c790a70b4d00d3031629f1acf394e2281eca9bf2bd83326db1d65bad",
+   "sha256": "fecd66a737dbff09ba612fd5ff40fcf2f7935efb5223045b53a0725ae27b1556",
    "files": [
     {
      "path": "brief.md",
@@ -1298,8 +1314,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "ca7a618a3a88301b9edf1e02be8336ccc35cbcccda1675e0da7ea4f861bddef5",
-     "bytes": 1251
+     "sha256": "ddb1130c3e6bf3c01f91ce4ade9cec4251590fbbb8effa3d06bd7f93fe69f9a0",
+     "bytes": 1300
     },
     {
      "path": "props.example.json",
@@ -1308,8 +1324,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "6c3977d657d2884c6658505c42269ae2e0bf6df3f8ae83b4615d1f243d1b69b3",
-     "bytes": 5379
+     "sha256": "03b6c2859d3f7861efaae25e5b963d0732bdff1f90e92673e05547eeb4a0596e",
+     "bytes": 5576
     },
     {
      "path": "src/schema.ts",
@@ -1403,6 +1419,8 @@
    ],
    "segmentable": true,
    "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -1433,7 +1451,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "33e0aa809ecec9260b67ec4a074616369a21704a2da4244b6fc8cb204c4b05bd",
+   "sha256": "0c40e846acd0cc6139c93303d272be45bb5ade1153731d859adf5b47b983f1fb",
    "files": [
     {
      "path": "brief.md",
@@ -1442,8 +1460,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "be3cf21a71a6709236a8f33e2d44157112cc0ef170745f3ee4c81b29bb43afc0",
-     "bytes": 1087
+     "sha256": "4277d128eca9199a33a522cb2b19101a6cde62fa86d214183c822eee369527d1",
+     "bytes": 1136
     },
     {
      "path": "props.example.json",
@@ -1452,8 +1470,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "3a2261d1e2673d8bf4e40cc1fd97ff8c51d5e3a458c960921fdb344bfb850204",
-     "bytes": 4771
+     "sha256": "17ab54026781089e85f4517d492b5e96ee6717beda10ac1002923f652220010a",
+     "bytes": 5119
     },
     {
      "path": "src/schema.ts",
@@ -1557,6 +1575,8 @@
    ],
    "segmentable": true,
    "look": "adaptive",
+   "lookPreset": "documentary",
+   "themeable": true,
    "adWeave": [
     "end-card",
     "sponsor-mention",
@@ -1592,7 +1612,7 @@
    "license": "MIT",
    "status": "approved",
    "authoredBy": "claude-opus-5-5",
-   "sha256": "736e687cce789ff617d01d0e1a58afce72c6daf25f57d360369be75d30b502e9",
+   "sha256": "8947d0233a80e8ac334138decb950086f1dd1e58c9e922988e9d1b259caf973a",
    "files": [
     {
      "path": "brief.md",
@@ -1601,8 +1621,8 @@
     },
     {
      "path": "meta.json",
-     "sha256": "2547a11566ece32380354b5b6eef3a1dfa0b4d759edf42104f040cbb2a95366e",
-     "bytes": 1195
+     "sha256": "a1a68fc517e9a173d9659284a4dbda5829c151e85f0b164887399de69d184495",
+     "bytes": 1247
     },
     {
      "path": "props.example.json",
@@ -1611,8 +1631,8 @@
     },
     {
      "path": "src/index.tsx",
-     "sha256": "272e407428f51dc70dabc6c72d2e535f66d99c065eeb927e1b08327eb16c06e1",
-     "bytes": 5843
+     "sha256": "1f80eabd7f7f8ab8885e988dfd337f11a21f578d87406f20e9de0545ef2ab44f",
+     "bytes": 6172
     },
     {
      "path": "src/schema.ts",

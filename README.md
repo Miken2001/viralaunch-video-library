@@ -39,7 +39,7 @@ fits:
 | **genre** (what kind of video) | documentary, map-journey, timeline, explainer, listicle, data-story, comparison, product-launch, news-recap, story-narrative, quote-kinetic… |
 | **domain** (what it is about) | history, geography, science, space, sports, finance, tech, religion-myth, culture-entertainment, generic… |
 | **adWeave** (how a sponsor may appear) | native-integrated, end-card, mid-roll-card, sponsor-mention, none-pure-brand |
-| **roles** (which beat of a longer video it can show) | hook, context, evidence, explanation, payoff, closer — plus `segmentable` and `look` (dark/light/adaptive) |
+| **roles** (which beat of a longer video it can show) | hook, context, evidence, explanation, payoff, closer — plus `segmentable`, `themeable`, `look` (dark/light/adaptive) and `lookPreset` |
 | technique · aspect · tier · minModel · renderCost | kinetic-type, maps, charts… · 9:16 · fill/fork · small/mid/frontier |
 
 - `index/index.json` — every entry's metadata, props JSON Schema, content hash and file list (no code)
@@ -57,11 +57,21 @@ Product-launch templates never show up for that query.
 A longer video can switch templates per narrative beat — a cinematic hook, fact cards for the
 numbers, a line-art diagram for the mechanism, a documentary close — under one continuous
 narration. Each segment renders as its own composition; `kit/node/sequence.ts` cross-fades the
-clips with ffmpeg and lays the audio underneath, and every segment gets the same `media.accent`
-so highlights match.
+clips with ffmpeg and lays the audio underneath.
+
+**One look, many templates.** Every segment gets the same `media.look` (`kit/src/look.tsx`), so
+the result reads as one film:
+- the kit draws the captions (same font, size, colours and position everywhere);
+- named fonts are remapped by role (display / body / label);
+- each template takes its background family, surfaces, text colours, accent and texture from
+  the look.
+
+Templates keep their own layout, motion, camera and illustrations. The look defaults to the
+first segment's `lookPreset` (cinematic, documentary, midnight, paper, broadcast). Mark another
+segment `anchor: true`, or pass `look: {preset, palette, fonts}` to brand it.
 
 ```bash
-pnpm sequence-preview examples/sequences/malaria.json   # → out/sequences/malaria.mp4
+pnpm sequence-preview examples/sequences/malaria.json --cuts   # → out/sequences/malaria.mp4 + -cuts.png (continuity QA)
 ```
 
 A spec is a normal example (`media`, `scenes`) plus `accent`, `transition`

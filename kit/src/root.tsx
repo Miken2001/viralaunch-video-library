@@ -9,10 +9,12 @@
  * Output size, fps and duration always come from `media`, so an entry never hard-codes them.
  */
 import React from 'react';
-import {Composition, continueRender, delayRender, registerRoot, staticFile} from 'remotion';
+import {Composition, continueRender, delayRender, registerRoot, staticFile, useVideoConfig} from 'remotion';
 import {fontFaces} from './fonts';
 import type {z} from 'zod';
-import {MediaSchema, type LibraryEntry, type Media} from './index';
+import {MediaSchema, endCardFrames, type LibraryEntry, type Media} from './index';
+import {LookCaptions} from './fx';
+import {LookProvider, applyFontRoles, resolveLook} from './look';
 
 /**
  * ViraLaunch stages every asset into the render's public directory and passes bare file
@@ -37,7 +39,21 @@ function resolveAssets(media: Media): Media {
 
 export function registerEntry<S extends z.ZodTypeAny>(entry: LibraryEntry<S>) {
   const Inner = entry.component as React.FC<{media: Media; props: unknown}>;
-  const Component: React.FC<{media: Media; props: unknown}> = ({media, props}) => <Inner media={resolveAssets(media)} props={props} />;
+  // With a shared look (multi-template sequences) the kit provides it to the entry and draws
+  // the captions itself, so they are identical in every segment.
+  const Component: React.FC<{media: Media; props: unknown}> = ({media, props}) => {
+    const {fps, durationInFrames} = useVideoConfig();
+    const look = React.useMemo(() => resolveLook(media.look, media.accent), [media.look, media.accent]);
+    applyFontRoles(look);
+    const resolved = React.useMemo(() => resolveAssets(media), [media]);
+    const hold = look && entry.captionHold ? entry.captionHold({props: props as never, media, fps}) : 0;
+    return (
+      <LookProvider look={look}>
+        <Inner media={resolved} props={props} />
+        {look ? <LookCaptions media={resolved} hold={hold} until={Math.min(durationInFrames - endCardFrames(media, fps, durationInFrames), durationInFrames - Math.round((media.tailMs / 1000) * fps))} /> : null}
+      </LookProvider>
+    );
+  };
   const Root: React.FC = () => (
     <Composition
       id={entry.id}

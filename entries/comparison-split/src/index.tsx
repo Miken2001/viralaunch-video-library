@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, Captions, NarrationTrack, SceneAsset, defineEntry, fadeIn, useContentFrames, useSceneTimeline, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, SceneAsset, defineEntry, fadeIn, useContentFrames, useSceneTimeline, type EntryProps, useLook} from '@viralaunch/kit';
 import {Props} from './schema';
 
 const FONT = '"Inter", "Helvetica Neue", Arial, sans-serif';
@@ -15,9 +15,10 @@ const ComparisonSplit: React.FC<EntryProps<Props>> = ({media, props}) => {
   const verdictAt = Math.min(content - fps * 1.5, Math.max(statsStart + props.stats.length * 0.7 * fps + fps, content * 0.65));
   const vs = spring({frame: frame - 10, fps, config: {damping: 8, stiffness: 200}});
   const half = width / 2;
+  const look = useLook();
   const imageFor = (i: number) => media.scenes[i]?.video ? media.scenes[i] : undefined;
   return (
-    <AbsoluteFill style={{background: '#0b0b0f', fontFamily: FONT, color: '#fff'}}>
+    <AbsoluteFill style={{background: look?.palette.bg ?? '#0b0b0f', fontFamily: look?.font.body ?? FONT, color: '#fff'}}>
       {[props.left, props.right].map((side, i) => {
         const scene = imageFor(i);
         return (
@@ -34,7 +35,7 @@ const ComparisonSplit: React.FC<EntryProps<Props>> = ({media, props}) => {
           </div>
         );
       })}
-      <div style={{position: 'absolute', left: half - 70, top: height * 0.13, width: 140, height: 140, borderRadius: 70, background: '#0b0b0f', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 60, fontWeight: 900, transform: `scale(${vs})`, boxShadow: '0 0 0 8px rgba(255,255,255,.15)'}}>VS</div>
+      <div style={{position: 'absolute', left: half - 70, top: height * 0.13, width: 140, height: 140, borderRadius: 70, background: look?.palette.bg ?? '#0b0b0f', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 60, fontWeight: 900, transform: `scale(${vs})`, boxShadow: '0 0 0 8px rgba(255,255,255,.15)'}}>VS</div>
       {props.title ? <div style={{position: 'absolute', top: height * 0.04, left: 0, right: 0, textAlign: 'center', fontSize: 40, fontWeight: 800, opacity: fadeIn(frame, 0, 10), textShadow: '0 2px 12px rgba(0,0,0,.5)'}}>{props.title}</div> : null}
       <div style={{position: 'absolute', top: height * 0.32, left: '5%', right: '5%'}}>
         {props.stats.map((st, i) => {

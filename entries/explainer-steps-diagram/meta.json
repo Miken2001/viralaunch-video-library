@@ -21,6 +21,8 @@
   ],
   "segmentable": true,
   "look": "adaptive",
+  "lookPreset": "paper",
+  "themeable": true,
   "adWeave": [
     "end-card",
     "sponsor-mention",

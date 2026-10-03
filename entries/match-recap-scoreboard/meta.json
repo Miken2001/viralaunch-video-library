@@ -18,6 +18,8 @@
   ],
   "segmentable": true,
   "look": "dark",
+  "lookPreset": "broadcast",
+  "themeable": true,
   "adWeave": [
     "end-card",
     "sponsor-mention",

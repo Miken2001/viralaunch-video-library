@@ -21,6 +21,8 @@
   ],
   "segmentable": true,
   "look": "adaptive",
+  "lookPreset": "documentary",
+  "themeable": true,
   "adWeave": [
     "end-card",
     "sponsor-mention",

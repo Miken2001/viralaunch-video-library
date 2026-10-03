@@ -1,7 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, NarrationTrack, defineEntry, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, NarrationTrack, defineEntry, type EntryProps, useLook, mix, type ActiveLook} from '@viralaunch/kit';
 import {Props} from './schema';
+
+/** The chat in a sequence's shared look: my bubbles take the accent. */
+const fromLook = (l: ActiveLook) => ({bg: l.palette.bg, header: l.palette.surface, me: l.palette.accent, them: mix(l.palette.surface, l.palette.bg2, 0.6), text: l.palette.text, muted: l.palette.muted});
 
 const THEMES = {
   dark: {bg: '#000000', header: '#1c1c1e', me: '#0a84ff', them: '#2c2c2e', text: '#ffffff', muted: '#8e8e93'},
@@ -21,7 +24,8 @@ const Typing: React.FC<{color: string; dot: string}> = ({color, dot}) => {
 const ChatThread: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, height, durationInFrames} = useVideoConfig();
-  const th = {...THEMES[props.theme], me: media.accent ?? THEMES[props.theme].me}; /* shared sequence accent */
+  const look = useLook();
+  const th = look ? fromLook(look) : {...THEMES[props.theme], me: media.accent ?? THEMES[props.theme].me};
   const start = Math.round(0.6 * fps);
   // Longer messages get more time: allocate the body of the video by text length.
   const weights = props.messages.map(m => 1 + m.text.length / 40);
@@ -38,7 +42,7 @@ const ChatThread: React.FC<EntryProps<Props>> = ({media, props}) => {
   // Auto-scroll: keep the newest bubble in view.
   const scroll = Math.max(0, visible - 6) * 150;
   return (
-    <AbsoluteFill style={{background: th.bg, fontFamily: FONT, color: th.text}}>
+    <AbsoluteFill style={{background: th.bg, fontFamily: look?.font.body ?? FONT, color: th.text}}>
       <div style={{position: 'absolute', top: 0, left: 0, right: 0, height: height * 0.13, background: th.header, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 22, zIndex: 2}}>
         <div style={{width: 96, height: 96, borderRadius: 48, background: 'linear-gradient(135deg,#8e8e93,#636366)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 44, fontWeight: 700, color: '#fff'}}>{props.contact.slice(0, 1).toUpperCase()}</div>
         <div style={{fontSize: 34, fontWeight: 600, marginTop: 8}}>{props.contact}</div>

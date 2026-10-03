@@ -1,7 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, Easing, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps, useLook, mix, type ActiveLook} from '@viralaunch/kit';
 import {Props} from './schema';
+
+/** The timeline in a sequence's shared look. */
+const fromLook = (l: ActiveLook) => ({bg: l.palette.bg, line: mix(l.palette.bg2, l.palette.text, 0.2), text: l.palette.text, muted: l.palette.muted, accent: l.palette.accent, band: `${l.palette.accent}14`});
 
 const PALETTES = {
   ink: {bg: '#0e1116', line: '#2b3340', text: '#f1f4f8', muted: '#8b96a8', accent: '#ff9f1c', band: 'rgba(255,159,28,.08)'},
@@ -15,7 +18,8 @@ const formatYear = (y: number) => (y < 0 ? `${Math.abs(Math.round(y))} BC` : `${
 const TimelineEras: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
-  const p = {...PALETTES[props.palette], accent: media.accent ?? PALETTES[props.palette].accent}; /* shared sequence accent */
+  const look = useLook();
+  const p = look ? fromLook(look) : {...PALETTES[props.palette], accent: media.accent ?? PALETTES[props.palette].accent};
   const timeline = useSceneTimeline(media);
   const items = props.milestones;
   const portrait = height >= width;
@@ -42,7 +46,7 @@ const TimelineEras: React.FC<EntryProps<Props>> = ({media, props}) => {
   });
 
   return (
-    <AbsoluteFill style={{background: p.bg, fontFamily: 'Inter, system-ui, sans-serif', overflow: 'hidden'}}>
+    <AbsoluteFill style={{background: p.bg, fontFamily: look?.font.body ?? 'Inter, system-ui, sans-serif', overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: `translateY(${height * 0.5 - cameraY}px)`}}>
         {bands.map(b => (
           <div key={b.era + b.from} style={{position: 'absolute', left: 0, right: 0, top: b.from * gap - gap * 0.42, height: (b.to - b.from) * gap + gap * 0.84, background: p.band, borderTop: `1px solid ${p.line}`}}>

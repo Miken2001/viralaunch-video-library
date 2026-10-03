@@ -36,6 +36,11 @@ export type Meta = {
   authoredBy?: string;
   remotionPackages?: string[];
   portable?: boolean;
+  roles: Array<'hook' | 'context' | 'evidence' | 'explanation' | 'payoff' | 'closer'>;
+  segmentable: boolean;
+  look: 'dark' | 'light' | 'adaptive';
+  lookPreset: 'cinematic' | 'documentary' | 'midnight' | 'paper' | 'broadcast';
+  themeable: boolean;
 };
 
 export type Example = {

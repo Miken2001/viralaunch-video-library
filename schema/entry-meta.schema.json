@@ -26,7 +26,9 @@
     "status",
     "roles",
     "segmentable",
-    "look"
+    "look",
+    "lookPreset",
+    "themeable"
   ],
   "properties": {
     "schemaVersion": {
@@ -282,6 +284,20 @@
         "adaptive"
       ],
       "description": "Overall brightness; adaptive = chosen by a palette/theme prop."
+    },
+    "lookPreset": {
+      "enum": [
+        "cinematic",
+        "documentary",
+        "midnight",
+        "paper",
+        "broadcast"
+      ],
+      "description": "The kit look preset (kit/src/look.tsx LOOKS) closest to this entry's own design; a sequence anchored on this entry uses it for every segment."
+    },
+    "themeable": {
+      "type": "boolean",
+      "description": "The entry follows media.look (useLook) so it can sit inside a multi-template sequence."
     }
   },
   "definitions": {

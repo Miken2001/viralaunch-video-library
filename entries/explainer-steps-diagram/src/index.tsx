@@ -1,8 +1,11 @@
 import React from 'react';
 import {AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {evolvePath} from '@remotion/paths';
-import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps, useLook, mix, type ActiveLook} from '@viralaunch/kit';
 import {Props} from './schema';
+
+/** The diagram in a sequence's shared look. */
+const fromLook = (l: ActiveLook) => ({bg: l.palette.bg, grid: `${l.palette.text}0d`, node: l.palette.surface, line: mix(l.palette.text, l.palette.bg, 0.25), text: l.palette.text, muted: l.palette.muted, active: l.palette.accent});
 
 const PALETTES = {
   blueprint: {bg: '#0b2a4a', grid: 'rgba(255,255,255,.07)', node: '#123b66', line: '#9cc9ff', text: '#ffffff', muted: '#a9c6e8', active: '#ffd166'},
@@ -13,7 +16,8 @@ const PALETTES = {
 const StepsDiagram: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
-  const p = {...PALETTES[props.palette], active: media.accent ?? PALETTES[props.palette].active}; /* shared sequence accent */
+  const look = useLook();
+  const p = look ? fromLook(look) : {...PALETTES[props.palette], active: media.accent ?? PALETTES[props.palette].active};
   const timeline = useSceneTimeline(media);
   const n = props.steps.length;
   const portrait = height >= width;
@@ -37,7 +41,7 @@ const StepsDiagram: React.FC<EntryProps<Props>> = ({media, props}) => {
     return {d: `M${sx},${sy} Q${cx},${cy} ${ex},${ey}`, angle: Math.atan2(ey - cy, ex - cx), ex, ey};
   };
   return (
-    <AbsoluteFill style={{background: p.bg, fontFamily: '"Inter", "Helvetica Neue", Arial, sans-serif', color: p.text}}>
+    <AbsoluteFill style={{background: p.bg, fontFamily: look?.font.body ?? '"Inter", "Helvetica Neue", Arial, sans-serif', color: p.text}}>
       <svg width={width} height={height} style={{position: 'absolute'}}>
         {Array.from({length: Math.ceil(width / 60)}, (_, i) => <line key={'v' + i} x1={i * 60} x2={i * 60} y1={0} y2={height} stroke={p.grid} />)}
         {Array.from({length: Math.ceil(height / 60)}, (_, i) => <line key={'h' + i} y1={i * 60} y2={i * 60} x1={0} x2={width} stroke={p.grid} />)}

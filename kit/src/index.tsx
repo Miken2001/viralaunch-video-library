@@ -12,6 +12,7 @@
  * @remotion/* packages listed in the entry's meta.json, and the entry's own files.
  */
 import React from 'react';
+import {LookSchema, useLook} from './look';
 import {
   AbsoluteFill,
   Audio,
@@ -24,6 +25,7 @@ import {
 } from 'remotion';
 import {z} from 'zod';
 export {ICON_NAMES, type IconName} from './icon-names';
+export {LOOKS, LookProvider, LookSchema, FullLookSchema, mix, resolveLook, useLook, type ActiveLook, type FullLook, type FontKey, type Look} from './look';
 
 export const CaptionSchema = z.object({
   text: z.string(),
@@ -69,6 +71,16 @@ export const MediaSchema = z.object({
    * highlight colour; entries use it in place of their palette accent when present.
    */
   accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
+  /**
+   * Shared look of a multi-template sequence (see look.tsx). When present the kit draws the
+   * captions and entries take colours, fonts and texture from `useLook()`.
+   */
+  look: LookSchema.optional(),
+  /**
+   * Silent tail (ms) added to a sequence segment so the next segment can cross-fade over it.
+   * The narration there already belongs to the next segment, so shared captions stop before it.
+   */
+  tailMs: z.number().min(0).default(0),
   /** Mandatory disclosure text for sponsored placements; render it whenever non-empty. */
   disclosure: z.string().default(''),
   /**
@@ -88,6 +100,11 @@ export type LibraryEntry<S extends z.ZodTypeAny> = {
   id: string;
   schema: S;
   component: React.FC<EntryProps<z.infer<S>>>;
+  /**
+   * Frames at the start during which shared (look) captions stay hidden, e.g. while an opening
+   * title owns the screen. Only used when `media.look` is set.
+   */
+  captionHold?: (args: {props: z.infer<S>; media: Media; fps: number}) => number;
 };
 
 /** Every entry's src/index.ts default-exports the result of defineEntry. */
@@ -157,6 +174,7 @@ export const Captions: React.FC<{
   highlight?: string;
   style?: React.CSSProperties;
 }> = ({scene, words = 6, color = '#FFFFFF', highlight = '#FFD60A', style}) => {
+  const look = useLook();
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const captions = scene.captions.length ? scene.captions : evenCaptions(scene.text, scene.audio.duration * 1000);
@@ -164,6 +182,8 @@ export const Captions: React.FC<{
   const current = Math.max(0, activeWord(captions, ms));
   const start = Math.floor(current / words) * words;
   const window = captions.slice(start, start + words);
+  // A sequence's shared look draws captions once, at the kit level (look.tsx / root.tsx).
+  if (look) return null;
   return (
     <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0 0.3em', fontWeight: 800, fontSize: 64, lineHeight: 1.15, textAlign: 'center', ...style}}>
       {window.map((c, i) => (
@@ -200,9 +220,12 @@ export function useContentFrames(media: Media): number {
  * or nothing. native-integrated renders nothing here because the entry's own props carry
  * the product. The disclosure is always shown when present.
  */
-export const AdWeave: React.FC<{media: Media; theme?: {background?: string; text?: string; font?: string}}> = ({media, theme = {}}) => {
+export const AdWeave: React.FC<{media: Media; theme?: {background?: string; text?: string; font?: string}}> = ({media, theme: given = {}}) => {
+  let theme = given;
   const {fps, durationInFrames} = useVideoConfig();
-  const brand = media.brand;
+  const look = useLook();
+  if (look) theme = {background: look.palette.bg, text: look.palette.text, font: look.font.display === look.font.serif ? look.font.serif : look.font.body};
+  const brand = look ? {...media.brand, accent: look.palette.accent} : media.brand;
   const text = theme.text ?? '#FFFFFF';
   const font = theme.font ?? 'Inter, system-ui, sans-serif';
   const disclosure = media.disclosure ? <Disclosure text={media.disclosure} color={text} font={font} /> : null;

@@ -24,28 +24,7 @@ import '@fontsource/jetbrains-mono/latin-400.css';
 import '@fontsource/jetbrains-mono/latin-700.css';
 import '@fontsource/caveat/latin-700.css';
 
-const stack = (family: string, fallback: string) => `"${family}", ${fallback}`;
-
-export const fonts = {
-  /** Neutral UI / body. */
-  sans: stack('Inter', 'system-ui, sans-serif'),
-  /** Geometric grotesk for tech and editorial labels. */
-  grotesk: stack('Space Grotesk', '"Inter", sans-serif'),
-  /** Editorial serif for documentary, quotes, luxury. */
-  serif: stack('Playfair Display', 'Georgia, serif'),
-  /** High-contrast display serif for titles. */
-  serifDisplay: stack('DM Serif Display', 'Georgia, serif'),
-  /** Condensed sports/broadcast. */
-  condensed: stack('Barlow Condensed', '"Arial Narrow", sans-serif'),
-  /** All-caps poster headlines. */
-  poster: stack('Bebas Neue', 'Impact, sans-serif'),
-  /** Heavy display for punchy kinetic type. */
-  heavy: stack('Archivo Black', 'Impact, sans-serif'),
-  /** Monospace for terminals, HUD labels, data. */
-  mono: stack('JetBrains Mono', 'ui-monospace, monospace'),
-  /** Handwritten annotations. */
-  hand: stack('Caveat', 'cursive'),
-} as const;
+export {baseFonts, fonts, setFontRoles, type FontName} from './font-names';
 
 /** Families + weights to await before rendering (see root.tsx). */
 export const fontFaces = [

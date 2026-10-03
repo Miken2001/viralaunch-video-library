@@ -21,6 +21,8 @@
   ],
   "segmentable": true,
   "look": "dark",
+  "lookPreset": "cinematic",
+  "themeable": true,
   "adWeave": [
     "end-card",
     "sponsor-mention",

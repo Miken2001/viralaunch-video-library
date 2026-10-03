@@ -71,6 +71,10 @@ export async function validateEntry(id: string): Promise<string[]> {
     if (indexFile) {
       const source = readFileSync(path.join(dir, indexFile), 'utf8');
       if (!new RegExp(`defineEntry\\(\\{\\s*id:\\s*['"]${id}['"]`).test(source)) errors.push(`${indexFile} must end with defineEntry({id: '${id}', ...})`);
+      // Sequence continuity: an entry that can sit inside a multi-template video must take
+      // its colours/fonts from the shared look (kit look.tsx) and be allowed in a sequence.
+      if (meta.themeable && !/\buseLook\(/.test(source)) errors.push(`${indexFile}: themeable entries must read the shared look with useLook() (see kit/src/look.tsx)`);
+      if (meta.segmentable && !meta.themeable) errors.push('segmentable entries must be themeable (they share one look inside a sequence)');
     }
     try {
       const {Props} = (await import(pathToFileURL(path.join(dir, 'src', 'schema.ts')).href)) as {Props?: {safeParse: (v: unknown) => {success: boolean; error?: {message: string}}}};

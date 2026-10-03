@@ -1,7 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, Easing, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps, useLook, mix, type ActiveLook} from '@viralaunch/kit';
 import {Props} from './schema';
+
+/** The chart in a sequence's shared look. */
+const fromLook = (l: ActiveLook) => ({bg: l.palette.bg, panel: l.palette.surface, text: l.palette.text, muted: l.palette.muted, bar: mix(l.palette.bg2, l.palette.text, 0.25), hi: l.palette.accent});
 
 const PALETTES = {
   graphite: {bg: '#121316', panel: '#1c1e23', text: '#f3f4f6', muted: '#8f96a3', bar: '#3b82f6', hi: '#f59e0b'},
@@ -14,7 +17,8 @@ const fmt = (v: number, d: number) => v.toLocaleString('en-US', {minimumFraction
 const DataStoryBars: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
-  const p = {...PALETTES[props.palette], hi: media.accent ?? PALETTES[props.palette].hi}; /* shared sequence accent */
+  const look = useLook();
+  const p = look ? fromLook(look) : {...PALETTES[props.palette], hi: media.accent ?? PALETTES[props.palette].hi};
   const timeline = useSceneTimeline(media);
   const portrait = height >= width;
 
@@ -29,7 +33,7 @@ const DataStoryBars: React.FC<EntryProps<Props>> = ({media, props}) => {
   const takeawayAt = chartStart + Math.round(sorted.length * 0.35 * fps) + fps;
 
   return (
-    <AbsoluteFill style={{background: p.bg, fontFamily: '"Inter", "Helvetica Neue", Arial, sans-serif', color: p.text}}>
+    <AbsoluteFill style={{background: p.bg, fontFamily: look?.font.body ?? '"Inter", "Helvetica Neue", Arial, sans-serif', color: p.text}}>
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', opacity: heroOut, padding: '0 8%', textAlign: 'center'}}>
         <div style={{fontSize: 40, color: p.muted, fontWeight: 600, marginBottom: 20}}>{props.title}</div>
         <div style={{fontSize: portrait ? 230 : 200, fontWeight: 900, letterSpacing: '-0.04em', fontVariantNumeric: 'tabular-nums', color: p.hi, lineHeight: 1}}>{fmt(count, props.decimals)}</div>

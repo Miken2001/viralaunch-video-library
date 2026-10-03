@@ -1,7 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, NarrationTrack, defineEntry, fadeIn, useContentFrames, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, NarrationTrack, defineEntry, fadeIn, useContentFrames, type EntryProps, useLook, type ActiveLook} from '@viralaunch/kit';
 import {Props} from './schema';
+
+/** The quote card in a sequence's shared look. */
+const fromLook = (l: ActiveLook) => ({bg: l.palette.bg, text: l.palette.text, accent: l.palette.accent, muted: l.palette.muted});
 
 const PALETTES = {
   ivory: {bg: '#f4efe6', text: '#1d1a16', accent: '#b5462f', muted: '#7d7266'},
@@ -9,13 +12,15 @@ const PALETTES = {
   oxblood: {bg: '#3b0d11', text: '#f8e9e1', accent: '#ffb4a2', muted: '#c9a39a'},
   sage: {bg: '#dfe6da', text: '#22301f', accent: '#5b7f3a', muted: '#6c7a64'},
 } as const;
-const SERIF = '"Playfair Display", "Iowan Old Style", Georgia, "Times New Roman", serif';
+const OWN_SERIF = '"Playfair Display", "Iowan Old Style", Georgia, "Times New Roman", serif';
 
 const QuoteKinetic: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const content = useContentFrames(media);
-  const p = {...PALETTES[props.palette], accent: media.accent ?? PALETTES[props.palette].accent}; /* shared sequence accent */
+  const look = useLook();
+  const p = look ? fromLook(look) : {...PALETTES[props.palette], accent: media.accent ?? PALETTES[props.palette].accent};
+  const SERIF = look?.font.display ?? OWN_SERIF;
   const words = props.quote.split(/\s+/).filter(Boolean).map(w => ({text: w.replace(/\*/g, ''), key: /^\*.*\*[.,;:!?"]*$/.test(w) || /^\*/.test(w)}));
   // Reveal all words over the first ~65% of the video; then hold for reading + attribution.
   const revealEnd = Math.max(fps, content * 0.65);

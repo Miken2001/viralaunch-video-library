@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, Captions, NarrationTrack, defineEntry, useSceneTimeline, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, defineEntry, useSceneTimeline, type EntryProps, useLook} from '@viralaunch/kit';
 import {Props} from './schema';
 
 const FONT = '"Barlow Condensed", "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif';
@@ -9,6 +9,7 @@ const ICON: Record<string, string> = {score: '●', card: '▮', sub: '⇄', cha
 const MatchRecap: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, height, durationInFrames} = useVideoConfig();
+  const look = useLook();
   const timeline = useSceneTimeline(media);
   const hasStats = props.stats.length > 0;
   const statsAt = hasStats ? Math.round(durationInFrames * 0.68) : durationInFrames;
@@ -23,7 +24,7 @@ const MatchRecap: React.FC<EntryProps<Props>> = ({media, props}) => {
   const statsT = spring({frame: frame - statsAt, fps, config: {damping: 18, stiffness: 110}});
   const team = (side: 'home' | 'away') => props[side];
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 0%, #1b3a24 0%, #08120b 70%)', fontFamily: FONT, color: '#fff'}}>
+    <AbsoluteFill style={{background: look ? `radial-gradient(ellipse at 50% 0%, ${look.palette.bg2} 0%, ${look.palette.bg} 70%)` : 'radial-gradient(ellipse at 50% 0%, #1b3a24 0%, #08120b 70%)', fontFamily: look?.font.body ?? FONT, color: look?.palette.text ?? '#fff'}}>
       <svg width="100%" height="100%" style={{position: 'absolute', opacity: 0.08}}>
         {Array.from({length: 10}, (_, i) => <rect key={i} x="0" y={`${i * 10}%`} width="100%" height="5%" fill="#fff" />)}
       </svg>

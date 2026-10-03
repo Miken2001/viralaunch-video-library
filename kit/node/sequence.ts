@@ -16,10 +16,25 @@ export type SequenceMedia = {
   adWeave: 'native-integrated' | 'end-card' | 'mid-roll-card' | 'sponsor-mention' | 'none-pure-brand';
   disclosure: string;
   accent?: string;
+  /** Cross-fade tail added to this segment (set by segmentMedia). */
+  tailMs?: number;
+  /** Shared look (kit look.tsx): preset + overrides. Every segment gets the same one. */
+  look?: SequenceLook;
   music?: unknown;
   [key: string]: unknown;
 };
-export type SegmentSpec = {templateId: string; props: Record<string, unknown>; fromScene: number; toScene: number; role: string};
+export type SegmentSpec = {templateId: string; props: Record<string, unknown>; fromScene: number; toScene: number; role: string; anchor?: boolean};
+export type SequenceLook = {preset?: string; [token: string]: unknown};
+
+/**
+ * The one look a sequence uses everywhere: explicit overrides win, then the anchor segment's
+ * preset (the segment marked `anchor`, else the first one — normally the hook). `presetOf`
+ * returns a template's meta.json `lookPreset`.
+ */
+export function sequenceLook(segments: SegmentSpec[], presetOf: (templateId: string) => string | undefined, overrides?: SequenceLook): SequenceLook {
+  const anchor = segments.find(s => s.anchor) ?? segments[0];
+  return {...overrides, preset: overrides?.preset ?? presetOf(anchor.templateId) ?? 'cinematic'};
+}
 export type Transition = 'light-leak-dissolve' | 'whip' | 'zoom' | 'cut';
 
 /** Seconds of overlap between two segments. */
@@ -46,7 +61,7 @@ export function segmentMedia(media: SequenceMedia, segment: SegmentSpec, index: 
     audio: {url: '', duration: s.audio.duration + (i === all.length - 1 ? pad : 0)},
   }));
   const seconds = scenes.reduce((n, s) => n + s.audio.duration, 0);
-  return {...media, scenes, durationMs: Math.round(seconds * 1000), adWeave: placementFor(media.adWeave, index, count), music: undefined};
+  return {...media, scenes, durationMs: Math.round(seconds * 1000), tailMs: Math.round(pad * 1000), adWeave: placementFor(media.adWeave, index, count), music: undefined};
 }
 
 /** Unpadded length of each segment in seconds. */

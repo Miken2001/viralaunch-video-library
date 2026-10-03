@@ -10,6 +10,7 @@ import React from 'react';
 import {AbsoluteFill, Easing, Img, OffthreadVideo, Sequence, interpolate, random, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {activeWord, evenCaptions, sceneTimeline, type Media, type Scene, type TimedScene} from './index';
 import {fonts} from './fonts';
+import {useLook} from './look';
 
 export {fonts};
 
@@ -76,7 +77,9 @@ export const glow = (color: string, strength = 1) => `0 0 ${8 * strength}px ${al
 const NOISE_TILE = `url("data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>')}")`;
 
 /** Animated film grain blended over everything below it. */
-export const Grain: React.FC<{opacity?: number; blend?: React.CSSProperties['mixBlendMode']}> = ({opacity = 0.08, blend = 'overlay'}) => {
+export const Grain: React.FC<{opacity?: number; blend?: React.CSSProperties['mixBlendMode']}> = ({opacity: own = 0.08, blend = 'overlay'}) => {
+  const look = useLook();
+  const opacity = look ? look.texture.grain : own;
   const frame = useCurrentFrame();
   const x = Math.floor(rand(`gx${frame % 48}`, 0, 256));
   const y = Math.floor(rand(`gy${frame % 48}`, 0, 256));
@@ -84,9 +87,11 @@ export const Grain: React.FC<{opacity?: number; blend?: React.CSSProperties['mix
 };
 
 /** Radial vignette. */
-export const Vignette: React.FC<{strength?: number; color?: string}> = ({strength = 0.6, color = '#000'}) => (
-  <AbsoluteFill style={{pointerEvents: 'none', background: `radial-gradient(ellipse at center, transparent 40%, ${alpha(color, strength)} 100%)`}} />
-);
+export const Vignette: React.FC<{strength?: number; color?: string}> = ({strength = 0.6, color = '#000'}) => {
+  const look = useLook();
+  const s = look ? look.texture.vignette : strength;
+  return <AbsoluteFill style={{pointerEvents: 'none', background: `radial-gradient(ellipse at center, transparent 40%, ${alpha(look && look.tone === 'light' ? look.palette.text : color, look && look.tone === 'light' ? s * 0.4 : s)} 100%)`}} />;
+};
 
 /**
  * Organic light leak that blooms and retracts over `durationInFrames`, screen-blended: three
@@ -138,13 +143,15 @@ export const HudFrame: React.FC<{
   timecode?: boolean;
   progressBar?: boolean;
   inset?: number;
-}> = ({color = '#ffffff', topLeft = '', topRight = '', bottomLeft = '', bottomRight = '', timecode = true, progressBar = true, inset = 0.035}) => {
+}> = ({color: own = '#ffffff', topLeft = '', topRight = '', bottomLeft = '', bottomRight = '', timecode = true, progressBar = true, inset = 0.035}) => {
+  const look = useLook();
+  const color = look ? look.palette.text : own;
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
   const pad = Math.round(Math.min(width, height) * inset);
   const arm = Math.round(Math.min(width, height) * 0.04);
   const appear = progress(frame, 0, 18);
-  const label: React.CSSProperties = {position: 'absolute', fontFamily: fonts.mono, fontSize: Math.max(14, Math.round(Math.min(width, height) * 0.016)), letterSpacing: '0.18em', textTransform: 'uppercase', color, opacity: 0.75 * appear};
+  const label: React.CSSProperties = {position: 'absolute', fontFamily: look ? look.font.label : fonts.mono, fontSize: Math.max(14, Math.round(Math.min(width, height) * 0.016)), letterSpacing: '0.18em', textTransform: 'uppercase', color, opacity: 0.75 * appear};
   const s = Math.floor(frame / fps);
   const tc = `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}:${String(frame % fps).padStart(2, '0')}`;
   const corner = (x: 'left' | 'right', y: 'top' | 'bottom') => (
@@ -254,7 +261,14 @@ export const StyledCaptions: React.FC<{
   align?: 'left' | 'center';
   /** Drop shadow for legibility over imagery; turn off on flat light backgrounds. */
   shadow?: boolean;
-}> = ({scene, variant = 'pop', accent = '#FFD60A', color = '#ffffff', font = fonts.sans, size = 64, words = 4, uppercase = false, weight = 900, align = 'center', shadow: withShadow = true}) => {
+}> = props => {
+  // A sequence's shared look draws captions once, at the kit level (LookCaptions).
+  if (useLook()) return null;
+  return <CaptionBody {...props} />;
+};
+
+type CaptionBodyProps = React.ComponentProps<typeof StyledCaptions>;
+const CaptionBody: React.FC<CaptionBodyProps> = ({scene, variant = 'pop', accent = '#FFD60A', color = '#ffffff', font = fonts.sans, size = 64, words = 4, uppercase = false, weight = 900, align = 'center', shadow: withShadow = true}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const captions = scene.captions.length ? scene.captions : evenCaptions(scene.text, scene.audio.duration * 1000);
@@ -491,3 +505,29 @@ export {LineIcon, iconNames, type IconName} from './icons';
 
 /** Widens an `as const` palette to plain strings, so entries can override a colour (e.g. media.accent). */
 export type Widen<T> = {[K in keyof T]: T[K] extends string ? string : T[K] extends readonly string[] ? readonly string[] : T[K]};
+
+/**
+ * The captions of a multi-template sequence, drawn by the kit (root.tsx) above the entry so every
+ * segment shows the same caption design in the same place. Hidden during the first `hold` frames
+ * and during an end card.
+ */
+export const LookCaptions: React.FC<{media: Media; hold?: number; until?: number}> = ({media, hold = 0, until}) => {
+  const look = useLook();
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+  const timeline = React.useMemo(() => sceneTimeline(media.scenes, fps), [media.scenes, fps]);
+  if (!look || !media.captions || frame < hold || (until !== undefined && frame >= until)) return null;
+  const c = look.captions;
+  const landscape = width > height;
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      {timeline.map(t => (
+        <Sequence key={t.index} from={t.from} durationInFrames={t.durationInFrames} layout="none">
+          <div style={{position: 'absolute', left: landscape ? '12%' : '7%', right: landscape ? '12%' : '7%', bottom: height * c.bottom}}>
+            <CaptionBody scene={t.scene} variant={c.variant} accent={c.highlight} color={c.color} font={look.captionFont} size={Math.min(width, height) * c.size * (landscape ? 0.85 : 1)} weight={c.weight} words={landscape ? c.words + 2 : c.words} uppercase={c.uppercase} shadow={c.shadow} />
+          </div>
+        </Sequence>
+      ))}
+    </AbsoluteFill>
+  );
+};

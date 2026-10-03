@@ -12,9 +12,9 @@ import {execFileSync} from 'node:child_process';
 import {copyFileSync, existsSync, mkdirSync, readFileSync, rmSync} from 'node:fs';
 import path from 'node:path';
 import {exampleMedia, kitAliases, root, writeEntryRoot, type Example} from './lib';
-import {muxArgs, segmentMedia, segmentSeconds, stitchArgs, type SegmentSpec, type SequenceMedia, type Transition} from '../kit/node/sequence';
+import {TRANSITION_SECONDS, muxArgs, segmentMedia, segmentSeconds, sequenceLook, stitchArgs, type SegmentSpec, type SequenceLook, type SequenceMedia, type Transition} from '../kit/node/sequence';
 
-type Spec = Example & {accent?: string; transition?: Transition; segments: SegmentSpec[]};
+type Spec = Example & {accent?: string; look?: SequenceLook; transition?: Transition; segments: SegmentSpec[]};
 const args = process.argv.slice(2);
 const specFile = path.resolve(args[0] ?? '');
 if (!existsSync(specFile)) throw new Error('Usage: pnpm sequence-preview <spec.json> [--aspect 16:9]');
@@ -33,7 +33,10 @@ const work = path.join(root, '.cache', 'sequences', name);
 rmSync(work, {recursive: true, force: true});
 mkdirSync(path.join(work, 'public'), {recursive: true});
 for (const s of spec.scenes) if (s.asset) copyFileSync(path.join(root, s.asset), path.join(work, 'public', path.basename(s.asset)));
-const media = {...exampleMedia(spec, aspect), ...(spec.accent ? {accent: spec.accent} : {})} as unknown as SequenceMedia;
+const presetOf = (id: string) => (JSON.parse(readFileSync(path.join(entryDir(id), 'meta.json'), 'utf8')) as {lookPreset?: string}).lookPreset;
+const look = sequenceLook(spec.segments, presetOf, spec.look);
+console.log(`look: ${JSON.stringify(look)}`);
+const media = {...exampleMedia(spec, aspect), ...(spec.accent ? {accent: spec.accent} : {}), look} as unknown as SequenceMedia;
 
 const chromiumOptions = {gl: 'swiftshader' as const};
 const browser = await openBrowser('chrome', {chromiumOptions});
@@ -60,3 +63,21 @@ mkdirSync(path.join(root, 'out', 'sequences'), {recursive: true});
 const out = path.join(root, 'out', 'sequences', `${name}.mp4`);
 execFileSync('ffmpeg', ['-loglevel', 'error', ...muxArgs(video, [], undefined, 0, total, out)]);
 console.log(`wrote ${path.relative(root, out)} (${total.toFixed(1)}s, ${spec.segments.length} segments)`);
+if (args.includes('--cuts')) {
+  // Continuity QA: frames just before and after every cut, side by side, one row per cut.
+  let at = 0;
+  const times = lengths.slice(0, -1).flatMap(l => {
+    at += l;
+    return [at - 0.35, at + TRANSITION_SECONDS[transition] + 0.35];
+  });
+  const frames = times.map((t, i) => {
+    const f = path.join(work, `cut-${i}.png`);
+    execFileSync('ffmpeg', ['-loglevel', 'error', '-y', '-ss', t.toFixed(2), '-i', out, '-frames:v', '1', '-vf', 'scale=360:-2', f]);
+    return f;
+  });
+  const sheet = path.join(root, 'out', 'sequences', `${name}-cuts.png`);
+  const rows = frames.length / 2;
+  const filter = Array.from({length: rows}, (_, r) => `[${2 * r}][${2 * r + 1}]hstack=inputs=2[r${r}]`).join(';') + (rows > 1 ? `;${Array.from({length: rows}, (_, r) => `[r${r}]`).join('')}vstack=inputs=${rows}[out]` : ';[r0]null[out]');
+  execFileSync('ffmpeg', ['-loglevel', 'error', '-y', ...frames.flatMap(f => ['-i', f]), '-filter_complex', filter, '-map', '[out]', '-frames:v', '1', sheet]);
+  console.log(`wrote ${path.relative(root, sheet)} (before | after, one row per cut)`);
+}

@@ -1,7 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, Captions, NarrationTrack, SceneAsset, defineEntry, useSceneTimeline, type EntryProps, type Scene} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, SceneAsset, defineEntry, useSceneTimeline, type EntryProps, type Scene, useLook, mix, type ActiveLook} from '@viralaunch/kit';
 import {Props} from './schema';
+
+/** Slide colours in a sequence's shared look: tones of the background family with the accent woven in. */
+const fromLook = (l: ActiveLook) => [mix(l.palette.bg2, l.palette.accent, 0.35), l.palette.bg2, mix(l.palette.bg, l.palette.accent, 0.2), mix(l.palette.bg2, l.palette.accent, 0.15), l.palette.surface];
 
 const PALETTES = {
   heat: ['#ff3d2e', '#ff7a00', '#ffb800', '#e0115f', '#8a2be2'],
@@ -28,6 +31,7 @@ const Item: React.FC<{rank: number; title: string; why: string; color: string; s
   const crash = spring({frame, fps, config: {damping: 9, stiffness: 220, mass: 0.7}});
   const slide = spring({frame: frame - 6, fps, config: {damping: 16, stiffness: 160}});
   const shake = frame < 8 ? Math.sin(frame * 3) * (8 - frame) * 2 : 0;
+  const display = useLook()?.font.display;
   return (
     <AbsoluteFill style={{background: color, transform: `translateX(${shake}px)`}}>
       {scene?.video ? (
@@ -36,11 +40,11 @@ const Item: React.FC<{rank: number; title: string; why: string; color: string; s
           <AbsoluteFill style={{background: `linear-gradient(transparent 30%, ${color}ee 85%)`}} />
         </AbsoluteFill>
       ) : null}
-      <div style={{position: 'absolute', top: '8%', left: '7%', fontSize: Math.min(420, width * 0.4), fontWeight: 900, color: '#fff', lineHeight: 0.8, transform: `scale(${2.2 - crash * 1.2})`, transformOrigin: 'top left', opacity: crash, textShadow: '0 10px 40px rgba(0,0,0,.35)'}}>
+      <div style={{position: 'absolute', top: '8%', left: '7%', fontFamily: display, fontSize: Math.min(420, width * 0.4), fontWeight: 900, color: '#fff', lineHeight: 0.8, transform: `scale(${2.2 - crash * 1.2})`, transformOrigin: 'top left', opacity: crash, textShadow: '0 10px 40px rgba(0,0,0,.35)'}}>
         #{rank}
       </div>
       <div style={{position: 'absolute', left: '7%', right: '7%', bottom: '26%', transform: `translateY(${(1 - slide) * 80}px)`, opacity: slide}}>
-        <div style={{fontSize: 92, fontWeight: 900, color: '#fff', lineHeight: 1, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.4)'}}>{title}</div>
+        <div style={{fontFamily: display, fontSize: 92, fontWeight: 900, color: '#fff', lineHeight: 1, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.4)'}}>{title}</div>
         {why ? <div style={{fontSize: 42, fontWeight: 600, color: 'rgba(255,255,255,.88)', marginTop: 18, lineHeight: 1.25}}>{why}</div> : null}
       </div>
     </AbsoluteFill>
@@ -50,14 +54,15 @@ const Item: React.FC<{rank: number; title: string; why: string; color: string; s
 const ListicleCountdown: React.FC<EntryProps<Props>> = ({media, props}) => {
   const {fps, durationInFrames} = useVideoConfig();
   const timeline = useSceneTimeline(media);
-  const colors = PALETTES[props.palette];
+  const look = useLook();
+  const colors = look ? fromLook(look) : PALETTES[props.palette];
   const n = props.items.length;
   const intro = Math.min(Math.round(1.8 * fps), Math.floor(durationInFrames / (n + 2)));
   const per = Math.floor((durationInFrames - intro) / n);
   // Use scene images in order when there is one scene per item (+ optional intro scene).
   const sceneFor = (i: number) => (media.scenes.length >= n ? media.scenes[media.scenes.length - n + i] : undefined);
   return (
-    <AbsoluteFill style={{fontFamily: '"Inter", "Helvetica Neue", Arial, sans-serif'}}>
+    <AbsoluteFill style={{fontFamily: look?.font.body ?? '"Inter", "Helvetica Neue", Arial, sans-serif'}}>
       <Sequence durationInFrames={intro}>
         <Intro title={props.title} count={n} color={colors[0]} />
       </Sequence>

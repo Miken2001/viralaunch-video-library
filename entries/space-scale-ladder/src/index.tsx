@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Easing, Sequence, interpolate, random, useCurrentFrame, useVideoConfig} from 'remotion';
-import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps} from '@viralaunch/kit';
+import {AdWeave, Captions, NarrationTrack, defineEntry, fadeIn, useSceneTimeline, type EntryProps, useLook} from '@viralaunch/kit';
 import {Props} from './schema';
 
 const STARS = Array.from({length: 220}, (_, i) => ({x: random(`sx${i}`), y: random(`sy${i}`), r: 0.6 + random(`sr${i}`) * 1.8, tw: random(`st${i}`) * Math.PI * 2}));
@@ -8,8 +8,9 @@ const STARS = Array.from({length: 220}, (_, i) => ({x: random(`sx${i}`), y: rand
 const Starfield: React.FC<{zoom: number}> = ({zoom}) => {
   const frame = useCurrentFrame();
   const {width, height} = useVideoConfig();
+  const look = useLook();
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 40%, #0d1433 0%, #03040c 70%)'}}>
+    <AbsoluteFill style={{background: look ? `radial-gradient(ellipse at 50% 40%, ${look.palette.bg2} 0%, ${look.palette.bg} 70%)` : 'radial-gradient(ellipse at 50% 40%, #0d1433 0%, #03040c 70%)'}}>
       <svg width={width} height={height}>
         {STARS.map((s, i) => {
           const parallax = 1 + (zoom - 1) * 0.03 * s.r;
@@ -26,6 +27,7 @@ const ScaleLadder: React.FC<EntryProps<Props>> = ({media, props}) => {
   const frame = useCurrentFrame();
   const {fps, width, height, durationInFrames} = useVideoConfig();
   const timeline = useSceneTimeline(media);
+  const look = useLook();
   const objs = props.objects;
   const intro = Math.round(1.0 * fps);
   const per = (durationInFrames - intro - fps * 0.8) / objs.length;
@@ -51,7 +53,7 @@ const ScaleLadder: React.FC<EntryProps<Props>> = ({media, props}) => {
 
   const current = objs[step];
   return (
-    <AbsoluteFill style={{fontFamily: '"Inter", "Helvetica Neue", Arial, sans-serif', color: '#fff'}}>
+    <AbsoluteFill style={{fontFamily: look?.font.body ?? '"Inter", "Helvetica Neue", Arial, sans-serif', color: look?.palette.text ?? '#fff'}}>
       <Starfield zoom={zoomOut} />
       <AbsoluteFill>
         {objs.map((o, i) => {
