@@ -44,7 +44,7 @@ const clips: string[] = [];
 try {
   for (const [i, seg] of spec.segments.entries()) {
     const started = Date.now();
-    const serveUrl = await bundle({entryPoint: writeEntryRoot(entryDir(seg.templateId), path.join(work, `root-${i}`)), publicDir: path.join(work, 'public'), ignoreRegisterRootWarning: true, onProgress: () => {}, webpackOverride: c => ({...c, resolve: {...c.resolve, alias: {...(c.resolve?.alias as object), ...kitAliases()}, modules: [path.join(root, 'node_modules'), 'node_modules']}})});
+    const serveUrl = await bundle({outDir: path.join(work, `bundle-${i}`), entryPoint: writeEntryRoot(entryDir(seg.templateId), path.join(work, `root-${i}`)), publicDir: path.join(work, 'public'), ignoreRegisterRootWarning: true, onProgress: () => {}, webpackOverride: c => ({...c, resolve: {...c.resolve, alias: {...(c.resolve?.alias as object), ...kitAliases()}, modules: [path.join(root, 'node_modules'), 'node_modules']}})});
     const inputProps = {media: segmentMedia(media, seg, i, spec.segments.length, transition), props: seg.props};
     const composition = await selectComposition({serveUrl, id: seg.templateId, inputProps, chromiumOptions, puppeteerInstance: browser, timeoutInMilliseconds: 180000});
     const clip = path.join(work, `seg-${i}.mp4`);

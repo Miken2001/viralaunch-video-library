@@ -42,7 +42,9 @@ for (const id of ids) {
     rmSync(publicDir, {recursive: true, force: true});
     mkdirSync(publicDir, {recursive: true});
     for (const scene of readExample(id).scenes) if (scene.asset) copyFileSync(path.join(root, scene.asset), path.join(publicDir, path.basename(scene.asset)));
+    const bundleDir = path.join(root, '.cache', 'bundles', `preview-${id}`);
     const serveUrl = await bundle({
+      outDir: bundleDir,
       entryPoint,
       publicDir,
       webpackOverride: config => ({
@@ -58,6 +60,7 @@ for (const id of ids) {
     const suffix = aspect ? `-${aspect.replace(':', 'x')}` : '';
     await renderMedia({composition, serveUrl, codec: 'h264', outputLocation: path.join(out, `${id}${suffix}.mp4`), inputProps, browserExecutable, chromiumOptions: {gl: 'swiftshader'}, timeoutInMilliseconds: 180000, concurrency: Number(process.env.PREVIEW_CONCURRENCY ?? 4), onBrowserLog: l => l.type === 'error' && console.error(`[${id}] ${l.text}`)});
     await renderStill({composition, serveUrl, frame: Math.floor(composition.durationInFrames * 0.4), output: path.join(out, `${id}${suffix}.jpg`), imageFormat: 'jpeg', inputProps, browserExecutable, chromiumOptions: {gl: 'swiftshader'}, timeoutInMilliseconds: 180000});
+    rmSync(bundleDir, {recursive: true, force: true});
     if (!suffix) recordPreview(id);
     console.log(`ok   ${id}${suffix} (${composition.width}x${composition.height}, ${(composition.durationInFrames / composition.fps).toFixed(1)}s) in ${((Date.now() - started) / 1000).toFixed(1)}s`);
   } catch (e) {

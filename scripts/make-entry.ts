@@ -18,7 +18,8 @@ const direction = args.includes('--direction') ? args[args.indexOf('--direction'
 const awesome = args.includes('--awesome') ? args[args.indexOf('--awesome') + 1] : undefined;
 const dryRun = args.includes('--dry-run');
 if (!inspirationId || !entryId) throw new Error('Usage: pnpm make-entry <inspiration-id> <new-entry-id> [--awesome <checkout>] [--dry-run]');
-if (existsSync(path.join(root, 'entries', entryId))) throw new Error(`entries/${entryId} already exists`);
+// An existing folder is an unfinished draft from an interrupted run: continue it.
+const resuming = existsSync(path.join(root, 'entries', entryId));
 
 const record = readJson<{records: Array<Record<string, unknown>>}>(path.join(root, 'inspiration', 'inspiration.json')).records.find(r => r.id === inspirationId);
 if (!record) throw new Error(`No inspiration record ${inspirationId}`);
@@ -41,12 +42,12 @@ if (awesome && String(record.id).startsWith('ao-')) {
   }
 }
 
-const prompt = `${readFileSync(path.join(root, 'prompts', 'make-entry.md'), 'utf8')}\n\nENTRY_ID: ${entryId}\nINSPIRATION: ${JSON.stringify(record, null, 2)}\nREFERENCE FRAMES: ${existsSync(refDir) ? path.relative(root, refDir) : 'none'}\nDIRECTION: ${direction}\n`;
+const prompt = `${readFileSync(path.join(root, 'prompts', 'make-entry.md'), 'utf8')}\n\nENTRY_ID: ${entryId}\nINSPIRATION: ${JSON.stringify(record, null, 2)}\nREFERENCE FRAMES: ${existsSync(refDir) ? path.relative(root, refDir) : 'none'}\nDIRECTION: ${direction}\n${resuming ? `RESUME: entries/${entryId} already contains an unfinished draft from an interrupted run. Read it, keep what is good, and finish it.\n` : ''}`;
 if (dryRun) {
   console.log(prompt);
   process.exit(0);
 }
 // The core entries in a sibling viralaunch-local checkout are the quality bar (read-only).
 const core = path.join(root, '..', 'viralaunch-local', 'packages', 'remotion', 'library', 'entries');
-const result = spawnSync('claude', ['-p', prompt, '--permission-mode', 'acceptEdits', ...(existsSync(core) ? ['--add-dir', core] : []), '--allowedTools', 'Read,Write,Edit,Glob,Grep,Bash(pnpm:*),Bash(npx:*),Bash(ffmpeg:*),Bash(ls:*)'], {cwd: root, stdio: 'inherit'});
+const result = spawnSync('claude', ['-p', prompt, '--permission-mode', 'acceptEdits', ...(existsSync(core) ? ['--add-dir', core] : []), '--allowedTools', 'Read,Write,Edit,Glob,Grep,Bash(pnpm:*),Bash(npx:*),Bash(ffmpeg:*),Bash(ls:*)'], {cwd: root, stdio: ['ignore', 'inherit', 'inherit']});
 process.exit(result.status ?? 1);

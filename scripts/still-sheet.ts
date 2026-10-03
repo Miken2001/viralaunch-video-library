@@ -22,7 +22,8 @@ const publicDir = path.join(root, '.cache', 'public', id);
 rmSync(publicDir, {recursive: true, force: true});
 mkdirSync(publicDir, {recursive: true});
 for (const s of example.scenes) if (s.asset) copyFileSync(path.join(root, s.asset), path.join(publicDir, path.basename(s.asset)));
-const serveUrl = await bundle({entryPoint: writeEntryRoot(path.join(entriesDir, id), path.join(root, '.cache', 'roots', id)), publicDir, ignoreRegisterRootWarning: true, onProgress: () => {}, webpackOverride: c => ({...c, resolve: {...c.resolve, alias: {...(c.resolve?.alias as object), ...kitAliases()}, modules: [path.join(root, 'node_modules'), 'node_modules']}})});
+const bundleDir = path.join(root, '.cache', 'bundles', `still-${id}`);
+const serveUrl = await bundle({outDir: bundleDir, entryPoint: writeEntryRoot(path.join(entriesDir, id), path.join(root, '.cache', 'roots', id)), publicDir, ignoreRegisterRootWarning: true, onProgress: () => {}, webpackOverride: c => ({...c, resolve: {...c.resolve, alias: {...(c.resolve?.alias as object), ...kitAliases()}, modules: [path.join(root, 'node_modules'), 'node_modules']}})});
 const inputProps = {media: {...exampleMedia(example, aspect ?? meta.aspects[0]), ...(look ? {look: {preset: look}} : {})}, props: example.props};
 const chromiumOptions = {gl: 'swiftshader' as const};
 const browser = await openBrowser('chrome', {chromiumOptions});
@@ -37,6 +38,7 @@ for (let i = 0; i < count; i++) {
   files.push(file);
 }
 await browser.close({silent: true});
+rmSync(bundleDir, {recursive: true, force: true});
 const h = composition.width > composition.height ? 360 : 640;
 const target = path.join(out, `${id}${aspect ? '-' + aspect.replace(':', 'x') : ''}${look ? '-look-' + look : ''}.jpg`);
 execFileSync('ffmpeg', ['-loglevel', 'error', '-y', ...files.flatMap(f => ['-i', f]), '-filter_complex', `${files.map((_, i) => `[${i}]scale=-1:${h}[v${i}]`).join(';')};${files.map((_, i) => `[v${i}]`).join('')}hstack=${files.length}`, target]);

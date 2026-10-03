@@ -1,3 +1,5 @@
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
 /**
  * Copies the shared runtime of the library into a viralaunch-local checkout so the CLI renders
  * free library entries exactly like this repo does:
@@ -26,3 +28,9 @@ for (const [from, to] of [
 ]) cpSync(path.join(root, from), path.join(library, to));
 console.log(`synced kit + catalog into ${path.relative(process.cwd(), library)}`);
 console.log('Next: in viralaunch-local run `npx tsx scripts/export-domain-contracts.ts` and `pnpm renderer:pack`.');
+
+// Immutable source revision; release verification checks that all catalog hashes exist there.
+const catalogFile=path.join(library,'remote-index.json');
+const catalog=JSON.parse(readFileSync(catalogFile,'utf8'));
+catalog.ref=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
+writeFileSync(catalogFile,JSON.stringify(catalog,null,1)+'\n');
