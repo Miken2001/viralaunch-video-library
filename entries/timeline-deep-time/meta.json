@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline-deep-time",
+  "name": "Deep-Time Era Ruler",
+  "version": "1.0.0",
+  "summary": "Travels through geological periods, prehistoric ages or dynasties: an era card with a drawn illustration, over a colour-banded era ruler that zooms into each era while a date pin counts through it.",
+  "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+  ],
+  "domains": [
+    "history",
+    "science",
+    "nature",
+    "education",
+    "geography"
+  ],
+  "roles": [
+    "context",
+    "explanation",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "documentary",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 12,
+    "max": 150
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/mellow_neet2000/status/2103487198758834408",
+      "author": "mellow_neet2000",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-mellow_neet2000-834408"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

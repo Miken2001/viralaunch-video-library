@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "story-pixel-arcade",
+  "name": "Pixel Arcade Story",
+  "version": "1.0.0",
+  "summary": "A 16-bit side-scroller that tells a story as game levels: a pixel hero runs through parallax worlds, jumps hazards and collects coins, with a dialog box per level, score/lives HUD and a stage-clear finale.",
+  "genres": [
+    "story-narrative",
+    "explainer"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "education",
+    "science",
+    "space",
+    "history"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "closer"
+  ],
+  "segmentable": true,
+  "look": "dark",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "captions-voiceover",
+    "transitions",
+    "camera-motion"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/riku720720/status/2102515055116063144",
+      "author": "riku720720",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-riku720720-063144"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

@@ -1,15 +1,15 @@
 # ViraLaunch Video Library
 
-A free, open library of **Remotion video templates** for coding agents and humans. Every
-template ships **working code**, a **preview video**, a **brief written for agents**, and a
-**props schema** simple enough for a small local model to fill.
+A free, public **MIT library of Remotion video templates** for coding agents and humans.
+Every template ships working code, a preview, an agent brief and a props schema.
 
-Prompt galleries show you what an AI made. This library gives you the code it would take,
-already parameterized: a weaker model can fill a template's props, and a frontier agent can
-fork the code and push it further.
+It powers [ViraLaunch](https://viralaunch.ai), whose application and orchestration remain
+closed source. The CLI's twelve core templates are bundled in its optional renderer pack
+for offline use after installation. This public repository supplies additional templates
+on demand, verified against catalog hashes. The expansion target is 100+ templates.
 
-It powers [ViraLaunch](https://viralaunch.ai) (which fetches templates on demand), but it
-stands alone: clone it, pick a template, render.
+Template customization and exact-hash approval remain supported. The shared kit supports
+multi-template sequences with continuous narration and a consistent look.
 
 ## Templates
 
@@ -26,8 +26,9 @@ stands alone: clone it, pick a template, render.
 | `explainer-steps-diagram` | explainer | processes and cycles, step by step |
 | `news-headline-highlight` | news recap | headlines with marker highlights + "why it matters" |
 
-Previews: see the [`previews-v1` release](../../releases/tag/previews-v1) (one MP4 + poster
-per template). More templates are added in batches; the goal is 100+.
+Previews are generated as one MP4 + poster per template and distributed through GitHub
+releases. Release validation checks that referenced assets are available and match hashes. More templates are added in batches;
+the goal is 100+.
 
 ## Finding the right template fast
 
@@ -133,7 +134,8 @@ viralaunch library fork timeline-eras my-timeline --project <id>
 
 ## Licensing
 
-Code, briefs and metadata are MIT. `samples/` holds public-domain images used only to render
+Code, briefs and metadata are MIT; preserve existing grants and notices.
+`samples/` holds public-domain images used only to render
 previews (`samples/SOURCES.md`). `inspiration/inspiration.json` reuses titles and descriptions
 from awesome-opus-5.5-video-prompts under CC BY 4.0, with attribution in the file. The
 prompts, videos and thumbnails it lists belong to their creators and are **not**

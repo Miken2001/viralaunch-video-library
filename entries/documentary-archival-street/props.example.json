@@ -1,0 +1,23 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Old Lines", "tagline": "Stories from the history of transit", "cta": "Follow for more"}},
+  "scenes": [
+    {"text": "By the 1890s, streetcars jammed the busiest streets of downtown Boston.", "durationSeconds": 5},
+    {"text": "In 1895, the city began digging a tunnel to take them underground.", "durationSeconds": 5},
+    {"text": "On September 1, 1897, the Tremont Street Subway opened, the first subway in the United States.", "durationSeconds": 6},
+    {"text": "More than a century later, its tunnels still carry Green Line trains.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "America's First Subway",
+    "place": "Boston",
+    "plates": [
+      {"date": "1890s", "label": "Streetcars on Tremont Street"},
+      {"date": "1895", "label": "Construction begins"},
+      {"date": "1 September 1897", "label": "The Tremont Street Subway opens"},
+      {"date": "Today", "label": "Still in service on the Green Line"}
+    ],
+    "grade": "sepia",
+    "street": "tramway",
+    "frame": "film",
+    "showCaptions": true
+  }
+}

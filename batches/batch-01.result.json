@@ -1,0 +1,51 @@
+{
+  "documentary-archival-street": {
+    "status": "skipped",
+    "reason": "already valid"
+  },
+  "timeline-company-history": {
+    "status": "failed",
+    "reason": "failed: other make-entry runs are editing this entry and overwriting its still-sheet frames, so I made no changes and couldn't do the visual checks",
+    "minutes": 10
+  },
+  "news-roundup-cards": {
+    "status": "failed",
+    "reason": "exit 0",
+    "minutes": 19
+  },
+  "timeline-deep-time": {
+    "status": "failed",
+    "reason": "exit 0",
+    "minutes": 25
+  },
+  "map-country-tour": {
+    "status": "failed",
+    "reason": "exit 1",
+    "minutes": 4
+  },
+  "documentary-mosaic-reveal": {
+    "status": "failed",
+    "reason": "exit 1",
+    "minutes": 9
+  },
+  "explainer-money-story": {
+    "status": "failed",
+    "reason": "exit 1",
+    "minutes": 0
+  },
+  "story-rain-mood": {
+    "status": "failed",
+    "reason": "exit 1",
+    "minutes": 0
+  },
+  "story-cartoon-explainer": {
+    "status": "failed",
+    "reason": "exit 1",
+    "minutes": 0
+  },
+  "story-pixel-arcade": {
+    "status": "failed",
+    "reason": "exit 1",
+    "minutes": 19
+  }
+}

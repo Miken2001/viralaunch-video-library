@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "news-roundup-cards",
+  "name": "News Roundup Cards",
+  "version": "1.0.0",
+  "summary": "A fast roundup deck: one broadcast-style card per story with category and date chips, a big headline, a one-line takeaway, numbered points and a counting figure, swapped by an accent wipe. Releases, launches, any news beat.",
+  "genres": [
+    "news-recap",
+    "listicle"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "tech",
+    "sports",
+    "business",
+    "science"
+  ],
+  "roles": [
+    "context",
+    "evidence",
+    "hook"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "transitions",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/gigabit_million/status/2104068536041959719",
+      "author": "gigabit_million",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-gigabit_million-959719"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

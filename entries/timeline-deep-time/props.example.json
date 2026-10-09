@@ -1,0 +1,26 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Stratum", "tagline": "Earth history, one layer at a time", "cta": "Start learning"}},
+  "scenes": [
+    {"text": "Two hundred and fifty million years of Earth history, on one ruler.", "durationSeconds": 4},
+    {"text": "In the Triassic, every continent was joined in one supercontinent, Pangaea, and the first dinosaurs appeared.", "durationSeconds": 6},
+    {"text": "In the Jurassic, Pangaea split apart, giant sauropods roamed, and the first birds took off.", "durationSeconds": 6},
+    {"text": "The Cretaceous brought flowering plants, and ended with the asteroid impact at Chicxulub.", "durationSeconds": 6},
+    {"text": "In the Paleogene, mammals spread into the empty world, including early primates and the ancestors of whales.", "durationSeconds": 6},
+    {"text": "The Pleistocene was an age of ice. Twenty thousand years ago, the sea stood about one hundred and twenty metres lower.", "durationSeconds": 7},
+    {"text": "Then the ice retreated, the climate settled, and people began to farm.", "durationSeconds": 6}
+  ],
+  "props": {
+    "title": "From the dinosaurs to the *first* farmers",
+    "axis": "years-ago",
+    "palette": "earth",
+    "showCaptions": true,
+    "eras": [
+      {"kicker": "Mesozoic Era", "name": "Triassic", "from": 251900000, "to": 201400000, "span": "252–201 million years ago", "visual": "globe", "icon": "globe", "points": ["All continents form one supercontinent, Pangaea", "The first dinosaurs appear, about 230 million years ago"]},
+      {"kicker": "Mesozoic Era", "name": "Jurassic", "from": 201400000, "to": 145000000, "span": "201–145 million years ago", "visual": "globe", "icon": "globe", "points": ["Pangaea breaks up and the Atlantic begins to open", "Giant sauropods such as Brachiosaurus roam", "Archaeopteryx, one of the first birds, appears"]},
+      {"kicker": "Mesozoic Era", "name": "Cretaceous", "from": 145000000, "to": 66000000, "span": "145–66 million years ago", "visual": "strata", "icon": "fire", "points": ["Flowering plants spread across the land", "The Chicxulub impact ends the non-bird dinosaurs"]},
+      {"kicker": "Cenozoic Era", "name": "Paleogene", "from": 66000000, "to": 23000000, "span": "66–23 million years ago", "visual": "strata", "icon": "leaf", "points": ["Mammals diversify into the empty niches", "Early primates and the first whale ancestors evolve"]},
+      {"kicker": "Quaternary", "name": "Pleistocene", "from": 2580000, "to": 11700, "span": "2.6 million – 11,700 years ago", "visual": "terrain", "icon": "mountain", "points": ["Repeated ice ages bury northern continents in ice", "20,000 years ago the sea was about 120 m lower"]},
+      {"kicker": "Quaternary", "name": "Holocene", "from": 11700, "to": 0, "span": "11,700 years ago – today", "visual": "icon", "icon": "leaf", "points": ["The climate warms and settles after the last ice age", "Farming begins in the Fertile Crescent"]}
+    ]
+  }
+}

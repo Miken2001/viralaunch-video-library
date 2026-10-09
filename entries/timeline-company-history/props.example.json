@@ -1,0 +1,23 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Playbook", "tagline": "Company stories in five minutes", "cta": "Read more"}},
+  "scenes": [
+    {"text": "How a playing-card maker from Kyoto became one of the biggest names in games.", "durationSeconds": 4},
+    {"text": "In 1889, Fusajiro Yamauchi founded Nintendo Koppai in Kyoto to make hanafuda playing cards.", "durationSeconds": 5},
+    {"text": "In July 1983 came the Family Computer. Two years later it reached America as the NES.", "durationSeconds": 5},
+    {"text": "In 1989 the Game Boy arrived. With the Game Boy Color, it sold over one hundred and eighteen million units.", "durationSeconds": 6},
+    {"text": "In 2006, the Wii and its motion controls brought a whole new audience to video games.", "durationSeconds": 5},
+    {"text": "And in 2017, the Switch turned a home console into one you can carry.", "durationSeconds": 5}
+  ],
+  "props": {
+    "company": "Nintendo",
+    "title": "From playing cards to *Switch*",
+    "milestones": [
+      {"year": 1889, "date": "September 23, 1889", "tag": "Founded", "headline": "Nintendo Koppai", "detail": "Fusajiro Yamauchi opens a shop in Kyoto making hanafuda playing cards.", "card": "document", "icon": "building"},
+      {"year": 1983, "date": "July 15, 1983", "tag": "Launched", "headline": "Family Computer", "detail": "The Famicom goes on sale in Japan, and reaches North America as the NES in 1985.", "card": "product", "icon": "chip"},
+      {"year": 1989, "date": "April 21, 1989", "tag": "Record", "headline": "Game Boy", "detail": "A handheld with swappable cartridges, later joined by the Game Boy Color.", "card": "stat", "icon": "chart", "stat": {"value": 118.69, "decimals": 2, "unit": "M", "label": "Game Boy + Game Boy Color units sold"}},
+      {"year": 2006, "date": "November 19, 2006", "tag": "Launched", "headline": "Wii", "detail": "Motion controls bring families and first-time players to video games.", "card": "product", "icon": "ball", "stamp": "101M sold"},
+      {"year": 2017, "date": "March 3, 2017", "tag": "Launched", "headline": "Nintendo Switch", "detail": "A hybrid console that plays on the TV and in your hands.", "card": "product", "icon": "phone"}
+    ],
+    "palette": "boardroom"
+  }
+}

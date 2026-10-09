@@ -1,0 +1,58 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Loadscreen Digest", "tagline": "Game news, every morning", "cta": "Subscribe"}},
+  "scenes": [
+    {"text": "November 2004: four releases that changed gaming, in one month.", "durationSeconds": 4},
+    {"text": "On November ninth, Halo 2 arrived on Xbox and took in one hundred twenty-five million dollars on day one.", "durationSeconds": 6},
+    {"text": "A week later, Half-Life 2 hit PC with physics puzzles, and it needed Steam to play.", "durationSeconds": 5.5},
+    {"text": "On November twenty-first, the Nintendo DS launched in North America with two screens, for one forty-nine ninety-nine.", "durationSeconds": 6},
+    {"text": "Two days later came World of Warcraft, which would peak at twelve million subscribers.", "durationSeconds": 8}
+  ],
+  "props": {
+    "title": "The month gaming changed",
+    "period": "November 2004",
+    "stories": [
+      {
+        "headline": "Halo 2 launches on Xbox",
+        "category": "Console game",
+        "date": "Nov 9, 2004",
+        "takeaway": "Matchmaking and parties made online play easy on Xbox Live.",
+        "points": ["Developed by Bungie, published by Microsoft", "Introduced dual-wielding weapons", "Campaign adds the Arbiter as a playable lead"],
+        "icon": "target",
+        "figure": {"value": 125, "prefix": "$", "unit": "M", "label": "first-day sales, US & Canada"},
+        "source": "Source: Microsoft, Nov 2004"
+      },
+      {
+        "headline": "Half-Life 2 arrives on PC",
+        "category": "PC game",
+        "date": "Nov 16, 2004",
+        "takeaway": "Physics became gameplay, and Steam became a requirement.",
+        "points": ["Built on Valve's Source engine", "Gravity Gun turns objects into tools", "Required Steam activation to play"],
+        "icon": "atom",
+        "figure": {"value": 96, "label": "Metacritic score (PC)"},
+        "source": "Source: Valve; Metacritic"
+      },
+      {
+        "headline": "Nintendo DS launches",
+        "category": "Hardware",
+        "date": "Nov 21, 2004",
+        "takeaway": "A handheld with two screens, one of them a touchscreen.",
+        "points": ["North American launch", "Plays Game Boy Advance cartridges", "Built-in microphone"],
+        "icon": "chip",
+        "figure": {"value": 149.99, "prefix": "$", "decimals": 2, "label": "US launch price"},
+        "source": "Source: Nintendo of America"
+      },
+      {
+        "headline": "World of Warcraft goes live",
+        "category": "MMO",
+        "date": "Nov 23, 2004",
+        "takeaway": "It went on to become the most-subscribed MMORPG ever.",
+        "points": ["Launched in North America, Australia and NZ", "Monthly subscription model"],
+        "icon": "globe",
+        "figure": {"value": 12, "unit": "M", "label": "peak subscribers (2010)"},
+        "source": "Source: Blizzard, Oct 2010"
+      }
+    ],
+    "palette": "midnight",
+    "showCaptions": true
+  }
+}

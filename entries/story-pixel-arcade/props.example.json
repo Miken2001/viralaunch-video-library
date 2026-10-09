@@ -1,0 +1,24 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "StarQuest Kids", "tagline": "Science you can play", "cta": "Start learning"}},
+  "scenes": [
+    {"text": "Press start on the real mission that put people on the Moon: Apollo 11.", "durationSeconds": 4},
+    {"text": "July 16, 1969. A Saturn V rocket launches three astronauts from Florida.", "durationSeconds": 5},
+    {"text": "For about three days, the crew coasts across space toward the Moon.", "durationSeconds": 5},
+    {"text": "Alarms flash and fuel runs low, but the lander Eagle touches down on July 20.", "durationSeconds": 6},
+    {"text": "Four days later, the capsule splashes down safely in the Pacific Ocean.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "Apollo *11*",
+    "hero": "astronaut",
+    "lives": 3,
+    "ending": "MISSION COMPLETE",
+    "palette": "nebula",
+    "showCaptions": true,
+    "levels": [
+      {"name": "Liftoff", "text": "A Saturn V rocket lifts off from Kennedy Space Center, Florida, with three astronauts.", "world": "city", "hazard": "block", "item": "coin"},
+      {"name": "To the Moon", "text": "The crew travels about 384,000 km to reach the Moon in roughly three days.", "world": "space", "item": "star"},
+      {"name": "The Eagle Lands", "text": "Program alarms and low fuel, yet Eagle lands in the Sea of Tranquility on July 20.", "world": "space", "item": "gem", "hit": true},
+      {"name": "Splashdown", "text": "On July 24, 1969 the Columbia capsule splashes down in the Pacific Ocean.", "world": "ocean", "item": "coin"}
+    ]
+  }
+}

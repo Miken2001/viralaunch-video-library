@@ -1,0 +1,24 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Gallery Notes", "tagline": "Short stories from art history", "cta": "Follow for more"}},
+  "scenes": [
+    {"text": "In many creation myths the world begins as water. In Egypt it was Nun, the dark primeval ocean.", "durationSeconds": 6},
+    {"text": "Hokusai's Great Wave off Kanagawa, a woodblock print from around 1831, sets fishing boats under a towering sea, with Mount Fuji small behind.", "durationSeconds": 7, "asset": "samples/great-wave.jpg"},
+    {"text": "Early Christians used the fish as a sign. In Greek, ichthys reads as an acronym for Jesus Christ, Son of God, Saviour.", "durationSeconds": 7},
+    {"text": "In Ravenna, the fifth-century Mausoleum of Galla Placidia has a deep blue vault set with gold stars.", "durationSeconds": 6},
+    {"text": "Byzantine artists sealed gold leaf inside glass tiles, so halos glowed in candlelight.", "durationSeconds": 6}
+  ],
+  "props": {
+    "title": "Water, Faith and Light",
+    "panels": [
+      {"label": "The First Waters", "note": "Nun, Egyptian creation myth", "motif": "waves"},
+      {"label": "The Great Wave", "note": "Katsushika Hokusai, c. 1831", "motif": "waves"},
+      {"label": "Ichthys", "note": "An early Christian sign", "motif": "fish"},
+      {"label": "A Vault of Stars", "note": "Galla Placidia, Ravenna, 5th century", "motif": "star"},
+      {"label": "The Golden Halo", "note": "Gold leaf sealed in glass tesserae", "motif": "halo"}
+    ],
+    "palette": "byzantine",
+    "tiles": "medium",
+    "assembly": "mixed",
+    "showCaptions": true
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "documentary-mosaic-reveal",
+  "name": "Mosaic Reveal Documentary",
+  "version": "1.0.0",
+  "summary": "Art-history documentary: glass and gold tesserae fly in and click into place to build each scene's image or a drawn motif, with a museum label per scene. For myths, sacred symbols, religious art and art history.",
+  "genres": [
+    "documentary",
+    "explainer"
+  ],
+  "domains": [
+    "religion-myth",
+    "history",
+    "culture-entertainment"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "dark",
+  "lookPreset": "documentary",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "particles",
+    "kinetic-type",
+    "captions-voiceover",
+    "transitions"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 180
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "med",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/LCSlates/status/2102503027340988559",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-lcslates-988559",
+      "author": "LCSlates"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": []
+}

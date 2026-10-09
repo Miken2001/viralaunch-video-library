@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "documentary-archival-street",
+  "name": "Archival Street Documentary",
+  "version": "1.0.0",
+  "summary": "Period documentary: the camera travels up an old street (scene photos or a drawn one-point-perspective street) under a film grade, with typed archive date slips, film strip and projector wear. For any historical place or event.",
+  "genres": [
+    "documentary",
+    "timeline"
+  ],
+  "domains": [
+    "history",
+    "geography",
+    "culture-entertainment",
+    "tech",
+    "business"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "dark",
+  "lookPreset": "documentary",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "camera-motion",
+    "svg-illustration",
+    "captions-voiceover",
+    "transitions",
+    "kinetic-type"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 180
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "med",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/alexalbert__/status/2102466523164274839",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-alexalbert__-274839",
+      "author": "alexalbert__"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": []
+}

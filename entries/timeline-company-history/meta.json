@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline-company-history",
+  "name": "Company History Timeline",
+  "version": "1.0.0",
+  "summary": "Company or product history, milestone by milestone: an odometer year badge, a date chip and one card per milestone (founding document, spotlit product shot, growth stat or parent-company chart) over a travelling year rail.",
+  "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+  ],
+  "domains": [
+    "business",
+    "tech",
+    "history",
+    "finance",
+    "education"
+  ],
+  "roles": [
+    "context",
+    "evidence",
+    "explanation"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "svg-illustration",
+    "camera-motion",
+    "captions-voiceover",
+    "transitions"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 12,
+    "max": 150
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/aakashbuildsAI/status/2104141972135121079",
+      "author": "aakashbuildsAI",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-aakashbuildsai-121079"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

@@ -9,6 +9,11 @@
     "poster": "data-story-bars.jpg",
     "sha256": "69a1b00ed8b41f1ccd1d36d48474f5c09821d171a8f4fc0b8bd07760327742db"
   },
+  "documentary-archival-street": {
+    "file": "documentary-archival-street.mp4",
+    "poster": "documentary-archival-street.jpg",
+    "sha256": "9bfa369ed7c27471dd08204aa1a3ef55d50ace7fd9983d0b3445bae8053ab9bd"
+  },
   "explainer-steps-diagram": {
     "file": "explainer-steps-diagram.mp4",
     "poster": "explainer-steps-diagram.jpg",
@@ -28,6 +33,11 @@
     "file": "news-headline-highlight.mp4",
     "poster": "news-headline-highlight.jpg",
     "sha256": "bd586f2f9762893505d20197e3283d1c252e9008bf68a55ab9fa03ff736d09bf"
+  },
+  "news-roundup-cards": {
+    "file": "news-roundup-cards.mp4",
+    "poster": "news-roundup-cards.jpg",
+    "sha256": "b5807eb952da8f0b581e541f2fa9dd10332ad90dbbc39f29819bfe1745edb24d"
   },
   "quote-kinetic-serif": {
     "file": "quote-kinetic-serif.mp4",
