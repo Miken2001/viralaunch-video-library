@@ -16,6 +16,11 @@ type Pick = {inspirationId: string; entryId: string; direction: string; target: 
 
 const args = process.argv.slice(2);
 const size = args.includes('--size') ? Number(args[args.indexOf('--size') + 1]) : 10;
+// --source skillry|awesome|remotion limits the batch to one list. Without it, two picks in
+// three come from the Skillry list (better reference videos), the rest from the other two.
+const SOURCES: Record<string, string> = {skillry: 'awesome-opus5-5-videos', awesome: 'awesome-opus-5.5-video-prompts', remotion: 'remotion-prompts'};
+const source = args.includes('--source') ? args[args.indexOf('--source') + 1] : undefined;
+if (source && !SOURCES[source]) throw new Error(`--source must be one of ${Object.keys(SOURCES).join(', ')}`);
 const coreDir = args.includes('--core') ? args[args.indexOf('--core') + 1] : path.join(root, '..', 'viralaunch-local', 'packages', 'remotion', 'library', 'entries');
 const batchesDir = path.join(root, 'batches');
 mkdirSync(batchesDir, {recursive: true});
@@ -68,11 +73,14 @@ const usable = (r: Rec) => !(r.inputs ?? []).some(i => ['reference-video', 'foot
 const picks: Pick[] = [];
 const takenTitles = planned.map(p => records.find(r => r.id === p.inspirationId)?.title ?? '');
 const existingIds = new Set([...entryIds(), ...planned.map(p => p.entryId)]);
+const isSkillry = (r: Rec) => r.collection === SOURCES.skillry;
 for (let n = 0; n < size; n++) {
+  const wanted = (r: Rec) => (source ? r.collection === SOURCES[source] : isSkillry(r) === n % 3 < 2);
   // The thinnest target cell: favour uncovered domains, then uncovered genres.
   let best: {score: number; rec: Rec; domain: string; genre: string} | undefined;
   for (const rec of records) {
-    if (used.has(rec.id) || !usable(rec) || takenTitles.some(t => similar(t, rec.title))) continue;
+    // Skillry records carry a generic label, not a title, so title similarity says nothing.
+    if (used.has(rec.id) || !wanted(rec) || !usable(rec) || (!isSkillry(rec) && takenTitles.some(t => similar(t, rec.title)))) continue;
     const recDomains = [...new Set([...guessDomains(`${rec.title} ${rec.description}`), ...rec.domains.filter(d => d !== 'generic')])];
     // A marketing record can be re-aimed at any subject (its visual idea is what we reuse);
     // anything else stays on what it is actually about.
@@ -92,9 +100,11 @@ for (let n = 0; n < size; n++) {
   if (!best) break;
   const {rec, domain, genre} = best;
   used.add(rec.id);
-  takenTitles.push(rec.title);
+  if (!isSkillry(rec)) takenTitles.push(rec.title);
   bump(`${domain}|${genre}`), bump(`d:${domain}`), bump(`g:${genre}`);
   let entryId = `${genre.replace(/-(narrative|kinetic|recap|story|journey)$/, '')}-${rec.title.toLowerCase().replace(/[^a-z0-9 ]/g, '').split(/\s+/).filter(w => w.length > 2 && !['the', 'and', 'with', 'for', 'video', 'claude', 'opus'].includes(w)).slice(0, 2).join('-')}`.replace(/-+$/, '').slice(0, 40);
+  // Placeholder for a Skillry pick: rename it when reviewing the batch file.
+  if (isSkillry(rec)) entryId = `${genre.replace(/-(narrative|kinetic|recap|story|journey)$/, '')}-${domain}-${rec.id.split('-').pop()}`;
   for (let i = 2; existingIds.has(entryId); i++) entryId = `${entryId.replace(/-\d+$/, '')}-${i}`;
   existingIds.add(entryId);
   const direction = `Primary subject domain: ${domain}. Genre: ${genre}. ${MARKETING.has(genre) ? 'A product/brand video template (native placement).' : `Make it a template for ${domain} ${genre} content; reuse the inspiration's visual idea, not its product subject.`} Must work with narration and as one segment of a multi-template video.`;

@@ -3,6 +3,8 @@
  * Each record = authored meta + generated fields: propsSchema (JSON Schema of the entry's
  * zod Props), content hash + file list (what ViraLaunch verifies after fetching), and
  * preview info. No timestamps, so `--check` can prove the committed index is current.
+ * Also rewrites the README preview gallery (posters and videos are release assets, so the
+ * repository itself stays free of media).
  * Usage: pnpm index [--check]
  */
 import {existsSync, readFileSync, writeFileSync, mkdirSync} from 'node:fs';
@@ -49,6 +51,25 @@ const outputs: Record<string, unknown> = {
 const check = process.argv.includes('--check');
 mkdirSync(path.join(root, 'index'), {recursive: true});
 let stale = 0;
+
+// README gallery: one poster per previewed entry, linking to its MP4.
+const GALLERY = /(<!-- gallery:start -->)[\s\S]*?(<!-- gallery:end -->)/;
+const COLUMNS = 4;
+const assetUrl = (file: string) => config.previewBase.replace('{repo}', config.repo).replace('{release}', config.previewRelease).replace('{file}', file);
+const shown = entries.filter(e => e.preview) as Array<{id: string; preview: {file: string; poster: string}}>;
+const cell = (e: (typeof shown)[number]) => `<td width="${100 / COLUMNS}%" align="center" valign="top"><a href="${assetUrl(e.preview.file)}"><img src="${assetUrl(e.preview.poster)}" alt="${e.id} preview" width="100%"></a><br><a href="entries/${e.id}"><code>${e.id}</code></a></td>`;
+const rows = Array.from({length: Math.ceil(shown.length / COLUMNS)}, (_, r) => `<tr>${shown.slice(r * COLUMNS, (r + 1) * COLUMNS).map(cell).join('')}</tr>`);
+const readmeFile = path.join(root, 'README.md');
+const readme = readFileSync(readmeFile, 'utf8');
+if (GALLERY.test(readme)) {
+  const next = readme.replace(GALLERY, (_, a, b) => `${a}\n<table>\n${rows.join('\n')}\n</table>\n${b}`);
+  if (next !== readme) {
+    if (check) {
+      stale++;
+      console.error('stale: README.md gallery');
+    } else writeFileSync(readmeFile, next);
+  }
+}
 for (const [file, value] of Object.entries(outputs)) {
   const target = path.join(root, 'index', file);
   const text = JSON.stringify(value, null, 1) + '\n';

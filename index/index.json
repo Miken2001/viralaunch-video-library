@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 10,
+ "count": 16,
  "entries": [
   {
    "schemaVersion": 1,
@@ -404,6 +404,397 @@
     "poster": "data-story-bars.jpg",
     "sha256": "69a1b00ed8b41f1ccd1d36d48474f5c09821d171a8f4fc0b8bd07760327742db",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/data-story-bars.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "documentary-archival-street",
+   "name": "Archival Street Documentary",
+   "version": "1.0.0",
+   "summary": "Period documentary: the camera travels up an old street (scene photos or a drawn one-point-perspective street) under a film grade, with typed archive date slips, film strip and projector wear. For any historical place or event.",
+   "genres": [
+    "documentary",
+    "timeline"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "culture-entertainment",
+    "tech",
+    "business"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "dark",
+   "lookPreset": "documentary",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "camera-motion",
+    "svg-illustration",
+    "captions-voiceover",
+    "transitions",
+    "kinetic-type"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 180
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "med",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/alexalbert__/status/2102466523164274839",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-alexalbert__-274839",
+     "author": "alexalbert__"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [],
+   "sha256": "bde949f3c971f453561b2513d14b2a05f371336dabb6d4be6d9acbe8cf15b2f4",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "f67c6b052d4f0578e158f5510e34d9e0270a78b716553fbed7140057df647b7e",
+     "bytes": 2994
+    },
+    {
+     "path": "meta.json",
+     "sha256": "07a992facb7c7b07b1722d30a0083194960d2d5deca76002c15d3f3fcc6316cd",
+     "bytes": 1548
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "f21a5163bea60300d2c8a227a217801d0336f0060dacfd0fadd34145e485e60b",
+     "bytes": 1094
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "1d1b0064b15a0f5e0fdf37e63caedf76a9572479adef9330af74ffebaffe8f0d",
+     "bytes": 31885
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "56f149e561f57b72e067886ecc8e28870319745fc21b35ab3a5f209b542b1342",
+     "bytes": 1998
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Opening title card, a few words."
+     },
+     "place": {
+      "default": "",
+      "description": "City or place name, shown small in capitals.",
+      "type": "string",
+      "maxLength": 40
+     },
+     "plates": {
+      "default": [],
+      "description": "One {date, label} per narration scene, in order.",
+      "maxItems": 60,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "date": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 32,
+         "description": "Date stamp for this scene: a day, a year or an era (\"c. 1890\")."
+        },
+        "label": {
+         "default": "",
+         "description": "Short line under the date: the place or what the viewer sees.",
+         "type": "string",
+         "maxLength": 70
+        }
+       },
+       "required": [
+        "date"
+       ]
+      }
+     },
+     "grade": {
+      "default": "silver",
+      "description": "Period grade: silver (black and white), sepia, cyanotype (blue) or amber (tinted film).",
+      "type": "string",
+      "enum": [
+       "silver",
+       "sepia",
+       "cyanotype",
+       "amber"
+      ]
+     },
+     "street": {
+      "default": "tramway",
+      "description": "Drawn street for scenes with no image: tramway (rails, wires, clock tower), boulevard (wide, trees, dome) or lane (narrow, lanterns, arch).",
+      "type": "string",
+      "enum": [
+       "tramway",
+       "boulevard",
+       "lane"
+      ]
+     },
+     "frame": {
+      "default": "film",
+      "description": "Picture border: film (sprocket strip), print (mounted photo) or none.",
+      "type": "string",
+      "enum": [
+       "film",
+       "print",
+       "none"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word captions of the narration.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title"
+    ]
+   },
+   "preview": {
+    "file": "documentary-archival-street.mp4",
+    "poster": "documentary-archival-street.jpg",
+    "sha256": "9bfa369ed7c27471dd08204aa1a3ef55d50ace7fd9983d0b3445bae8053ab9bd",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/documentary-archival-street.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "documentary-mosaic-reveal",
+   "name": "Mosaic Reveal Documentary",
+   "version": "1.0.0",
+   "summary": "Art-history documentary: glass and gold tesserae fly in and click into place to build each scene's image or a drawn motif, with a museum label per scene. For myths, sacred symbols, religious art and art history.",
+   "genres": [
+    "documentary",
+    "explainer"
+   ],
+   "domains": [
+    "religion-myth",
+    "history",
+    "culture-entertainment"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "dark",
+   "lookPreset": "documentary",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "particles",
+    "kinetic-type",
+    "captions-voiceover",
+    "transitions"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 180
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "med",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/LCSlates/status/2102503027340988559",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-lcslates-988559",
+     "author": "LCSlates"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [],
+   "sha256": "a99e784f592e376da94e4d1c9acf0da2a273ce237610365a3384594b3340d87b",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "20425514cf421e7cd3395670195d9e307fe41a081d33fc31d8e6564dcb474550",
+     "bytes": 3470
+    },
+    {
+     "path": "meta.json",
+     "sha256": "e6d8cb15b9723b1141bc087c2fb9442af74aaceb4a373cd7e9d032fc46df350a",
+     "bytes": 1508
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "afd1e1440b11904a84af63aa3535a9513c50b31e8cdd4db96535d485c5179fec",
+     "bytes": 1586
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "dae9af3d6c9537fe1a5a4ac90452c9541634b1feaa15fc52f4731048110a1848",
+     "bytes": 30629
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "b691611496496ac8f1844111ba9909c20794d78195310fdf7a9904679a741ece",
+     "bytes": 2272
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "default": "",
+      "description": "Gallery title shown at the top, a few words. Empty to hide.",
+      "type": "string",
+      "maxLength": 60
+     },
+     "panels": {
+      "minItems": 1,
+      "maxItems": 60,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 48,
+         "description": "Museum-label title of this scene, 1-6 words."
+        },
+        "note": {
+         "default": "",
+         "description": "One short line under the label: place, date or meaning.",
+         "type": "string",
+         "maxLength": 60
+        },
+        "motif": {
+         "default": "star",
+         "description": "Drawn mosaic for scenes without an image: sun, moon, star, tree, bird, fish, waves, halo (figure with a halo), eye, lotus or rosette.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "moon",
+          "star",
+          "tree",
+          "bird",
+          "fish",
+          "waves",
+          "halo",
+          "eye",
+          "lotus",
+          "rosette"
+         ]
+        }
+       },
+       "required": [
+        "label"
+       ]
+      },
+      "description": "One {label, note, motif} per narration scene, in order."
+     },
+     "palette": {
+      "default": "byzantine",
+      "description": "byzantine (gold ground, lapis, red), lapis (night blue with gold stars), roman (marble, terracotta, black) or cathedral (stained glass jewel tones).",
+      "type": "string",
+      "enum": [
+       "byzantine",
+       "lapis",
+       "roman",
+       "cathedral"
+      ]
+     },
+     "tiles": {
+      "default": "medium",
+      "description": "Tile size: fine (detailed), medium or bold (big chunky tiles).",
+      "type": "string",
+      "enum": [
+       "fine",
+       "medium",
+       "bold"
+      ]
+     },
+     "assembly": {
+      "default": "mixed",
+      "description": "How tiles arrive: swirl (spiral in), sweep (stream from a corner), rise (from below), scatter (settle from everywhere) or mixed (changes every scene).",
+      "type": "string",
+      "enum": [
+       "mixed",
+       "swirl",
+       "sweep",
+       "rise",
+       "scatter"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word captions of the narration.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "panels"
+    ]
+   },
+   "preview": {
+    "file": "documentary-mosaic-reveal.mp4",
+    "poster": "documentary-mosaic-reveal.jpg",
+    "sha256": "bddb571c9919e7e251d297bc3ec9391686dfded0fde24e2b01addb619347b0b3",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/documentary-mosaic-reveal.mp4"
    }
   },
   {
@@ -1117,6 +1508,301 @@
   },
   {
    "schemaVersion": 1,
+   "id": "news-roundup-cards",
+   "name": "News Roundup Cards",
+   "version": "1.0.0",
+   "summary": "A fast roundup deck: one broadcast-style card per story with category and date chips, a big headline, a one-line takeaway, numbered points and a counting figure, swapped by an accent wipe. Releases, launches, any news beat.",
+   "genres": [
+    "news-recap",
+    "listicle"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "tech",
+    "sports",
+    "business",
+    "science"
+   ],
+   "roles": [
+    "context",
+    "evidence",
+    "hook"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "transitions",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/gigabit_million/status/2104068536041959719",
+     "author": "gigabit_million",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-gigabit_million-959719"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "4bc38788590429a1ea6e958bc08fbd66c2ea136dd3720cf990f248e099427ea9",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "bbc1e07e764bb0f655d58a7af2a1bbbb3d719a281c500140f1044cde937f48cd",
+     "bytes": 2464
+    },
+    {
+     "path": "meta.json",
+     "sha256": "0e5fc1d9ee3d9a0a86b2005f12dc29f5e592941517a06c6155e2c91c9d0aa414",
+     "bytes": 1502
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "df86d62b6bbb080618946d995fc6fe3f3ad07066070897cd46fa04ff0116df83",
+     "bytes": 2950
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "62a448d35518fdc853380a6b10fcf684b64aa96abe8ca51d85ca3e09311dd585",
+     "bytes": 24083
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "e736d115e0856a6428a0ccc2321d3be7346becaa5a196239da8bfac9e386dde6",
+     "bytes": 2940
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 40,
+      "description": "Roundup title, e.g. \"This week in film\" (at most ~6 words)."
+     },
+     "period": {
+      "default": "",
+      "description": "Period covered, e.g. \"Sep 25-26\" or \"November 2004\". Empty to hide.",
+      "type": "string",
+      "maxLength": 28
+     },
+     "stories": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "headline": {
+         "type": "string",
+         "minLength": 2,
+         "maxLength": 48,
+         "description": "Headline of this story, at most ~7 words (a title, product or event name works)."
+        },
+        "category": {
+         "type": "string",
+         "minLength": 2,
+         "maxLength": 18,
+         "description": "Short category chip, e.g. \"FILM\", \"PC GAME\", \"STREAMING\", \"HARDWARE\"."
+        },
+        "date": {
+         "default": "",
+         "description": "Release or event date as display text, e.g. \"Nov 9, 2004\". Empty to hide.",
+         "type": "string",
+         "maxLength": 20
+        },
+        "takeaway": {
+         "type": "string",
+         "minLength": 5,
+         "maxLength": 100,
+         "description": "One sentence: the single thing to remember about this story."
+        },
+        "points": {
+         "default": [],
+         "description": "0-3 short supporting facts, each under 9 words.",
+         "maxItems": 3,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 56
+         }
+        },
+        "icon": {
+         "default": "spark",
+         "description": "Icon for the side panel (used when the scene has no image).",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "figure": {
+         "description": "Optional key number for the story. Only real, checkable numbers.",
+         "type": "object",
+         "properties": {
+          "value": {
+           "type": "number",
+           "description": "The number, e.g. 125."
+          },
+          "prefix": {
+           "default": "",
+           "description": "Shown before the number, e.g. \"$\".",
+           "type": "string",
+           "maxLength": 3
+          },
+          "unit": {
+           "default": "",
+           "description": "Shown after the number, e.g. \"M\" or \"%\".",
+           "type": "string",
+           "maxLength": 8
+          },
+          "decimals": {
+           "default": 0,
+           "type": "integer",
+           "minimum": 0,
+           "maximum": 2
+          },
+          "label": {
+           "default": "",
+           "description": "What the number measures, e.g. \"first-day sales\".",
+           "type": "string",
+           "maxLength": 40
+          }
+         },
+         "required": [
+          "value"
+         ]
+        },
+        "source": {
+         "default": "",
+         "description": "Where the facts come from, e.g. \"Source: Nintendo\". Empty to hide.",
+         "type": "string",
+         "maxLength": 60
+        }
+       },
+       "required": [
+        "headline",
+        "category",
+        "takeaway"
+       ]
+      },
+      "description": "2-8 stories. Narration: an optional intro scene, then one scene per story."
+     },
+     "palette": {
+      "default": "midnight",
+      "description": "Colour scheme: midnight (navy/cyan), graphite (black/orange), violet (purple/lime) or paper (light).",
+      "type": "string",
+      "enum": [
+       "midnight",
+       "graphite",
+       "violet",
+       "paper"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions under the cards.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "stories"
+    ]
+   },
+   "preview": {
+    "file": "news-roundup-cards.mp4",
+    "poster": "news-roundup-cards.jpg",
+    "sha256": "b5807eb952da8f0b581e541f2fa9dd10332ad90dbbc39f29819bfe1745edb24d",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/news-roundup-cards.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
    "id": "quote-kinetic-serif",
    "name": "Kinetic Quote",
    "version": "1.0.0",
@@ -1548,6 +2234,822 @@
     "poster": "story-chat-thread.jpg",
     "sha256": "532499c504f567f200804db22a90c34b1a5001c126257a3ec6c62022dafd67b0",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-chat-thread.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-pixel-arcade",
+   "name": "Pixel Arcade Story",
+   "version": "1.0.0",
+   "summary": "A 16-bit side-scroller that tells a story as game levels: a pixel hero runs through parallax worlds, jumps hazards and collects coins, with a dialog box per level, score/lives HUD and a stage-clear finale.",
+   "genres": [
+    "story-narrative",
+    "explainer"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "education",
+    "science",
+    "space",
+    "history"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "closer"
+   ],
+   "segmentable": true,
+   "look": "dark",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "captions-voiceover",
+    "transitions",
+    "camera-motion"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/riku720720/status/2102515055116063144",
+     "author": "riku720720",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-riku720720-063144"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "08abcdee13e1d1ddb76e330ef0dc0d99923fb45fe44ddd7b59819e17d6642b6d",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "78b41959d07c929ecf7784b5dfbae79754d7d564a88f1c92e0ab39e95520fed0",
+     "bytes": 2540
+    },
+    {
+     "path": "meta.json",
+     "sha256": "4da58703980067d9c38e1d0f5bfcca87a5a0c7202f73b54ab78fc9b06790d56a",
+     "bytes": 1477
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "a2bc8bb1da3e568865c32b4d96f933f590f2fb3df13dc1f436ecb730182e0132",
+     "bytes": 1580
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "05d88d4c4698afcb250d71f1e373d1e6d31bedba98604263a38f1a65a56a1800",
+     "bytes": 45589
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "2004d15b004f6bdfe5775e93a826abd3f8f224d0441a9ad3897647112215e036",
+     "bytes": 2171
+    },
+    {
+     "path": "src/sprites.ts",
+     "sha256": "c92bcfabdd60e0b9ad340a676a9a4d5333b86a8adf74dbaee5c5cc865a00ad8a",
+     "bytes": 3721
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Game title on the start screen, e.g. \"The Water Cycle\". Wrap one word in *asterisks* to highlight it."
+     },
+     "hero": {
+      "default": "runner",
+      "description": "Pixel character: runner (orange critter), astronaut, robot or cat.",
+      "type": "string",
+      "enum": [
+       "runner",
+       "astronaut",
+       "robot",
+       "cat"
+      ]
+     },
+     "levels": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28,
+         "description": "Level title shown in the dialog box, e.g. \"Evaporation\" or \"The Moon Landing\"."
+        },
+        "text": {
+         "default": "",
+         "description": "One short line the level teaches or tells (a fact or a story beat). Shown in the dialog box.",
+         "type": "string",
+         "maxLength": 90
+        },
+        "world": {
+         "default": "space",
+         "description": "Background world the character runs through.",
+         "type": "string",
+         "enum": [
+          "space",
+          "city",
+          "forest",
+          "ocean",
+          "desert",
+          "cave",
+          "sky"
+         ]
+        },
+        "hazard": {
+         "default": "auto",
+         "description": "What the character jumps over. \"auto\" picks one that suits the world.",
+         "type": "string",
+         "enum": [
+          "auto",
+          "meteor",
+          "block",
+          "spike",
+          "bug",
+          "ghost"
+         ]
+        },
+        "item": {
+         "default": "coin",
+         "description": "What the character collects (coin 100, star 250, gem 500, heart 50 points).",
+         "type": "string",
+         "enum": [
+          "coin",
+          "star",
+          "gem",
+          "heart"
+         ]
+        },
+        "hit": {
+         "default": false,
+         "description": "true = the character gets hit once in this level and loses a life (a setback in the story).",
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "name"
+       ]
+      },
+      "description": "2–8 levels in story order; each one usually matches one narration scene."
+     },
+     "lives": {
+      "default": 3,
+      "description": "Hearts the character starts with.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+     },
+     "ending": {
+      "default": "STAGE CLEAR",
+      "description": "Banner on the final screen, e.g. \"STAGE CLEAR\", \"MISSION COMPLETE\", \"GAME OVER\".",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 24
+     },
+     "palette": {
+      "default": "nebula",
+      "description": "nebula = purple space night, gameboy = 4-shade green handheld, sunset = warm pink dusk, arcade = black with neon.",
+      "type": "string",
+      "enum": [
+       "nebula",
+       "gameboy",
+       "sunset",
+       "arcade"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions under the floor.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "levels"
+    ]
+   },
+   "preview": {
+    "file": "story-pixel-arcade.mp4",
+    "poster": "story-pixel-arcade.jpg",
+    "sha256": "6d977db4c798bc1b208639f2af4f5b3ef795dde4002e0f6b4b6de3f76d777b44",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-pixel-arcade.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "timeline-company-history",
+   "name": "Company History Timeline",
+   "version": "1.0.0",
+   "summary": "Company or product history, milestone by milestone: an odometer year badge, a date chip and one card per milestone (founding document, spotlit product shot, growth stat or parent-company chart) over a travelling year rail.",
+   "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+   ],
+   "domains": [
+    "business",
+    "tech",
+    "history",
+    "finance",
+    "education"
+   ],
+   "roles": [
+    "context",
+    "evidence",
+    "explanation"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "svg-illustration",
+    "camera-motion",
+    "captions-voiceover",
+    "transitions"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 12,
+    "max": 150
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/aakashbuildsAI/status/2104141972135121079",
+     "author": "aakashbuildsAI",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-aakashbuildsai-121079"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "8e93ba54bee8ba2d0adf28ce53d1f02e7af151d188481d4220f85edf6d3f1aac",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "5a876a94f0d2a1bbb27ea87a300dc5a843de501e748c39c9ce97f17f6e6e7f6a",
+     "bytes": 4065
+    },
+    {
+     "path": "meta.json",
+     "sha256": "8fe69165fea94491e476cb09261ccf0fc0d0220561c359b0a038a2f722f51c7b",
+     "bytes": 1552
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "95ea953246769d7d0fbf716812ad1820e30174b17f0646013237df7fdacb0576",
+     "bytes": 2272
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "c526baef217b407a0af8a6c002c6299af45e8f76fc009bcc998a38c0bb5aa970",
+     "bytes": 32816
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "25660000928c2c586403b0d71eca7ba45fa13c1f9ba5b27048b08dfb9c9e99ee",
+     "bytes": 3117
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "company": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 24,
+      "description": "Company or product name shown in the year badge, e.g. \"Nintendo\"."
+     },
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Opening title, e.g. \"From playing cards to *Switch*\". Wrap one word in *asterisks* to colour it."
+     },
+     "milestones": {
+      "minItems": 3,
+      "maxItems": 10,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "year": {
+         "type": "integer",
+         "minimum": -9007199254740991,
+         "maximum": 9007199254740991,
+         "description": "Year of the milestone, e.g. 1998. The year badge rolls to it and the rail travels to it."
+        },
+        "date": {
+         "default": "",
+         "description": "Exact date shown on the date chip, e.g. \"September 4, 1998\". Leave empty to show just the year.",
+         "type": "string",
+         "maxLength": 24
+        },
+        "tag": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 18,
+         "description": "One or two words saying what happened: \"Founded\", \"Launched\", \"Acquired\", \"IPO\", \"Renamed\", \"Record\"."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 40,
+         "description": "Short title of the milestone, usually a name: \"Google Inc.\", \"The iPhone\", \"Alphabet\"."
+        },
+        "detail": {
+         "default": "",
+         "description": "One plain sentence explaining the milestone.",
+         "type": "string",
+         "maxLength": 110
+        },
+        "card": {
+         "default": "document",
+         "description": "How the milestone is shown: document = founding certificate / press-release paper; product = spotlit product shot or logo (uses the image of the narration scene playing at that moment, else the icon); stat = big growth number from `stat`; branch = parent box splitting into `branches` (mergers, spin-offs, new parent company).",
+         "type": "string",
+         "enum": [
+          "document",
+          "product",
+          "stat",
+          "branch"
+         ]
+        },
+        "stat": {
+         "description": "Required when card is \"stat\". Ignored otherwise.",
+         "type": "object",
+         "properties": {
+          "value": {
+           "type": "number",
+           "description": "The number that counts up, e.g. 118.69 or 1000000."
+          },
+          "decimals": {
+           "default": 0,
+           "description": "Decimals shown while counting (0–2).",
+           "type": "integer",
+           "minimum": 0,
+           "maximum": 2
+          },
+          "prefix": {
+           "default": "",
+           "description": "Text before the number, e.g. \"$\". Usually empty.",
+           "type": "string",
+           "maxLength": 3
+          },
+          "unit": {
+           "default": "",
+           "description": "Text after the number, e.g. \"M\", \"bn\", \"%\", \"stores\".",
+           "type": "string",
+           "maxLength": 14
+          },
+          "label": {
+           "default": "",
+           "description": "What the number measures, e.g. \"units sold worldwide\".",
+           "type": "string",
+           "maxLength": 60
+          }
+         },
+         "required": [
+          "value"
+         ]
+        },
+        "branches": {
+         "default": [],
+         "description": "2–3 names under the headline when card is \"branch\", e.g. [\"Google\", \"Other Bets\"].",
+         "maxItems": 3,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+         }
+        },
+        "stamp": {
+         "default": "",
+         "description": "Optional rubber stamp slammed on the card, e.g. \"PUBLIC\", \"SOLD OUT\", \"ANTITRUST\". Usually empty.",
+         "type": "string",
+         "maxLength": 14
+        },
+        "icon": {
+         "default": "building",
+         "description": "Line icon used on document seals and for product cards with no image (e.g. building, rocket, phone, chip, cart, money).",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "year",
+        "tag",
+        "headline"
+       ]
+      },
+      "description": "3–10 milestones in chronological order, oldest first."
+     },
+     "palette": {
+      "default": "studio",
+      "description": "studio = clean light grey with soft colour, boardroom = deep navy night, heritage = warm paper and ink.",
+      "type": "string",
+      "enum": [
+       "studio",
+       "boardroom",
+       "heritage"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word-synced narration captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "company",
+     "title",
+     "milestones"
+    ]
+   },
+   "preview": {
+    "file": "timeline-company-history.mp4",
+    "poster": "timeline-company-history.jpg",
+    "sha256": "af7bb8f897248692eaa666356d76c3ae16bcca835d06166fee15b3b7c76c014e",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-company-history.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "timeline-deep-time",
+   "name": "Deep-Time Era Ruler",
+   "version": "1.0.0",
+   "summary": "Travels through geological periods, prehistoric ages or dynasties: an era card with a drawn illustration, over a colour-banded era ruler that zooms into each era while a date pin counts through it.",
+   "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+   ],
+   "domains": [
+    "history",
+    "science",
+    "nature",
+    "education",
+    "geography"
+   ],
+   "roles": [
+    "context",
+    "explanation",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "documentary",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 12,
+    "max": 150
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/mellow_neet2000/status/2103487198758834408",
+     "author": "mellow_neet2000",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-mellow_neet2000-834408"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "939a46340822fc44925d215a493fb7d85ccb5c717f7478af3200297f1a1eba2e",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "2aa86cabee72046fc08647d83e082f6a13f0c6c61b2bc6e61e28c0a2ba9d4535",
+     "bytes": 3247
+    },
+    {
+     "path": "meta.json",
+     "sha256": "6a9a91fa1345a30aabc3031e96235c187d55ba14b5ec17d1d1c5f3fa26add547",
+     "bytes": 1464
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "17bba96952277a77303066cacd5480b88886463a1af53e0e6eaa91b96b53a224",
+     "bytes": 2986
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "7994f7319489634eaab9e80ae0f32809aa849b35e7c71b95e8d476732a0474c4",
+     "bytes": 34611
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "ab6d687a04056c2564b13f684460370bd5f79288eab87a4d1ba72081ee289428",
+     "bytes": 2194
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Opening title, e.g. \"From the dinosaurs to the first farmers\". Wrap one word in *asterisks* to colour it."
+     },
+     "axis": {
+      "default": "years-ago",
+      "description": "years-ago = deep time (geology, prehistory) on a logarithmic ruler; calendar = dated history (dynasties, empires) on a linear ruler.",
+      "type": "string",
+      "enum": [
+       "years-ago",
+       "calendar"
+      ]
+     },
+     "eras": {
+      "minItems": 2,
+      "maxItems": 10,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "kicker": {
+         "default": "",
+         "description": "Small label above the name: the larger period or group, e.g. \"Mesozoic Era\", \"Imperial China\". Can be empty.",
+         "type": "string",
+         "maxLength": 32
+        },
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28,
+         "description": "Name of the era, epoch, period or dynasty, e.g. \"Jurassic\", \"Tang dynasty\"."
+        },
+        "from": {
+         "type": "number",
+         "description": "When the era starts. In \"years-ago\" axis: years before present (201000000). In \"calendar\" axis: calendar year, negative for BC (618)."
+        },
+        "to": {
+         "type": "number",
+         "description": "When the era ends, same unit as `from` (0 = today in \"years-ago\" axis)."
+        },
+        "span": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 40,
+         "description": "Readable date range shown under the name, e.g. \"201–145 million years ago\", \"618–907 AD\"."
+        },
+        "points": {
+         "minItems": 1,
+         "maxItems": 3,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+         },
+         "description": "1–3 short facts about the era, revealed one by one as the narration goes."
+        },
+        "visual": {
+         "default": "icon",
+         "description": "Illustration: globe = planet with drifting continents, strata = rock layers with this era highlighted, terrain = landscape cross-section with a water level, icon = a large drawn line icon.",
+         "type": "string",
+         "enum": [
+          "globe",
+          "strata",
+          "terrain",
+          "icon"
+         ]
+        },
+        "icon": {
+         "default": "star",
+         "description": "Line icon used when visual is \"icon\" (e.g. building, flag, book, fire, leaf, mountain).",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "name",
+        "from",
+        "to",
+        "span",
+        "points"
+       ]
+      },
+      "description": "2–10 eras in chronological order, oldest first."
+     },
+     "palette": {
+      "default": "earth",
+      "description": "earth = warm dark brown, abyss = deep teal night, parchment = light paper.",
+      "type": "string",
+      "enum": [
+       "earth",
+       "abyss",
+       "parchment"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word-synced narration captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "eras"
+    ]
+   },
+   "preview": {
+    "file": "timeline-deep-time.mp4",
+    "poster": "timeline-deep-time.jpg",
+    "sha256": "67f94958e6a906b307cb912ce2d542be2dd0890d98de8f57b68136ef1a162c17",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-deep-time.mp4"
    }
   },
   {

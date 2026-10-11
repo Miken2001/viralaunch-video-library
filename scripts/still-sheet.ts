@@ -23,7 +23,7 @@ rmSync(publicDir, {recursive: true, force: true});
 mkdirSync(publicDir, {recursive: true});
 for (const s of example.scenes) if (s.asset) copyFileSync(path.join(root, s.asset), path.join(publicDir, path.basename(s.asset)));
 const bundleDir = path.join(root, '.cache', 'bundles', `still-${id}`);
-const serveUrl = await bundle({outDir: bundleDir, entryPoint: writeEntryRoot(path.join(entriesDir, id), path.join(root, '.cache', 'roots', id)), publicDir, ignoreRegisterRootWarning: true, onProgress: () => {}, webpackOverride: c => ({...c, resolve: {...c.resolve, alias: {...(c.resolve?.alias as object), ...kitAliases()}, modules: [path.join(root, 'node_modules'), 'node_modules']}})});
+const serveUrl = await bundle({outDir: bundleDir, enableCaching: false, entryPoint: writeEntryRoot(path.join(entriesDir, id), path.join(root, '.cache', 'roots', id)), publicDir, ignoreRegisterRootWarning: true, onProgress: () => {}, webpackOverride: c => ({...c, resolve: {...c.resolve, alias: {...(c.resolve?.alias as object), ...kitAliases()}, modules: [path.join(root, 'node_modules'), 'node_modules']}})});
 const inputProps = {media: {...exampleMedia(example, aspect ?? meta.aspects[0]), ...(look ? {look: {preset: look}} : {})}, props: example.props};
 const chromiumOptions = {gl: 'swiftshader' as const};
 const browser = await openBrowser('chrome', {chromiumOptions});

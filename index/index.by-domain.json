@@ -1,42 +1,60 @@
 {
  "tech": [
   "comparison-split",
+  "documentary-archival-street",
   "explainer-steps-diagram",
   "news-headline-highlight",
+  "news-roundup-cards",
+  "timeline-company-history",
   "timeline-eras"
  ],
  "business": [
   "data-story-bars",
+  "documentary-archival-street",
   "explainer-steps-diagram",
   "news-headline-highlight",
+  "news-roundup-cards",
   "quote-kinetic-serif",
-  "story-chat-thread"
+  "story-chat-thread",
+  "timeline-company-history"
  ],
  "history": [
   "comparison-split",
+  "documentary-archival-street",
+  "documentary-mosaic-reveal",
   "listicle-countdown",
   "news-headline-highlight",
   "quote-kinetic-serif",
   "story-chat-thread",
+  "story-pixel-arcade",
+  "timeline-company-history",
+  "timeline-deep-time",
   "timeline-eras"
  ],
  "geography": [
   "comparison-split",
   "data-story-bars",
-  "space-scale-ladder"
+  "documentary-archival-street",
+  "space-scale-ladder",
+  "timeline-deep-time"
  ],
  "science": [
   "data-story-bars",
   "explainer-steps-diagram",
   "news-headline-highlight",
+  "news-roundup-cards",
   "space-scale-ladder",
+  "story-pixel-arcade",
+  "timeline-deep-time",
   "timeline-eras"
  ],
  "space": [
   "space-scale-ladder",
+  "story-pixel-arcade",
   "timeline-eras"
  ],
  "religion-myth": [
+  "documentary-mosaic-reveal",
   "quote-kinetic-serif",
   "timeline-eras"
  ],
@@ -44,31 +62,41 @@
   "comparison-split",
   "data-story-bars",
   "listicle-countdown",
-  "match-recap-scoreboard"
+  "match-recap-scoreboard",
+  "news-roundup-cards"
  ],
  "finance": [
   "comparison-split",
   "data-story-bars",
-  "news-headline-highlight"
+  "news-headline-highlight",
+  "timeline-company-history"
  ],
  "health": [
   "explainer-steps-diagram"
  ],
  "culture-entertainment": [
+  "documentary-archival-street",
+  "documentary-mosaic-reveal",
   "listicle-countdown",
+  "news-roundup-cards",
   "quote-kinetic-serif",
-  "story-chat-thread"
+  "story-chat-thread",
+  "story-pixel-arcade"
  ],
  "nature": [
   "listicle-countdown",
-  "space-scale-ladder"
+  "space-scale-ladder",
+  "timeline-deep-time"
  ],
  "education": [
   "explainer-steps-diagram",
   "listicle-countdown",
   "quote-kinetic-serif",
   "space-scale-ladder",
-  "story-chat-thread"
+  "story-chat-thread",
+  "story-pixel-arcade",
+  "timeline-company-history",
+  "timeline-deep-time"
  ],
  "generic": [
   "comparison-split",

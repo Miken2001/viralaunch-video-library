@@ -8,7 +8,7 @@
 import {spawn, spawnSync} from 'node:child_process';
 import {createWriteStream, existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
-import {readJson, recordPreview, root} from './lib';
+import {readJson, readPreviewManifest, recordPreview, root} from './lib';
 
 type Pick = {inspirationId: string; entryId: string; direction: string};
 const nn = String(process.argv[2] ?? '').padStart(2, '0');
@@ -20,7 +20,7 @@ mkdirSync(logs, {recursive: true});
 const concurrency = Number(process.env.BATCH_CONCURRENCY ?? 3);
 const awesome = path.join(root, '.cache', 'awesome');
 
-const valid = (id: string) => existsSync(path.join(root, 'entries', id, 'meta.json')) && spawnSync('npx', ['tsx', 'scripts/validate.ts', id], {cwd: root}).status === 0 && existsSync(path.join(root, 'previews', `${id}.mp4`));
+const valid = (id: string) => existsSync(path.join(root, 'entries', id, 'meta.json')) && spawnSync('npx', ['tsx', 'scripts/validate.ts', id], {cwd: root}).status === 0 && (existsSync(path.join(root, 'previews', `${id}.mp4`)) || id in readPreviewManifest());
 const results: Record<string, {status: 'ok' | 'failed' | 'skipped'; reason?: string; minutes?: number}> = {};
 
 async function run(p: Pick) {
@@ -48,3 +48,5 @@ for (const p of picks) recordPreview(p.entryId);
 writeFileSync(path.join(root, 'batches', `batch-${nn}.result.json`), JSON.stringify(results, null, 2) + '\n');
 const ok = Object.values(results).filter(r => r.status !== 'failed').length;
 console.log(`batch ${nn}: ${ok}/${picks.length} ok`);
+const fresh = picks.filter(p => existsSync(path.join(root, 'previews', `${p.entryId}.mp4`))).flatMap(p => [`previews/${p.entryId}.mp4`, `previews/${p.entryId}.jpg`]);
+if (fresh.length) console.log(`After QA, publish the previews, then free the disk:\n  gh release upload ${readJson<{previewRelease: string}>(path.join(root, 'library.config.json')).previewRelease} ${fresh.join(' ')} --clobber\n  pnpm tidy`);

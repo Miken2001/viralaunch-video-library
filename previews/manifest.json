@@ -14,6 +14,11 @@
     "poster": "documentary-archival-street.jpg",
     "sha256": "9bfa369ed7c27471dd08204aa1a3ef55d50ace7fd9983d0b3445bae8053ab9bd"
   },
+  "documentary-mosaic-reveal": {
+    "file": "documentary-mosaic-reveal.mp4",
+    "poster": "documentary-mosaic-reveal.jpg",
+    "sha256": "bddb571c9919e7e251d297bc3ec9391686dfded0fde24e2b01addb619347b0b3"
+  },
   "explainer-steps-diagram": {
     "file": "explainer-steps-diagram.mp4",
     "poster": "explainer-steps-diagram.jpg",
@@ -53,6 +58,21 @@
     "file": "story-chat-thread.mp4",
     "poster": "story-chat-thread.jpg",
     "sha256": "532499c504f567f200804db22a90c34b1a5001c126257a3ec6c62022dafd67b0"
+  },
+  "story-pixel-arcade": {
+    "file": "story-pixel-arcade.mp4",
+    "poster": "story-pixel-arcade.jpg",
+    "sha256": "6d977db4c798bc1b208639f2af4f5b3ef795dde4002e0f6b4b6de3f76d777b44"
+  },
+  "timeline-company-history": {
+    "file": "timeline-company-history.mp4",
+    "poster": "timeline-company-history.jpg",
+    "sha256": "af7bb8f897248692eaa666356d76c3ae16bcca835d06166fee15b3b7c76c014e"
+  },
+  "timeline-deep-time": {
+    "file": "timeline-deep-time.mp4",
+    "poster": "timeline-deep-time.jpg",
+    "sha256": "67f94958e6a906b307cb912ce2d542be2dd0890d98de8f57b68136ef1a162c17"
   },
   "timeline-eras": {
     "file": "timeline-eras.mp4",

@@ -2,19 +2,29 @@
  "product-launch": [],
  "product-demo": [],
  "explainer": [
+  "documentary-mosaic-reveal",
   "explainer-steps-diagram",
   "news-headline-highlight",
   "space-scale-ladder",
+  "story-pixel-arcade",
+  "timeline-company-history",
+  "timeline-deep-time",
   "timeline-eras"
  ],
  "documentary": [
+  "documentary-archival-street",
+  "documentary-mosaic-reveal",
+  "timeline-company-history",
+  "timeline-deep-time",
   "timeline-eras"
  ],
  "story-narrative": [
-  "story-chat-thread"
+  "story-chat-thread",
+  "story-pixel-arcade"
  ],
  "listicle": [
-  "listicle-countdown"
+  "listicle-countdown",
+  "news-roundup-cards"
  ],
  "data-story": [
   "comparison-split",
@@ -23,7 +33,10 @@
  ],
  "map-journey": [],
  "timeline": [
+  "documentary-archival-street",
   "match-recap-scoreboard",
+  "timeline-company-history",
+  "timeline-deep-time",
   "timeline-eras"
  ],
  "quote-kinetic": [
@@ -42,7 +55,8 @@
  "news-recap": [
   "data-story-bars",
   "match-recap-scoreboard",
-  "news-headline-highlight"
+  "news-headline-highlight",
+  "news-roundup-cards"
  ],
  "meme-reaction": [
   "story-chat-thread"

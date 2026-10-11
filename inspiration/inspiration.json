@@ -2,9 +2,10 @@
  "version": 1,
  "attribution": {
   "awesome-opus-5.5-video-prompts": "Titles and descriptions from \"Awesome Opus 5.5 Video Prompts\" by Li-Evan (https://github.com/Li-Evan/awesome-opus-5.5-video-prompts), CC BY 4.0. Prompts, videos and thumbnails belong to their creators and are not reproduced here; follow each url.",
+  "awesome-opus5-5-videos": "Author handles, post links, categories and tech tags from \"Awesome Opus 5.5 Videos\" by yihui-dev (https://github.com/yihui-dev/awesome-opus5-5-videos, MIT), shown side by side with remakes at https://skillry.dev/ai-videos/opus-5-5. Prompts, videos and thumbnails belong to their creators and are not reproduced here; follow each url.",
   "remotion-prompts": "Titles and author handles from https://www.remotion.dev/prompts. Prompts and videos are not reproduced; follow each url."
  },
- "count": 359,
+ "count": 608,
  "records": [
   {
    "id": "ao-donaldjewkes-587569",
@@ -107,10 +108,8 @@
     "likes": 11725,
     "bookmarks": 19438
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "shape-morph-motion"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-majidmanzarpour-927543",
@@ -174,10 +173,8 @@
     "likes": 1712,
     "bookmarks": 1042
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "documentary-ken-burns"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-deedydas-252537",
@@ -211,10 +208,8 @@
     "likes": 3245,
     "bookmarks": 4699
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "kinetic-launch"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-riku720720-063144",
@@ -245,8 +240,10 @@
     "likes": 1080,
     "bookmarks": 844
    },
-   "hasCode": false,
-   "libraryEntries": []
+   "hasCode": true,
+   "libraryEntries": [
+    "story-pixel-arcade"
+   ]
   },
   {
    "id": "ao-dotey-522564",
@@ -316,8 +313,10 @@
     "likes": 1120,
     "bookmarks": 418
    },
-   "hasCode": false,
-   "libraryEntries": []
+   "hasCode": true,
+   "libraryEntries": [
+    "documentary-archival-street"
+   ]
   },
   {
    "id": "ao-minosdevs-251920",
@@ -384,10 +383,8 @@
     "likes": 695,
     "bookmarks": 808
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "lineart-explainer"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-lcslates-988559",
@@ -419,8 +416,10 @@
     "likes": 1037,
     "bookmarks": 867
    },
-   "hasCode": false,
-   "libraryEntries": []
+   "hasCode": true,
+   "libraryEntries": [
+    "documentary-mosaic-reveal"
+   ]
   },
   {
    "id": "ao-alsk_ai-630632",
@@ -490,10 +489,8 @@
     "likes": 1841,
     "bookmarks": 3266
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "device-keynote-showcase"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-emollick-918334",
@@ -593,10 +590,8 @@
     "likes": 962,
     "bookmarks": 1087
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "saas-glass-explainer"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-moritzkremb-466494",
@@ -629,10 +624,8 @@
     "likes": 403,
     "bookmarks": 946
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "saas-glass-explainer"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-miaai_lab-774895",
@@ -732,11 +725,8 @@
     "likes": 339,
     "bookmarks": 353
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "collage-journalism",
-    "documentary-ken-burns"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-ai_dvd6-178199",
@@ -765,10 +755,8 @@
     "likes": 298,
     "bookmarks": 466
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "reddit-story-premium"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-frenchie_-948730",
@@ -968,10 +956,8 @@
     "likes": 537,
     "bookmarks": 275
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "lineart-explainer"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-sab8a-475686",
@@ -1003,10 +989,8 @@
     "likes": 288,
     "bookmarks": 581
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "cinematic-broll"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-goodside-235004",
@@ -1394,10 +1378,8 @@
     "likes": 370,
     "bookmarks": 411
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "lineart-explainer"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-oxpsats-369282",
@@ -2079,10 +2061,8 @@
     "likes": 219,
     "bookmarks": 231
    },
-   "hasCode": true,
-   "libraryEntries": [
-    "facts-cards-3d"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "ao-condzxyz-178789",
@@ -2659,8 +2639,10 @@
     "likes": 46,
     "bookmarks": 61
    },
-   "hasCode": false,
-   "libraryEntries": []
+   "hasCode": true,
+   "libraryEntries": [
+    "timeline-deep-time"
+   ]
   },
   {
    "id": "ao-nemtudo_-614053",
@@ -5204,8 +5186,10 @@
     "likes": 9,
     "bookmarks": 3
    },
-   "hasCode": false,
-   "libraryEntries": []
+   "hasCode": true,
+   "libraryEntries": [
+    "news-roundup-cards"
+   ]
   },
   {
    "id": "ao-majidmanzarpour-373576",
@@ -8808,8 +8792,10 @@
     "likes": 1,
     "bookmarks": 1
    },
-   "hasCode": false,
-   "libraryEntries": []
+   "hasCode": true,
+   "libraryEntries": [
+    "timeline-company-history"
+   ]
   },
   {
    "id": "ao-rohittirunellai-878956",
@@ -10800,6 +10786,6193 @@
    "libraryEntries": []
   },
   {
+   "id": "sk-ajith-io-890146",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ajith_io",
+   "description": "",
+   "url": "https://x.com/ajith_io/status/2103449416325890146",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ajith-io-890146",
+   "author": "ajith_io",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-leonabboud-358051",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @leonabboud",
+   "description": "",
+   "url": "https://x.com/leonabboud/status/2103576084499358051",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/leonabboud-358051",
+   "author": "leonabboud",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-himanshutwtxs-882858",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @himanshutwtxs",
+   "description": "",
+   "url": "https://x.com/himanshutwtxs/status/2103495232637882858",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/himanshutwtxs-882858",
+   "author": "himanshutwtxs",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-kenn-937232",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @kenn",
+   "description": "",
+   "url": "https://x.com/kenn/status/2103337314021937232",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/kenn-937232",
+   "author": "kenn",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-anabology-491441",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @anabology",
+   "description": "",
+   "url": "https://x.com/anabology/status/2103534482930491441",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/anabology-491441",
+   "author": "anabology",
+   "date": "2026-09-26",
+   "genres": [
+    "timeline",
+    "tutorial",
+    "story-narrative"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "finance",
+    "sports"
+   ],
+   "tools": [
+    "canvas",
+    "ai-image"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ayushunleashed-084755",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ayushunleashed",
+   "description": "",
+   "url": "https://x.com/ayushunleashed/status/2103794962257084755",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ayushunleashed-084755",
+   "author": "ayushunleashed",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-codestackr-328129",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @codeSTACKr",
+   "description": "",
+   "url": "https://x.com/codeSTACKr/status/2103656229717328129",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/codestackr-328129",
+   "author": "codeSTACKr",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-misbahsy-882277",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @MisbahSy",
+   "description": "",
+   "url": "https://x.com/MisbahSy/status/2103831201114882277",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/misbahsy-882277",
+   "author": "MisbahSy",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-morse-369333",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @__morse",
+   "description": "",
+   "url": "https://x.com/__morse/status/2103485566570369333",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/morse-369333",
+   "author": "__morse",
+   "date": "2026-09-26",
+   "genres": [
+    "data-story",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-wallt-white-942703",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @wallt_white",
+   "description": "",
+   "url": "https://x.com/wallt_white/status/2103750353585942703",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/wallt-white-942703",
+   "author": "wallt_white",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-raphaelaubryy-190360",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @RaphaelAubryy",
+   "description": "",
+   "url": "https://x.com/RaphaelAubryy/status/2103416909857190360",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/raphaelaubryy-190360",
+   "author": "RaphaelAubryy",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "shader",
+    "canvas",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-itisrazak-332386",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @itisRazak",
+   "description": "",
+   "url": "https://x.com/itisRazak/status/2103517930424332386",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/itisrazak-332386",
+   "author": "itisRazak",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-thismacapital-375808",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @thismacapital",
+   "description": "",
+   "url": "https://x.com/thismacapital/status/2103773635714375808",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/thismacapital-375808",
+   "author": "thismacapital",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-demonugc-525162",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @demonugc",
+   "description": "",
+   "url": "https://x.com/demonugc/status/2103526713208525162",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/demonugc-525162",
+   "author": "demonugc",
+   "date": "2026-09-26",
+   "genres": [
+    "data-story",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-gabrielbuzziv-057430",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @gabrielbuzziv",
+   "description": "",
+   "url": "https://x.com/gabrielbuzziv/status/2103590703289057430",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/gabrielbuzziv-057430",
+   "author": "gabrielbuzziv",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-eyishazyer-129686",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @eyishazyer",
+   "description": "",
+   "url": "https://x.com/eyishazyer/status/2103816865852129686",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/eyishazyer-129686",
+   "author": "eyishazyer",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-stephanlivera-470926",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @stephanlivera",
+   "description": "",
+   "url": "https://x.com/stephanlivera/status/2103315922098470926",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/stephanlivera-470926",
+   "author": "stephanlivera",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-mdaman010-111079",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @mdaman010",
+   "description": "",
+   "url": "https://x.com/mdaman010/status/2103845689713111079",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/mdaman010-111079",
+   "author": "mdaman010",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-iamtanzil-675031",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @iamtanzil_",
+   "description": "",
+   "url": "https://x.com/iamtanzil_/status/2103820321673675031",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/iamtanzil-675031",
+   "author": "iamtanzil_",
+   "date": "2026-09-26",
+   "genres": [
+    "timeline",
+    "map-journey",
+    "listicle"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "space",
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-vfnuness-704448",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @vfnuness",
+   "description": "",
+   "url": "https://x.com/vfnuness/status/2103800512797704448",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/vfnuness-704448",
+   "author": "vfnuness",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-zaqailo-835623",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @zaqailo",
+   "description": "",
+   "url": "https://x.com/zaqailo/status/2103768009017835623",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/zaqailo-835623",
+   "author": "zaqailo",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-mattiapomelli-229129",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @mattiapomelli",
+   "description": "",
+   "url": "https://x.com/mattiapomelli/status/2103757371357229129",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/mattiapomelli-229129",
+   "author": "mattiapomelli",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-levon96-651291",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @levon96",
+   "description": "",
+   "url": "https://x.com/levon96/status/2103757157078651291",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/levon96-651291",
+   "author": "levon96",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-roxsav2-073412",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @RoxsaV2",
+   "description": "",
+   "url": "https://x.com/RoxsaV2/status/2103749285846073412",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/roxsav2-073412",
+   "author": "RoxsaV2",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-teslachartz-887985",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @TeslaChartz",
+   "description": "",
+   "url": "https://x.com/TeslaChartz/status/2103746486978887985",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/teslachartz-887985",
+   "author": "TeslaChartz",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sahilvermaai-189237",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @sahilvermaai",
+   "description": "",
+   "url": "https://x.com/sahilvermaai/status/2103725292095189237",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sahilvermaai-189237",
+   "author": "sahilvermaai",
+   "date": "2026-09-26",
+   "genres": [
+    "news-recap"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-alexwtlf-981005",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @alexwtlf",
+   "description": "",
+   "url": "https://x.com/alexwtlf/status/2103713416367981005",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/alexwtlf-981005",
+   "author": "alexwtlf",
+   "date": "2026-09-26",
+   "genres": [
+    "map-journey"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "space",
+    "science"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-souravbhar871-477361",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @souravbhar871",
+   "description": "",
+   "url": "https://x.com/souravbhar871/status/2103711849703477361",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/souravbhar871-477361",
+   "author": "souravbhar871",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-gautam-mer1-530003",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @gautam_mer1",
+   "description": "",
+   "url": "https://x.com/gautam_mer1/status/2103703336780530003",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/gautam-mer1-530003",
+   "author": "gautam_mer1",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-motiondsgnr-313960",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @motiondsgnr",
+   "description": "",
+   "url": "https://x.com/motiondsgnr/status/2103692944771313960",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/motiondsgnr-313960",
+   "author": "motiondsgnr",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-karanb192-032177",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @karanb192",
+   "description": "",
+   "url": "https://x.com/karanb192/status/2103690266633032177",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/karanb192-032177",
+   "author": "karanb192",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jasonzhou1993-515541",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @jasonzhou1993",
+   "description": "",
+   "url": "https://x.com/jasonzhou1993/status/2103663364958515541",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jasonzhou1993-515541",
+   "author": "jasonzhou1993",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-akbuilds-150675",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @akbuilds_",
+   "description": "",
+   "url": "https://x.com/akbuilds_/status/2103646141271150675",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/akbuilds-150675",
+   "author": "akbuilds_",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-web3wesley-365164",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Web3Wesley",
+   "description": "",
+   "url": "https://x.com/Web3Wesley/status/2103644329294365164",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/web3wesley-365164",
+   "author": "Web3Wesley",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "css",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-seflless-929329",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @seflless",
+   "description": "",
+   "url": "https://x.com/seflless/status/2103629182487929329",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/seflless-929329",
+   "author": "seflless",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-leadnotifi-960983",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @leadnotifi",
+   "description": "",
+   "url": "https://x.com/leadnotifi/status/2103628028391960983",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/leadnotifi-960983",
+   "author": "leadnotifi",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tolgayhickiran-935120",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @tolgayhickiran",
+   "description": "",
+   "url": "https://x.com/tolgayhickiran/status/2103619422128935120",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tolgayhickiran-935120",
+   "author": "tolgayhickiran",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-mrtanviir-132205",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @mrtanviir",
+   "description": "",
+   "url": "https://x.com/mrtanviir/status/2103608767309132205",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/mrtanviir-132205",
+   "author": "mrtanviir",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-marouanegazouzi-131257",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @marouanegazouzi",
+   "description": "",
+   "url": "https://x.com/marouanegazouzi/status/2103608571435131257",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/marouanegazouzi-131257",
+   "author": "marouanegazouzi",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dzhohola-249003",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @dzhohola",
+   "description": "",
+   "url": "https://x.com/dzhohola/status/2103605737595249003",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dzhohola-249003",
+   "author": "dzhohola",
+   "date": "2026-09-26",
+   "genres": [
+    "data-story",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-hicallmechai-878304",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @hiCallMeChai",
+   "description": "",
+   "url": "https://x.com/hiCallMeChai/status/2103600312296878304",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/hicallmechai-878304",
+   "author": "hiCallMeChai",
+   "date": "2026-09-26",
+   "genres": [
+    "data-story",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-phonggt-377247",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @PhongGT",
+   "description": "",
+   "url": "https://x.com/PhongGT/status/2103591799189377247",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/phonggt-377247",
+   "author": "PhongGT",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-m1n9-k7-295601",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @m1n9_k7",
+   "description": "",
+   "url": "https://x.com/m1n9_k7/status/2103580011882295601",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/m1n9-k7-295601",
+   "author": "m1n9_k7",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-m1n9-k7-466682",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @m1n9_k7",
+   "description": "",
+   "url": "https://x.com/m1n9_k7/status/2103579630045466682",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/m1n9-k7-466682",
+   "author": "m1n9_k7",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "ai-image"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sagarmohansingh-322168",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @SagarmohanSingh",
+   "description": "",
+   "url": "https://x.com/SagarmohanSingh/status/2103574041781322168",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sagarmohansingh-322168",
+   "author": "SagarmohanSingh",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-crazyalphaaa-480622",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @CrazyAlphaaa",
+   "description": "",
+   "url": "https://x.com/CrazyAlphaaa/status/2103568486249480622",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/crazyalphaaa-480622",
+   "author": "CrazyAlphaaa",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-blue-clarity-449603",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @blue_clarity",
+   "description": "",
+   "url": "https://x.com/blue_clarity/status/2103564589065449603",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/blue-clarity-449603",
+   "author": "blue_clarity",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-3xtihor-159839",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @3xtihor",
+   "description": "",
+   "url": "https://x.com/3xtihor/status/2103551886272159839",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/3xtihor-159839",
+   "author": "3xtihor",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sahildesigner23-307120",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @sahildesigner23",
+   "description": "",
+   "url": "https://x.com/sahildesigner23/status/2103536115563307120",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sahildesigner23-307120",
+   "author": "sahildesigner23",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-safarkhanshuvo-059752",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @safarkhanshuvo",
+   "description": "",
+   "url": "https://x.com/safarkhanshuvo/status/2103520091552059752",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/safarkhanshuvo-059752",
+   "author": "safarkhanshuvo",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-leonkohli-191220",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @LeonKohli",
+   "description": "",
+   "url": "https://x.com/LeonKohli/status/2103517696038191220",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/leonkohli-191220",
+   "author": "LeonKohli",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-charliie-334026",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @charliie",
+   "description": "",
+   "url": "https://x.com/charliie/status/2103514073476334026",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/charliie-334026",
+   "author": "charliie",
+   "date": "2026-09-26",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-fionntobin-479597",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @fionntobin",
+   "description": "",
+   "url": "https://x.com/fionntobin/status/2103510776690479597",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/fionntobin-479597",
+   "author": "fionntobin",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-leanzubrezki-766171",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @LeanZubrezki",
+   "description": "",
+   "url": "https://x.com/LeanZubrezki/status/2103502063950766171",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/leanzubrezki-766171",
+   "author": "LeanZubrezki",
+   "date": "2026-09-26",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-nezbuilds-294391",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @nezbuilds",
+   "description": "",
+   "url": "https://x.com/nezbuilds/status/2103487427365294391",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/nezbuilds-294391",
+   "author": "nezbuilds",
+   "date": "2026-09-26",
+   "genres": [
+    "data-story",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-umangratani-840800",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @umangratani",
+   "description": "",
+   "url": "https://x.com/umangratani/status/2103486881136840800",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/umangratani-840800",
+   "author": "umangratani",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-buildfastwithai-597035",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @BuildFastWithAI",
+   "description": "",
+   "url": "https://x.com/BuildFastWithAI/status/2103483174957597035",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/buildfastwithai-597035",
+   "author": "BuildFastWithAI",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-praburajkennady-972967",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @praburajkennady",
+   "description": "",
+   "url": "https://x.com/praburajkennady/status/2103467326112972967",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/praburajkennady-972967",
+   "author": "praburajkennady",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-techyoutbe-588678",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @techyoutbe",
+   "description": "",
+   "url": "https://x.com/techyoutbe/status/2103465227807588678",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/techyoutbe-588678",
+   "author": "techyoutbe",
+   "date": "2026-09-26",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sudo-kiran-696074",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @sudo_kiran",
+   "description": "",
+   "url": "https://x.com/sudo_kiran/status/2103463886372696074",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sudo-kiran-696074",
+   "author": "sudo_kiran",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-iamtanzil-120030",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @iamtanzil_",
+   "description": "",
+   "url": "https://x.com/iamtanzil_/status/2103459843831120030",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/iamtanzil-120030",
+   "author": "iamtanzil_",
+   "date": "2026-09-26",
+   "genres": [
+    "news-recap",
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "space",
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sanjeevn72-457691",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @sanjeevn72",
+   "description": "",
+   "url": "https://x.com/sanjeevn72/status/2103456358125457691",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sanjeevn72-457691",
+   "author": "sanjeevn72",
+   "date": "2026-09-26",
+   "genres": [
+    "data-story",
+    "product-launch"
+   ],
+   "domains": [
+    "history",
+    "geography",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-itsuki-dev-618392",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @itsuki_dev",
+   "description": "",
+   "url": "https://x.com/itsuki_dev/status/2103438087204618392",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/itsuki-dev-618392",
+   "author": "itsuki_dev",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dris1153-101043",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @dris1153",
+   "description": "",
+   "url": "https://x.com/dris1153/status/2103433398069101043",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dris1153-101043",
+   "author": "dris1153",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-raphaelaubryy-687877",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @RaphaelAubryy",
+   "description": "",
+   "url": "https://x.com/RaphaelAubryy/status/2103413596822687877",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/raphaelaubryy-687877",
+   "author": "RaphaelAubryy",
+   "date": "2026-09-26",
+   "genres": [
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "space",
+    "tech",
+    "sports",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-hsanat-012699",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @hSanat",
+   "description": "",
+   "url": "https://x.com/hSanat/status/2103358205091012699",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/hsanat-012699",
+   "author": "hSanat",
+   "date": "2026-09-26",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-drrickio-009558",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @drrickio",
+   "description": "",
+   "url": "https://x.com/drrickio/status/2103333836130009558",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/drrickio-009558",
+   "author": "drrickio",
+   "date": "2026-09-26",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-mycodecoach-459574",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @MyCodeCoach",
+   "description": "",
+   "url": "https://x.com/MyCodeCoach/status/2103181065976459574",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/mycodecoach-459574",
+   "author": "MyCodeCoach",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "history"
+   ],
+   "tools": [
+    "threejs",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-pbteja1998-651644",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @pbteja1998",
+   "description": "",
+   "url": "https://x.com/pbteja1998/status/2103176101497651644",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/pbteja1998-651644",
+   "author": "pbteja1998",
+   "date": "2026-09-26",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-suryarajendhran-730437",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @SuryaRajendhran",
+   "description": "",
+   "url": "https://x.com/SuryaRajendhran/status/2103122292343730437",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/suryarajendhran-730437",
+   "author": "SuryaRajendhran",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-modaalbuilder-868989",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @modaalbuilder",
+   "description": "",
+   "url": "https://x.com/modaalbuilder/status/2103053680945868989",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/modaalbuilder-868989",
+   "author": "modaalbuilder",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-viggle-pinoc-434495",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @Viggle_PINOC",
+   "description": "",
+   "url": "https://x.com/Viggle_PINOC/status/2102861939072434495",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/viggle-pinoc-434495",
+   "author": "Viggle_PINOC",
+   "date": "2026-09-26",
+   "genres": [
+    "comparison",
+    "story-narrative"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "sports",
+    "religion-myth"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jrayon-054015",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @jrayon",
+   "description": "",
+   "url": "https://x.com/jrayon/status/2102861376184054015",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jrayon-054015",
+   "author": "jrayon",
+   "date": "2026-09-26",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "shader",
+    "webgl",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-zeezomb-726206",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @zeezomb",
+   "description": "",
+   "url": "https://x.com/zeezomb/status/2102906701552726206",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/zeezomb-726206",
+   "author": "zeezomb",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ercankeskinx-897906",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ercankeskinx",
+   "description": "",
+   "url": "https://x.com/ercankeskinx/status/2102995443818897906",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ercankeskinx-897906",
+   "author": "ercankeskinx",
+   "date": "2026-09-26",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-0xlangeai-178533",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @0xlangeai",
+   "description": "",
+   "url": "https://x.com/0xlangeai/status/2104119716533178533",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/0xlangeai-178533",
+   "author": "0xlangeai",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-stephanferraro-224281",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @StephanFerraro",
+   "description": "",
+   "url": "https://x.com/StephanFerraro/status/2103020274107224281",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/stephanferraro-224281",
+   "author": "StephanFerraro",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "science",
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "physics"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-chudry223-081860",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @chudry223",
+   "description": "",
+   "url": "https://x.com/chudry223/status/2103044654187081860",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/chudry223-081860",
+   "author": "chudry223",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-voxyz-ai-345550",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @Voxyz_ai",
+   "description": "",
+   "url": "https://x.com/Voxyz_ai/status/2103117246860345550",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/voxyz-ai-345550",
+   "author": "Voxyz_ai",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "space",
+    "science",
+    "tech",
+    "finance"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-explorations-iq-921682",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @explorations_iq",
+   "description": "",
+   "url": "https://x.com/explorations_iq/status/2103317768669921682",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/explorations-iq-921682",
+   "author": "explorations_iq",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "space",
+    "science"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-nybobs-680050",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @nybobs",
+   "description": "",
+   "url": "https://x.com/nybobs/status/2103385835328680050",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/nybobs-680050",
+   "author": "nybobs",
+   "date": "2026-09-28",
+   "genres": [
+    "news-recap"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "sports"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-garmdotcom-987439",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @garmdotcom",
+   "description": "",
+   "url": "https://x.com/garmdotcom/status/2103516101518987439",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/garmdotcom-987439",
+   "author": "garmdotcom",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-cyrilxbt-149036",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @cyrilXBT",
+   "description": "",
+   "url": "https://x.com/cyrilXBT/status/2103532793406149036",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/cyrilxbt-149036",
+   "author": "cyrilXBT",
+   "date": "2026-09-28",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "nature",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "physics"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-miguel07code-091611",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @Miguel07Code",
+   "description": "",
+   "url": "https://x.com/Miguel07Code/status/2103626582896091611",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/miguel07code-091611",
+   "author": "Miguel07Code",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "culture-entertainment",
+    "education"
+   ],
+   "tools": [
+    "canvas",
+    "audio",
+    "ai-image"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-kureshirfan-386691",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @kureshirfan",
+   "description": "",
+   "url": "https://x.com/kureshirfan/status/2103788564840386691",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/kureshirfan-386691",
+   "author": "kureshirfan",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "nature",
+    "education"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-amberpromptai-345137",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @AmberPromptai",
+   "description": "",
+   "url": "https://x.com/AmberPromptai/status/2103793821012345137",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/amberpromptai-345137",
+   "author": "AmberPromptai",
+   "date": "2026-09-28",
+   "genres": [
+    "documentary",
+    "story-narrative",
+    "explainer"
+   ],
+   "domains": [
+    "history",
+    "space",
+    "education"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-iniyanai-856596",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @iniyanai",
+   "description": "",
+   "url": "https://x.com/iniyanai/status/2103814603100856596",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/iniyanai-856596",
+   "author": "iniyanai",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "finance",
+    "culture-entertainment",
+    "education"
+   ],
+   "tools": [
+    "threejs",
+    "svg",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-acoramaa-053577",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @Acoramaa",
+   "description": "",
+   "url": "https://x.com/Acoramaa/status/2103833991879053577",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/acoramaa-053577",
+   "author": "Acoramaa",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "finance"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-kgonia7-746268",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @kgonia7",
+   "description": "",
+   "url": "https://x.com/kgonia7/status/2103835848575746268",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/kgonia7-746268",
+   "author": "kgonia7",
+   "date": "2026-09-28",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "space",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-nathanwilbanks-981110",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @NathanWilbanks_",
+   "description": "",
+   "url": "https://x.com/NathanWilbanks_/status/2103881538592981110",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/nathanwilbanks-981110",
+   "author": "NathanWilbanks_",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "science",
+    "tech",
+    "finance",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-hunzai-842605",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @hunzai",
+   "description": "",
+   "url": "https://x.com/hunzai/status/2103904436141842605",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/hunzai-842605",
+   "author": "hunzai",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "education"
+   ],
+   "tools": [
+    "canvas",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-konstantinsaifo-501736",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @konstantinsaifo",
+   "description": "",
+   "url": "https://x.com/konstantinsaifo/status/2104094723887501736",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/konstantinsaifo-501736",
+   "author": "konstantinsaifo",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "space",
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-rakhsh-tech-544921",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @Rakhsh_Tech",
+   "description": "",
+   "url": "https://x.com/Rakhsh_Tech/status/2104144532644544921",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/rakhsh-tech-544921",
+   "author": "Rakhsh_Tech",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-arthurkatcher-604161",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @arthurkatcher",
+   "description": "",
+   "url": "https://x.com/arthurkatcher/status/2104198927549604161",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/arthurkatcher-604161",
+   "author": "arthurkatcher",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "education"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-moguzbulbul-215591",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @moguzbulbul",
+   "description": "",
+   "url": "https://x.com/moguzbulbul/status/2104206095313215591",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/moguzbulbul-215591",
+   "author": "moguzbulbul",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "education"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-irinatoxi-962937",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @irinatoxi",
+   "description": "",
+   "url": "https://x.com/irinatoxi/status/2104212841657962937",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/irinatoxi-962937",
+   "author": "irinatoxi",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "science",
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-konstantinsaifo-587629",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @konstantinsaifo",
+   "description": "",
+   "url": "https://x.com/konstantinsaifo/status/2104216976801587629",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/konstantinsaifo-587629",
+   "author": "konstantinsaifo",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "geography",
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-stefanostraus-971191",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @StefanoStraus",
+   "description": "",
+   "url": "https://x.com/StefanoStraus/status/2104236916316971191",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/stefanostraus-971191",
+   "author": "StefanoStraus",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-demitiyageekzen-818523",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @DemitiyaGeekzen",
+   "description": "",
+   "url": "https://x.com/DemitiyaGeekzen/status/2103517910274818523",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/demitiyageekzen-818523",
+   "author": "DemitiyaGeekzen",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "shader",
+    "webgl",
+    "canvas",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-gmgmgm1545-245507",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @gmgmgm1545",
+   "description": "",
+   "url": "https://x.com/gmgmgm1545/status/2103793820815245507",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/gmgmgm1545-245507",
+   "author": "gmgmgm1545",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jarvis11x-544635",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @jarvis11x",
+   "description": "",
+   "url": "https://x.com/jarvis11x/status/2103816821782544635",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jarvis11x-544635",
+   "author": "jarvis11x",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-kewai386772-276947",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @KeWai386772",
+   "description": "",
+   "url": "https://x.com/KeWai386772/status/2103821018947276947",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/kewai386772-276947",
+   "author": "KeWai386772",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-nft-chen-350878",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @NFT_Chen",
+   "description": "",
+   "url": "https://x.com/NFT_Chen/status/2103882415299350878",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/nft-chen-350878",
+   "author": "NFT_Chen",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-0xsolty-735200",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @0xSolty",
+   "description": "",
+   "url": "https://x.com/0xSolty/status/2102888414219735200",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/0xsolty-735200",
+   "author": "0xSolty",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "geography",
+    "space",
+    "science",
+    "tech"
+   ],
+   "tools": [
+    "shader",
+    "webgl"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-curieuxexplorer-272483",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @CurieuxExplorer",
+   "description": "",
+   "url": "https://x.com/CurieuxExplorer/status/2103038625483272483",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/curieuxexplorer-272483",
+   "author": "CurieuxExplorer",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-myonisto-923578",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @myonisto",
+   "description": "",
+   "url": "https://x.com/myonisto/status/2103082459503923578",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/myonisto-923578",
+   "author": "myonisto",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-truenyl-447745",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @truenyl",
+   "description": "",
+   "url": "https://x.com/truenyl/status/2103086316137447745",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/truenyl-447745",
+   "author": "truenyl",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-builtbysketch-114092",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @builtbysketch",
+   "description": "",
+   "url": "https://x.com/builtbysketch/status/2103105938853114092",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/builtbysketch-114092",
+   "author": "builtbysketch",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-per-simmons-944727",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @per_simmons_",
+   "description": "",
+   "url": "https://x.com/per_simmons_/status/2103208157308944727",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/per-simmons-944727",
+   "author": "per_simmons_",
+   "date": "2026-09-28",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-nicolamanzini-156628",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @NicolaManzini",
+   "description": "",
+   "url": "https://x.com/NicolaManzini/status/2103499771206156628",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/nicolamanzini-156628",
+   "author": "NicolaManzini",
+   "date": "2026-09-28",
+   "genres": [
+    "comparison"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-0xwast3-222104",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @0xWast3",
+   "description": "",
+   "url": "https://x.com/0xWast3/status/2103513328077222104",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/0xwast3-222104",
+   "author": "0xWast3",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "science",
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-wzarok-283635",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @wzarok",
+   "description": "",
+   "url": "https://x.com/wzarok/status/2103530789510283635",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/wzarok-283635",
+   "author": "wzarok",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-goofyninjaaa-315331",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @goofyninjaaa",
+   "description": "",
+   "url": "https://x.com/goofyninjaaa/status/2103540288136315331",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/goofyninjaaa-315331",
+   "author": "goofyninjaaa",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-friskyggg-054427",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @FriskyGGG",
+   "description": "",
+   "url": "https://x.com/FriskyGGG/status/2103766565389054427",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/friskyggg-054427",
+   "author": "FriskyGGG",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ai-ba-reza-113363",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @ai_ba_reza",
+   "description": "",
+   "url": "https://x.com/ai_ba_reza/status/2103792451551113363",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ai-ba-reza-113363",
+   "author": "ai_ba_reza",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-souradip3000-800291",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @Souradip3000",
+   "description": "",
+   "url": "https://x.com/Souradip3000/status/2103876499262800291",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/souradip3000-800291",
+   "author": "Souradip3000",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "nature"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "svg",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-techartist-786274",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @techartist_",
+   "description": "",
+   "url": "https://x.com/techartist_/status/2103933640392786274",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/techartist-786274",
+   "author": "techartist_",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-lribes4-742305",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @lribes4",
+   "description": "",
+   "url": "https://x.com/lribes4/status/2103938636173742305",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/lribes4-742305",
+   "author": "lribes4",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-eigeorguy-813651",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @eigeorguy",
+   "description": "",
+   "url": "https://x.com/eigeorguy/status/2103992442072813651",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/eigeorguy-813651",
+   "author": "eigeorguy",
+   "date": "2026-09-28",
+   "genres": [
+    "map-journey"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-kum1ta-740521",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @kum1ta",
+   "description": "",
+   "url": "https://x.com/kum1ta/status/2103998389058740521",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/kum1ta-740521",
+   "author": "kum1ta",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-vectorcrossprod-436573",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @VectorCrossProd",
+   "description": "",
+   "url": "https://x.com/VectorCrossProd/status/2104093497561436573",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/vectorcrossprod-436573",
+   "author": "VectorCrossProd",
+   "date": "2026-09-28",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sanjay-khadka07-620029",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @sanjay_khadka07",
+   "description": "",
+   "url": "https://x.com/sanjay_khadka07/status/2104102479927620029",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sanjay-khadka07-620029",
+   "author": "sanjay_khadka07",
+   "date": "2026-09-28",
+   "genres": [
+    "news-recap",
+    "story-narrative"
+   ],
+   "domains": [
+    "geography",
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ksmialowski-473410",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @ksmialowski",
+   "description": "",
+   "url": "https://x.com/ksmialowski/status/2104103109358473410",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ksmialowski-473410",
+   "author": "ksmialowski",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-acoramaa-248467",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @Acoramaa",
+   "description": "",
+   "url": "https://x.com/Acoramaa/status/2104145227573248467",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/acoramaa-248467",
+   "author": "Acoramaa",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "space",
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "svg",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-maruo-0314-998343",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @Maruo_0314",
+   "description": "",
+   "url": "https://x.com/Maruo_0314/status/2104159752095998343",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/maruo-0314-998343",
+   "author": "Maruo_0314",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-aayush4soni-644283",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @aayush4soni",
+   "description": "",
+   "url": "https://x.com/aayush4soni/status/2104181266459644283",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/aayush4soni-644283",
+   "author": "aayush4soni",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "sports",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-allforbigfire-029657",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @allforbigfire",
+   "description": "",
+   "url": "https://x.com/allforbigfire/status/2104193522715029657",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/allforbigfire-029657",
+   "author": "allforbigfire",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "audio"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ewashoku-201053",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @EWashoku",
+   "description": "",
+   "url": "https://x.com/EWashoku/status/2104211672370201053",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ewashoku-201053",
+   "author": "EWashoku",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ajthemongol-318512",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @AJtheMongol",
+   "description": "",
+   "url": "https://x.com/AJtheMongol/status/2104214187522318512",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ajthemongol-318512",
+   "author": "AJtheMongol",
+   "date": "2026-09-28",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-zhang-baoqing-920413",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @zhang_baoqing",
+   "description": "",
+   "url": "https://x.com/zhang_baoqing/status/2104081777119920413",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/zhang-baoqing-920413",
+   "author": "zhang_baoqing",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "particles"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sciencedegens-843325",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @sciencedegens",
+   "description": "",
+   "url": "https://x.com/sciencedegens/status/2104114814536843325",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sciencedegens-843325",
+   "author": "sciencedegens",
+   "date": "2026-09-28",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-mattworkman-309357",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @mattworkman",
+   "description": "",
+   "url": "https://x.com/mattworkman/status/2104662818742309357",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/mattworkman-309357",
+   "author": "mattworkman",
+   "date": "2026-09-29",
+   "genres": [
+    "tutorial"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-washow-cfo-175311",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @washow_cfo",
+   "description": "",
+   "url": "https://x.com/washow_cfo/status/2104595346882175311",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/washow-cfo-175311",
+   "author": "washow_cfo",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-timguignard-623571",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @TimGuignard",
+   "description": "",
+   "url": "https://x.com/TimGuignard/status/2104515756159623571",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/timguignard-623571",
+   "author": "TimGuignard",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jesscaroline7-955094",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @jesscaroline7",
+   "description": "",
+   "url": "https://x.com/jesscaroline7/status/2104336637752955094",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jesscaroline7-955094",
+   "author": "jesscaroline7",
+   "date": "2026-09-29",
+   "genres": [
+    "tutorial"
+   ],
+   "domains": [
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-joao-felixl-809438",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @joao_felixl",
+   "description": "",
+   "url": "https://x.com/joao_felixl/status/2104273407818809438",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/joao-felixl-809438",
+   "author": "joao_felixl",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-vince-builds-355650",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @vince_builds",
+   "description": "",
+   "url": "https://x.com/vince_builds/status/2104257989100355650",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/vince-builds-355650",
+   "author": "vince_builds",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-thayto-dev-739735",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @thayto_dev",
+   "description": "",
+   "url": "https://x.com/thayto_dev/status/2104200591278739735",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/thayto-dev-739735",
+   "author": "thayto_dev",
+   "date": "2026-09-29",
+   "genres": [
+    "tutorial"
+   ],
+   "domains": [
+    "tech",
+    "education"
+   ],
+   "tools": [
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jayjohnsonai-117305",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @jayjohnsonai",
+   "description": "",
+   "url": "https://x.com/jayjohnsonai/status/2104188140718117305",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jayjohnsonai-117305",
+   "author": "jayjohnsonai",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "shader",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-itsahmedharoon-544194",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @itsahmedharoon",
+   "description": "",
+   "url": "https://x.com/itsahmedharoon/status/2103986344414544194",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/itsahmedharoon-544194",
+   "author": "itsahmedharoon",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ik-builds-585923",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ik_builds",
+   "description": "",
+   "url": "https://x.com/ik_builds/status/2103890476885585923",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ik-builds-585923",
+   "author": "ik_builds",
+   "date": "2026-09-29",
+   "genres": [
+    "quote-kinetic",
+    "explainer",
+    "product-launch"
+   ],
+   "domains": [
+    "science",
+    "sports",
+    "culture-entertainment",
+    "education"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-petert-540960",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @_petert",
+   "description": "",
+   "url": "https://x.com/_petert/status/2103885710734540960",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/petert-540960",
+   "author": "_petert",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-petert-635793",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @_petert",
+   "description": "",
+   "url": "https://x.com/_petert/status/2103885113528635793",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/petert-635793",
+   "author": "_petert",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-petert-350098",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @_petert",
+   "description": "",
+   "url": "https://x.com/_petert/status/2103878940100350098",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/petert-350098",
+   "author": "_petert",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-danilowm-412022",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @danilowm",
+   "description": "",
+   "url": "https://x.com/danilowm/status/2103661844661412022",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/danilowm-412022",
+   "author": "danilowm",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-georgejimenez98-431559",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @georgejimenez98",
+   "description": "",
+   "url": "https://x.com/georgejimenez98/status/2103650183699431559",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/georgejimenez98-431559",
+   "author": "georgejimenez98",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-majin-appsheet-693327",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Majin_AppSheet",
+   "description": "",
+   "url": "https://x.com/Majin_AppSheet/status/2103497319899693327",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/majin-appsheet-693327",
+   "author": "Majin_AppSheet",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-javi-llofriu-059888",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Javi_llofriu",
+   "description": "",
+   "url": "https://x.com/Javi_llofriu/status/2103372534922059888",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/javi-llofriu-059888",
+   "author": "Javi_llofriu",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jake11moran-825416",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @jake11moran",
+   "description": "",
+   "url": "https://x.com/jake11moran/status/2103247490237825416",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jake11moran-825416",
+   "author": "jake11moran",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "history",
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-georgejimenez98-427173",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @georgejimenez98",
+   "description": "",
+   "url": "https://x.com/georgejimenez98/status/2103214871785427173",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/georgejimenez98-427173",
+   "author": "georgejimenez98",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-pwntastickev-664257",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @PwntasticKev",
+   "description": "",
+   "url": "https://x.com/PwntasticKev/status/2103202224675664257",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/pwntastickev-664257",
+   "author": "PwntasticKev",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-henritoivar-445215",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @HenriToivar",
+   "description": "",
+   "url": "https://x.com/HenriToivar/status/2102832525798445215",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/henritoivar-445215",
+   "author": "HenriToivar",
+   "date": "2026-09-29",
+   "genres": [
+    "data-story",
+    "explainer",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "education"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-shushant-l-619370",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @shushant_l",
+   "description": "",
+   "url": "https://x.com/shushant_l/status/2102730243576619370",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/shushant-l-619370",
+   "author": "shushant_l",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-papaneco-life-541187",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @papaneco_life",
+   "description": "",
+   "url": "https://x.com/papaneco_life/status/2102676815416541187",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/papaneco-life-541187",
+   "author": "papaneco_life",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-papaneco-life-038225",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @papaneco_life",
+   "description": "",
+   "url": "https://x.com/papaneco_life/status/2102649707504038225",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/papaneco-life-038225",
+   "author": "papaneco_life",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-jetbrains-754812",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @jetbrains",
+   "description": "",
+   "url": "https://x.com/jetbrains/status/2102459650125754812",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/jetbrains-754812",
+   "author": "jetbrains",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-l3d1c-632524",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @l3d1c",
+   "description": "",
+   "url": "https://x.com/l3d1c/status/2104649028193632524",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/l3d1c-632524",
+   "author": "l3d1c",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tardigrade111-160686",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Tardigrade111",
+   "description": "",
+   "url": "https://x.com/Tardigrade111/status/2104620857826160686",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tardigrade111-160686",
+   "author": "Tardigrade111",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-wustep-884086",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @wustep",
+   "description": "",
+   "url": "https://x.com/wustep/status/2104610435571884086",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/wustep-884086",
+   "author": "wustep",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-apoorvjain25-309680",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @apoorvjain25",
+   "description": "",
+   "url": "https://x.com/apoorvjain25/status/2104528012746309680",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/apoorvjain25-309680",
+   "author": "apoorvjain25",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "finance",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-pranavclickks-254816",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @pranavclickks",
+   "description": "",
+   "url": "https://x.com/pranavclickks/status/2104512280390254816",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/pranavclickks-254816",
+   "author": "pranavclickks",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-rpa-dake-593915",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @rpa_dake",
+   "description": "",
+   "url": "https://x.com/rpa_dake/status/2104466394859593915",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/rpa-dake-593915",
+   "author": "rpa_dake",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-devarshukani-341827",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @devarshukani",
+   "description": "",
+   "url": "https://x.com/devarshukani/status/2104432185277341827",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/devarshukani-341827",
+   "author": "devarshukani",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-zakisbuilding-495680",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @zakisbuilding",
+   "description": "",
+   "url": "https://x.com/zakisbuilding/status/2104389736647495680",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/zakisbuilding-495680",
+   "author": "zakisbuilding",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-aschapmann-724497",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @aschapmann",
+   "description": "",
+   "url": "https://x.com/aschapmann/status/2104230888812724497",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/aschapmann-724497",
+   "author": "aschapmann",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative",
+    "quote-kinetic",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "finance",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-itsyashf-692347",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @itsyashf",
+   "description": "",
+   "url": "https://x.com/itsyashf/status/2104227261142692347",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/itsyashf-692347",
+   "author": "itsyashf",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-elliot-garreffa-446825",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @elliot_garreffa",
+   "description": "",
+   "url": "https://x.com/elliot_garreffa/status/2104213514944446825",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/elliot-garreffa-446825",
+   "author": "elliot_garreffa",
+   "date": "2026-09-29",
+   "genres": [
+    "tutorial",
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "sports",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dannyverkissen-101463",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @DannyVerkissen",
+   "description": "",
+   "url": "https://x.com/DannyVerkissen/status/2104212402875101463",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dannyverkissen-101463",
+   "author": "DannyVerkissen",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-theviableedge-869918",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @TheViableEdge",
+   "description": "",
+   "url": "https://x.com/TheViableEdge/status/2104207707980869918",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/theviableedge-869918",
+   "author": "TheViableEdge",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "education"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-chapi13-131449",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @chapi13",
+   "description": "",
+   "url": "https://x.com/chapi13/status/2104206465863131449",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/chapi13-131449",
+   "author": "chapi13",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-qinelke-271655",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @QinElke",
+   "description": "",
+   "url": "https://x.com/QinElke/status/2104176976261271655",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/qinelke-271655",
+   "author": "QinElke",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-genelab-999-088672",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @geneLab_999",
+   "description": "",
+   "url": "https://x.com/geneLab_999/status/2104163377560088672",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/genelab-999-088672",
+   "author": "geneLab_999",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-inoue-aix-234322",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @inoue_aix",
+   "description": "",
+   "url": "https://x.com/inoue_aix/status/2104155161883234322",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/inoue-aix-234322",
+   "author": "inoue_aix",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-daniel-haida-636937",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @daniel_haida",
+   "description": "",
+   "url": "https://x.com/daniel_haida/status/2104139720829636937",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/daniel-haida-636937",
+   "author": "daniel_haida",
+   "date": "2026-09-29",
+   "genres": [
+    "data-story",
+    "news-recap",
+    "tutorial"
+   ],
+   "domains": [
+    "history",
+    "science",
+    "tech",
+    "finance"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-pisajeski-168993",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @PIsajeski",
+   "description": "",
+   "url": "https://x.com/PIsajeski/status/2104124855302168993",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/pisajeski-168993",
+   "author": "PIsajeski",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dustindavis-644806",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @DustinDavis",
+   "description": "",
+   "url": "https://x.com/DustinDavis/status/2104075537228644806",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dustindavis-644806",
+   "author": "DustinDavis",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-signalz-jp-918002",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @signalz_jp",
+   "description": "",
+   "url": "https://x.com/signalz_jp/status/2104022166471918002",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/signalz-jp-918002",
+   "author": "signalz_jp",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-djadkison-394122",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @DJAdkison",
+   "description": "",
+   "url": "https://x.com/DJAdkison/status/2104020177478394122",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/djadkison-394122",
+   "author": "DJAdkison",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-mousszy-baby-014197",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @mousszy_baby",
+   "description": "",
+   "url": "https://x.com/mousszy_baby/status/2103966434280014197",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/mousszy-baby-014197",
+   "author": "mousszy_baby",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-fr-sorrentino-871017",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Fr_Sorrentino",
+   "description": "",
+   "url": "https://x.com/Fr_Sorrentino/status/2103922812255871017",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/fr-sorrentino-871017",
+   "author": "Fr_Sorrentino",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-proanaliteg-458642",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @proanaliteg",
+   "description": "",
+   "url": "https://x.com/proanaliteg/status/2103895246593458642",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/proanaliteg-458642",
+   "author": "proanaliteg",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dys-hay-749645",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Dys_hay",
+   "description": "",
+   "url": "https://x.com/Dys_hay/status/2103819139307749645",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dys-hay-749645",
+   "author": "Dys_hay",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ambiguous-ai-389509",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @ambiguous_ai",
+   "description": "",
+   "url": "https://x.com/ambiguous_ai/status/2103813886684389509",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ambiguous-ai-389509",
+   "author": "ambiguous_ai",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-heymrzak-349060",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @heymrzak",
+   "description": "",
+   "url": "https://x.com/heymrzak/status/2103768331782349060",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/heymrzak-349060",
+   "author": "heymrzak",
+   "date": "2026-09-29",
+   "genres": [
+    "map-journey"
+   ],
+   "domains": [
+    "geography"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ambiguous-ai-505873",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ambiguous_ai",
+   "description": "",
+   "url": "https://x.com/ambiguous_ai/status/2103763542432505873",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ambiguous-ai-505873",
+   "author": "ambiguous_ai",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-lnkiai-544254",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @lnkiai",
+   "description": "",
+   "url": "https://x.com/lnkiai/status/2103759350330544254",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/lnkiai-544254",
+   "author": "lnkiai",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tejasthange3-128242",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @TejasThange3",
+   "description": "",
+   "url": "https://x.com/TejasThange3/status/2103735653943128242",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tejasthange3-128242",
+   "author": "TejasThange3",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-helloshiva0801-438284",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @helloshiva0801",
+   "description": "",
+   "url": "https://x.com/helloshiva0801/status/2103733875734438284",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/helloshiva0801-438284",
+   "author": "helloshiva0801",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-itakahashikun-990109",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @iTakahashikun",
+   "description": "",
+   "url": "https://x.com/iTakahashikun/status/2103731575661990109",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/itakahashikun-990109",
+   "author": "iTakahashikun",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-als-link-301108",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @als_link",
+   "description": "",
+   "url": "https://x.com/als_link/status/2103617322464301108",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/als-link-301108",
+   "author": "als_link",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "nature"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-cboyack-407181",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @cboyack",
+   "description": "",
+   "url": "https://x.com/cboyack/status/2103617085402407181",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/cboyack-407181",
+   "author": "cboyack",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-salmanr2d2-661615",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @salmanr2d2",
+   "description": "",
+   "url": "https://x.com/salmanr2d2/status/2103608284825661615",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/salmanr2d2-661615",
+   "author": "salmanr2d2",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-piyushaaryan2-196586",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @PiyushAaryan2",
+   "description": "",
+   "url": "https://x.com/PiyushAaryan2/status/2103603040079196586",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/piyushaaryan2-196586",
+   "author": "PiyushAaryan2",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-thuggy-juice-072370",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Thuggy_Juice",
+   "description": "",
+   "url": "https://x.com/Thuggy_Juice/status/2103539067317072370",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/thuggy-juice-072370",
+   "author": "Thuggy_Juice",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ninjaswebcom-684126",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @ninjaswebcom",
+   "description": "",
+   "url": "https://x.com/ninjaswebcom/status/2103537378283684126",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ninjaswebcom-684126",
+   "author": "ninjaswebcom",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tequilafunks-127728",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @tequilafunks",
+   "description": "",
+   "url": "https://x.com/tequilafunks/status/2103528644828127728",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tequilafunks-127728",
+   "author": "tequilafunks",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-iammukeshm-421585",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @iammukeshm",
+   "description": "",
+   "url": "https://x.com/iammukeshm/status/2103511739585421585",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/iammukeshm-421585",
+   "author": "iammukeshm",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-yarhmm-341449",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @YarHmm",
+   "description": "",
+   "url": "https://x.com/YarHmm/status/2103505435802341449",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/yarhmm-341449",
+   "author": "YarHmm",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-t4k1ra-cg-110846",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @T4K1RA_CG",
+   "description": "",
+   "url": "https://x.com/T4K1RA_CG/status/2103486728917110846",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/t4k1ra-cg-110846",
+   "author": "T4K1RA_CG",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-francoxavier33-341663",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @francoxavier33",
+   "description": "",
+   "url": "https://x.com/francoxavier33/status/2103486218323341663",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/francoxavier33-341663",
+   "author": "francoxavier33",
+   "date": "2026-09-29",
+   "genres": [
+    "tutorial",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tony-tt-872147",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @_Tony_TT_",
+   "description": "",
+   "url": "https://x.com/_Tony_TT_/status/2103227891009872147",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tony-tt-872147",
+   "author": "_Tony_TT_",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "finance"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tycenjm-098014",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @tycenjm",
+   "description": "",
+   "url": "https://x.com/tycenjm/status/2103024522589098014",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tycenjm-098014",
+   "author": "tycenjm",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-samissudo-927179",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @samissudo",
+   "description": "",
+   "url": "https://x.com/samissudo/status/2102860811219927179",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/samissudo-927179",
+   "author": "samissudo",
+   "date": "2026-09-29",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-iamshankhadeep-506266",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Iamshankhadeep",
+   "description": "",
+   "url": "https://x.com/Iamshankhadeep/status/2102825543733506266",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/iamshankhadeep-506266",
+   "author": "Iamshankhadeep",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-safaelmali-004843",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @SafaElmali",
+   "description": "",
+   "url": "https://x.com/SafaElmali/status/2102749298673004843",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/safaelmali-004843",
+   "author": "SafaElmali",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "threejs",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-localjulius-625706",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @localjulius",
+   "description": "",
+   "url": "https://x.com/localjulius/status/2102725361922625706",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/localjulius-625706",
+   "author": "localjulius",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative",
+    "explainer",
+    "product-launch"
+   ],
+   "domains": [
+    "education"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-alanschwegler-629665",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @alanschwegler",
+   "description": "",
+   "url": "https://x.com/alanschwegler/status/2102634404774629665",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/alanschwegler-629665",
+   "author": "alanschwegler",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "finance"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-seantiffonnet-675262",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @SeanTiffonnet",
+   "description": "",
+   "url": "https://x.com/SeanTiffonnet/status/2102518598736675262",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/seantiffonnet-675262",
+   "author": "SeanTiffonnet",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "sports",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-priyansh0327-206409",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @priyansh0327",
+   "description": "",
+   "url": "https://x.com/priyansh0327/status/2102472633057206409",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/priyansh0327-206409",
+   "author": "priyansh0327",
+   "date": "2026-09-29",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "geography",
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-goldiez2599-685869",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Goldiez2599",
+   "description": "",
+   "url": "https://x.com/Goldiez2599/status/2102463234586685869",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/goldiez2599-685869",
+   "author": "Goldiez2599",
+   "date": "2026-09-29",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-bridgemindai-286423",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @bridgemindai",
+   "description": "",
+   "url": "https://x.com/bridgemindai/status/2102462889160286423",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/bridgemindai-286423",
+   "author": "bridgemindai",
+   "date": "2026-09-29",
+   "genres": [
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-arumii-movie-622720",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @arumii_movie",
+   "description": "",
+   "url": "https://x.com/arumii_movie/status/2107790132061622720",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/arumii-movie-622720",
+   "author": "arumii_movie",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs",
+    "shader"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-arumii-movie-249613",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @arumii_movie",
+   "description": "",
+   "url": "https://x.com/arumii_movie/status/2107737607908249613",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/arumii-movie-249613",
+   "author": "arumii_movie",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "threejs"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-justinbuilds-412401",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @justinbuilds",
+   "description": "",
+   "url": "https://x.com/justinbuilds/status/2107655437969412401",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/justinbuilds-412401",
+   "author": "justinbuilds",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dheepanratnam-706454",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Dheepanratnam",
+   "description": "",
+   "url": "https://x.com/Dheepanratnam/status/2107568904075706454",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dheepanratnam-706454",
+   "author": "Dheepanratnam",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-soumymaheshwri-825921",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Soumymaheshwri",
+   "description": "",
+   "url": "https://x.com/Soumymaheshwri/status/2107520392302825921",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/soumymaheshwri-825921",
+   "author": "Soumymaheshwri",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-joaquimcassano-778239",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @joaquimcassano",
+   "description": "",
+   "url": "https://x.com/joaquimcassano/status/2107237736121778239",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/joaquimcassano-778239",
+   "author": "joaquimcassano",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-kzmucx-402052",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @kzmucx",
+   "description": "",
+   "url": "https://x.com/kzmucx/status/2107225121123402052",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/kzmucx-402052",
+   "author": "kzmucx",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tankazunori0914-156748",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @tankazunori0914",
+   "description": "",
+   "url": "https://x.com/tankazunori0914/status/2105917770907156748",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tankazunori0914-156748",
+   "author": "tankazunori0914",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-liu8in-891423",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @liu8in",
+   "description": "",
+   "url": "https://x.com/liu8in/status/2105750054908891423",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/liu8in-891423",
+   "author": "liu8in",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ideavim-986785",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ideavim",
+   "description": "",
+   "url": "https://x.com/ideavim/status/2105231699407986785",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ideavim-986785",
+   "author": "ideavim",
+   "date": "2026-10-08",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-leandroriviello-827135",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @leandroriviello",
+   "description": "",
+   "url": "https://x.com/leandroriviello/status/2104728379798827135",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/leandroriviello-827135",
+   "author": "leandroriviello",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-0xlangeai-597929",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @0xlangeai",
+   "description": "",
+   "url": "https://x.com/0xlangeai/status/2106391068367597929",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/0xlangeai-597929",
+   "author": "0xlangeai",
+   "date": "2026-10-08",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-maxhirsch13-600983",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @MaxHirsch13",
+   "description": "",
+   "url": "https://x.com/MaxHirsch13/status/2107985883949600983",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/maxhirsch13-600983",
+   "author": "MaxHirsch13",
+   "date": "2026-10-08",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-xamfonos-004331",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @xamfonos_",
+   "description": "",
+   "url": "https://x.com/xamfonos_/status/2107809209593004331",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/xamfonos-004331",
+   "author": "xamfonos_",
+   "date": "2026-10-08",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-saadpastadev-347341",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @SaadPastaDev",
+   "description": "",
+   "url": "https://x.com/SaadPastaDev/status/2107741413769347341",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/saadpastadev-347341",
+   "author": "SaadPastaDev",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "finance",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-envoldev-017555",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @EnvolDev",
+   "description": "",
+   "url": "https://x.com/EnvolDev/status/2107547689819017555",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/envoldev-017555",
+   "author": "EnvolDev",
+   "date": "2026-10-08",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-dengent-412996",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @DengenT",
+   "description": "",
+   "url": "https://x.com/DengenT/status/2107425308773412996",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/dengent-412996",
+   "author": "DengenT",
+   "date": "2026-10-08",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-apoorvjain25-150112",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @apoorvjain25",
+   "description": "",
+   "url": "https://x.com/apoorvjain25/status/2107157871356150112",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/apoorvjain25-150112",
+   "author": "apoorvjain25",
+   "date": "2026-10-08",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-smitjaineditor-843957",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @SmitJainEditor",
+   "description": "",
+   "url": "https://x.com/SmitJainEditor/status/2107019496078843957",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/smitjaineditor-843957",
+   "author": "SmitJainEditor",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-argbeknwn-466818",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @argbeknwn",
+   "description": "",
+   "url": "https://x.com/argbeknwn/status/2106734468715466818",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/argbeknwn-466818",
+   "author": "argbeknwn",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-leowenai-125931",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @LeowenAI",
+   "description": "",
+   "url": "https://x.com/LeowenAI/status/2106666146456125931",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/leowenai-125931",
+   "author": "LeowenAI",
+   "date": "2026-10-08",
+   "genres": [
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "business"
+   ],
+   "tools": [
+    "shader",
+    "canvas",
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-humzaakhalid-537875",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @humzaakhalid",
+   "description": "",
+   "url": "https://x.com/humzaakhalid/status/2106640261623537875",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/humzaakhalid-537875",
+   "author": "humzaakhalid",
+   "date": "2026-10-08",
+   "genres": [
+    "tutorial",
+    "story-narrative",
+    "quote-kinetic"
+   ],
+   "domains": [
+    "tech",
+    "culture-entertainment",
+    "education"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-xenit-v0-532873",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @xenit_v0",
+   "description": "",
+   "url": "https://x.com/xenit_v0/status/2106270979932532873",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/xenit-v0-532873",
+   "author": "xenit_v0",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-sonali-sahu-09-350200",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Sonali_Sahu_09",
+   "description": "",
+   "url": "https://x.com/Sonali_Sahu_09/status/2106265463378350200",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/sonali-sahu-09-350200",
+   "author": "Sonali_Sahu_09",
+   "date": "2026-10-08",
+   "genres": [
+    "timeline",
+    "story-narrative",
+    "product-launch"
+   ],
+   "domains": [
+    "tech",
+    "business"
+   ],
+   "tools": [
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-aijipusi75693-284735",
+   "collection": "awesome-opus5-5-videos",
+   "category": "3d",
+   "title": "3D scene by @aijipusi75693",
+   "description": "",
+   "url": "https://x.com/aijipusi75693/status/2106201281199284735",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/aijipusi75693-284735",
+   "author": "aijipusi75693",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "threejs",
+    "shader",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-seri-nonnon-231813",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @seri_nonnon",
+   "description": "",
+   "url": "https://x.com/seri_nonnon/status/2106192761632231813",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/seri-nonnon-231813",
+   "author": "seri_nonnon",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-tetsu-tetsu333-576886",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @tetsu_tetsu333",
+   "description": "",
+   "url": "https://x.com/tetsu_tetsu333/status/2106177888265576886",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/tetsu-tetsu333-576886",
+   "author": "tetsu_tetsu333",
+   "date": "2026-10-08",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-0xrapzz-433554",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @0xRapzz",
+   "description": "",
+   "url": "https://x.com/0xRapzz/status/2106062139920433554",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/0xrapzz-433554",
+   "author": "0xRapzz",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-rishit30g-568278",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @rishit30g",
+   "description": "",
+   "url": "https://x.com/rishit30g/status/2106061225851568278",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/rishit30g-568278",
+   "author": "rishit30g",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-alex-leiro-867087",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @Alex_Leiro",
+   "description": "",
+   "url": "https://x.com/Alex_Leiro/status/2106032245848867087",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/alex-leiro-867087",
+   "author": "Alex_Leiro",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-asei-ikarashi-437835",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @asei_ikarashi",
+   "description": "",
+   "url": "https://x.com/asei_ikarashi/status/2105976102074437835",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/asei-ikarashi-437835",
+   "author": "asei_ikarashi",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-nehalmax-802479",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @nehalmax",
+   "description": "",
+   "url": "https://x.com/nehalmax/status/2105939128705802479",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/nehalmax-802479",
+   "author": "nehalmax",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap",
+    "css"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-colecornelll-047465",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @colecornelll",
+   "description": "",
+   "url": "https://x.com/colecornelll/status/2105751866051047465",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/colecornelll-047465",
+   "author": "colecornelll",
+   "date": "2026-10-08",
+   "genres": [
+    "timeline",
+    "tutorial"
+   ],
+   "domains": [
+    "tech",
+    "finance",
+    "culture-entertainment"
+   ],
+   "tools": [
+    "threejs",
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-allodev-069765",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @allodev",
+   "description": "",
+   "url": "https://x.com/allodev/status/2105414480910069765",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/allodev-069765",
+   "author": "allodev",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-aylmerth-356252",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @AylmerTH",
+   "description": "",
+   "url": "https://x.com/AylmerTH/status/2105346401878356252",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/aylmerth-356252",
+   "author": "AylmerTH",
+   "date": "2026-10-08",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-falcong-j-277506",
+   "collection": "awesome-opus5-5-videos",
+   "category": "explainer",
+   "title": "Explainer by @FalconG_J",
+   "description": "",
+   "url": "https://x.com/FalconG_J/status/2105033204319277506",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/falcong-j-277506",
+   "author": "FalconG_J",
+   "date": "2026-10-08",
+   "genres": [
+    "explainer"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-saxxyweb3-690124",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @saxxyweb3",
+   "description": "",
+   "url": "https://x.com/saxxyweb3/status/2104961677963690124",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/saxxyweb3-690124",
+   "author": "saxxyweb3",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "generic"
+   ],
+   "tools": [
+    "canvas",
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
+   "id": "sk-ayumi-t820-871023",
+   "collection": "awesome-opus5-5-videos",
+   "category": "motion",
+   "title": "Motion graphics by @ayumi_t820",
+   "description": "",
+   "url": "https://x.com/ayumi_t820/status/2104807505297871023",
+   "showcaseUrl": "https://skillry.dev/ai-videos/opus-5-5/ayumi-t820-871023",
+   "author": "ayumi_t820",
+   "date": "2026-10-08",
+   "genres": [
+    "showreel"
+   ],
+   "domains": [
+    "tech"
+   ],
+   "tools": [
+    "svg",
+    "gsap"
+   ],
+   "inputs": [],
+   "hasCode": false,
+   "libraryEntries": []
+  },
+  {
    "id": "rp-3d-retro-pixel-font",
    "collection": "remotion-prompts",
    "category": "remotion-showcase",
@@ -10815,10 +16988,8 @@
     "remotion"
    ],
    "model": "Opus4.6",
-   "hasCode": true,
-   "libraryEntries": [
-    "glitch-text-meme"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-apple-style-device-rise-animation",
@@ -10836,10 +17007,8 @@
     "remotion"
    ],
    "model": "Opus 4.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "device-keynote-showcase"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-audio-spectrum-visualizer",
@@ -10876,7 +17045,6 @@
    "model": "Opus 4.5",
    "hasCode": true,
    "libraryEntries": [
-    "collage-journalism",
     "data-story-bars"
    ]
   },
@@ -10914,10 +17082,8 @@
     "remotion"
    ],
    "model": "k2.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "cinematic-broll"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-cursor-agent-skills-announcement",
@@ -10952,10 +17118,8 @@
    "tools": [
     "remotion"
    ],
-   "hasCode": true,
-   "libraryEntries": [
-    "glitch-text-meme"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-html-in-canvas-magnifying-glass",
@@ -10992,10 +17156,8 @@
     "remotion"
    ],
    "model": "Opus 4.6",
-   "hasCode": true,
-   "libraryEntries": [
-    "device-keynote-showcase"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-music-cd-store-promo",
@@ -11127,11 +17289,8 @@
     "remotion"
    ],
    "model": "k2.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "facts-cards-3d",
-    "kinetic-launch"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-solar-system-orbit-animation",
@@ -11168,10 +17327,8 @@
     "remotion"
    ],
    "model": "Opus 4.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "shape-morph-motion"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-strava-run-visualized",
@@ -11189,10 +17346,8 @@
     "remotion"
    ],
    "model": "Opus 4.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "map-journey-route"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-the-kinetic-marketing",
@@ -11211,10 +17366,8 @@
     "remotion"
    ],
    "model": "k2.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "kinetic-launch"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-threejs-top-20-games-sold-ranking-1",
@@ -11269,10 +17422,8 @@
     "remotion"
    ],
    "model": "Opus 4.5",
-   "hasCode": true,
-   "libraryEntries": [
-    "map-journey-route"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   },
   {
    "id": "rp-vintage-screen-effect-html-in-canvas",
@@ -11290,10 +17441,8 @@
     "remotion"
    ],
    "model": "Opus 4.7",
-   "hasCode": true,
-   "libraryEntries": [
-    "glitch-text-meme"
-   ]
+   "hasCode": false,
+   "libraryEntries": []
   }
  ]
 }

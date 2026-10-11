@@ -45,6 +45,7 @@ for (const id of ids) {
     const bundleDir = path.join(root, '.cache', 'bundles', `preview-${id}`);
     const serveUrl = await bundle({
       outDir: bundleDir,
+      enableCaching: false,
       entryPoint,
       publicDir,
       webpackOverride: config => ({

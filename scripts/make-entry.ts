@@ -42,7 +42,28 @@ if (awesome && String(record.id).startsWith('ao-')) {
   }
 }
 
-const prompt = `${readFileSync(path.join(root, 'prompts', 'make-entry.md'), 'utf8')}\n\nENTRY_ID: ${entryId}\nINSPIRATION: ${JSON.stringify(record, null, 2)}\nREFERENCE FRAMES: ${existsSync(refDir) ? path.relative(root, refDir) : 'none'}\nDIRECTION: ${direction}\n${resuming ? `RESUME: entries/${entryId} already contains an unfinished draft from an interrupted run. Read it, keep what is good, and finish it.\n` : ''}`;
+// Skillry list: the original video is hosted next to the showcase page. The creator's brief
+// is handed to the session as local reference only (never written into the repository).
+let sourceBrief = '';
+const skillry = path.join(root, '.cache', 'skillry', 'data', 'videos.json');
+if (String(record.id).startsWith('sk-')) {
+  const slug = String(record.id).slice(3);
+  mkdirSync(refDir, {recursive: true});
+  const video = path.join(refDir, 'source.mp4');
+  try {
+    if (!existsSync(video)) execFileSync('curl', ['-fsSL', '-o', video, `https://media.skillry.dev/opus-5-5/${slug}/original.mp4`]);
+    const duration = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', video], {encoding: 'utf8'})) || 10;
+    for (let i = 0; i < 6; i++) execFileSync('ffmpeg', ['-loglevel', 'error', '-y', '-ss', String(((i + 0.5) * duration) / 6), '-i', video, '-frames:v', '1', '-vf', 'scale=480:-1', path.join(refDir, `frame-${i}.jpg`)]);
+  } catch (e) {
+    console.warn(`No reference frames for ${record.id}: ${(e as Error).message.split('\n')[0]}`);
+  }
+  if (existsSync(skillry)) {
+    const brief = readJson<Array<{slug: string; prompt?: string}>>(skillry).find(v => v.slug === slug)?.prompt;
+    if (brief) sourceBrief = `SOURCE BRIEF (what the creator asked for; reference for the visual idea only, do not copy its wording or subject):\n${brief.slice(0, 4000)}\n`;
+  }
+}
+
+const prompt = `${readFileSync(path.join(root, 'prompts', 'make-entry.md'), 'utf8')}\n\nENTRY_ID: ${entryId}\nINSPIRATION: ${JSON.stringify(record, null, 2)}\nREFERENCE FRAMES: ${existsSync(refDir) ? path.relative(root, refDir) : 'none'}\nDIRECTION: ${direction}\n${sourceBrief}${resuming ? `RESUME: entries/${entryId} already contains an unfinished draft from an interrupted run. Read it, keep what is good, and finish it.\n` : ''}`;
 if (dryRun) {
   console.log(prompt);
   process.exit(0);
