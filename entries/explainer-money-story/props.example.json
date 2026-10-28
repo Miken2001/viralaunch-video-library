@@ -1,0 +1,26 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Ledgerly", "tagline": "Budgeting that adds up", "cta": "Try it free"}},
+  "scenes": [
+    {"text": "In 1971 the dollar stopped being tied to gold. Here is what an ounce has cost since.", "durationSeconds": 4.5},
+    {"text": "August 1971: Nixon closes the gold window. The official price is thirty-five dollars.", "durationSeconds": 4.5},
+    {"text": "January 1980: with inflation raging, gold is fixed at eight hundred and fifty dollars.", "durationSeconds": 4.5},
+    {"text": "By 1999 central banks are selling, and gold sinks to about two hundred and fifty.", "durationSeconds": 4.5},
+    {"text": "In 2011 debt-crisis fears push it to a record near nineteen hundred.", "durationSeconds": 4.5},
+    {"text": "And in August 2020, pandemic stimulus sends it past two thousand. About fifty-nine times 1971.", "durationSeconds": 6}
+  ],
+  "props": {
+    "title": "Gold after the dollar left it",
+    "metric": {"label": "Gold, US$ per troy ounce", "prefix": "$", "suffix": "", "decimals": 0},
+    "beats": [
+      {"label": "1971", "headline": "Nixon closes the *gold* window", "value": 35, "note": "Official price", "icon": "lock"},
+      {"label": "1980", "headline": "Inflation panic sends gold *soaring*", "value": 850, "note": "Jan 1980 fix", "icon": "fire"},
+      {"label": "1999", "headline": "Central banks sell, gold *slumps*", "value": 253, "note": "20-year low", "icon": "building"},
+      {"label": "2011", "headline": "Debt-crisis fears set a *record*", "value": 1895, "note": "Sept 2011 fix", "icon": "shield"},
+      {"label": "2020", "headline": "Pandemic stimulus, another *record*", "value": 2067, "note": "Aug 2020 fix", "icon": "globe"}
+    ],
+    "takeaway": "Same ounce, about *59 times* the 1971 price.",
+    "source": "LBMA gold price fixes",
+    "palette": "amber",
+    "showCaptions": true
+  }
+}

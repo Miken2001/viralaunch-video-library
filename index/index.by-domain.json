@@ -11,6 +11,7 @@
  "business": [
   "data-story-bars",
   "documentary-archival-street",
+  "explainer-money-story",
   "explainer-steps-diagram",
   "news-headline-highlight",
   "news-roundup-cards",
@@ -22,6 +23,7 @@
   "comparison-split",
   "documentary-archival-street",
   "documentary-mosaic-reveal",
+  "explainer-money-story",
   "listicle-countdown",
   "map-country-tour",
   "news-headline-highlight",
@@ -70,6 +72,7 @@
  "finance": [
   "comparison-split",
   "data-story-bars",
+  "explainer-money-story",
   "news-headline-highlight",
   "timeline-company-history"
  ],

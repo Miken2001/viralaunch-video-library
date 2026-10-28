@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-money-story",
+  "name": "Money Story: Value Line Explainer",
+  "version": "1.0.0",
+  "summary": "Tells a money concept in illustrated beats while a glowing price/value line draws itself and reacts to each beat: it rises or falls, a counter ticks, the change lands as a badge. For prices, inflation, markets, savings, money history.",
+  "genres": [
+    "explainer",
+    "data-story",
+    "story-narrative"
+  ],
+  "domains": [
+    "finance",
+    "business",
+    "history"
+  ],
+  "roles": [
+    "context",
+    "evidence",
+    "explanation"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "cinematic",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "charts",
+    "kinetic-type",
+    "svg-illustration",
+    "captions-voiceover",
+    "camera-motion"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/oxpsats/status/2102927498858369282",
+      "author": "oxpsats",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-oxpsats-369282"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

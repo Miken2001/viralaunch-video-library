@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 17,
+ "count": 18,
  "entries": [
   {
    "schemaVersion": 1,
@@ -795,6 +795,281 @@
     "poster": "documentary-mosaic-reveal.jpg",
     "sha256": "bddb571c9919e7e251d297bc3ec9391686dfded0fde24e2b01addb619347b0b3",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/documentary-mosaic-reveal.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "explainer-money-story",
+   "name": "Money Story: Value Line Explainer",
+   "version": "1.0.0",
+   "summary": "Tells a money concept in illustrated beats while a glowing price/value line draws itself and reacts to each beat: it rises or falls, a counter ticks, the change lands as a badge. For prices, inflation, markets, savings, money history.",
+   "genres": [
+    "explainer",
+    "data-story",
+    "story-narrative"
+   ],
+   "domains": [
+    "finance",
+    "business",
+    "history"
+   ],
+   "roles": [
+    "context",
+    "evidence",
+    "explanation"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "cinematic",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "charts",
+    "kinetic-type",
+    "svg-illustration",
+    "captions-voiceover",
+    "camera-motion"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/oxpsats/status/2102927498858369282",
+     "author": "oxpsats",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-oxpsats-369282"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "c0ac50ff63cc59589843e0e6a8f2f45b86619ba62628b4e495650831f5881c9a",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "1842a0444811e05a18d8fc5d624636693ab55acdf702839f3aa0f3d6b8fbaeff",
+     "bytes": 2919
+    },
+    {
+     "path": "meta.json",
+     "sha256": "d259e5269b370dcc3a546cefa213a5695fba572a19048d6987c980015b35eb51",
+     "bytes": 1504
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "dcece7c0d00ef9b18ffee67f425920faecd0e9307afd440583b7810c8a01b45d",
+     "bytes": 1880
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "8ede46aea7b158489325aea75032273f3fc918834d8c0c67fae363b9f2150a0c",
+     "bytes": 22804
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "b890d9b5f8223d1eb2bea6fb80d417871c132c94e10848122857f23b842b3267",
+     "bytes": 3112
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "The money story in a few words, e.g. \"Gold after the dollar left it\". Opening title and header."
+     },
+     "metric": {
+      "description": "What the value line measures and how its numbers are formatted.",
+      "default": {},
+      "type": "object",
+      "properties": {
+       "label": {
+        "default": "",
+        "description": "What the line measures, e.g. \"Gold, US$ per troy ounce\".",
+        "type": "string",
+        "maxLength": 40
+       },
+       "prefix": {
+        "default": "",
+        "description": "Written before every number, e.g. \"$\".",
+        "type": "string",
+        "maxLength": 4
+       },
+       "suffix": {
+        "default": "",
+        "description": "Written after every number, e.g. \"%\" or \" bn\".",
+        "type": "string",
+        "maxLength": 6
+       },
+       "decimals": {
+        "default": 0,
+        "description": "Decimal places for every number.",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 2
+       }
+      }
+     },
+     "beats": {
+      "minItems": 2,
+      "maxItems": 7,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 10,
+         "description": "Short time marker shown on the chart axis, e.g. \"1971\" or \"Day 3\". Max 10 characters."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 3,
+         "maxLength": 70,
+         "description": "What happened at this moment, in at most 9 words. Wrap one key word in *asterisks* to highlight it."
+        },
+        "value": {
+         "type": "number",
+         "description": "The tracked number at this moment (a price, a balance, an index). Real data only."
+        },
+        "note": {
+         "default": "",
+         "description": "Optional tag pinned to this point on the chart, e.g. \"Record high\". Max 28 characters.",
+         "type": "string",
+         "maxLength": 28
+        },
+        "icon": {
+         "default": "money",
+         "description": "Line icon drawn for this beat, e.g. money, chart, building, fire, globe, clock, lock, shield.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "label",
+        "headline",
+        "value"
+       ]
+      },
+      "description": "2-7 story beats in time order, one per narration scene. One extra first scene becomes the title card."
+     },
+     "takeaway": {
+      "default": "",
+      "description": "One closing sentence shown over the last beat. Leave empty for none.",
+      "type": "string",
+      "maxLength": 70
+     },
+     "source": {
+      "default": "",
+      "description": "Where the numbers come from, shown small under the chart.",
+      "type": "string",
+      "maxLength": 60
+     },
+     "palette": {
+      "default": "amber",
+      "description": "amber = warm black and gold, ledger = light paper and green ink, mint = dark green terminal, midnight = deep blue and cyan.",
+      "type": "string",
+      "enum": [
+       "amber",
+       "ledger",
+       "mint",
+       "midnight"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show the narration as word captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "beats"
+    ]
+   },
+   "preview": {
+    "file": "explainer-money-story.mp4",
+    "poster": "explainer-money-story.jpg",
+    "sha256": "156e2f00cf5d7893f5bcad5c151cdc3fff236b3851dfd469a7033c10e6956b44",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-money-story.mp4"
    }
   },
   {
