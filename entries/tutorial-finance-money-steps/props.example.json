@@ -1,0 +1,51 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Pocket Ledger", "tagline": "Budgets that stick", "cta": "Start your budget"}},
+  "scenes": [
+    {"text": "Here is the 50/30/20 budget, a simple way to split your take-home pay.", "durationSeconds": 4},
+    {"text": "Start with your take-home pay. Say four thousand dollars a month after tax.", "durationSeconds": 4.5},
+    {"text": "Fifty percent goes to needs: rent, groceries, insurance and minimum loan payments.", "durationSeconds": 5},
+    {"text": "Thirty percent goes to wants, like eating out, streaming and travel.", "durationSeconds": 4.5},
+    {"text": "And the last twenty percent goes to savings and paying down extra debt.", "durationSeconds": 4.5}
+  ],
+  "props": {
+    "title": "The *50/30/20* budget",
+    "kicker": "Money basics",
+    "steps": [
+      {
+        "label": "Take-home pay",
+        "headline": "Start from your *take-home* pay",
+        "detail": "Use what lands in your account after tax, not your salary.",
+        "icon": "money",
+        "stat": {"value": 4000, "prefix": "$", "suffix": "/mo", "label": "on a $4,000 example"},
+        "chips": []
+      },
+      {
+        "label": "Needs",
+        "headline": "Put *50%* toward needs",
+        "detail": "Rent, groceries, insurance and minimum loan payments.",
+        "icon": "house",
+        "stat": {"value": 2000, "prefix": "$", "label": "needs each month"},
+        "chips": [{"value": "50%", "label": "of pay"}, {"value": "$24,000", "label": "per year"}]
+      },
+      {
+        "label": "Wants",
+        "headline": "Keep *30%* for wants",
+        "detail": "Eating out, streaming, hobbies and travel.",
+        "icon": "cart",
+        "stat": {"value": 1200, "prefix": "$", "label": "wants each month"},
+        "chips": [{"value": "30%", "label": "of pay"}, {"value": "$14,400", "label": "per year"}]
+      },
+      {
+        "label": "Savings",
+        "headline": "Send *20%* to savings and debt",
+        "detail": "Emergency fund first, then extra debt payments and investing.",
+        "icon": "chart",
+        "stat": {"value": 800, "prefix": "$", "label": "saved each month"},
+        "chips": [{"value": "20%", "label": "of pay"}, {"value": "$9,600", "label": "per year"}]
+      }
+    ],
+    "palette": "neon",
+    "disclaimer": "Educational only. Not financial advice.",
+    "showCaptions": true
+  }
+}

@@ -17,7 +17,8 @@
   "news-roundup-cards",
   "quote-kinetic-serif",
   "story-chat-thread",
-  "timeline-company-history"
+  "timeline-company-history",
+  "tutorial-finance-money-steps"
  ],
  "history": [
   "comparison-split",
@@ -80,7 +81,8 @@
   "data-story-bars",
   "explainer-money-story",
   "news-headline-highlight",
-  "timeline-company-history"
+  "timeline-company-history",
+  "tutorial-finance-money-steps"
  ],
  "health": [
   "explainer-route-trace",
@@ -117,6 +119,7 @@
   "story-pixel-arcade",
   "timeline-company-history",
   "timeline-deep-time",
+  "tutorial-finance-money-steps",
   "tutorial-sports-play-steps"
  ],
  "generic": [

@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 22,
+ "count": 23,
  "entries": [
   {
    "schemaVersion": 1,
@@ -4593,6 +4593,311 @@
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-eras.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "tutorial-finance-money-steps",
+   "name": "Money Steps",
+   "version": "1.0.0",
+   "summary": "Personal finance tutorial on a glowing money path: an orb travels node to node as each step's headline rises in, a hero figure counts up with a neon glow and glass chips show the supporting numbers.",
+   "genres": [
+    "tutorial",
+    "explainer"
+   ],
+   "domains": [
+    "finance",
+    "business",
+    "education"
+   ],
+   "roles": [
+    "explanation",
+    "evidence",
+    "context",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "svg-illustration",
+    "charts",
+    "ui-mockup",
+    "particles",
+    "transitions",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/colecornelll/status/2105751866051047465",
+     "author": "colecornelll",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-colecornelll-047465"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "5f15b2370fc5de301d966667b184fd0b37e2476e253165610533e62a70ef82d4",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "d9989bddb765a6aa87eb02d68302ada377661841b1f5944c247fd4ba8dee739e",
+     "bytes": 2768
+    },
+    {
+     "path": "meta.json",
+     "sha256": "614fe1a8d61060ee195c79f1e0511f98b00ce9c77fb0a764bcb4bd051f0281e6",
+     "bytes": 1483
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "a5231ce889b61253a098b88a604f0efe4c5ee0e4426bc5caaed242be0be1a0af",
+     "bytes": 2364
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "9734b98738879b39b2d5931d1026577d5df063761838080a3db20dab70e97151",
+     "bytes": 20321
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "9c98a1be9bd620d4b80a7ce080011cd6dca69fd8f1b5b9c0c33e9c200033d239",
+     "bytes": 2756
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "What the tutorial teaches, e.g. \"The *50/30/20* budget\". Wrap 1–2 words in *asterisks* for the accent colour."
+     },
+     "kicker": {
+      "default": "",
+      "description": "Small label above the title and in the top bar, e.g. \"Money basics\".",
+      "type": "string",
+      "maxLength": 32
+     },
+     "steps": {
+      "minItems": 2,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 24,
+         "description": "Short step name shown as \"STEP 02 · LABEL\", e.g. \"Cover your needs\"."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 56,
+         "description": "The instruction for this step, e.g. \"Put *50%* toward needs\". *Asterisks* highlight words."
+        },
+        "detail": {
+         "default": "",
+         "description": "One plain supporting sentence, e.g. \"Rent, groceries, insurance and minimum loan payments.\"",
+         "type": "string",
+         "maxLength": 110
+        },
+        "icon": {
+         "default": "money",
+         "description": "Line icon on this step's node, e.g. money, chart, bars, calendar, clock, house, cart, shield, lock, target, check.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "stat": {
+         "description": "Optional hero number for this step that counts up with a glow.",
+         "type": "object",
+         "properties": {
+          "value": {
+           "type": "number",
+           "description": "The number that counts up, e.g. 800 or 4.5. Plain number, no symbols."
+          },
+          "prefix": {
+           "default": "",
+           "description": "Shown before the number, e.g. \"$\", \"€\", \"£\" or \"\".",
+           "type": "string",
+           "maxLength": 4
+          },
+          "suffix": {
+           "default": "",
+           "description": "Shown after the number, e.g. \"%\", \"/mo\", \"k\", \" yrs\" or \"\".",
+           "type": "string",
+           "maxLength": 8
+          },
+          "decimals": {
+           "default": 0,
+           "description": "Digits after the decimal point (0 for whole amounts).",
+           "type": "integer",
+           "minimum": 0,
+           "maximum": 2
+          },
+          "label": {
+           "default": "",
+           "description": "Small line above the number saying what it is, e.g. \"goes to savings each month\".",
+           "type": "string",
+           "maxLength": 40
+          }
+         },
+         "required": [
+          "value"
+         ]
+        },
+        "chips": {
+         "default": [],
+         "description": "0–3 small glass chips with supporting figures.",
+         "maxItems": 3,
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10,
+            "description": "Short figure on the glass chip, e.g. \"$2,000\", \"50%\", \"3–6 mo\"."
+           },
+           "label": {
+            "default": "",
+            "description": "One or two words under the figure, e.g. \"needs\", \"per year\".",
+            "type": "string",
+            "maxLength": 18
+           }
+          },
+          "required": [
+           "value"
+          ]
+         }
+        }
+       },
+       "required": [
+        "label",
+        "headline"
+       ]
+      },
+      "description": "The method in order, 2–6 steps. Narration scene i+1 explains step i (scene 1 is the title)."
+     },
+     "palette": {
+      "default": "neon",
+      "description": "neon = black with lime glow; gold = black with warm gold; ocean = deep navy with cyan; ledger = light paper with green ink.",
+      "type": "string",
+      "enum": [
+       "neon",
+       "gold",
+       "ocean",
+       "ledger"
+      ]
+     },
+     "disclaimer": {
+      "default": "Educational only. Not financial advice.",
+      "description": "Small line in the top bar. Keep it for anything that sounds like advice; \"\" hides it.",
+      "type": "string",
+      "maxLength": 60
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "tutorial-finance-money-steps.mp4",
+    "poster": "tutorial-finance-money-steps.jpg",
+    "sha256": "1c8e6bca1369679be91a891a926ce37acc335b8f5fecff3cc331721ac79d33f5",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-finance-money-steps.mp4"
    }
   },
   {
