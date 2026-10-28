@@ -40,6 +40,7 @@
   "documentary-archival-street",
   "map-country-tour",
   "space-scale-ladder",
+  "story-rain-mood",
   "timeline-deep-time"
  ],
  "science": [
@@ -87,12 +88,14 @@
   "news-roundup-cards",
   "quote-kinetic-serif",
   "story-chat-thread",
-  "story-pixel-arcade"
+  "story-pixel-arcade",
+  "story-rain-mood"
  ],
  "nature": [
   "listicle-countdown",
   "map-country-tour",
   "space-scale-ladder",
+  "story-rain-mood",
   "timeline-deep-time"
  ],
  "education": [

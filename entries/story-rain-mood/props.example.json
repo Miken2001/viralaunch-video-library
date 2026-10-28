@@ -1,0 +1,25 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Field Notes Travel", "tagline": "Slow trips to wild places", "cta": "Plan a monsoon trip"}},
+  "scenes": [
+    {"text": "In the hills of northeast India, the rain hardly ever seems to stop.", "durationSeconds": 5},
+    {"text": "The village of Mawsynram gets close to twelve metres of rain in an average year, among the most on Earth.", "durationSeconds": 6},
+    {"text": "Most of it falls during the summer monsoon, from June to September.", "durationSeconds": 5},
+    {"text": "Nearby Cherrapunji once recorded more than twenty-six metres of rain in twelve months, in 1860 and 1861.", "durationSeconds": 6},
+    {"text": "Here, Khasi villagers guide the roots of rubber fig trees across streams to grow living bridges.", "durationSeconds": 6}
+  ],
+  "props": {
+    "title": "Where the *rain* lives",
+    "subtitle": "Meghalaya, India",
+    "mood": "blue-hour",
+    "closing": "Listen to it fall.",
+    "showCaptions": true,
+    "letterbox": true,
+    "shots": [
+      {"setting": "mountains", "weather": "rain", "time": "dawn", "figure": "birds", "label": "Khasi Hills, Meghalaya"},
+      {"setting": "field", "weather": "rain", "time": "night", "figure": "umbrella", "label": "Mawsynram"},
+      {"setting": "forest", "weather": "storm", "time": "dusk", "figure": "none", "label": "June to September"},
+      {"setting": "lake", "weather": "rain", "time": "day", "figure": "walker", "label": "Cherrapunji, 1860–61"},
+      {"setting": "forest", "weather": "fog", "time": "dawn", "figure": "walker", "label": "Living root bridges"}
+    ]
+  }
+}

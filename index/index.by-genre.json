@@ -16,6 +16,7 @@
  "documentary": [
   "documentary-archival-street",
   "documentary-mosaic-reveal",
+  "story-rain-mood",
   "timeline-company-history",
   "timeline-deep-time",
   "timeline-eras"
@@ -23,7 +24,8 @@
  "story-narrative": [
   "explainer-money-story",
   "story-chat-thread",
-  "story-pixel-arcade"
+  "story-pixel-arcade",
+  "story-rain-mood"
  ],
  "listicle": [
   "listicle-countdown",

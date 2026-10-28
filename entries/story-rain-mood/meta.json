@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "story-rain-mood",
+  "name": "Rain Mood Story",
+  "version": "1.0.0",
+  "summary": "A calm, moody 2D illustrated short: layered parallax landscapes (forest, mountains, lake, coast, city, station, field) under rain, storms, snow or fog, with silhouette figures, location tags and quiet serif captions.",
+  "genres": [
+    "story-narrative",
+    "documentary"
+  ],
+  "domains": [
+    "nature",
+    "geography",
+    "culture-entertainment"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "closer"
+  ],
+  "segmentable": true,
+  "look": "dark",
+  "lookPreset": "documentary",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "particles",
+    "captions-voiceover",
+    "transitions"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 150
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "med",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/zhu185178/status/2103757767727255661",
+      "author": "zhu185178",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-zhu185178-255661"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

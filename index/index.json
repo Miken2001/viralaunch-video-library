@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 18,
+ "count": 19,
  "entries": [
   {
    "schemaVersion": 1,
@@ -3062,6 +3062,230 @@
     "poster": "story-pixel-arcade.jpg",
     "sha256": "6d977db4c798bc1b208639f2af4f5b3ef795dde4002e0f6b4b6de3f76d777b44",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-pixel-arcade.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-rain-mood",
+   "name": "Rain Mood Story",
+   "version": "1.0.0",
+   "summary": "A calm, moody 2D illustrated short: layered parallax landscapes (forest, mountains, lake, coast, city, station, field) under rain, storms, snow or fog, with silhouette figures, location tags and quiet serif captions.",
+   "genres": [
+    "story-narrative",
+    "documentary"
+   ],
+   "domains": [
+    "nature",
+    "geography",
+    "culture-entertainment"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "closer"
+   ],
+   "segmentable": true,
+   "look": "dark",
+   "lookPreset": "documentary",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "particles",
+    "captions-voiceover",
+    "transitions"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 150
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "med",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/zhu185178/status/2103757767727255661",
+     "author": "zhu185178",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-zhu185178-255661"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "99d6492e5354c6d90d3634e665c13f7b61d03ba41b8211b6870bef65602819d6",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "7146fc2130547dcef5852b9b5c725c46542fe10666498c3510b6ed27b3631971",
+     "bytes": 3025
+    },
+    {
+     "path": "meta.json",
+     "sha256": "9a3233e239a1491dfdaef752286491f21b2403db79ac066a7a22d078dcec47c9",
+     "bytes": 1470
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "3ce564cc0f99c688d84500bc8bca8b98e1c1200109719e3ff3c3c254fa2fd63f",
+     "bytes": 1628
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "82337980e4a553a3d00f5ae4a761efe256d37d0b8808681abe724c338ee178b9",
+     "bytes": 12175
+    },
+    {
+     "path": "src/scenery.tsx",
+     "sha256": "1282662131c3faf045b0e715e4c92ed2fd824b4051871f7a6a00e4c888e7cf28",
+     "bytes": 30165
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "d95737bc5aff853edb8a0daa84d0e65af14fa5372f2b3df94cbd3c8ce5e3e85d",
+     "bytes": 2189
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Opening title, max ~6 words. Wrap one word in *asterisks* to tint it."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Small line under the title: a place, season or mood.",
+      "type": "string",
+      "maxLength": 80
+     },
+     "shots": {
+      "minItems": 1,
+      "maxItems": 16,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "setting": {
+         "default": "forest",
+         "description": "Drawn place: forest, mountains, lake, coast (sea + lighthouse), city (rainy streets), station (train platform) or field.",
+         "type": "string",
+         "enum": [
+          "forest",
+          "mountains",
+          "lake",
+          "coast",
+          "city",
+          "station",
+          "field"
+         ]
+        },
+        "weather": {
+         "default": "rain",
+         "description": "rain, storm (heavy rain + lightning), snow, fog or clear (fireflies/dust).",
+         "type": "string",
+         "enum": [
+          "rain",
+          "storm",
+          "snow",
+          "fog",
+          "clear"
+         ]
+        },
+        "time": {
+         "default": "night",
+         "description": "dawn, day, dusk or night.",
+         "type": "string",
+         "enum": [
+          "dawn",
+          "day",
+          "dusk",
+          "night"
+         ]
+        },
+        "figure": {
+         "default": "none",
+         "description": "none, umbrella (person under an umbrella), walker, deer or birds (a flock crossing the sky).",
+         "type": "string",
+         "enum": [
+          "none",
+          "umbrella",
+          "walker",
+          "deer",
+          "birds"
+         ]
+        },
+        "label": {
+         "default": "",
+         "description": "Short place or moment tag, max 40 characters. Empty shows nothing.",
+         "type": "string",
+         "maxLength": 40
+        }
+       }
+      },
+      "description": "One shot per narration scene, in order. Extra scenes reuse the shots from the start."
+     },
+     "closing": {
+      "default": "",
+      "description": "Quiet closing line shown over the last scene, e.g. \"Listen to it fall.\" Empty shows nothing.",
+      "type": "string",
+      "maxLength": 70
+     },
+     "mood": {
+      "default": "blue-hour",
+      "description": "Colour mood: blue-hour (cool blues, warm lamps), ember (warm), moss (green, earthy), mono (near black and white).",
+      "type": "string",
+      "enum": [
+       "blue-hour",
+       "ember",
+       "moss",
+       "mono"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show the narration as calm word captions.",
+      "type": "boolean"
+     },
+     "letterbox": {
+      "default": true,
+      "description": "Cinema bars on landscape (16:9) output.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "shots"
+    ]
+   },
+   "preview": {
+    "file": "story-rain-mood.mp4",
+    "poster": "story-rain-mood.jpg",
+    "sha256": "774b070b9721ef6f0741af13a73119f038d0e11063f032fd2a97207c49ab841a",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-rain-mood.mp4"
    }
   },
   {

@@ -74,6 +74,11 @@
     "poster": "story-pixel-arcade.jpg",
     "sha256": "6d977db4c798bc1b208639f2af4f5b3ef795dde4002e0f6b4b6de3f76d777b44"
   },
+  "story-rain-mood": {
+    "file": "story-rain-mood.mp4",
+    "poster": "story-rain-mood.jpg",
+    "sha256": "774b070b9721ef6f0741af13a73119f038d0e11063f032fd2a97207c49ab841a"
+  },
   "timeline-company-history": {
     "file": "timeline-company-history.mp4",
     "poster": "timeline-company-history.jpg",
