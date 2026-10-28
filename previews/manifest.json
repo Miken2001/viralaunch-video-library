@@ -64,6 +64,11 @@
     "poster": "space-scale-ladder.jpg",
     "sha256": "a880878dbea04ece0db94a460ab07bc9a49339506622eb276b23e89c464a34fe"
   },
+  "story-cartoon-explainer": {
+    "file": "story-cartoon-explainer.mp4",
+    "poster": "story-cartoon-explainer.jpg",
+    "sha256": "f4974558bc0567dc5ed3363c9390f1f685b458eb9fffd4aece59a2d99d5eeaa1"
+  },
   "story-chat-thread": {
     "file": "story-chat-thread.mp4",
     "poster": "story-chat-thread.jpg",

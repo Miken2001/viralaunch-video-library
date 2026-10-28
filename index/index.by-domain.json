@@ -49,12 +49,14 @@
   "news-headline-highlight",
   "news-roundup-cards",
   "space-scale-ladder",
+  "story-cartoon-explainer",
   "story-pixel-arcade",
   "timeline-deep-time",
   "timeline-eras"
  ],
  "space": [
   "space-scale-ladder",
+  "story-cartoon-explainer",
   "story-pixel-arcade",
   "timeline-eras"
  ],
@@ -78,7 +80,8 @@
   "timeline-company-history"
  ],
  "health": [
-  "explainer-steps-diagram"
+  "explainer-steps-diagram",
+  "story-cartoon-explainer"
  ],
  "culture-entertainment": [
   "documentary-archival-street",
@@ -95,6 +98,7 @@
   "listicle-countdown",
   "map-country-tour",
   "space-scale-ladder",
+  "story-cartoon-explainer",
   "story-rain-mood",
   "timeline-deep-time"
  ],
@@ -104,6 +108,7 @@
   "map-country-tour",
   "quote-kinetic-serif",
   "space-scale-ladder",
+  "story-cartoon-explainer",
   "story-chat-thread",
   "story-pixel-arcade",
   "timeline-company-history",

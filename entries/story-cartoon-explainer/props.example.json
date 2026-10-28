@@ -1,0 +1,25 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Lumen Tutor", "tagline": "Science that clicks", "cta": "Start learning"}},
+  "scenes": [
+    {"text": "Ice, water and steam are all the same stuff. Let's follow one ice cube.", "durationSeconds": 4},
+    {"text": "Ice is frozen water. Below zero degrees Celsius, water stays solid.", "durationSeconds": 4.5},
+    {"text": "Warm it up to zero degrees and the ice melts into liquid water.", "durationSeconds": 4.5},
+    {"text": "Heat it more. At sea level, water boils at one hundred degrees Celsius.", "durationSeconds": 4.5},
+    {"text": "Boiling turns liquid water into an invisible gas called water vapor.", "durationSeconds": 4.5},
+    {"text": "When vapor cools, it condenses back into tiny droplets. Same water, three states.", "durationSeconds": 6}
+  ],
+  "props": {
+    "title": "How water changes *state*",
+    "host": {"kind": "blob", "name": "Pip"},
+    "steps": [
+      {"heading": "Ice is *solid* water", "line": "Below 0 °C, water stays frozen!", "prop": "ice", "action": "point"},
+      {"heading": "Heat makes it *melt*", "line": "At 0 °C the ice turns to liquid.", "prop": "ice", "becomes": "drop", "action": "shock", "sfx": "DRIP!"},
+      {"heading": "Water *boils* at 100 °C", "line": "That's at sea level. Up a mountain it's lower!", "prop": "thermometer", "action": "explain", "sfx": "HISS!"},
+      {"heading": "Liquid becomes *gas*", "line": "Water vapor is invisible!", "prop": "flame", "action": "think"},
+      {"heading": "Cool vapor *condenses*", "line": "The gas turns back into droplets.", "prop": "cloud", "becomes": "drop", "action": "cheer", "sfx": "PLINK!"}
+    ],
+    "takeaway": "Same water, three states: *solid*, *liquid*, *gas*!",
+    "palette": "saturday",
+    "showCaptions": true
+  }
+}

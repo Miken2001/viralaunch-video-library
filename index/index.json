@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 19,
+ "count": 20,
  "entries": [
   {
    "schemaVersion": 1,
@@ -2673,6 +2673,273 @@
     "poster": "space-scale-ladder.jpg",
     "sha256": "a880878dbea04ece0db94a460ab07bc9a49339506622eb276b23e89c464a34fe",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/space-scale-ladder.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-cartoon-explainer",
+   "name": "Cartoon Explainer: Host and Props",
+   "version": "1.0.0",
+   "summary": "A Saturday-morning cartoon explainer: an outlined SVG host walks past rolling hills, and each step's cartoon prop drops in, acts out the idea and can poof into another. For science and kids' how-it-works topics.",
+   "genres": [
+    "explainer",
+    "story-narrative",
+    "tutorial"
+   ],
+   "domains": [
+    "science",
+    "nature",
+    "education",
+    "space",
+    "health"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "captions-voiceover",
+    "camera-motion",
+    "transitions"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/Ryzoft/status/2102989395359887481",
+     "author": "Ryzoft",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-ryzoft-887481"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "6d8b153ed7bf02d32568b0c99cf79341e19743b356a180c525d7e90337e2e3a1",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "f5ae7643c7c58b107cc88d52c938f5d31a942448253bc72b444a23b1b3678565",
+     "bytes": 3544
+    },
+    {
+     "path": "meta.json",
+     "sha256": "148d4ed31b8649d1c9ef63c42866f5ffcf92d21ac9a2a0644057438646d55b7c",
+     "bytes": 1492
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "e891d70b703d81f2fe9b4e5775849b925302f0be6309cd46a554a318ec34df0f",
+     "bytes": 1789
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "c32899ca909d8aeacfdc8102bf1d4c73934e52955d34e66fc788c1f5b77c90c3",
+     "bytes": 56785
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "42f5c923d6c789cf958793ca774a7d6f4bb2cc628751fe1670cd25018433c9f6",
+     "bytes": 3549
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Episode title, e.g. \"Where does rain come from?\". Shown on the opening title card."
+     },
+     "host": {
+      "description": "The cartoon host who acts out every step.",
+      "default": {},
+      "type": "object",
+      "properties": {
+       "kind": {
+        "default": "blob",
+        "description": "The cartoon host: blob (round friendly creature), robot, or professor (lab coat, glasses).",
+        "type": "string",
+        "enum": [
+         "blob",
+         "robot",
+         "professor"
+        ]
+       },
+       "name": {
+        "default": "",
+        "description": "Optional host name shown on the title card, e.g. \"Professor Pip\".",
+        "type": "string",
+        "maxLength": 24
+       }
+      }
+     },
+     "steps": {
+      "minItems": 2,
+      "maxItems": 7,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "heading": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 40,
+         "description": "What happens in this step, in at most 6 words, e.g. \"Heat melts the ice\". Wrap one word in *asterisks* to colour it."
+        },
+        "line": {
+         "default": "",
+         "description": "Short line the host says in a speech bubble (max 70 characters). Leave empty for no bubble.",
+         "type": "string",
+         "maxLength": 70
+        },
+        "prop": {
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "drop",
+          "ice",
+          "flame",
+          "plant",
+          "tree",
+          "atom",
+          "dna",
+          "cell",
+          "heart",
+          "magnet",
+          "bolt",
+          "bulb",
+          "battery",
+          "thermometer",
+          "flask",
+          "rocket",
+          "planet",
+          "moon",
+          "earth"
+         ],
+         "description": "Cartoon prop acting out the step: sun, cloud, drop, ice, flame, plant, tree, atom, dna, cell, heart, magnet, bolt, bulb, battery, thermometer, flask, rocket, planet, moon, earth."
+        },
+        "becomes": {
+         "default": "none",
+         "description": "Optional: the prop changes into this prop halfway through the step, e.g. ice becomes drop. \"none\" keeps it.",
+         "type": "string",
+         "enum": [
+          "none",
+          "sun",
+          "cloud",
+          "drop",
+          "ice",
+          "flame",
+          "plant",
+          "tree",
+          "atom",
+          "dna",
+          "cell",
+          "heart",
+          "magnet",
+          "bolt",
+          "bulb",
+          "battery",
+          "thermometer",
+          "flask",
+          "rocket",
+          "planet",
+          "moon",
+          "earth"
+         ]
+        },
+        "action": {
+         "default": "point",
+         "description": "What the host does: point (at the prop), explain (open arms), think (hand on chin), wave, cheer (jumps), shock (surprised jump).",
+         "type": "string",
+         "enum": [
+          "point",
+          "explain",
+          "think",
+          "wave",
+          "cheer",
+          "shock"
+         ]
+        },
+        "sfx": {
+         "default": "",
+         "description": "Optional comic sound word next to the prop, e.g. \"POP!\", \"ZAP!\", \"DRIP!\". Max 8 characters.",
+         "type": "string",
+         "maxLength": 8
+        }
+       },
+       "required": [
+        "heading",
+        "prop"
+       ]
+      },
+      "description": "2-7 steps in order, one per narration scene. Add one extra first scene to get a title card."
+     },
+     "takeaway": {
+      "default": "",
+      "description": "Optional closing idea shown at the end of the last step, e.g. \"Same water, three *states*!\". Leave empty for none.",
+      "type": "string",
+      "maxLength": 70
+     },
+     "palette": {
+      "default": "saturday",
+      "description": "saturday = bright sky and green hills, dusk = purple sunset, chalk = soft paper colours.",
+      "type": "string",
+      "enum": [
+       "saturday",
+       "dusk",
+       "chalk"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show the narration as word captions on the ground band.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "story-cartoon-explainer.mp4",
+    "poster": "story-cartoon-explainer.jpg",
+    "sha256": "f4974558bc0567dc5ed3363c9390f1f685b458eb9fffd4aece59a2d99d5eeaa1",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-cartoon-explainer.mp4"
    }
   },
   {

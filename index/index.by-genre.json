@@ -8,6 +8,7 @@
   "map-country-tour",
   "news-headline-highlight",
   "space-scale-ladder",
+  "story-cartoon-explainer",
   "story-pixel-arcade",
   "timeline-company-history",
   "timeline-deep-time",
@@ -23,6 +24,7 @@
  ],
  "story-narrative": [
   "explainer-money-story",
+  "story-cartoon-explainer",
   "story-chat-thread",
   "story-pixel-arcade",
   "story-rain-mood"
@@ -60,7 +62,8 @@
   "space-scale-ladder"
  ],
  "tutorial": [
-  "explainer-steps-diagram"
+  "explainer-steps-diagram",
+  "story-cartoon-explainer"
  ],
  "news-recap": [
   "data-story-bars",
