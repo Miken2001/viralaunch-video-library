@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "story-dev-session-diary",
+  "name": "Dev Session Diary",
+  "version": "1.0.0",
+  "summary": "A tech story told as one working session at a cartoon desk: timestamped chat bubbles type out, the character reacts, the monitor shows errors, builds and wins, the wall clock turns and the window goes from day to night.",
+  "genres": [
+    "story-narrative"
+  ],
+  "domains": [
+    "tech",
+    "history",
+    "business"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "explanation"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "paper",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "ui-mockup",
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/jake11moran/status/2103247490237825416",
+      "author": "jake11moran",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-jake11moran-825416"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": [
+    "@remotion/paths"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Bytewise", "tagline": "Computing history in a minute", "cta": "Follow for more"}},
+  "scenes": [
+    {"text": "September 9th, 1947. Harvard's Mark II computer, and one long day in its logbook.", "durationSeconds": 5},
+    {"text": "At eight in the morning, the operators start an arctangent run.", "durationSeconds": 4.5},
+    {"text": "By ten it stops, and the check passes.", "durationSeconds": 4},
+    {"text": "At eleven they load the cosine tape for a sine check.", "durationSeconds": 4.5},
+    {"text": "Twenty-five past three: a multi-adder test begins.", "durationSeconds": 4.5},
+    {"text": "Then, at three forty-five, something is wrong in Relay number seventy, Panel F. It's a moth.", "durationSeconds": 6},
+    {"text": "They tape it into the log: first actual case of bug being found.", "durationSeconds": 5},
+    {"text": "The arctangent run restarts at four thirty, and at five, they close down.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "Opening logbook: 9 Sep 1947",
+    "nameplate": "Mark II Operators",
+    "cast": {"human": "Operator", "machine": "Mark II"},
+    "beats": [
+      {"time": "08:00", "message": "Arctan started.", "who": "human", "mood": "focused", "screen": "typing"},
+      {"time": "10:00", "message": "arctan stopped. check OK", "who": "machine", "mood": "happy", "screen": "success"},
+      {"time": "11:00", "message": "Started cosine tape (sine check).", "who": "human", "mood": "focused", "screen": "progress"},
+      {"time": "15:25", "message": "Started multi-adder test.", "who": "human", "mood": "focused", "screen": "typing"},
+      {"time": "15:45", "message": "Relay #70, Panel F... there's a moth in the relay.", "who": "human", "mood": "confused", "screen": "error", "sticker": "MOTH!"},
+      {"time": "15:45", "message": "First actual case of bug being found.", "who": "human", "mood": "proud", "screen": "success", "sticker": "BUG FOUND"},
+      {"time": "17:00", "message": "Arctangent started at 16:30. Closed down.", "who": "human", "mood": "sleepy", "screen": "typing"}
+    ],
+    "sky": "daylight",
+    "palette": "cozy",
+    "showCaptions": true
+  }
+}

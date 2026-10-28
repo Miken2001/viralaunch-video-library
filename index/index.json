@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 31,
+ "count": 32,
  "entries": [
   {
    "schemaVersion": 1,
@@ -5021,6 +5021,248 @@
     "poster": "story-cosmic-zoom-out.jpg",
     "sha256": "3590a30438eb337f09d26c97fa4ed3b18a7e9bc9ed4c5baff2c0aecea5878ec7",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-cosmic-zoom-out.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-dev-session-diary",
+   "name": "Dev Session Diary",
+   "version": "1.0.0",
+   "summary": "A tech story told as one working session at a cartoon desk: timestamped chat bubbles type out, the character reacts, the monitor shows errors, builds and wins, the wall clock turns and the window goes from day to night.",
+   "genres": [
+    "story-narrative"
+   ],
+   "domains": [
+    "tech",
+    "history",
+    "business"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "ui-mockup",
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/jake11moran/status/2103247490237825416",
+     "author": "jake11moran",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-jake11moran-825416"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [
+    "@remotion/paths"
+   ],
+   "sha256": "e788627d666efffb4f51cfce38d84d8338670442ca77f69c573eba01dd7d89b9",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "d87339430647a6e79c20d4b9d51a7dd420bcdcf231c1b72b94197549f6387211",
+     "bytes": 2724
+    },
+    {
+     "path": "meta.json",
+     "sha256": "4c832e6c5cbf086cb5a878f6070e54e6e72fe396873d4ccdd149303cd70b35f1",
+     "bytes": 1514
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "e2eab613ea3e5b5d58d6ac49f6ee060ee2c753c1f8f24a01776147670d39dc9a",
+     "bytes": 2182
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "97515caae7768429f9c204cb49a6e20598a32bc6057f2ef0fd8caa69359653e7",
+     "bytes": 37789
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "174ff137aff55ac90c4eae42cd8721f66f50e62f056f1285b909eeea7e107432",
+     "bytes": 3254
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "default": "Initiating session...",
+      "description": "Opening line typed on the monitor while the camera pulls back, ≤ 40 characters.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+     },
+     "nameplate": {
+      "default": "",
+      "description": "Text on the desk nameplate, ≤ 28 characters (a name or a role). \"\" hides the plate text.",
+      "type": "string",
+      "maxLength": 28
+     },
+     "cast": {
+      "description": "Names on the bubbles.",
+      "default": {},
+      "type": "object",
+      "properties": {
+       "human": {
+        "default": "Dev",
+        "description": "Name shown on human bubbles, e.g. \"Dev\" or \"Operator\".",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 16
+       },
+       "machine": {
+        "default": "Terminal",
+        "description": "Name shown on machine bubbles, e.g. \"Terminal\" or \"Build bot\".",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 16
+       }
+      }
+     },
+     "beats": {
+      "minItems": 2,
+      "maxItems": 12,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "time": {
+         "default": "",
+         "description": "Clock time of the moment, \"HH:MM\" (24h), e.g. \"09:14\". Use \"\" if unknown.",
+         "type": "string",
+         "maxLength": 8
+        },
+        "message": {
+         "type": "string",
+         "minLength": 2,
+         "maxLength": 90,
+         "description": "The message or log line for this moment, ≤ 90 characters, e.g. \"Why does the login page loop forever?\""
+        },
+        "who": {
+         "default": "human",
+         "description": "\"human\" = the person at the desk says it; \"machine\" = the computer replies (mono terminal bubble).",
+         "type": "string",
+         "enum": [
+          "human",
+          "machine"
+         ]
+        },
+        "mood": {
+         "default": "focused",
+         "description": "Character face for this moment.",
+         "type": "string",
+         "enum": [
+          "focused",
+          "happy",
+          "proud",
+          "confused",
+          "frustrated",
+          "sleepy"
+         ]
+        },
+        "screen": {
+         "default": "typing",
+         "description": "Monitor state: typing (terminal), thinking (idea bulb), progress (bar fills), error (red cross), success (green check), chart (growth), launch (rocket).",
+         "type": "string",
+         "enum": [
+          "typing",
+          "thinking",
+          "progress",
+          "error",
+          "success",
+          "chart",
+          "launch"
+         ]
+        },
+        "sticker": {
+         "default": "",
+         "description": "Optional ribbon slapped on the character, e.g. \"SO COOL\" or \"BUG FOUND\". Use \"\" for none.",
+         "type": "string",
+         "maxLength": 16
+        }
+       },
+       "required": [
+        "message"
+       ]
+      },
+      "description": "2–12 moments of the session in time order, one per narration scene."
+     },
+     "sky": {
+      "default": "day-to-night",
+      "description": "Window light across the video: day-to-night, night-to-dawn, or daylight only.",
+      "type": "string",
+      "enum": [
+       "day-to-night",
+       "night-to-dawn",
+       "daylight"
+      ]
+     },
+     "palette": {
+      "default": "cozy",
+      "description": "Room colours: cozy (cream and teal), pastel (lilac), midnight (dark navy).",
+      "type": "string",
+      "enum": [
+       "cozy",
+       "pastel",
+       "midnight"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "beats"
+    ]
+   },
+   "preview": {
+    "file": "story-dev-session-diary.mp4",
+    "poster": "story-dev-session-diary.jpg",
+    "sha256": "bb54731cb2efaa218bea88461514eeed111f56023e12da2a1902813c57eb89a5",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-dev-session-diary.mp4"
    }
   },
   {

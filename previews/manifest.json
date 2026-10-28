@@ -114,6 +114,11 @@
     "poster": "story-cosmic-zoom-out.jpg",
     "sha256": "3590a30438eb337f09d26c97fa4ed3b18a7e9bc9ed4c5baff2c0aecea5878ec7"
   },
+  "story-dev-session-diary": {
+    "file": "story-dev-session-diary.mp4",
+    "poster": "story-dev-session-diary.jpg",
+    "sha256": "bb54731cb2efaa218bea88461514eeed111f56023e12da2a1902813c57eb89a5"
+  },
   "story-pixel-arcade": {
     "file": "story-pixel-arcade.mp4",
     "poster": "story-pixel-arcade.jpg",
