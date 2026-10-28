@@ -1,0 +1,30 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Skyguide", "tagline": "Know what you're looking at", "cta": "Try it tonight"}},
+  "scenes": [
+    {"text": "Start on one quiet stretch of coast, and keep pulling back.", "durationSeconds": 3.5},
+    {"text": "Earth is about twelve thousand seven hundred kilometres across.", "durationSeconds": 4},
+    {"text": "The Moon circles it at an average of three hundred and eighty four thousand kilometres.", "durationSeconds": 5},
+    {"text": "Sunlight needs about eight minutes and twenty seconds to reach us.", "durationSeconds": 4.5},
+    {"text": "The nearest other star, Proxima Centauri, is four point two light-years away.", "durationSeconds": 5},
+    {"text": "Our Milky Way is about a hundred thousand light-years across.", "durationSeconds": 4.5},
+    {"text": "It belongs to the Local Group, alongside the Andromeda and Triangulum galaxies.", "durationSeconds": 5},
+    {"text": "And the observable universe spans about ninety-three billion light-years.", "durationSeconds": 5.5}
+  ],
+  "props": {
+    "title": "From one beach to the edge of *everything*",
+    "homeLabel": "You are here",
+    "palette": "deep",
+    "showRuler": true,
+    "showCaptions": true,
+    "levels": [
+      {"name": "A stretch of coast", "span": "a few kilometres of shore", "note": "Where the journey outward begins", "view": "surface"},
+      {"name": "Earth", "span": "12,742 km across", "note": "Light crosses it in about 0.04 seconds", "view": "planet"},
+      {"name": "Earth and the Moon", "span": "384,400 km apart on average", "note": "Moonlight reaches us in about 1.3 seconds", "view": "orbit", "labels": ["Moon"]},
+      {"name": "The inner Solar System", "span": "Earth orbits 150 million km from the Sun", "note": "Sunlight arrives after about 8 min 20 s", "view": "system", "labels": ["Sun", "Mercury", "Venus", "Mars"]},
+      {"name": "Our stellar neighbourhood", "span": "Proxima Centauri: 4.2 light-years", "note": "The closest star to the Sun", "view": "stars", "labels": ["Proxima Centauri", "Barnard's Star", "Sirius"]},
+      {"name": "The Milky Way", "span": "about 100,000 light-years across", "note": "The Sun sits about 26,000 light-years from the centre", "view": "galaxy", "labels": ["Large Magellanic Cloud", "Small Magellanic Cloud"]},
+      {"name": "The Local Group", "span": "about 10 million light-years across", "note": "Andromeda is about 2.5 million light-years away", "view": "group", "labels": ["Andromeda", "Triangulum"]},
+      {"name": "The observable universe", "span": "about 93 billion light-years across", "note": "Its oldest light set out 13.8 billion years ago", "view": "web"}
+    ]
+  }
+}

@@ -104,6 +104,11 @@
     "poster": "story-chat-thread.jpg",
     "sha256": "532499c504f567f200804db22a90c34b1a5001c126257a3ec6c62022dafd67b0"
   },
+  "story-cosmic-zoom-out": {
+    "file": "story-cosmic-zoom-out.mp4",
+    "poster": "story-cosmic-zoom-out.jpg",
+    "sha256": "3590a30438eb337f09d26c97fa4ed3b18a7e9bc9ed4c5baff2c0aecea5878ec7"
+  },
   "story-pixel-arcade": {
     "file": "story-pixel-arcade.mp4",
     "poster": "story-pixel-arcade.jpg",

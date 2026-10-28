@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "story-cosmic-zoom-out",
+  "name": "Cosmic Zoom-Out",
+  "version": "1.0.0",
+  "summary": "One continuous camera pull-back from a place on Earth through planet, orbits, stars and galaxies to the observable universe, with a 'you are here' marker, a size readout per level and a scale ruler.",
+  "genres": [
+    "story-narrative",
+    "explainer",
+    "comparison"
+  ],
+  "domains": [
+    "space",
+    "science",
+    "education"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "payoff"
+  ],
+  "segmentable": true,
+  "look": "dark",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "particles",
+    "kinetic-type",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 12,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "med",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/kgonia7/status/2103835848575746268",
+      "author": "kgonia7",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-kgonia7-746268"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

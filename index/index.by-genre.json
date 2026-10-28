@@ -13,6 +13,7 @@
   "space-scale-ladder",
   "story-cartoon-explainer",
   "story-character-dialogue",
+  "story-cosmic-zoom-out",
   "story-pixel-arcade",
   "timeline-company-history",
   "timeline-deep-time",
@@ -37,6 +38,7 @@
   "story-cartoon-explainer",
   "story-character-dialogue",
   "story-chat-thread",
+  "story-cosmic-zoom-out",
   "story-pixel-arcade",
   "story-rain-mood"
  ],
@@ -73,7 +75,8 @@
   "comparison-split",
   "data-story-bars",
   "listicle-countdown",
-  "space-scale-ladder"
+  "space-scale-ladder",
+  "story-cosmic-zoom-out"
  ],
  "tutorial": [
   "explainer-line-art-lesson",

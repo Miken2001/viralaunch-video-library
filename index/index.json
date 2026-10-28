@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 29,
+ "count": 30,
  "entries": [
   {
    "schemaVersion": 1,
@@ -4509,6 +4509,210 @@
     "poster": "story-chat-thread.jpg",
     "sha256": "532499c504f567f200804db22a90c34b1a5001c126257a3ec6c62022dafd67b0",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-chat-thread.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-cosmic-zoom-out",
+   "name": "Cosmic Zoom-Out",
+   "version": "1.0.0",
+   "summary": "One continuous camera pull-back from a place on Earth through planet, orbits, stars and galaxies to the observable universe, with a 'you are here' marker, a size readout per level and a scale ruler.",
+   "genres": [
+    "story-narrative",
+    "explainer",
+    "comparison"
+   ],
+   "domains": [
+    "space",
+    "science",
+    "education"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "dark",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "particles",
+    "kinetic-type",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 12,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "med",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/kgonia7/status/2103835848575746268",
+     "author": "kgonia7",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-kgonia7-746268"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "d5189b7680747104759b80c3015e628f1dd9e104e19f5a4d4fd353c69052bc23",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "e9ecef88688fdc2d369ae20ef1f21420fd10b81e802aef0621d437f9b749bef9",
+     "bytes": 3477
+    },
+    {
+     "path": "meta.json",
+     "sha256": "611767701c1c4b439a74fb5298faa6ae9093f0fad44ec61012f811a8ed8e12ab",
+     "bytes": 1433
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "8f09b99e37f056cd57eb1c5f8b67ba497cb050ac6d5b62f60a48d570316b2fc1",
+     "bytes": 2678
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "241d992db0fe6147756cfa5de1b084c0595900b45a2451e492c7542d73f31279",
+     "bytes": 40930
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "3fa631d76686eef8a67f6fca89616040e32088446360c44b73fee614489aa300",
+     "bytes": 2765
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 70,
+      "description": "Opening line over the first level. Wrap one word in *asterisks* to highlight it."
+     },
+     "homeLabel": {
+      "default": "You are here",
+      "description": "Label of the marker that keeps pointing at the starting place.",
+      "type": "string",
+      "maxLength": 24
+     },
+     "levels": {
+      "minItems": 3,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 32,
+         "description": "Short name of this scale level, e.g. \"The Milky Way\"."
+        },
+        "span": {
+         "default": "",
+         "description": "Size or distance readout, e.g. \"about 100,000 light-years across\".",
+         "type": "string",
+         "maxLength": 40
+        },
+        "note": {
+         "default": "",
+         "description": "One extra fact line shown under the readout. May be empty.",
+         "type": "string",
+         "maxLength": 70
+        },
+        "view": {
+         "type": "string",
+         "enum": [
+          "surface",
+          "planet",
+          "orbit",
+          "system",
+          "stars",
+          "galaxy",
+          "group",
+          "web"
+         ],
+         "description": "Drawing for this level: surface, planet, orbit, system, stars, galaxy, group or web."
+        },
+        "labels": {
+         "default": [],
+         "description": "Up to 4 names pinned on the drawing, e.g. [\"Andromeda\", \"Triangulum\"].",
+         "maxItems": 4,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+         }
+        }
+       },
+       "required": [
+        "name",
+        "view"
+       ]
+      },
+      "description": "3 to 8 scale levels, smallest first. One narration scene per level."
+     },
+     "palette": {
+      "default": "deep",
+      "description": "deep (blue), aurora (green), ember (warm) or mono (black and white).",
+      "type": "string",
+      "enum": [
+       "deep",
+       "aurora",
+       "ember",
+       "mono"
+      ]
+     },
+     "showRuler": {
+      "default": true,
+      "description": "Show the scale ruler along the bottom.",
+      "type": "boolean"
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show narration as word captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "levels"
+    ]
+   },
+   "preview": {
+    "file": "story-cosmic-zoom-out.mp4",
+    "poster": "story-cosmic-zoom-out.jpg",
+    "sha256": "3590a30438eb337f09d26c97fa4ed3b18a7e9bc9ed4c5baff2c0aecea5878ec7",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-cosmic-zoom-out.mp4"
    }
   },
   {
