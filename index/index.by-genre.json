@@ -6,6 +6,7 @@
   "documentary-mosaic-reveal",
   "explainer-line-art-lesson",
   "explainer-money-story",
+  "explainer-physics-diagram",
   "explainer-route-trace",
   "explainer-steps-diagram",
   "map-country-tour",
@@ -80,6 +81,7 @@
  ],
  "tutorial": [
   "explainer-line-art-lesson",
+  "explainer-physics-diagram",
   "explainer-steps-diagram",
   "story-cartoon-explainer",
   "tutorial-creator-howto",

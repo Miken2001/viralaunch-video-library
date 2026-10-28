@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-physics-diagram",
+  "name": "Pipeline Schematic Explainer",
+  "version": "1.0.0",
+  "summary": "Dark technical-schematic explainer: a pipeline of glowing modules on a rail pans stage by stage while bullets, a counter card and a bottom stepper explain how a film, song, game or show gets made.",
+  "genres": [
+    "explainer",
+    "tutorial"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "tech",
+    "education",
+    "business"
+  ],
+  "roles": [
+    "context",
+    "explanation",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 6,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/Frenchie_/status/2103731959918948730",
+      "author": "Frenchie_",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-frenchie_-948730"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

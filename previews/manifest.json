@@ -34,6 +34,11 @@
     "poster": "explainer-money-story.jpg",
     "sha256": "156e2f00cf5d7893f5bcad5c151cdc3fff236b3851dfd469a7033c10e6956b44"
   },
+  "explainer-physics-diagram": {
+    "file": "explainer-physics-diagram.mp4",
+    "poster": "explainer-physics-diagram.jpg",
+    "sha256": "df00cff4b57f1f5f3ab40059e5fb4b180702fbbe156e10b1654b4552dee4ee69"
+  },
   "explainer-route-trace": {
     "file": "explainer-route-trace.mp4",
     "poster": "explainer-route-trace.jpg",

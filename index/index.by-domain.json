@@ -2,6 +2,7 @@
  "tech": [
   "comparison-split",
   "documentary-archival-street",
+  "explainer-physics-diagram",
   "explainer-steps-diagram",
   "news-city-blocks",
   "news-headline-highlight",
@@ -16,6 +17,7 @@
   "data-story-bars",
   "documentary-archival-street",
   "explainer-money-story",
+  "explainer-physics-diagram",
   "explainer-steps-diagram",
   "news-city-blocks",
   "news-headline-highlight",
@@ -107,6 +109,7 @@
   "documentary-archival-street",
   "documentary-festival-moon",
   "documentary-mosaic-reveal",
+  "explainer-physics-diagram",
   "listicle-countdown",
   "map-country-tour",
   "news-roundup-cards",
@@ -130,6 +133,7 @@
  "education": [
   "documentary-festival-moon",
   "explainer-line-art-lesson",
+  "explainer-physics-diagram",
   "explainer-steps-diagram",
   "listicle-countdown",
   "map-country-tour",

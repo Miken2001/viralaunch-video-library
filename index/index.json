@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 30,
+ "count": 31,
  "entries": [
   {
    "schemaVersion": 1,
@@ -1607,6 +1607,314 @@
     "poster": "explainer-money-story.jpg",
     "sha256": "156e2f00cf5d7893f5bcad5c151cdc3fff236b3851dfd469a7033c10e6956b44",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-money-story.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "explainer-physics-diagram",
+   "name": "Pipeline Schematic Explainer",
+   "version": "1.0.0",
+   "summary": "Dark technical-schematic explainer: a pipeline of glowing modules on a rail pans stage by stage while bullets, a counter card and a bottom stepper explain how a film, song, game or show gets made.",
+   "genres": [
+    "explainer",
+    "tutorial"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "tech",
+    "education",
+    "business"
+   ],
+   "roles": [
+    "context",
+    "explanation",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "camera-motion",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 6,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/Frenchie_/status/2103731959918948730",
+     "author": "Frenchie_",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-frenchie_-948730"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "8d13ad44fcf598da394497d36c22c7c40fce0ceadbe0747c286361f524c813c5",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "8b1f348db2dab8dceb3f27cd6114d2285f296921b7897689e45ea0b1698c9061",
+     "bytes": 3612
+    },
+    {
+     "path": "meta.json",
+     "sha256": "7df69ce7c4531e527d24c3fcf362de79bb21b0a996be96c6d7e2d0c54cc4f650",
+     "bytes": 1453
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "ac15010335929d6c571ca9419d7222e90ad8add65c916664f97c93d6b8adace0",
+     "bytes": 2902
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "205080dc687716b3e665465e78912a05fc70443e49cb38f526ac87e72f7ccee7",
+     "bytes": 26172
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "2aa907051dfd21c372bb8e8e768caac37b19f5590310fd116cfb671f462cf026",
+     "bytes": 2847
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "kicker": {
+      "default": "",
+      "description": "Small series label above the title, e.g. \"How it's made · Animation\".",
+      "type": "string",
+      "maxLength": 40
+     },
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Title of the explainer, e.g. \"How an *animated film* is made\"."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Optional one line under the title.",
+      "type": "string",
+      "maxLength": 80
+     },
+     "stages": {
+      "minItems": 2,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 18,
+         "description": "Short stage name shown on the diagram module and the bottom stepper, e.g. \"Storyboard\", \"Recording\", \"Mixing\"."
+        },
+        "icon": {
+         "default": "spark",
+         "description": "Line icon drawn inside the module (camera, music, book, chat, people, star, trophy, chip, gear, bulb, calendar, ...).",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "tag": {
+         "default": "",
+         "description": "Optional small mono line under the stage name, e.g. \"months 1-6\" or \"story team\".",
+         "type": "string",
+         "maxLength": 24
+        }
+       },
+       "required": [
+        "name"
+       ]
+      },
+      "description": "2-6 stages of the process, left to right. They form the diagram pipeline and the bottom stepper."
+     },
+     "steps": {
+      "minItems": 1,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "stage": {
+         "description": "Which stage (1-based, in `stages` order) this step is about. Leave out to use the step order.",
+         "type": "integer",
+         "minimum": 1,
+         "maximum": 6
+        },
+        "heading": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 56,
+         "description": "Headline of this step, e.g. \"Every shot starts as a *sketch*\". *Asterisks* colour a word."
+        },
+        "points": {
+         "minItems": 1,
+         "maxItems": 3,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 72
+         },
+         "description": "1-3 short bullet lines, in the order the narration says them."
+        },
+        "stat": {
+         "description": "Optional key number for this step, shown as a counter card under the bullets.",
+         "type": "object",
+         "properties": {
+          "value": {
+           "type": "number",
+           "description": "The number that counts up, e.g. 24. Real and checkable only."
+          },
+          "decimals": {
+           "default": 0,
+           "description": "Decimal places shown for the value.",
+           "type": "integer",
+           "minimum": 0,
+           "maximum": 2
+          },
+          "unit": {
+           "default": "",
+           "description": "Short unit after the number, e.g. \"fps\", \"%\", \"min\".",
+           "type": "string",
+           "maxLength": 10
+          },
+          "label": {
+           "type": "string",
+           "minLength": 1,
+           "maxLength": 48,
+           "description": "What the number means, e.g. \"frames in every second of film\"."
+          }
+         },
+         "required": [
+          "value",
+          "label"
+         ]
+        }
+       },
+       "required": [
+        "heading",
+        "points"
+       ]
+      },
+      "description": "1-8 steps, one per narration line (an extra first narration line becomes the title card)."
+     },
+     "flowLabel": {
+      "default": "",
+      "description": "Optional name of what flows through the pipeline, shown on the moving packets, e.g. \"Shots\", \"Tracks\", \"Scenes\".",
+      "type": "string",
+      "maxLength": 18
+     },
+     "palette": {
+      "default": "midnight",
+      "description": "midnight = deep navy with electric blue (the classic schematic look), graphite = near-black with orange, studio = light grey with blue.",
+      "type": "string",
+      "enum": [
+       "midnight",
+       "graphite",
+       "studio"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced subtitles at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "stages",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "explainer-physics-diagram.mp4",
+    "poster": "explainer-physics-diagram.jpg",
+    "sha256": "df00cff4b57f1f5f3ab40059e5fb4b180702fbbe156e10b1654b4552dee4ee69",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-physics-diagram.mp4"
    }
   },
   {

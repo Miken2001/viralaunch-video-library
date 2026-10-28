@@ -1,0 +1,55 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Frame Notes", "tagline": "How films really get made", "cta": "Watch the next breakdown"}},
+  "scenes": [
+    {"text": "How does an animated film go from an idea to the big screen? It moves through a pipeline.", "durationSeconds": 5},
+    {"text": "It starts with storyboards. Artists sketch the film shot by shot, then cut the sketches into a story reel with temporary voices.", "durationSeconds": 7},
+    {"text": "Layout sets the camera. Simple stand-in models block out each shot, and artists choose the angles and camera moves.", "durationSeconds": 7},
+    {"text": "Then animators bring the characters to life, pose by pose, at twenty-four frames for every second of film.", "durationSeconds": 7},
+    {"text": "Lighting sets the mood. Virtual lights are placed like on a real film set, and colour guides where you look.", "durationSeconds": 7},
+    {"text": "Finally every frame is rendered as a finished image. A ninety-minute film needs almost one hundred and thirty thousand of them.", "durationSeconds": 8}
+  ],
+  "props": {
+    "kicker": "How it's made · Animation",
+    "title": "How an *animated film* is made",
+    "subtitle": "From the first sketch to the finished frame",
+    "stages": [
+      {"name": "Story", "icon": "book", "tag": "storyboards"},
+      {"name": "Layout", "icon": "camera", "tag": "camera & staging"},
+      {"name": "Animation", "icon": "person", "tag": "performance"},
+      {"name": "Lighting", "icon": "bulb", "tag": "mood & colour"},
+      {"name": "Rendering", "icon": "chip", "tag": "final frames"}
+    ],
+    "steps": [
+      {
+        "stage": 1,
+        "heading": "Every film starts as *storyboards*",
+        "points": ["Story artists sketch the film shot by shot", "The sketches are cut into a story reel", "Temporary voices and music test the timing"]
+      },
+      {
+        "stage": 2,
+        "heading": "Layout sets the *camera*",
+        "points": ["Simple stand-in models block out each shot", "Artists choose angles, lenses and camera moves"]
+      },
+      {
+        "stage": 3,
+        "heading": "Animators give characters *life*",
+        "points": ["Characters are posed with digital controls called rigs", "Key poses come first, the in-betweens follow"],
+        "stat": {"value": 24, "unit": "fps", "label": "frames in every second of film"}
+      },
+      {
+        "stage": 4,
+        "heading": "Light sets the *mood*",
+        "points": ["Virtual lights are placed like on a film set", "Colour and shadow guide where you look"]
+      },
+      {
+        "stage": 5,
+        "heading": "Every frame becomes an *image*",
+        "points": ["Computers calculate each frame as a finished picture"],
+        "stat": {"value": 129600, "label": "frames in a 90-minute film at 24 fps"}
+      }
+    ],
+    "flowLabel": "Shots",
+    "palette": "midnight",
+    "showCaptions": true
+  }
+}
