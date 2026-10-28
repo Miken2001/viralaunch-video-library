@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 16,
+ "count": 17,
  "entries": [
   {
    "schemaVersion": 1,
@@ -1100,6 +1100,324 @@
     "poster": "listicle-countdown.jpg",
     "sha256": "9e1bf2f23e539cf1a1ed306725d9e56d823605c05b804d5fc8fcdeec3da1c123",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/listicle-countdown.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "map-country-tour",
+   "name": "Map Country Tour",
+   "version": "1.0.0",
+   "summary": "A country or city tour on a stylised map: the camera follows a car, train or plane along a drawn route, pins drop at each stop and a place card shows a flat illustration, a counted-up stat and one fact.",
+   "genres": [
+    "map-journey",
+    "explainer",
+    "showreel"
+   ],
+   "domains": [
+    "geography",
+    "history",
+    "nature",
+    "culture-entertainment",
+    "education"
+   ],
+   "roles": [
+    "context",
+    "evidence",
+    "explanation"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "cinematic",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "maps",
+    "kinetic-type",
+    "camera-motion",
+    "svg-illustration",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/alarcon7a/status/2103228872577765420",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-alarcon7a-765420"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "66be86da85fb52fd0e554b8dc7c265b651ce9e34927f4226dcb6ddf02e14915c",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "e557910db9fdf584081e6c7cb9db65e0db0e60f527b90454ff1bc9bd90112541",
+     "bytes": 2510
+    },
+    {
+     "path": "meta.json",
+     "sha256": "5ee891d607de73ca24b640af933b8cce03ccf77c5ba15143a95c24ab5b484fbf",
+     "bytes": 1466
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "8637a846f8c1fefa848217b8dd3ab178fff3dc38c793f5db30dcc3b3819061c2",
+     "bytes": 2123
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "9256bf45cbc62f5635061ba8f65548ab41252ecea4e83b606e7578b2d10a4483",
+     "bytes": 31381
+    },
+    {
+     "path": "src/scenery.tsx",
+     "sha256": "69dd04449e37cef82935160c19fa070a1597e628e83fde860e938508771ce820",
+     "bytes": 8170
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "6f3e7907d890656c7dd59d644a9f3f956aafacfe453b0409724e9b50401ed9ca",
+     "bytes": 2798
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "Opening title, e.g. \"Japan in five stops\". Wrap one word in *asterisks* to colour it."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Small line above the title, e.g. \"5 stops · 1 journey\". Leave empty to show the number of stops and the total distance.",
+      "type": "string",
+      "maxLength": 48
+     },
+     "stops": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28,
+         "description": "Place name shown on the card and the pin, e.g. \"Kyoto\", \"Mount Fuji\", \"Old Town\"."
+        },
+        "region": {
+         "default": "",
+         "description": "Small label above the name: province, state or district, e.g. \"Kansai\", \"Hokkaido\". Can be empty.",
+         "type": "string",
+         "maxLength": 32
+        },
+        "lat": {
+         "type": "number",
+         "minimum": -85,
+         "maximum": 85,
+         "description": "Latitude in decimal degrees (north positive), e.g. 35.01. Places the pin on the stylised map."
+        },
+        "lon": {
+         "type": "number",
+         "minimum": -180,
+         "maximum": 180,
+         "description": "Longitude in decimal degrees (east positive), e.g. 135.77."
+        },
+        "fact": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 110,
+         "description": "One short, verifiable fact about the place, shown on its card."
+        },
+        "stat": {
+         "default": null,
+         "description": "Optional headline number for the card (counts up). null when there is no good number.",
+         "anyOf": [
+          {
+           "type": "object",
+           "properties": {
+            "value": {
+             "type": "number",
+             "description": "The number, e.g. 3776."
+            },
+            "unit": {
+             "default": "",
+             "description": "Short unit or label after the number, e.g. \"m high\", \"years as capital\".",
+             "type": "string",
+             "maxLength": 24
+            },
+            "decimals": {
+             "default": 0,
+             "type": "integer",
+             "minimum": 0,
+             "maximum": 2
+            }
+           },
+           "required": [
+            "value"
+           ]
+          },
+          {
+           "type": "null"
+          }
+         ]
+        },
+        "scenery": {
+         "default": "city",
+         "description": "Flat illustration at the top of the card: city skyline, mountains, coast, forest, desert dunes, countryside fields, or oldtown (colourful historic houses).",
+         "type": "string",
+         "enum": [
+          "city",
+          "mountains",
+          "coast",
+          "forest",
+          "desert",
+          "countryside",
+          "oldtown"
+         ]
+        },
+        "icon": {
+         "default": "pin",
+         "description": "Line icon next to the stat or fact (e.g. building, mountain, wave, leaf, star, flag).",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "name",
+        "lat",
+        "lon",
+        "fact"
+       ]
+      },
+      "description": "2–8 stops in travel order. All in one country, region or city, so the map stays readable."
+     },
+     "travel": {
+      "default": "road",
+      "description": "How the route is drawn: flight = dashed arcs with a plane, road = curving road with a car, rail = rail line with a train.",
+      "type": "string",
+      "enum": [
+       "flight",
+       "road",
+       "rail"
+      ]
+     },
+     "units": {
+      "default": "km",
+      "description": "Units of the distance counter (straight-line distance between stops).",
+      "type": "string",
+      "enum": [
+       "km",
+       "mi"
+      ]
+     },
+     "palette": {
+      "default": "sunset",
+      "description": "sunset = warm dark terracotta, atlas = light paper atlas, night = deep navy with mint, jungle = deep green with gold.",
+      "type": "string",
+      "enum": [
+       "sunset",
+       "atlas",
+       "night",
+       "jungle"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word-synced narration captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "stops"
+    ]
+   },
+   "preview": {
+    "file": "map-country-tour.mp4",
+    "poster": "map-country-tour.jpg",
+    "sha256": "54c0af70d37bcd4e7dfdb0be84fcc906bae85abf3f6d732880f81d95db6da81a",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/map-country-tour.mp4"
    }
   },
   {

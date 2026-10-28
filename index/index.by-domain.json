@@ -23,6 +23,7 @@
   "documentary-archival-street",
   "documentary-mosaic-reveal",
   "listicle-countdown",
+  "map-country-tour",
   "news-headline-highlight",
   "quote-kinetic-serif",
   "story-chat-thread",
@@ -35,6 +36,7 @@
   "comparison-split",
   "data-story-bars",
   "documentary-archival-street",
+  "map-country-tour",
   "space-scale-ladder",
   "timeline-deep-time"
  ],
@@ -78,6 +80,7 @@
   "documentary-archival-street",
   "documentary-mosaic-reveal",
   "listicle-countdown",
+  "map-country-tour",
   "news-roundup-cards",
   "quote-kinetic-serif",
   "story-chat-thread",
@@ -85,12 +88,14 @@
  ],
  "nature": [
   "listicle-countdown",
+  "map-country-tour",
   "space-scale-ladder",
   "timeline-deep-time"
  ],
  "education": [
   "explainer-steps-diagram",
   "listicle-countdown",
+  "map-country-tour",
   "quote-kinetic-serif",
   "space-scale-ladder",
   "story-chat-thread",

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "map-country-tour",
+  "name": "Map Country Tour",
+  "version": "1.0.0",
+  "summary": "A country or city tour on a stylised map: the camera follows a car, train or plane along a drawn route, pins drop at each stop and a place card shows a flat illustration, a counted-up stat and one fact.",
+  "genres": [
+    "map-journey",
+    "explainer",
+    "showreel"
+  ],
+  "domains": [
+    "geography",
+    "history",
+    "nature",
+    "culture-entertainment",
+    "education"
+  ],
+  "roles": [
+    "context",
+    "evidence",
+    "explanation"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "cinematic",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "maps",
+    "kinetic-type",
+    "camera-motion",
+    "svg-illustration",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/alarcon7a/status/2103228872577765420",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-alarcon7a-765420"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

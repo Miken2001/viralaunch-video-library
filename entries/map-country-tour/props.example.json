@@ -1,0 +1,26 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Wayfare", "tagline": "Plan the whole trip in one place", "cta": "Start planning"}},
+  "scenes": [
+    {"text": "Five stops, one rail pass, and the best of Japan.", "durationSeconds": 3.5},
+    {"text": "Start in Tokyo, under the Skytree, the tallest tower in the country.", "durationSeconds": 5},
+    {"text": "Then west to Mount Fuji, Japan's highest peak.", "durationSeconds": 4.5},
+    {"text": "Kyoto was the imperial capital for more than a thousand years.", "durationSeconds": 5},
+    {"text": "Next door, Osaka, and its castle tower rebuilt in 1931.", "durationSeconds": 4.5},
+    {"text": "And finally Miyajima, where the shrine gate seems to float at high tide.", "durationSeconds": 5.5}
+  ],
+  "props": {
+    "title": "Japan in *five* stops",
+    "subtitle": "",
+    "travel": "rail",
+    "units": "km",
+    "palette": "sunset",
+    "showCaptions": true,
+    "stops": [
+      {"name": "Tokyo", "region": "Kanto", "lat": 35.68, "lon": 139.69, "fact": "The Tokyo Skytree, completed in 2012, is the tallest tower in Japan.", "stat": {"value": 634, "unit": "m Skytree", "decimals": 0}, "scenery": "city", "icon": "building"},
+      {"name": "Mount Fuji", "region": "Yamanashi · Shizuoka", "lat": 35.36, "lon": 138.73, "fact": "Japan's highest mountain, an active volcano that last erupted in 1707.", "stat": {"value": 3776, "unit": "m high", "decimals": 0}, "scenery": "mountains", "icon": "mountain"},
+      {"name": "Kyoto", "region": "Kansai", "lat": 35.01, "lon": 135.77, "fact": "Imperial capital from 794 until 1868.", "stat": {"value": 17, "unit": "World Heritage sites", "decimals": 0}, "scenery": "oldtown", "icon": "house"},
+      {"name": "Osaka", "region": "Kansai", "lat": 34.69, "lon": 135.5, "fact": "Osaka Castle's main tower was rebuilt in reinforced concrete in 1931.", "stat": null, "scenery": "city", "icon": "shield"},
+      {"name": "Miyajima", "region": "Hiroshima", "lat": 34.3, "lon": 132.32, "fact": "Itsukushima Shrine has been a UNESCO World Heritage Site since 1996.", "stat": null, "scenery": "coast", "icon": "wave"}
+    ]
+  }
+}

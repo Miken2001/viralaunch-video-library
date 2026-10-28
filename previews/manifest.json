@@ -19,6 +19,11 @@
     "poster": "documentary-mosaic-reveal.jpg",
     "sha256": "bddb571c9919e7e251d297bc3ec9391686dfded0fde24e2b01addb619347b0b3"
   },
+  "explainer-money-story": {
+    "file": "explainer-money-story.mp4",
+    "poster": "explainer-money-story.jpg",
+    "sha256": "4db7d7002eee8f3162f416f67adf3858538c4ad176fc7b253f287d0507443b9a"
+  },
   "explainer-steps-diagram": {
     "file": "explainer-steps-diagram.mp4",
     "poster": "explainer-steps-diagram.jpg",
@@ -28,6 +33,11 @@
     "file": "listicle-countdown.mp4",
     "poster": "listicle-countdown.jpg",
     "sha256": "9e1bf2f23e539cf1a1ed306725d9e56d823605c05b804d5fc8fcdeec3da1c123"
+  },
+  "map-country-tour": {
+    "file": "map-country-tour.mp4",
+    "poster": "map-country-tour.jpg",
+    "sha256": "54c0af70d37bcd4e7dfdb0be84fcc906bae85abf3f6d732880f81d95db6da81a"
   },
   "match-recap-scoreboard": {
     "file": "match-recap-scoreboard.mp4",
