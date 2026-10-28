@@ -1,0 +1,24 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Mixtape Lab", "tagline": "Better playlists, every week", "cta": "Get the guide"}},
+  "scenes": [
+    {"text": "Want a party playlist that keeps the room moving? Here is how to build one in four steps.", "durationSeconds": 4.5},
+    {"text": "First, pick a goal. Decide whether the playlist is for warming up, dancing or winding down.", "durationSeconds": 5},
+    {"text": "Next, open with songs people know, so the room relaxes in the first few minutes.", "durationSeconds": 4.5},
+    {"text": "Then build the tempo slowly. Group tracks by energy and raise it a little at a time.", "durationSeconds": 5},
+    {"text": "Finally, play it through once before the party and cut anything that breaks the flow.", "durationSeconds": 5},
+    {"text": "That is the whole recipe. Now press play.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "Build a *party* playlist",
+    "kicker": "Music basics",
+    "steps": [
+      {"label": "Pick a goal", "headline": "Know the *mood*.", "items": ["Warm-up, dance or chill", "One goal per playlist"], "icon": "target"},
+      {"label": "Open with favourites", "headline": "Start *familiar*.", "items": ["Songs people know", "Mid-tempo first"], "icon": "music"},
+      {"label": "Raise the tempo", "headline": "Build the *energy*.", "items": ["Group tracks by energy", "Small steps up", "Peak near the end"], "icon": "chart"},
+      {"label": "Test the flow", "headline": "Play it *through*.", "items": ["Listen once start to end", "Cut what breaks the flow"], "icon": "check"}
+    ],
+    "finale": "Now press *play*.",
+    "palette": "electric",
+    "showCaptions": true
+  }
+}

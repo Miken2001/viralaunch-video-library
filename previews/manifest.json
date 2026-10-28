@@ -134,6 +134,11 @@
     "poster": "tutorial-finance-money-steps.jpg",
     "sha256": "1c8e6bca1369679be91a891a926ce37acc335b8f5fecff3cc331721ac79d33f5"
   },
+  "tutorial-glow-reel-steps": {
+    "file": "tutorial-glow-reel-steps.mp4",
+    "poster": "tutorial-glow-reel-steps.jpg",
+    "sha256": "472f326bd73b84a5a2eab373871eb32bd69e736b7fffbbd358ae093cf42e85b9"
+  },
   "tutorial-sports-play-steps": {
     "file": "tutorial-sports-play-steps.mp4",
     "poster": "tutorial-sports-play-steps.jpg",

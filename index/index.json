@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 27,
+ "count": 28,
  "entries": [
   {
    "schemaVersion": 1,
@@ -5968,6 +5968,249 @@
     "poster": "tutorial-finance-money-steps.jpg",
     "sha256": "1c8e6bca1369679be91a891a926ce37acc335b8f5fecff3cc331721ac79d33f5",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-finance-money-steps.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "tutorial-glow-reel-steps",
+   "name": "Glow Reel Steps",
+   "version": "1.0.0",
+   "summary": "Fast neon motion-reel how-to for music, film, games and fan culture: warp-streak intro, HUD frame, a glowing icon emblem with orbiting sparkles and a terminal card that types each step and prints its checklist.",
+   "genres": [
+    "tutorial",
+    "explainer"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "education",
+    "tech"
+   ],
+   "roles": [
+    "explanation",
+    "context",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "particles",
+    "transitions",
+    "captions-voiceover",
+    "camera-motion"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/humzaakhalid/status/2106640261623537875",
+     "author": "humzaakhalid",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-humzaakhalid-537875"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "19bf894ef20098a07c63a77e5ae8b674cd7d12752300125190745003b9bd4b05",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "d077a335f325e32103bcfa7ff3c7af7228cbf2692e36af0cf52ab00600d003be",
+     "bytes": 3283
+    },
+    {
+     "path": "meta.json",
+     "sha256": "9f921f66bb2d42623705531332708d7422842318e63ed2c06f34090e443157aa",
+     "bytes": 1472
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "37b408557af0c2c546fb0590ebbbc9e3d9e7b3aa15fc6895ea9d8fc89daa4c44",
+     "bytes": 1672
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "c7d48652705fdc77b01ab56ccefdbabb6d19e58568a32269b23de482f0a1bdb2",
+     "bytes": 23847
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "01408f086e127b7db5d8fb85c2779b53caa2a6ea29418528eb2ddc9a7fb893c1",
+     "bytes": 1878
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 44,
+      "description": "What the viewer will learn, e.g. \"How to build a *perfect* playlist\". Wrap 1–2 words in *asterisks* to light them in the accent colour."
+     },
+     "kicker": {
+      "default": "",
+      "description": "Short topic label in the HUD corner and above the title, e.g. \"Music basics\" or \"Film club\".",
+      "type": "string",
+      "maxLength": 28
+     },
+     "steps": {
+      "minItems": 1,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 30,
+         "description": "Short step name, typed into the terminal card and listed in the intro, e.g. \"Pick an opening track\"."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 36,
+         "description": "The instruction as a punchy headline, e.g. \"Open with *energy*.\" *Asterisks* light 1–2 words."
+        },
+        "items": {
+         "default": [],
+         "description": "0–3 short lines that print one by one under the command, e.g. [\"Mid-tempo, not a ballad\", \"Instantly recognisable\"].",
+         "maxItems": 3,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+         }
+        },
+        "icon": {
+         "default": "spark",
+         "description": "Line icon drawn inside the glowing emblem, e.g. music, camera, book, star, heart, people, calendar, clock, chat, trophy, spark.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "label",
+        "headline"
+       ]
+      },
+      "description": "The how-to in order, 2–6 steps. Narration: scene 1 is the title, then one scene per step, then an optional finale scene."
+     },
+     "finale": {
+      "default": "",
+      "description": "Closing line shown in a last narration scene after the steps, e.g. \"Now press *play*.\" \"\" = no finale card.",
+      "type": "string",
+      "maxLength": 40
+     },
+     "palette": {
+      "default": "electric",
+      "description": "electric = vivid cobalt blue with ice-cyan accent; violet = ultraviolet purple with pink accent; night = deep teal-black with mint accent.",
+      "type": "string",
+      "enum": [
+       "electric",
+       "violet",
+       "night"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "tutorial-glow-reel-steps.mp4",
+    "poster": "tutorial-glow-reel-steps.jpg",
+    "sha256": "472f326bd73b84a5a2eab373871eb32bd69e736b7fffbbd358ae093cf42e85b9",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-glow-reel-steps.mp4"
    }
   },
   {

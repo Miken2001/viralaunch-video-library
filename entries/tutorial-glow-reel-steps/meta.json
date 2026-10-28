@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial-glow-reel-steps",
+  "name": "Glow Reel Steps",
+  "version": "1.0.0",
+  "summary": "Fast neon motion-reel how-to for music, film, games and fan culture: warp-streak intro, HUD frame, a glowing icon emblem with orbiting sparkles and a terminal card that types each step and prints its checklist.",
+  "genres": [
+    "tutorial",
+    "explainer"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "education",
+    "tech"
+  ],
+  "roles": [
+    "explanation",
+    "context",
+    "payoff"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "particles",
+    "transitions",
+    "captions-voiceover",
+    "camera-motion"
+  ],
+  "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/humzaakhalid/status/2106640261623537875",
+      "author": "humzaakhalid",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-humzaakhalid-537875"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

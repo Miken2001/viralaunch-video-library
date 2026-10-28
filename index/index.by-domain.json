@@ -9,7 +9,8 @@
   "story-character-dialogue",
   "timeline-company-history",
   "timeline-eras",
-  "tutorial-creator-howto"
+  "tutorial-creator-howto",
+  "tutorial-glow-reel-steps"
  ],
  "business": [
   "data-story-bars",
@@ -110,7 +111,8 @@
   "story-chat-thread",
   "story-pixel-arcade",
   "story-rain-mood",
-  "tutorial-creator-howto"
+  "tutorial-creator-howto",
+  "tutorial-glow-reel-steps"
  ],
  "nature": [
   "listicle-countdown",
@@ -135,6 +137,7 @@
   "timeline-deep-time",
   "tutorial-creator-howto",
   "tutorial-finance-money-steps",
+  "tutorial-glow-reel-steps",
   "tutorial-sports-play-steps"
  ],
  "generic": [
