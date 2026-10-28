@@ -24,6 +24,11 @@
     "poster": "documentary-mosaic-reveal.jpg",
     "sha256": "bddb571c9919e7e251d297bc3ec9391686dfded0fde24e2b01addb619347b0b3"
   },
+  "explainer-line-art-lesson": {
+    "file": "explainer-line-art-lesson.mp4",
+    "poster": "explainer-line-art-lesson.jpg",
+    "sha256": "80c52ab60981f0d63429d57b5835163b3211ed69c253f96715cf31aff9b823b0"
+  },
   "explainer-money-story": {
     "file": "explainer-money-story.mp4",
     "poster": "explainer-money-story.jpg",
@@ -108,6 +113,11 @@
     "file": "story-rain-mood.mp4",
     "poster": "story-rain-mood.jpg",
     "sha256": "774b070b9721ef6f0741af13a73119f038d0e11063f032fd2a97207c49ab841a"
+  },
+  "timeline-battle-map": {
+    "file": "timeline-battle-map.mp4",
+    "poster": "timeline-battle-map.jpg",
+    "sha256": "08fd7c92bef8b3c29e2f24623306314363bb9c83abeefa6e3e2e8f8a1248a798"
   },
   "timeline-company-history": {
     "file": "timeline-company-history.mp4",

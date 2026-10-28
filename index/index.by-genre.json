@@ -4,6 +4,7 @@
  "explainer": [
   "documentary-festival-moon",
   "documentary-mosaic-reveal",
+  "explainer-line-art-lesson",
   "explainer-money-story",
   "explainer-route-trace",
   "explainer-steps-diagram",
@@ -75,6 +76,7 @@
   "space-scale-ladder"
  ],
  "tutorial": [
+  "explainer-line-art-lesson",
   "explainer-steps-diagram",
   "story-cartoon-explainer",
   "tutorial-creator-howto",

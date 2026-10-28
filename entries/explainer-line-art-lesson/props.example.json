@@ -1,0 +1,76 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Atlas Notes", "tagline": "Geography, one sketch at a time", "cta": "Start the next lesson"}},
+  "scenes": [
+    {"text": "How does air circulate around the Earth? Let's draw it step by step.", "durationSeconds": 4},
+    {"text": "Air pressure forms belts. Low at the equator, high near thirty degrees, low near sixty, and high at the poles.", "durationSeconds": 7},
+    {"text": "Winds blow between the belts. The trade winds come from the east, the westerlies from the west, and polar easterlies circle the poles.", "durationSeconds": 7},
+    {"text": "Mountains matter too. Moist air from the sea rises up the slope, cools and drops rain. Sinking air leaves the far side dry.", "durationSeconds": 7},
+    {"text": "All of this weather happens in the troposphere, the lowest layer of the atmosphere.", "durationSeconds": 6},
+    {"text": "And the belts shape climates: rainforests under the equatorial low, deserts under the subtropical highs.", "durationSeconds": 7}
+  ],
+  "props": {
+    "chapter": "Geography · Climate",
+    "title": "How air *circulates* around Earth",
+    "subtitle": "Pressure belts, winds and climate",
+    "steps": [
+      {
+        "heading": "Pressure *belts*",
+        "diagram": "globe",
+        "marks": [
+          {"label": "Polar high", "at": 90, "tone": "cool"},
+          {"label": "Subpolar low", "detail": "near 60°N", "at": 60, "tone": "warm"},
+          {"label": "Subtropical high", "detail": "near 30°N", "at": 30, "tone": "cool"},
+          {"label": "Equatorial low", "detail": "rising warm air", "at": 0, "tone": "warm"},
+          {"label": "Subtropical high", "detail": "near 30°S", "at": -30, "tone": "cool"},
+          {"label": "Subpolar low", "detail": "near 60°S", "at": -60, "tone": "warm"}
+        ],
+        "note": "Rising air makes low pressure; sinking air makes high pressure"
+      },
+      {
+        "heading": "Global *wind* belts",
+        "diagram": "globe",
+        "marks": [
+          {"label": "Polar easterlies", "at": 75, "tone": "cool", "arrow": "west"},
+          {"label": "Westerlies", "at": 45, "tone": "green", "arrow": "east"},
+          {"label": "Trade winds", "detail": "from the northeast", "at": 15, "tone": "warm", "arrow": "west"},
+          {"label": "Trade winds", "detail": "from the southeast", "at": -15, "tone": "warm", "arrow": "west"},
+          {"label": "Westerlies", "at": -45, "tone": "green", "arrow": "east"},
+          {"label": "Polar easterlies", "at": -75, "tone": "cool", "arrow": "west"}
+        ],
+        "note": "Earth's spin bends the winds: the Coriolis effect"
+      },
+      {
+        "heading": "Rain over *mountains*",
+        "diagram": "section",
+        "marks": [
+          {"label": "Moist sea air", "detail": "blows inland", "at": 14, "tone": "cool", "arrow": "east"},
+          {"label": "Rises and cools", "detail": "rain on the windward side", "at": 52, "tone": "cool", "arrow": "up"},
+          {"label": "Sinking dry air", "detail": "the leeward side", "at": 82, "tone": "warm", "arrow": "down"}
+        ],
+        "note": "The dry side is called a rain shadow"
+      },
+      {
+        "heading": "Layers of the *atmosphere*",
+        "diagram": "layers",
+        "marks": [
+          {"label": "Thermosphere", "detail": "above about 85 km", "at": 3, "tone": "warm"},
+          {"label": "Mesosphere", "detail": "about 50 to 85 km", "at": 2, "tone": "ink"},
+          {"label": "Stratosphere", "detail": "holds the ozone layer", "at": 2.5, "tone": "cool"},
+          {"label": "Troposphere", "detail": "where weather happens", "at": 2, "tone": "green"}
+        ],
+        "note": "Drawn for clarity, not to scale"
+      },
+      {
+        "heading": "Impact on *climate*",
+        "diagram": "panels",
+        "marks": [
+          {"label": "Equatorial low", "detail": "rising air, heavy rain", "tone": "cool", "arrow": "up", "icon": "rain"},
+          {"label": "Subtropical high", "detail": "sinking dry air, deserts", "tone": "warm", "arrow": "down", "icon": "sun"},
+          {"label": "Mediterranean", "detail": "dry summers, wet winters", "tone": "green", "icon": "leaf"}
+        ]
+      }
+    ],
+    "palette": "paper",
+    "showCaptions": true
+  }
+}

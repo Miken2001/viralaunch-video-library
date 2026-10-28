@@ -46,6 +46,7 @@
   "comparison-split",
   "data-story-bars",
   "documentary-archival-street",
+  "explainer-line-art-lesson",
   "explainer-route-trace",
   "map-country-tour",
   "news-city-blocks",
@@ -56,6 +57,7 @@
  "science": [
   "data-story-bars",
   "documentary-festival-moon",
+  "explainer-line-art-lesson",
   "explainer-steps-diagram",
   "news-headline-highlight",
   "news-roundup-cards",
@@ -115,6 +117,7 @@
   "tutorial-glow-reel-steps"
  ],
  "nature": [
+  "explainer-line-art-lesson",
   "listicle-countdown",
   "map-country-tour",
   "space-scale-ladder",
@@ -124,6 +127,7 @@
  ],
  "education": [
   "documentary-festival-moon",
+  "explainer-line-art-lesson",
   "explainer-steps-diagram",
   "listicle-countdown",
   "map-country-tour",

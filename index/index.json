@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 28,
+ "count": 29,
  "entries": [
   {
    "schemaVersion": 1,
@@ -1034,6 +1034,304 @@
     "poster": "documentary-mosaic-reveal.jpg",
     "sha256": "bddb571c9919e7e251d297bc3ec9391686dfded0fde24e2b01addb619347b0b3",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/documentary-mosaic-reveal.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "explainer-line-art-lesson",
+   "name": "Line-Art Geography Lesson",
+   "version": "1.0.0",
+   "summary": "Classroom-style geography explainer in ink line art on paper: a sketched spinning globe with pressure belts and wind rows, land-and-sea cross-sections, layered strata and comparison panels, drawn step by step with the narration.",
+   "genres": [
+    "explainer",
+    "tutorial"
+   ],
+   "domains": [
+    "geography",
+    "education",
+    "nature",
+    "science"
+   ],
+   "roles": [
+    "context",
+    "explanation",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "maps",
+    "kinetic-type",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 6,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/akokoi1/status/2102606609574941028",
+     "author": "akokoi1",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-akokoi1-941028"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "2e87b31721a25adf8572ab194cdf9e75f12832466fb1e971f2e54223571f78c7",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "b2fb4c8e83e7020671cecbc4504e1efe168603a79c4cd06101160c6a228ba1df",
+     "bytes": 4330
+    },
+    {
+     "path": "meta.json",
+     "sha256": "fc13d9ab2e5e591859c221f295d1cdcb1ca9ccfb672c03f8896dd0fec69f029a",
+     "bytes": 1453
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "3e4ed5de14bb71dfba33f4e5d9b560b2af8cee45c087d4a4ef118cbfb7d326d1",
+     "bytes": 4244
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "48189a11bbbe2fb6824496644d11902aa975b30c21d3be64f9f10044952510da",
+     "bytes": 37231
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "469ec4a4c6ae74925f18cf24676f840c7027b04bf6cb1a3527a6a47c389faf26",
+     "bytes": 3370
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "chapter": {
+      "default": "",
+      "description": "Small course label shown above the title and beside each heading, e.g. \"Geography · Unit 4\".",
+      "type": "string",
+      "maxLength": 36
+     },
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 52,
+      "description": "Lesson title, e.g. \"How the atmosphere moves heat\"."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Optional line under the title, e.g. a second-language title or a one-line question.",
+      "type": "string",
+      "maxLength": 70
+     },
+     "steps": {
+      "minItems": 1,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "heading": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 40,
+         "description": "Chapter heading for this step, e.g. \"The three-cell model\". *Asterisks* colour a word."
+        },
+        "diagram": {
+         "type": "string",
+         "enum": [
+          "globe",
+          "section",
+          "layers",
+          "panels"
+         ],
+         "description": "globe = sketched Earth with latitude belts and wind rows; section = side-view cross-section of land and sky with arrows; layers = stacked strata (Earth interior, atmosphere, soil); panels = 2–4 side-by-side sketch cards comparing places or types."
+        },
+        "marks": {
+         "minItems": 1,
+         "maxItems": 6,
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 28,
+            "description": "Short name drawn on the diagram, e.g. \"Equatorial low\", \"Trade winds\", \"Mantle\", \"Windward side\"."
+           },
+           "detail": {
+            "default": "",
+            "description": "Optional small second line under the label, e.g. \"rising air, heavy rain\" or \"about 2,900 km thick\".",
+            "type": "string",
+            "maxLength": 60
+           },
+           "at": {
+            "default": 0,
+            "description": "Where the mark sits. globe: latitude in degrees (-90 south pole … 0 equator … 90 north pole). section: position across the drawing, 0 (left) to 100 (right). layers: relative thickness of the layer (e.g. 1, 2, 5). panels: ignored.",
+            "type": "number",
+            "minimum": -90,
+            "maximum": 100
+           },
+           "tone": {
+            "default": "ink",
+            "description": "Line colour: warm (red/orange: heat, low pressure, rising air), cool (blue: cold, high pressure, sinking air, water), green (land, plants, winds), ink (neutral).",
+            "type": "string",
+            "enum": [
+             "warm",
+             "cool",
+             "green",
+             "ink"
+            ]
+           },
+           "arrow": {
+            "default": "none",
+            "description": "Movement drawn with the mark. globe: east/west = a row of wind or current arrows at that latitude, up/down = toward the north/south pole, none = a latitude line (belt, zone or boundary). section: up/down = rising/sinking arrow, east/west = sideways flow. panels: a small arrow beside the label.",
+            "type": "string",
+            "enum": [
+             "none",
+             "up",
+             "down",
+             "east",
+             "west"
+            ]
+           },
+           "icon": {
+            "default": "pin",
+            "description": "Line icon, only used by the panels diagram (sun, cloud, rain, drop, leaf, mountain, wave, globe, map, pin, fire, house, building, people...).",
+            "type": "string",
+            "enum": [
+             "sun",
+             "cloud",
+             "rain",
+             "globe",
+             "gear",
+             "person",
+             "people",
+             "bulb",
+             "chart",
+             "bars",
+             "book",
+             "rocket",
+             "heart",
+             "lock",
+             "search",
+             "phone",
+             "money",
+             "clock",
+             "leaf",
+             "drop",
+             "flask",
+             "atom",
+             "building",
+             "house",
+             "car",
+             "check",
+             "cross",
+             "arrow",
+             "cycle",
+             "star",
+             "flag",
+             "mountain",
+             "wave",
+             "fire",
+             "brain",
+             "chip",
+             "shield",
+             "chat",
+             "mail",
+             "camera",
+             "music",
+             "trophy",
+             "ball",
+             "planet",
+             "map",
+             "pin",
+             "target",
+             "spark",
+             "code",
+             "cart",
+             "calendar"
+            ]
+           }
+          },
+          "required": [
+           "label"
+          ]
+         },
+         "description": "1–6 labelled parts of the diagram, in the order the narration mentions them (panels use the first 4)."
+        },
+        "note": {
+         "default": "",
+         "description": "Optional one-line handwritten takeaway under the diagram, e.g. \"Rising air cools, so clouds form here\".",
+         "type": "string",
+         "maxLength": 80
+        }
+       },
+       "required": [
+        "heading",
+        "diagram",
+        "marks"
+       ]
+      },
+      "description": "1–8 lesson steps in order, one per narration line (an extra first narration line becomes the title card)."
+     },
+     "palette": {
+      "default": "paper",
+      "description": "paper = cream page with ink lines (the classic lesson look), blueprint = navy with white lines, chalk = green chalkboard.",
+      "type": "string",
+      "enum": [
+       "paper",
+       "blueprint",
+       "chalk"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced subtitles in a plate at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "explainer-line-art-lesson.mp4",
+    "poster": "explainer-line-art-lesson.jpg",
+    "sha256": "80c52ab60981f0d63429d57b5835163b3211ed69c253f96715cf31aff9b823b0",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-line-art-lesson.mp4"
    }
   },
   {

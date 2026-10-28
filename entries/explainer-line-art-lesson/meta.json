@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-line-art-lesson",
+  "name": "Line-Art Geography Lesson",
+  "version": "1.0.0",
+  "summary": "Classroom-style geography explainer in ink line art on paper: a sketched spinning globe with pressure belts and wind rows, land-and-sea cross-sections, layered strata and comparison panels, drawn step by step with the narration.",
+  "genres": [
+    "explainer",
+    "tutorial"
+  ],
+  "domains": [
+    "geography",
+    "education",
+    "nature",
+    "science"
+  ],
+  "roles": [
+    "context",
+    "explanation",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "paper",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "maps",
+    "kinetic-type",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 6,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/akokoi1/status/2102606609574941028",
+      "author": "akokoi1",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-akokoi1-941028"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}
