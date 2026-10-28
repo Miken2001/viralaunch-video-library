@@ -14,6 +14,11 @@
     "poster": "documentary-archival-street.jpg",
     "sha256": "9bfa369ed7c27471dd08204aa1a3ef55d50ace7fd9983d0b3445bae8053ab9bd"
   },
+  "documentary-festival-moon": {
+    "file": "documentary-festival-moon.mp4",
+    "poster": "documentary-festival-moon.jpg",
+    "sha256": "615f3b946bc1f096547162fee3132f2e1381ba25e4e15a06138c3a2696dafa6b"
+  },
   "documentary-mosaic-reveal": {
     "file": "documentary-mosaic-reveal.mp4",
     "poster": "documentary-mosaic-reveal.jpg",

@@ -2,6 +2,7 @@
  "product-launch": [],
  "product-demo": [],
  "explainer": [
+  "documentary-festival-moon",
   "documentary-mosaic-reveal",
   "explainer-money-story",
   "explainer-route-trace",
@@ -21,6 +22,7 @@
  ],
  "documentary": [
   "documentary-archival-street",
+  "documentary-festival-moon",
   "documentary-mosaic-reveal",
   "story-rain-mood",
   "timeline-company-history",
@@ -28,6 +30,7 @@
   "timeline-eras"
  ],
  "story-narrative": [
+  "documentary-festival-moon",
   "explainer-money-story",
   "story-cartoon-explainer",
   "story-character-dialogue",

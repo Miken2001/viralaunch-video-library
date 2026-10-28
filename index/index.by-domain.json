@@ -28,6 +28,7 @@
  "history": [
   "comparison-split",
   "documentary-archival-street",
+  "documentary-festival-moon",
   "documentary-mosaic-reveal",
   "explainer-money-story",
   "listicle-countdown",
@@ -53,6 +54,7 @@
  ],
  "science": [
   "data-story-bars",
+  "documentary-festival-moon",
   "explainer-steps-diagram",
   "news-headline-highlight",
   "news-roundup-cards",
@@ -63,6 +65,7 @@
   "timeline-eras"
  ],
  "space": [
+  "documentary-festival-moon",
   "space-scale-ladder",
   "story-cartoon-explainer",
   "story-pixel-arcade",
@@ -97,6 +100,7 @@
  ],
  "culture-entertainment": [
   "documentary-archival-street",
+  "documentary-festival-moon",
   "documentary-mosaic-reveal",
   "listicle-countdown",
   "map-country-tour",
@@ -117,6 +121,7 @@
   "timeline-deep-time"
  ],
  "education": [
+  "documentary-festival-moon",
   "explainer-steps-diagram",
   "listicle-countdown",
   "map-country-tour",

@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 26,
+ "count": 27,
  "entries": [
   {
    "schemaVersion": 1,
@@ -593,6 +593,245 @@
     "poster": "documentary-archival-street.jpg",
     "sha256": "9bfa369ed7c27471dd08204aa1a3ef55d50ace7fd9983d0b3445bae8053ab9bd",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/documentary-archival-street.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "documentary-festival-moon",
+   "name": "Ink-Wash Moon Documentary",
+   "version": "1.0.0",
+   "summary": "A space documentary painted in ink wash: a moon (or sun, or ringed planet) rises over misty peaks and changes phase each chapter, while vertical inscriptions, red seals and a brush-drawn ensō circle frame images and counted figures.",
+   "genres": [
+    "documentary",
+    "story-narrative",
+    "explainer"
+   ],
+   "domains": [
+    "space",
+    "history",
+    "science",
+    "culture-entertainment",
+    "education"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "payoff",
+    "closer"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "documentary",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "kinetic-type",
+    "particles",
+    "transitions",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "med",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/AmberPromptai/status/2103793821012345137",
+     "author": "AmberPromptai",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-amberpromptai-345137"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "085bfac3cbce5fcfe8c7356491eb7a701319b6189cb4f578f8a4a850c959fbac",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "96eade79eec2881634db3d394d3ebdaa42b05557386769bd1c305cbe5bd1e323",
+     "bytes": 2267
+    },
+    {
+     "path": "meta.json",
+     "sha256": "0d5194a65a8ca2974802bab31d9d6202a404c4a1a59e0b3f89fb3a4ba6ff0dc6",
+     "bytes": 1585
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "5fdcc039e604ad41291b1936dead35629cc424db9a4ade9466665938e7e0036b",
+     "bytes": 1789
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "41a04523f17a50a92795b858b134c9f700e364864366f8d246545b41de6862b9",
+     "bytes": 29568
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "20d7613d9653bd45cf8b5eb8299366a6c0536449185abf6302bb4d586df97549",
+     "bytes": 2773
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Opening title written over the moonrise, e.g. \"Our Moon\", \"Why the Moon Has Phases\"."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Small italic line under the title, e.g. \"4.5 billion years beside the Earth\". Can be empty.",
+      "type": "string",
+      "maxLength": 60
+     },
+     "chapters": {
+      "minItems": 1,
+      "maxItems": 12,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "heading": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 26,
+         "description": "Short chapter heading, set vertically beside the sky like a scroll inscription, e.g. \"The Giant Impact\", \"Apollo 11\", \"Tidal Lock\"."
+        },
+        "phase": {
+         "default": "full",
+         "description": "How the sky body looks in this chapter. For the moon: new, waxing-crescent, first-quarter, waxing-gibbous, full, waning-gibbous, last-quarter, waning-crescent, or eclipse (a red, eclipsed full moon). For the sun only \"eclipse\" changes it (a total solar eclipse).",
+         "type": "string",
+         "enum": [
+          "new",
+          "waxing-crescent",
+          "first-quarter",
+          "waxing-gibbous",
+          "full",
+          "waning-gibbous",
+          "last-quarter",
+          "waning-crescent",
+          "eclipse"
+         ]
+        },
+        "stat": {
+         "default": null,
+         "description": "Optional figure shown inside a brush-drawn ink circle. null for none. When the scene has an image, the image fills the circle instead and the figure sits under it.",
+         "anyOf": [
+          {
+           "type": "object",
+           "properties": {
+            "value": {
+             "type": "number",
+             "description": "The number that counts up, e.g. 384400. Put years in the label or heading, not here."
+            },
+            "unit": {
+             "default": "",
+             "description": "Short unit after the number, e.g. \"km\", \"days\", \"%\".",
+             "type": "string",
+             "maxLength": 14
+            },
+            "label": {
+             "default": "",
+             "description": "Small line under the number, e.g. \"average distance from Earth\".",
+             "type": "string",
+             "maxLength": 32
+            },
+            "decimals": {
+             "default": 0,
+             "type": "integer",
+             "minimum": 0,
+             "maximum": 2
+            }
+           },
+           "required": [
+            "value"
+           ]
+          },
+          {
+           "type": "null"
+          }
+         ]
+        }
+       },
+       "required": [
+        "heading"
+       ]
+      },
+      "description": "One chapter per narration scene, in order. The first chapter shows after the title card."
+     },
+     "orb": {
+      "default": "moon",
+      "description": "The body hanging in the painted sky: moon (phases work), sun (glowing disc; \"eclipse\" = total eclipse), ringed-planet (a banded planet with rings, like Saturn; phases shade it).",
+      "type": "string",
+      "enum": [
+       "moon",
+       "sun",
+       "ringed-planet"
+      ]
+     },
+     "scenery": {
+      "default": "mountains",
+      "description": "The ink landscape under the sky: mountains = layered peaks over a still lake; sea = far islands over open water; hills = low rolling hills and a lake.",
+      "type": "string",
+      "enum": [
+       "mountains",
+       "sea",
+       "hills"
+      ]
+     },
+     "palette": {
+      "default": "rice-paper",
+      "description": "rice-paper = warm paper with black ink and a red seal (light); indigo-night = blue-black night with stars and gold; ember-dusk = dark plum dusk with amber light.",
+      "type": "string",
+      "enum": [
+       "rice-paper",
+       "indigo-night",
+       "ember-dusk"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word-synced narration captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "chapters"
+    ]
+   },
+   "preview": {
+    "file": "documentary-festival-moon.mp4",
+    "poster": "documentary-festival-moon.jpg",
+    "sha256": "615f3b946bc1f096547162fee3132f2e1381ba25e4e15a06138c3a2696dafa6b",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/documentary-festival-moon.mp4"
    }
   },
   {

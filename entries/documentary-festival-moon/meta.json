@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "documentary-festival-moon",
+  "name": "Ink-Wash Moon Documentary",
+  "version": "1.0.0",
+  "summary": "A space documentary painted in ink wash: a moon (or sun, or ringed planet) rises over misty peaks and changes phase each chapter, while vertical inscriptions, red seals and a brush-drawn ensō circle frame images and counted figures.",
+  "genres": [
+    "documentary",
+    "story-narrative",
+    "explainer"
+  ],
+  "domains": [
+    "space",
+    "history",
+    "science",
+    "culture-entertainment",
+    "education"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "payoff",
+    "closer"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "documentary",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "kinetic-type",
+    "particles",
+    "transitions",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "med",
+  "requires": [],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/AmberPromptai/status/2103793821012345137",
+      "author": "AmberPromptai",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-amberpromptai-345137"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

@@ -1,0 +1,27 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Skyward", "tagline": "The night sky, explained", "cta": "Start stargazing"}},
+  "scenes": [
+    {"text": "Every night it hangs above us, the same face, the same quiet light. This is the story of our Moon.", "durationSeconds": 6},
+    {"text": "The Moon is on average about three hundred and eighty four thousand kilometres from Earth.", "durationSeconds": 5},
+    {"text": "From new moon to new moon, its phases repeat about every twenty nine and a half days.", "durationSeconds": 5.5},
+    {"text": "It always shows us the same side, because it turns once on its axis for every orbit.", "durationSeconds": 5},
+    {"text": "In July 1969, Apollo 11 landed, and twelve people have walked on its surface since.", "durationSeconds": 5.5},
+    {"text": "And during a total lunar eclipse, Earth's shadow turns it a deep red.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "Our Moon",
+    "subtitle": "The light that keeps us company",
+    "orb": "moon",
+    "scenery": "mountains",
+    "palette": "rice-paper",
+    "showCaptions": true,
+    "chapters": [
+      {"heading": "Moonrise", "phase": "full", "stat": null},
+      {"heading": "The Distance", "phase": "waxing-gibbous", "stat": {"value": 384400, "unit": "km", "label": "average distance from Earth", "decimals": 0}},
+      {"heading": "The Phases", "phase": "waxing-crescent", "stat": {"value": 29.5, "unit": "days", "label": "from new moon to new moon", "decimals": 1}},
+      {"heading": "One Face", "phase": "first-quarter", "stat": null},
+      {"heading": "Apollo 11", "phase": "waning-gibbous", "stat": {"value": 12, "unit": "people", "label": "have walked on the Moon", "decimals": 0}},
+      {"heading": "Blood Moon", "phase": "eclipse", "stat": null}
+    ]
+  }
+}
