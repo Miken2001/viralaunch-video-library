@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 23,
+ "count": 24,
  "entries": [
   {
    "schemaVersion": 1,
@@ -3235,6 +3235,319 @@
     "poster": "story-cartoon-explainer.jpg",
     "sha256": "f4974558bc0567dc5ed3363c9390f1f685b458eb9fffd4aece59a2d99d5eeaa1",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-cartoon-explainer.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "story-character-dialogue",
+   "name": "Sketchbook Dialogue: Two-Character Tech Story",
+   "version": "1.0.0",
+   "summary": "A 2D sketchbook short: two drawn characters (developer, founder, scientist, robot) trade lines in speech bubbles while a magic pencil sketches each set and idea. For tech origin stories and conversations.",
+   "genres": [
+    "story-narrative",
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "business",
+    "education",
+    "culture-entertainment"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "explanation",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "captions-voiceover",
+    "camera-motion",
+    "transitions"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/ALSK_ai/status/2103135536634630632",
+     "author": "ALSK_ai",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-alsk_ai-630632"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "c36973b103d81feed5111783d7ea09fef14bbc7769b307833e40a7128dfcbd68",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "078ba70c5710816b4e57cdde9137e0db7e3dfb1ed3dde946dec0e3ad027cab2f",
+     "bytes": 4294
+    },
+    {
+     "path": "meta.json",
+     "sha256": "ab448c656ae88c2e02fd143d8774675f4ef8dd875fd84d4d5c40391187157366",
+     "bytes": 1486
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "35507cf5425e1cdc46741f401d832ac6ef4205230719a9ab9f660d4f3e48bce1",
+     "bytes": 2296
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "8416b46588a4b3d2e9ebaf2a4f70a2e64e2f6f989aa4d9f841bc0236a0e597a3",
+     "bytes": 43113
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "b1eb707b702c918e11d90293f41c53615c2401e716840502d94d7820273c433a",
+     "bytes": 3594
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Story title, e.g. \"The bug that only happened on Fridays\". Shown on the opening title card and in the corner label."
+     },
+     "cast": {
+      "minItems": 1,
+      "maxItems": 2,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 16,
+         "description": "Short character name shown on their speech bubbles, e.g. \"Maya\" or \"Bit\"."
+        },
+        "style": {
+         "default": "hoodie",
+         "description": "Outfit: hoodie (developer, glasses), blazer (founder or manager), labcoat (scientist or engineer), cap (student or maker, t-shirt and cap), robot (an AI or machine).",
+         "type": "string",
+         "enum": [
+          "hoodie",
+          "blazer",
+          "labcoat",
+          "cap",
+          "robot"
+         ]
+        },
+        "color": {
+         "default": "olive",
+         "description": "Main outfit colour: olive, navy, coral, teal, plum, charcoal or mustard.",
+         "type": "string",
+         "enum": [
+          "olive",
+          "navy",
+          "coral",
+          "teal",
+          "plum",
+          "charcoal",
+          "mustard"
+         ]
+        },
+        "skin": {
+         "default": "tan",
+         "description": "Skin tone: light, tan, brown or deep. Ignored for the robot.",
+         "type": "string",
+         "enum": [
+          "light",
+          "tan",
+          "brown",
+          "deep"
+         ]
+        }
+       },
+       "required": [
+        "name"
+       ]
+      },
+      "description": "One or two characters. The first stands on the left (speaker \"a\"), the second on the right (speaker \"b\")."
+     },
+     "beats": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "speaker": {
+         "default": "a",
+         "description": "Who says this line: \"a\" (first cast member, left), \"b\" (second, right) or \"narrator\" (a caption strip at the top, no bubble).",
+         "type": "string",
+         "enum": [
+          "a",
+          "b",
+          "narrator"
+         ]
+        },
+        "line": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 90,
+         "description": "The spoken line shown in the speech bubble, at most 90 characters. Usually the same words as this scene's narration, or a short version of it."
+        },
+        "place": {
+         "default": "paper",
+         "description": "Set sketched behind the cast: paper (blank page), desk (desk and monitor), city (skyline), servers (server racks), sky (sunset clouds on a paper plane), night (dark room under the stars).",
+         "type": "string",
+         "enum": [
+          "paper",
+          "desk",
+          "city",
+          "servers",
+          "sky",
+          "night"
+         ]
+        },
+        "sketch": {
+         "default": "none",
+         "description": "Optional object the pencil draws in a glowing loop between the characters, e.g. code, chip, lock, cloud, rocket, brain, bulb, phone, globe. \"none\" for no object.",
+         "type": "string",
+         "enum": [
+          "none",
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "action": {
+         "default": "talk",
+         "description": "What the speaker does: talk, point (at the sketch), think, shrug, wave, cheer (jump with arms up) or shock. For narrator beats, both characters do it.",
+         "type": "string",
+         "enum": [
+          "talk",
+          "point",
+          "think",
+          "shrug",
+          "wave",
+          "cheer",
+          "shock"
+         ]
+        }
+       },
+       "required": [
+        "line"
+       ]
+      },
+      "description": "2-8 story beats in order, one per narration scene. Add one extra first narration scene to get a title card."
+     },
+     "timer": {
+      "default": true,
+      "description": "Show a small countdown clock in the top corner (time left in the story).",
+      "type": "boolean"
+     },
+     "palette": {
+      "default": "sketchbook",
+      "description": "sketchbook = warm paper and orange, pastel = cool paper and blue, blueprint = dark navy with light lines.",
+      "type": "string",
+      "enum": [
+       "sketchbook",
+       "pastel",
+       "blueprint"
+      ]
+     },
+     "showCaptions": {
+      "default": false,
+      "description": "Also show the narration as word captions under the stage. Leave off when the bubbles already show the same words.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "cast",
+     "beats"
+    ]
+   },
+   "preview": {
+    "file": "story-character-dialogue.mp4",
+    "poster": "story-character-dialogue.jpg",
+    "sha256": "f190189cc511f691dffb5a2ef000dce9e588dd536e70f81fef8f1f27795db0cf",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/story-character-dialogue.mp4"
    }
   },
   {

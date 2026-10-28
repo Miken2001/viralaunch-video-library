@@ -1,0 +1,32 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Stackwise", "tagline": "Bite-size computing history", "cta": "Read the story"}},
+  "scenes": [
+    {"text": "The moth in the machine: a true story from 1947.", "durationSeconds": 3.5},
+    {"text": "September 9, 1947. Harvard's Mark II computer keeps making errors.", "durationSeconds": 4.5},
+    {"text": "Wait. A computer the size of a room just stops working?", "durationSeconds": 4},
+    {"text": "The team opened it up and found a moth stuck in relay number seventy.", "durationSeconds": 5},
+    {"text": "No way! So that is where the word bug comes from?", "durationSeconds": 4},
+    {"text": "Not quite. Engineers called glitches bugs long before. Edison did in 1878.", "durationSeconds": 5},
+    {"text": "They taped the moth into the logbook: first actual case of bug being found.", "durationSeconds": 5},
+    {"text": "And we still call fixing code debugging!", "durationSeconds": 4.5}
+  ],
+  "props": {
+    "title": "The *moth* in the machine",
+    "cast": [
+      {"name": "Maya", "style": "hoodie", "color": "olive", "skin": "tan"},
+      {"name": "Bit", "style": "robot", "color": "teal"}
+    ],
+    "beats": [
+      {"speaker": "narrator", "line": "September 9, 1947. Harvard's Mark II keeps making errors.", "place": "servers", "sketch": "chip", "action": "think"},
+      {"speaker": "a", "line": "Wait. A computer the size of a room just stops working?", "place": "servers", "action": "shrug"},
+      {"speaker": "b", "line": "They opened it up and found a *moth* stuck in relay 70.", "place": "servers", "sketch": "search", "action": "point"},
+      {"speaker": "a", "line": "No way! So that's where the word *bug* comes from?", "place": "desk", "action": "shock"},
+      {"speaker": "b", "line": "Not quite. Engineers said *bug* long before. Edison did in 1878.", "place": "desk", "sketch": "bulb", "action": "think"},
+      {"speaker": "b", "line": "They taped it in the logbook: \"First actual case of bug being found.\"", "place": "night", "sketch": "book", "action": "point"},
+      {"speaker": "a", "line": "And we still call fixing code *debugging*!", "place": "sky", "sketch": "code", "action": "cheer"}
+    ],
+    "timer": true,
+    "palette": "sketchbook",
+    "showCaptions": false
+  }
+}

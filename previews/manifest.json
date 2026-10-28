@@ -79,6 +79,11 @@
     "poster": "story-cartoon-explainer.jpg",
     "sha256": "f4974558bc0567dc5ed3363c9390f1f685b458eb9fffd4aece59a2d99d5eeaa1"
   },
+  "story-character-dialogue": {
+    "file": "story-character-dialogue.mp4",
+    "poster": "story-character-dialogue.jpg",
+    "sha256": "f190189cc511f691dffb5a2ef000dce9e588dd536e70f81fef8f1f27795db0cf"
+  },
   "story-chat-thread": {
     "file": "story-chat-thread.mp4",
     "poster": "story-chat-thread.jpg",
