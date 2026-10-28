@@ -4,6 +4,7 @@
  "explainer": [
   "documentary-mosaic-reveal",
   "explainer-money-story",
+  "explainer-route-trace",
   "explainer-steps-diagram",
   "map-country-tour",
   "news-headline-highlight",
@@ -37,9 +38,11 @@
   "comparison-split",
   "data-story-bars",
   "explainer-money-story",
+  "explainer-route-trace",
   "match-recap-scoreboard"
  ],
  "map-journey": [
+  "explainer-route-trace",
   "map-country-tour"
  ],
  "timeline": [

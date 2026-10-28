@@ -1,0 +1,28 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Stridewise", "tagline": "Train for the course you'll run", "cta": "Plan your race"}},
+  "scenes": [
+    {"text": "Boston is a point to point marathon, from Hopkinton into the city.", "durationSeconds": 4},
+    {"text": "It starts on Main Street in Hopkinton, a small town west of Boston.", "durationSeconds": 4},
+    {"text": "Near halfway, runners pass the Wellesley College scream tunnel.", "durationSeconds": 4},
+    {"text": "At mile sixteen the Newton hills begin. Four climbs in five miles.", "durationSeconds": 4},
+    {"text": "The last one, Heartbreak Hill, tops out near Boston College.", "durationSeconds": 4},
+    {"text": "The Citgo sign in Kenmore Square means about one mile to go.", "durationSeconds": 4},
+    {"text": "Right on Hereford, left on Boylston, and the finish line.", "durationSeconds": 4}
+  ],
+  "props": {
+    "title": "The Boston Marathon Course",
+    "kicker": "Marathon · Point to point",
+    "unit": "mi",
+    "total": 26.2,
+    "route": {"shape": "point-to-point"},
+    "checkpoints": [
+      {"at": 0, "label": "Hopkinton", "note": "Start line on Main Street", "icon": "flag"},
+      {"at": 13.1, "label": "Wellesley", "note": "The scream tunnel near halfway", "icon": "people"},
+      {"at": 16, "label": "Newton Hills", "note": "Four climbs between miles 16 and 21", "icon": "mountain"},
+      {"at": 21, "label": "Heartbreak Hill", "note": "The last climb, near Boston College", "icon": "fire"},
+      {"at": 25, "label": "Kenmore Square", "note": "The Citgo sign: about a mile to go", "icon": "star"},
+      {"at": 26.2, "label": "Boylston Street", "note": "Right on Hereford, left on Boylston", "icon": "trophy"}
+    ],
+    "palette": "night"
+  }
+}

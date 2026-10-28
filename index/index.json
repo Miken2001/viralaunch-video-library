@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 20,
+ "count": 21,
  "entries": [
   {
    "schemaVersion": 1,
@@ -1070,6 +1070,301 @@
     "poster": "explainer-money-story.jpg",
     "sha256": "156e2f00cf5d7893f5bcad5c151cdc3fff236b3851dfd469a7033c10e6956b44",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-money-story.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "explainer-route-trace",
+   "name": "Route Trace Explainer",
+   "version": "1.0.0",
+   "summary": "Sports course explainer: a glowing GPS-style line traces a marathon, race stage, track or trail over topographic terrain as the camera follows the runner, with checkpoint cards, live stats and a profile strip.",
+   "genres": [
+    "explainer",
+    "map-journey",
+    "data-story"
+   ],
+   "domains": [
+    "sports",
+    "health",
+    "geography"
+   ],
+   "roles": [
+    "context",
+    "explanation",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "broadcast",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "maps",
+    "svg-illustration",
+    "charts",
+    "camera-motion",
+    "kinetic-type",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://www.remotion.dev/prompts/strava-run-visualized",
+     "author": "JNYBGR",
+     "collection": "remotion-prompts",
+     "inspirationId": "rp-strava-run-visualized"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "65c9a153bee3dd522ec843840968def1e7ec2ea69cf4dc5e025ca384f8f63f94",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "f2f6e9e92a0cc57b029d023ca1648d119a3ec7ce4a5e4a9c8888f5582f73cf24",
+     "bytes": 2891
+    },
+    {
+     "path": "meta.json",
+     "sha256": "227b09e97743f50f9e37bd3207f6269fcee5df267ced00c94b770995a89ddcfa",
+     "bytes": 1465
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "a91c082ffee28db44140e9c31bd77fecd9216ff2870f8ac1e39a4976c48dc8a8",
+     "bytes": 1747
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "1bceb4aec53a18eae43323c20d5b7d51648c64a5f3b9edf86d0d3325b2d5fa84",
+     "bytes": 29072
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "c7b57072def3dfb95e3cc843c1cab53530b7643eca3aa6396f1dc31b1514bbf3",
+     "bytes": 2436
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "Name of the route or course, e.g. \"The Boston Marathon course\"."
+     },
+     "kicker": {
+      "default": "",
+      "description": "Small label above the title, e.g. \"MARATHON · POINT TO POINT\".",
+      "type": "string",
+      "maxLength": 40
+     },
+     "unit": {
+      "default": "km",
+      "description": "Distance unit for `total` and every checkpoint `at`.",
+      "type": "string",
+      "enum": [
+       "km",
+       "mi"
+      ]
+     },
+     "total": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Full route length in `unit`, e.g. 42.2 or 26.2."
+     },
+     "route": {
+      "description": "How the route line is drawn. It is a stylised trace, not a survey map.",
+      "default": {},
+      "type": "object",
+      "properties": {
+       "shape": {
+        "default": "loop",
+        "description": "Overall form of the drawn route: loop (back to start), point-to-point (A to B), out-and-back, figure-eight, or circuit (race track).",
+        "type": "string",
+        "enum": [
+         "loop",
+         "point-to-point",
+         "out-and-back",
+         "figure-eight",
+         "circuit"
+        ]
+       },
+       "points": {
+        "default": [],
+        "description": "Optional rough trace of the real route as 3–24 points on a 0–100 grid (y grows downward). Leave empty to use `shape`.",
+        "maxItems": 24,
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "x": {
+           "type": "number",
+           "minimum": 0,
+           "maximum": 100
+          },
+          "y": {
+           "type": "number",
+           "minimum": 0,
+           "maximum": 100
+          }
+         },
+         "required": [
+          "x",
+          "y"
+         ]
+        }
+       }
+      }
+     },
+     "checkpoints": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "at": {
+         "type": "number",
+         "minimum": 0,
+         "description": "Distance from the start where this checkpoint sits, in `unit` (e.g. 21 for mile 21). Must be ≤ total."
+        },
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28,
+         "description": "Short place or moment name, e.g. \"Heartbreak Hill\", \"Turn 1\", \"Summit\"."
+        },
+        "note": {
+         "default": "",
+         "description": "One factual line about this stretch, e.g. \"Last of four climbs through Newton\".",
+         "type": "string",
+         "maxLength": 70
+        },
+        "icon": {
+         "default": "pin",
+         "description": "Line icon on the checkpoint card (flag, mountain, trophy, clock, fire, wave, building, star, target...).",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "elevation": {
+         "description": "Height above sea level at this point (metres for km, feet for mi). Leave out when unknown; the profile only draws with 2+ values.",
+         "type": "number"
+        }
+       },
+       "required": [
+        "at",
+        "label"
+       ]
+      },
+      "description": "2–8 points along the route in order of distance, one per narration line. Usually starts at 0 and ends at the finish."
+     },
+     "palette": {
+      "default": "night",
+      "description": "night = navy with orange route, track = black with lime route, glacier = light with red route.",
+      "type": "string",
+      "enum": [
+       "night",
+       "track",
+       "glacier"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions under the panel.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "total",
+     "checkpoints"
+    ]
+   },
+   "preview": {
+    "file": "explainer-route-trace.mp4",
+    "poster": "explainer-route-trace.jpg",
+    "sha256": "b1279c8718194cb99912e4ee37aeb1e8c98f8b2e0c3149df62e5b0c144694673",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/explainer-route-trace.mp4"
    }
   },
   {

@@ -24,6 +24,11 @@
     "poster": "explainer-money-story.jpg",
     "sha256": "156e2f00cf5d7893f5bcad5c151cdc3fff236b3851dfd469a7033c10e6956b44"
   },
+  "explainer-route-trace": {
+    "file": "explainer-route-trace.mp4",
+    "poster": "explainer-route-trace.jpg",
+    "sha256": "b1279c8718194cb99912e4ee37aeb1e8c98f8b2e0c3149df62e5b0c144694673"
+  },
   "explainer-steps-diagram": {
     "file": "explainer-steps-diagram.mp4",
     "poster": "explainer-steps-diagram.jpg",
@@ -38,6 +43,11 @@
     "file": "map-country-tour.mp4",
     "poster": "map-country-tour.jpg",
     "sha256": "54c0af70d37bcd4e7dfdb0be84fcc906bae85abf3f6d732880f81d95db6da81a"
+  },
+  "map-orbit-night-earth": {
+    "file": "map-orbit-night-earth.mp4",
+    "poster": "map-orbit-night-earth.jpg",
+    "sha256": "1c522892682b5a9e433413834b7501c02123b5e3bb4ebb8de73965ca5414c9b7"
   },
   "match-recap-scoreboard": {
     "file": "match-recap-scoreboard.mp4",

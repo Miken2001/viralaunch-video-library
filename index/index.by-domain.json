@@ -38,6 +38,7 @@
   "comparison-split",
   "data-story-bars",
   "documentary-archival-street",
+  "explainer-route-trace",
   "map-country-tour",
   "space-scale-ladder",
   "story-rain-mood",
@@ -68,6 +69,7 @@
  "sports": [
   "comparison-split",
   "data-story-bars",
+  "explainer-route-trace",
   "listicle-countdown",
   "match-recap-scoreboard",
   "news-roundup-cards"
@@ -80,6 +82,7 @@
   "timeline-company-history"
  ],
  "health": [
+  "explainer-route-trace",
   "explainer-steps-diagram",
   "story-cartoon-explainer"
  ],

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-route-trace",
+  "name": "Route Trace Explainer",
+  "version": "1.0.0",
+  "summary": "Sports course explainer: a glowing GPS-style line traces a marathon, race stage, track or trail over topographic terrain as the camera follows the runner, with checkpoint cards, live stats and a profile strip.",
+  "genres": [
+    "explainer",
+    "map-journey",
+    "data-story"
+  ],
+  "domains": [
+    "sports",
+    "health",
+    "geography"
+  ],
+  "roles": [
+    "context",
+    "explanation",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "broadcast",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "maps",
+    "svg-illustration",
+    "charts",
+    "camera-motion",
+    "kinetic-type",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://www.remotion.dev/prompts/strava-run-visualized",
+      "author": "JNYBGR",
+      "collection": "remotion-prompts",
+      "inspirationId": "rp-strava-run-visualized"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}
