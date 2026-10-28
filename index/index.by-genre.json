@@ -48,7 +48,8 @@
  ],
  "map-journey": [
   "explainer-route-trace",
-  "map-country-tour"
+  "map-country-tour",
+  "news-city-blocks"
  ],
  "timeline": [
   "documentary-archival-street",
@@ -79,6 +80,7 @@
  "news-recap": [
   "data-story-bars",
   "match-recap-scoreboard",
+  "news-city-blocks",
   "news-headline-highlight",
   "news-roundup-cards"
  ],

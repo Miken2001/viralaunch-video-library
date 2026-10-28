@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "news-city-blocks",
+  "name": "News City Blocks",
+  "version": "1.0.0",
+  "summary": "Geography news recap on a miniature isometric city: each story is a tower with a place pin; the camera flies tower to tower while a card shows region, headline and a figure, under a live ticker. Map changes, world desk roundups.",
+  "genres": [
+    "news-recap",
+    "map-journey"
+  ],
+  "domains": [
+    "geography",
+    "business",
+    "tech"
+  ],
+  "roles": [
+    "hook",
+    "context",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "kinetic-type",
+    "captions-voiceover",
+    "particles"
+  ],
+  "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 75
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/sanjay_khadka07/status/2104102479927620029",
+      "author": "sanjay_khadka07",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-sanjay-khadka07-620029"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

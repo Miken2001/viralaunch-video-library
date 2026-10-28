@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 25,
+ "count": 26,
  "entries": [
   {
    "schemaVersion": 1,
@@ -2235,6 +2235,276 @@
     "poster": "match-recap-scoreboard.jpg",
     "sha256": "775533dcb61d6f5d73f5005a17207cbb7fb33fa24593d2ad080e602614dfad5d",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/match-recap-scoreboard.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "news-city-blocks",
+   "name": "News City Blocks",
+   "version": "1.0.0",
+   "summary": "Geography news recap on a miniature isometric city: each story is a tower with a place pin; the camera flies tower to tower while a card shows region, headline and a figure, under a live ticker. Map changes, world desk roundups.",
+   "genres": [
+    "news-recap",
+    "map-journey"
+   ],
+   "domains": [
+    "geography",
+    "business",
+    "tech"
+   ],
+   "roles": [
+    "hook",
+    "context",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "kinetic-type",
+    "captions-voiceover",
+    "particles"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 75
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/sanjay_khadka07/status/2104102479927620029",
+     "author": "sanjay_khadka07",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-sanjay-khadka07-620029"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "7ff3da3f032758482454a4c16fe636dc21a3505929e3bf129c686d73defd6b24",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "8d9204b0e26203cde0041d22d13785300a6653b3b24581f3f95f4a159bfd156b",
+     "bytes": 2734
+    },
+    {
+     "path": "meta.json",
+     "sha256": "db1eb052e1d4bc2acda7bf3805902080b020ff8c7cd510fd3f0d0aec7fbaaba2",
+     "bytes": 1491
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "a819e5dbf4d9fe167725bff84ef91c95cfa379e6e9e85bc1a849088271cbb72a",
+     "bytes": 2162
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "5f3676ea3ddb690fa74cf5edbce08b5cf652c0b30ec8645a96e1f842dbd92c2a",
+     "bytes": 30530
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "cc599a311df56ca15ab52a4d276f633b553db6edf5854584acffc85c1fa2f3bf",
+     "bytes": 2425
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 44,
+      "description": "Recap title, at most ~6 words, e.g. \"The year the map changed\"."
+     },
+     "edition": {
+      "default": "",
+      "description": "Edition or period, e.g. \"World desk · 2022\". Empty to hide.",
+      "type": "string",
+      "maxLength": 32
+     },
+     "stories": {
+      "minItems": 2,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "place": {
+         "type": "string",
+         "minLength": 2,
+         "maxLength": 28,
+         "description": "Where it happened, short: a city, country or region, e.g. \"Astana, Kazakhstan\"."
+        },
+        "region": {
+         "type": "string",
+         "minLength": 2,
+         "maxLength": 18,
+         "description": "Short region or beat chip, e.g. \"CENTRAL ASIA\", \"EUROPE\", \"BORDERS\"."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 4,
+         "maxLength": 60,
+         "description": "Headline, at most ~8 words, e.g. \"Kazakhstan renames its capital back to Astana\"."
+        },
+        "detail": {
+         "default": "",
+         "description": "One short sentence of context (under 18 words). Empty to hide.",
+         "type": "string",
+         "maxLength": 110
+        },
+        "icon": {
+         "default": "pin",
+         "description": "Icon in the place pin: pin, flag, building, map, globe, mountain, wave, car...",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "figure": {
+         "description": "Optional real, checkable number for this story. Leave out rather than guess.",
+         "type": "object",
+         "properties": {
+          "value": {
+           "type": "number",
+           "description": "The number, e.g. 55."
+          },
+          "unit": {
+           "default": "",
+           "description": "Shown after the number, e.g. \"km\", \"%\", \"years\".",
+           "type": "string",
+           "maxLength": 10
+          },
+          "decimals": {
+           "default": 0,
+           "type": "integer",
+           "minimum": 0,
+           "maximum": 2
+          },
+          "label": {
+           "default": "",
+           "description": "What the number measures, e.g. \"years after independence\".",
+           "type": "string",
+           "maxLength": 40
+          }
+         },
+         "required": [
+          "value"
+         ]
+        }
+       },
+       "required": [
+        "place",
+        "region",
+        "headline"
+       ]
+      },
+      "description": "2-6 stories. Narration: an optional intro scene, then one scene per story."
+     },
+     "timeOfDay": {
+      "default": "night",
+      "description": "City lighting: day (light), dusk (violet/orange) or night (navy, lit windows).",
+      "type": "string",
+      "enum": [
+       "day",
+       "dusk",
+       "night"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "stories"
+    ]
+   },
+   "preview": {
+    "file": "news-city-blocks.mp4",
+    "poster": "news-city-blocks.jpg",
+    "sha256": "4ae78f946056a4a1b905020c6220ffb3c4eda03113b77ef4f1e0416a315292b0",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/news-city-blocks.mp4"
    }
   },
   {

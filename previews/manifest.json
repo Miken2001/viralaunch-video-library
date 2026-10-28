@@ -54,6 +54,11 @@
     "poster": "match-recap-scoreboard.jpg",
     "sha256": "775533dcb61d6f5d73f5005a17207cbb7fb33fa24593d2ad080e602614dfad5d"
   },
+  "news-city-blocks": {
+    "file": "news-city-blocks.mp4",
+    "poster": "news-city-blocks.jpg",
+    "sha256": "4ae78f946056a4a1b905020c6220ffb3c4eda03113b77ef4f1e0416a315292b0"
+  },
   "news-headline-highlight": {
     "file": "news-headline-highlight.mp4",
     "poster": "news-headline-highlight.jpg",

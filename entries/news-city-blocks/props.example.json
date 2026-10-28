@@ -1,0 +1,47 @@
+{
+  "media": {"aspectRatio": "9:16", "adWeave": "end-card", "brand": {"name": "Atlas Notes", "tagline": "Geography, one story at a time", "cta": "Follow for more"}},
+  "scenes": [
+    {"text": "Four places that changed their names or their capitals in under a year.", "durationSeconds": 4},
+    {"text": "In November twenty twenty-one, Barbados became a republic, fifty-five years after independence.", "durationSeconds": 6},
+    {"text": "In January twenty twenty-two, Indonesia passed a law to move its capital from Jakarta to Nusantara, on Borneo.", "durationSeconds": 6.5},
+    {"text": "In June, the United Nations began using the name Türkiye for Turkey, at the country's request.", "durationSeconds": 6},
+    {"text": "And in September, Kazakhstan renamed its capital from Nur-Sultan back to Astana.", "durationSeconds": 6.5}
+  ],
+  "props": {
+    "title": "The map got new names",
+    "edition": "World desk · 2021-2022",
+    "timeOfDay": "night",
+    "showCaptions": true,
+    "stories": [
+      {
+        "place": "Bridgetown, Barbados",
+        "region": "Caribbean",
+        "headline": "Barbados becomes a republic",
+        "detail": "A president replaced the British monarch as head of state on 30 November 2021.",
+        "icon": "flag",
+        "figure": {"value": 55, "unit": "years", "label": "after independence in 1966"}
+      },
+      {
+        "place": "Nusantara, Indonesia",
+        "region": "Southeast Asia",
+        "headline": "Indonesia votes to move its capital",
+        "detail": "A January 2022 law names Nusantara, in East Kalimantan, as the successor to Jakarta.",
+        "icon": "building"
+      },
+      {
+        "place": "Ankara, Türkiye",
+        "region": "Europe · Asia",
+        "headline": "The UN adopts the name Türkiye",
+        "detail": "The change followed a formal request from the government in Ankara in June 2022.",
+        "icon": "globe"
+      },
+      {
+        "place": "Astana, Kazakhstan",
+        "region": "Central Asia",
+        "headline": "Nur-Sultan is Astana again",
+        "detail": "The capital took back the name it held from 1998 to 2019.",
+        "icon": "pin"
+      }
+    ]
+  }
+}
