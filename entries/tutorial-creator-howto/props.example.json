@@ -1,0 +1,22 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Groove Notes", "tagline": "Small habits for big collections", "cta": "Read the guide"}},
+  "scenes": [
+    {"text": "Want your records to sound good for decades? Here is how to care for vinyl in four steps.", "durationSeconds": 4.5},
+    {"text": "First, store them upright on a sturdy shelf. Records stacked flat can warp under their own weight.", "durationSeconds": 5},
+    {"text": "Handle every record by its edges and the label, so skin oils never touch the grooves.", "durationSeconds": 4.5},
+    {"text": "Before each play, give the spinning record a pass with a carbon fibre brush to lift dust.", "durationSeconds": 5},
+    {"text": "Finally, keep them away from heat and direct sunlight, which can warp the vinyl.", "durationSeconds": 4.5}
+  ],
+  "props": {
+    "title": "How to care for your *vinyl.*",
+    "kicker": "Record care",
+    "steps": [
+      {"label": "Store them upright", "headline": "Keep them *standing.*", "items": ["Sturdy, deep shelf", "Records upright", "No tall flat stacks"], "tip": "Stacked flat, the records at the bottom take all the weight and can warp.", "action": "Shelved", "icon": "book"},
+      {"label": "Hold by the edges", "headline": "Edges and label *only.*", "items": ["Thumb on the edge", "Fingers on the label", "Never touch the grooves"], "tip": "Skin oils left in the grooves attract dust and add surface noise.", "action": "Got it", "icon": "music"},
+      {"label": "Brush before playing", "headline": "Dust off every *spin.*", "items": ["Carbon fibre brush", "Record turning", "Lift off slowly"], "tip": "A light pass while the platter turns lifts loose dust before the needle finds it.", "action": "Clean", "icon": "spark"},
+      {"label": "Keep it cool", "headline": "No heat, no *sun.*", "items": ["Away from radiators", "Out of direct sunlight", "Never in a hot car"], "tip": "Vinyl softens with heat, so a sunny shelf can warp a record.", "action": "Done", "icon": "sun"}
+    ],
+    "palette": "cream",
+    "showCaptions": true
+  }
+}

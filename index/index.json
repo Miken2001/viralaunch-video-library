@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 24,
+ "count": 25,
  "entries": [
   {
    "schemaVersion": 1,
@@ -4906,6 +4906,254 @@
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-eras.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "tutorial-creator-howto",
+   "name": "Creator How-To",
+   "version": "1.0.0",
+   "summary": "Warm, app-style how-to for film, music, games and hobby culture: a serif headline with a hand-drawn underline, a tip bubble and a floating task card whose checklist ticks off before a cursor taps the step's button.",
+   "genres": [
+    "tutorial",
+    "explainer"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "education",
+    "tech"
+   ],
+   "roles": [
+    "explanation",
+    "context",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "captions-voiceover",
+    "transitions",
+    "svg-illustration"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/francoxavier33/status/2103486218323341663",
+     "author": "francoxavier33",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-francoxavier33-341663"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "9466d9fbc3db4febbc52cf419b42e64c7ee870ab3e270600f5454ab445098e7a",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "5f7e8197013607ed94c7c1a4ddb4b54e41dcd3b6f5785f837244f29bc05728d5",
+     "bytes": 2956
+    },
+    {
+     "path": "meta.json",
+     "sha256": "8cfbcd265891cdd154cb31ce3a215ccddf301e20083a2f712fa61cd9c8294405",
+     "bytes": 1462
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "bbc471ffe2c571ff1ddd002bb0913890a598b6d0dc8b223dc5984e9975d92715",
+     "bytes": 2049
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "c5b26ff8731151ea0d197ad42149f5a57ed5a487b1b35873e766990b7034ae58",
+     "bytes": 21204
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "229b4c94169939575666d802347aba84b48d0e63d42edcf99074a86a5ef0ac47",
+     "bytes": 1975
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "What the viewer will learn, e.g. \"How to care for your *vinyl*.\" Wrap 1–2 words in *asterisks*: they turn italic, accent-coloured and get a hand-drawn underline."
+     },
+     "kicker": {
+      "default": "",
+      "description": "Small label in the top bar and above the title, e.g. \"Record care\" or \"Film club basics\".",
+      "type": "string",
+      "maxLength": 32
+     },
+     "steps": {
+      "minItems": 1,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 28,
+         "description": "Short name of the step, shown on the card header and in the intro list, e.g. \"Store them upright\"."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 44,
+         "description": "The instruction as a headline, e.g. \"Keep them *standing*.\" *Asterisks* highlight 1–2 words."
+        },
+        "items": {
+         "default": [],
+         "description": "0–4 short checklist lines that tick off one by one, e.g. [\"Shelf deep enough\", \"No leaning stacks\"].",
+         "maxItems": 4,
+         "type": "array",
+         "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 34
+         }
+        },
+        "tip": {
+         "default": "",
+         "description": "One plain tip shown in a chat-style bubble, e.g. \"Records stored flat warp under their own weight.\"",
+         "type": "string",
+         "maxLength": 90
+        },
+        "action": {
+         "default": "",
+         "description": "Label of the button a cursor taps at the end of the step, e.g. \"Shelved\", \"Done\", \"Saved\". \"\" = no button.",
+         "type": "string",
+         "maxLength": 20
+        },
+        "icon": {
+         "default": "check",
+         "description": "Line icon for the step, e.g. music, camera, book, star, heart, clock, check, spark, calendar, people.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "label",
+        "headline"
+       ]
+      },
+      "description": "The how-to in order, 2–6 steps. Narration: scene 1 is the title, then one scene per step."
+     },
+     "palette": {
+      "default": "cream",
+      "description": "cream = warm paper with burnt-orange accent; blush = pink and sky with raspberry accent; studio = dark warm night with amber accent.",
+      "type": "string",
+      "enum": [
+       "cream",
+       "blush",
+       "studio"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "tutorial-creator-howto.mp4",
+    "poster": "tutorial-creator-howto.jpg",
+    "sha256": "824f2d195841a7c5af916fbd1b75a0b5e40f398b05af8a6c4e4e3ac9c11cf00d",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-creator-howto.mp4"
    }
   },
   {

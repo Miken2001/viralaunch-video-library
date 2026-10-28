@@ -7,7 +7,8 @@
   "news-roundup-cards",
   "story-character-dialogue",
   "timeline-company-history",
-  "timeline-eras"
+  "timeline-eras",
+  "tutorial-creator-howto"
  ],
  "business": [
   "data-story-bars",
@@ -101,7 +102,8 @@
   "story-character-dialogue",
   "story-chat-thread",
   "story-pixel-arcade",
-  "story-rain-mood"
+  "story-rain-mood",
+  "tutorial-creator-howto"
  ],
  "nature": [
   "listicle-countdown",
@@ -123,6 +125,7 @@
   "story-pixel-arcade",
   "timeline-company-history",
   "timeline-deep-time",
+  "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-sports-play-steps"
  ],

@@ -114,6 +114,11 @@
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0"
   },
+  "tutorial-creator-howto": {
+    "file": "tutorial-creator-howto.mp4",
+    "poster": "tutorial-creator-howto.jpg",
+    "sha256": "824f2d195841a7c5af916fbd1b75a0b5e40f398b05af8a6c4e4e3ac9c11cf00d"
+  },
   "tutorial-finance-money-steps": {
     "file": "tutorial-finance-money-steps.mp4",
     "poster": "tutorial-finance-money-steps.jpg",

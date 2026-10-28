@@ -15,6 +15,7 @@
   "timeline-company-history",
   "timeline-deep-time",
   "timeline-eras",
+  "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-sports-play-steps"
  ],
@@ -71,6 +72,7 @@
  "tutorial": [
   "explainer-steps-diagram",
   "story-cartoon-explainer",
+  "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-sports-play-steps"
  ],

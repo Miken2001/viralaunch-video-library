@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial-creator-howto",
+  "name": "Creator How-To",
+  "version": "1.0.0",
+  "summary": "Warm, app-style how-to for film, music, games and hobby culture: a serif headline with a hand-drawn underline, a tip bubble and a floating task card whose checklist ticks off before a cursor taps the step's button.",
+  "genres": [
+    "tutorial",
+    "explainer"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "education",
+    "tech"
+  ],
+  "roles": [
+    "explanation",
+    "context",
+    "payoff"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "paper",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "ui-mockup",
+    "captions-voiceover",
+    "transitions",
+    "svg-illustration"
+  ],
+  "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/francoxavier33/status/2103486218323341663",
+      "author": "francoxavier33",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-francoxavier33-341663"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}
