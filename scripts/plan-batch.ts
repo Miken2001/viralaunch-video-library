@@ -68,19 +68,28 @@ const similar = (a: string, b: string) => {
 };
 // Visual ideas that need a pipeline we do not have (live footage, generated video, music
 // production) are poor template sources.
-const usable = (r: Rec) => !(r.inputs ?? []).some(i => ['reference-video', 'footage', 'music'].includes(i)) && r.title.length > 0 && !RISKY.test(`${r.title} ${r.description}`);
+// Skillry records are link-only; the creator's brief (local checkout, never committed) says
+// what the video actually is.
+const skillryFile = path.join(root, '.cache', 'skillry', 'data', 'videos.json');
+const briefs = new Map(existsSync(skillryFile) ? readJson<Array<{slug: string; prompt?: string}>>(skillryFile).map(v => [`sk-${v.slug}`, v.prompt ?? '']) : []);
+const briefOf = (r: Rec) => briefs.get(r.id) || r.description;
+// Interactive web pages, 3D toys and playable demos are not videos: nothing to template.
+const NOT_A_VIDEO = /\b(interactive|playable|in (my|your|the) browser|browser tab|website|landing page|header|scroll|single html file|html file|hero section|drag|grab|take apart|you can (adjust|move|play)|floor plan|blender|rigged|shader lab|benchmark|eval|minecraft|clips i own|real vertical clips|ui states|swift|eyeball|art project|simulation of)\b/i;
+const usable = (r: Rec) => !(r.inputs ?? []).some(i => ['reference-video', 'footage', 'music'].includes(i)) && r.title.length > 0 && !RISKY.test(`${r.title} ${r.description}`) && !NOT_A_VIDEO.test(briefOf(r));
 
 const picks: Pick[] = [];
 const takenTitles = planned.map(p => records.find(r => r.id === p.inspirationId)?.title ?? '');
 const existingIds = new Set([...entryIds(), ...planned.map(p => p.entryId)]);
 const isSkillry = (r: Rec) => r.collection === SOURCES.skillry;
+// Many creators shared the same viral prompt; one template per prompt is enough.
+const takenBriefs = new Set(planned.map(p => briefOf(records.find(r => r.id === p.inspirationId)!).slice(0, 120)));
 for (let n = 0; n < size; n++) {
   const wanted = (r: Rec) => (source ? r.collection === SOURCES[source] : isSkillry(r) === n % 3 < 2);
   // The thinnest target cell: favour uncovered domains, then uncovered genres.
   let best: {score: number; rec: Rec; domain: string; genre: string} | undefined;
   for (const rec of records) {
     // Skillry records carry a generic label, not a title, so title similarity says nothing.
-    if (used.has(rec.id) || !wanted(rec) || !usable(rec) || (!isSkillry(rec) && takenTitles.some(t => similar(t, rec.title)))) continue;
+    if (used.has(rec.id) || !wanted(rec) || !usable(rec) || (!isSkillry(rec) && takenTitles.some(t => similar(t, rec.title))) || (briefOf(rec).length > 40 && takenBriefs.has(briefOf(rec).slice(0, 120)))) continue;
     const recDomains = [...new Set([...guessDomains(`${rec.title} ${rec.description}`), ...rec.domains.filter(d => d !== 'generic')])];
     // A marketing record can be re-aimed at any subject (its visual idea is what we reuse);
     // anything else stays on what it is actually about.
@@ -101,6 +110,7 @@ for (let n = 0; n < size; n++) {
   const {rec, domain, genre} = best;
   used.add(rec.id);
   if (!isSkillry(rec)) takenTitles.push(rec.title);
+  takenBriefs.add(briefOf(rec).slice(0, 120));
   bump(`${domain}|${genre}`), bump(`d:${domain}`), bump(`g:${genre}`);
   let entryId = `${genre.replace(/-(narrative|kinetic|recap|story|journey)$/, '')}-${rec.title.toLowerCase().replace(/[^a-z0-9 ]/g, '').split(/\s+/).filter(w => w.length > 2 && !['the', 'and', 'with', 'for', 'video', 'claude', 'opus'].includes(w)).slice(0, 2).join('-')}`.replace(/-+$/, '').slice(0, 40);
   // Placeholder for a Skillry pick: rename it when reviewing the batch file.

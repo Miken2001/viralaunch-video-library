@@ -1,0 +1,452 @@
+[
+  {
+    "inspirationId": "ao-alarcon7a-765420",
+    "entryId": "map-country-tour",
+    "direction": "Primary subject domain: geography. Genre: map-journey. A country/city tour: stops on a stylised map with pins, route line, place cards with one fact each. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "map-journey"
+    }
+  },
+  {
+    "inspirationId": "ao-oxpsats-369282",
+    "entryId": "explainer-money-story",
+    "direction": "Primary subject domain: finance. Genre: explainer. A finance story explainer: a money concept told in illustrated beats with a price/value line that reacts to the story. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "finance",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "ao-zhu185178-255661",
+    "entryId": "story-rain-mood",
+    "direction": "Primary subject domain: nature. Genre: story-narrative. A moody 2D illustrated short: layered parallax scenes, weather (rain/fog/snow) particles, calm captions; for nature, travel and reflective stories. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "nature",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "ao-ryzoft-887481",
+    "entryId": "story-cartoon-explainer",
+    "direction": "Primary subject domain: science. Genre: explainer. A cartoon explainer for science/kids: simple SVG characters and props acting out each step, playful motion. Reuse the inspiration's visual idea, not its specific subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "science",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-alexwtlf-981005",
+    "entryId": "map-orbit-night-earth",
+    "direction": "Primary subject domain: space. Genre: map-journey. Make it a template for space map-journey content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "space",
+      "genre": "map-journey"
+    }
+  },
+  {
+    "inspirationId": "sk-henritoivar-445215",
+    "entryId": "data-education-kinetic-charts",
+    "direction": "Primary subject domain: education. Genre: data-story. Make it a template for education data-story content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "education",
+      "genre": "data-story"
+    }
+  },
+  {
+    "inspirationId": "rp-strava-run-visualized",
+    "entryId": "explainer-route-trace",
+    "direction": "Primary subject domain: sports. Genre: explainer. Make it a template for sports explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "sports",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-elliot-garreffa-446825",
+    "entryId": "tutorial-sports-play-steps",
+    "direction": "Primary subject domain: sports. Genre: tutorial. Make it a template for sports tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "sports",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "sk-colecornelll-047465",
+    "entryId": "tutorial-finance-money-steps",
+    "direction": "Primary subject domain: finance. Genre: tutorial. Make it a template for finance tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "finance",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "ao-alsk_ai-630632",
+    "entryId": "story-character-dialogue",
+    "direction": "Primary subject domain: tech. Genre: story-narrative. Make it a template for tech story-narrative content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "sk-francoxavier33-341663",
+    "entryId": "tutorial-creator-howto",
+    "direction": "Primary subject domain: culture-entertainment. Genre: tutorial. Make it a template for culture-entertainment tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "sk-ik-builds-585923",
+    "entryId": "quote-sports-motivation",
+    "direction": "Primary subject domain: sports. Genre: quote-kinetic. Make it a template for sports quote-kinetic content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "sports",
+      "genre": "quote-kinetic"
+    }
+  },
+  {
+    "inspirationId": "ao-bryanpatricca-192868",
+    "entryId": "story-robot-world-journey",
+    "direction": "Primary subject domain: geography. Genre: story-narrative. Make it a template for geography story-narrative content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "sk-amberpromptai-345137",
+    "entryId": "documentary-festival-moon",
+    "direction": "Primary subject domain: space. Genre: documentary. Make it a template for space documentary content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "space",
+      "genre": "documentary"
+    }
+  },
+  {
+    "inspirationId": "sk-sanjay-khadka07-620029",
+    "entryId": "news-city-blocks",
+    "direction": "Primary subject domain: geography. Genre: news-recap. Make it a template for geography news-recap content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "news-recap"
+    }
+  },
+  {
+    "inspirationId": "ao-winterarc2125-347650",
+    "entryId": "timeline-battle-map",
+    "direction": "Primary subject domain: culture-entertainment. Genre: timeline. Make it a template for culture-entertainment timeline content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "sk-humzaakhalid-537875",
+    "entryId": "tutorial-glow-reel-steps",
+    "direction": "Primary subject domain: culture-entertainment. Genre: tutorial. Make it a template for culture-entertainment tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "sk-heymrzak-349060",
+    "entryId": "map-live-world-pins",
+    "direction": "Primary subject domain: geography. Genre: map-journey. Make it a template for geography map-journey content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "map-journey"
+    }
+  },
+  {
+    "inspirationId": "ao-akokoi1-941028",
+    "entryId": "explainer-line-art-lesson",
+    "direction": "Primary subject domain: geography. Genre: explainer. Make it a template for geography explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-kgonia7-746268",
+    "entryId": "story-cosmic-zoom-out",
+    "direction": "Primary subject domain: space. Genre: story-narrative. Make it a template for space story-narrative content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "space",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "sk-jake11moran-825416",
+    "entryId": "story-dev-session-diary",
+    "direction": "Primary subject domain: tech. Genre: story-narrative. Make it a template for tech story-narrative content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "ao-frenchie_-948730",
+    "entryId": "explainer-physics-diagram",
+    "direction": "Primary subject domain: culture-entertainment. Genre: explainer. Make it a template for culture-entertainment explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-jesscaroline7-955094",
+    "entryId": "tutorial-app-walkthrough",
+    "direction": "Primary subject domain: education. Genre: tutorial. Make it a template for education tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "education",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "sk-als-link-301108",
+    "entryId": "showreel-nature-reel",
+    "direction": "Primary subject domain: nature. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "nature",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "ao-songkeys-384673",
+    "entryId": "timeline-doodle-civilization",
+    "direction": "Primary subject domain: tech. Genre: timeline. Make it a template for tech timeline content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "sk-seantiffonnet-675262",
+    "entryId": "showreel-sports-highlight",
+    "direction": "Primary subject domain: sports. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "sports",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "sk-mattworkman-309357",
+    "entryId": "tutorial-tech-stack-build",
+    "direction": "Primary subject domain: tech. Genre: tutorial. Make it a template for tech tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "ao-dotey-927166",
+    "entryId": "timeline-ink-gold-dynasties",
+    "direction": "Primary subject domain: culture-entertainment. Genre: timeline. Make it a template for culture-entertainment timeline content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "sk-georgejimenez98-431559",
+    "entryId": "showreel-culture-mix",
+    "direction": "Primary subject domain: culture-entertainment. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "sk-mycodecoach-459574",
+    "entryId": "showreel-game-hud",
+    "direction": "Primary subject domain: history. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "history",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "ao-kloss_xyz-941143",
+    "entryId": "quote-chaotic-pov",
+    "direction": "Primary subject domain: health. Genre: quote-kinetic. Make it a template for health quote-kinetic content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "health",
+      "genre": "quote-kinetic"
+    }
+  },
+  {
+    "inspirationId": "sk-kureshirfan-386691",
+    "entryId": "explainer-earth-forces",
+    "direction": "Primary subject domain: nature. Genre: explainer. Make it a template for nature explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "nature",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-sonali-sahu-09-350200",
+    "entryId": "timeline-cinematic-tech",
+    "direction": "Primary subject domain: tech. Genre: timeline. Make it a template for tech timeline content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "ao-alu1337-547730",
+    "entryId": "quote-lineage-drawn",
+    "direction": "Primary subject domain: history. Genre: quote-kinetic. Make it a template for history quote-kinetic content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "history",
+      "genre": "quote-kinetic"
+    }
+  },
+  {
+    "inspirationId": "sk-miguel07code-091611",
+    "entryId": "explainer-math-waves",
+    "direction": "Primary subject domain: culture-entertainment. Genre: explainer. Make it a template for culture-entertainment explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-thayto-dev-739735",
+    "entryId": "tutorial-education-quick-steps",
+    "direction": "Primary subject domain: education. Genre: tutorial. Make it a template for education tutorial content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "education",
+      "genre": "tutorial"
+    }
+  },
+  {
+    "inspirationId": "ao-tetumemo-584046",
+    "entryId": "timeline-naval-overhead",
+    "direction": "Primary subject domain: culture-entertainment. Genre: timeline. Make it a template for culture-entertainment timeline content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "sk-priyansh0327-206409",
+    "entryId": "product-launch-travel",
+    "direction": "Primary subject domain: geography. Genre: product-launch. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "product-launch"
+    }
+  },
+  {
+    "inspirationId": "sk-georgejimenez98-427173",
+    "entryId": "product-launch-culture",
+    "direction": "Primary subject domain: culture-entertainment. Genre: product-launch. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "product-launch"
+    }
+  },
+  {
+    "inspirationId": "ao-miaai_lab-774895",
+    "entryId": "showreel-word-genesis",
+    "direction": "Primary subject domain: space. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "space",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "sk-iniyanai-856596",
+    "entryId": "explainer-mechanism-teardown",
+    "direction": "Primary subject domain: finance. Genre: explainer. Make it a template for finance explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "finance",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "sk-arthurkatcher-604161",
+    "entryId": "explainer-agent-flow",
+    "direction": "Primary subject domain: culture-entertainment. Genre: explainer. Make it a template for culture-entertainment explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "culture-entertainment",
+      "genre": "explainer"
+    }
+  },
+  {
+    "inspirationId": "ao-kaolti-092204",
+    "entryId": "product-demo-space-launch",
+    "direction": "Primary subject domain: space. Genre: product-demo. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "space",
+      "genre": "product-demo"
+    }
+  },
+  {
+    "inspirationId": "sk-ajith-io-890146",
+    "entryId": "showreel-myth-motion",
+    "direction": "Primary subject domain: religion-myth. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "religion-myth",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "sk-localjulius-625706",
+    "entryId": "story-education-ad",
+    "direction": "Primary subject domain: education. Genre: story-narrative. Make it a template for education story-narrative content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "education",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "ao-sachingmt-821899",
+    "entryId": "timeline-device-evolution",
+    "direction": "Primary subject domain: science. Genre: timeline. Make it a template for science timeline content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "science",
+      "genre": "timeline"
+    }
+  },
+  {
+    "inspirationId": "sk-djadkison-394122",
+    "entryId": "story-product-motion",
+    "direction": "Primary subject domain: tech. Genre: story-narrative. Make it a template for tech story-narrative content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "story-narrative"
+    }
+  },
+  {
+    "inspirationId": "sk-itisrazak-332386",
+    "entryId": "showreel-geography-dynamic",
+    "direction": "Primary subject domain: geography. Genre: showreel. A product/brand video template (native placement). Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "geography",
+      "genre": "showreel"
+    }
+  },
+  {
+    "inspirationId": "ao-kloss_xyz-067876",
+    "entryId": "documentary-decades-recap",
+    "direction": "Primary subject domain: tech. Genre: documentary. Make it a template for tech documentary content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "tech",
+      "genre": "documentary"
+    }
+  },
+  {
+    "inspirationId": "sk-tony-tt-872147",
+    "entryId": "explainer-trading-house",
+    "direction": "Primary subject domain: finance. Genre: explainer. Make it a template for finance explainer content; reuse the inspiration's visual idea, not its product subject. Must work with narration and as one segment of a multi-template video.",
+    "target": {
+      "domain": "finance",
+      "genre": "explainer"
+    }
+  }
+]

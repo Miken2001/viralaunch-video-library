@@ -65,7 +65,7 @@ Inputs (filled in below):
    clearly generic example.
 
 ## Loop until clean
-1. `pnpm typecheck` and `pnpm validate ENTRY_ID`.
+1. `pnpm typecheck-entry ENTRY_ID` and `pnpm validate ENTRY_ID` (other sessions may be writing other entries at the same time: only your entry has to be clean, and never touch theirs).
 2. `pnpm still-sheet ENTRY_ID`, then look at `out/sheets/ENTRY_ID.jpg`. Fix anything clipped,
    overlapping, unreadable, empty or static.
 3. `pnpm still-sheet ENTRY_ID --look cinematic` and `--look paper`, then look at both. The

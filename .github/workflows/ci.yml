@@ -1,5 +1,9 @@
 name: library
 on: [push, pull_request]
+# Batch runs push one commit per new entry; only the newest push needs checking.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   check:
     runs-on: ubuntu-latest

@@ -11,8 +11,9 @@ import path from 'node:path';
 import {readJson, root} from './lib';
 
 const dryRun = process.argv.includes('--dry-run');
-// Small checkouts and data the pipeline reads again; not worth re-downloading.
-const KEEP_IN_CACHE = new Set(['awesome', 'skillry', 'ne_110m_land.geojson']);
+// Small checkouts and data the pipeline reads again (not worth re-downloading), plus batch
+// logs/reports and parked failed drafts (text only, kept for review).
+const KEEP_IN_CACHE = new Set(['awesome', 'skillry', 'ne_110m_land.geojson', 'batches', 'failed']);
 
 const size = (p: string): number => {
   const s = statSync(p, {throwIfNoEntry: false});

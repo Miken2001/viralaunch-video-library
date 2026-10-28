@@ -5,6 +5,7 @@
  * preview info. No timestamps, so `--check` can prove the committed index is current.
  * Also rewrites the README preview gallery (posters and videos are release assets, so the
  * repository itself stays free of media).
+ * INDEX_EXCLUDE=id,id leaves out drafts that other batch sessions are still writing.
  * Usage: pnpm index [--check]
  */
 import {existsSync, readFileSync, writeFileSync, mkdirSync} from 'node:fs';
@@ -18,8 +19,9 @@ const previews = readPreviewManifest();
 const config = readJson<{repo: string; ref: string; previewRelease: string; rawBase: string; previewBase: string}>(path.join(root, 'library.config.json'));
 const taxonomy = readJson<{version: number; genre: Record<string, string>; domain: Record<string, string>}>(path.join(root, 'taxonomy.json'));
 
+const excluded = new Set((process.env.INDEX_EXCLUDE ?? '').split(',').filter(Boolean));
 const entries: Array<Record<string, unknown> & {id: string}> = [];
-for (const id of entryIds()) {
+for (const id of entryIds().filter(i => !excluded.has(i))) {
   const meta = readMeta(id);
   if (meta.status !== 'approved') continue;
   const dir = path.join(entriesDir, id);

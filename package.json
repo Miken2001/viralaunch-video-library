@@ -25,7 +25,8 @@
     "sequence-preview": "tsx scripts/sequence-preview.ts",
     "plan-batch": "tsx scripts/plan-batch.ts",
     "make-batch": "tsx scripts/make-batch.ts",
-    "tidy": "tsx scripts/tidy.ts"
+    "tidy": "tsx scripts/tidy.ts",
+    "typecheck-entry": "tsx scripts/typecheck-entry.ts"
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.0.0",
