@@ -72,7 +72,8 @@
   "explainer-route-trace",
   "listicle-countdown",
   "match-recap-scoreboard",
-  "news-roundup-cards"
+  "news-roundup-cards",
+  "tutorial-sports-play-steps"
  ],
  "finance": [
   "comparison-split",
@@ -115,7 +116,8 @@
   "story-chat-thread",
   "story-pixel-arcade",
   "timeline-company-history",
-  "timeline-deep-time"
+  "timeline-deep-time",
+  "tutorial-sports-play-steps"
  ],
  "generic": [
   "comparison-split",

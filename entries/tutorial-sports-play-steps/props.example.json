@@ -1,0 +1,34 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Courtside Coach", "tagline": "Plays you can run tonight", "cta": "Get the playbook"}},
+  "scenes": [
+    {"text": "Here is the pick and roll, the most common two-player action in basketball.", "durationSeconds": 4},
+    {"text": "First, the big sets a screen right next to the ball handler's defender.", "durationSeconds": 4.5},
+    {"text": "The ball handler dribbles tight off the screen, so the defender gets caught behind it.", "durationSeconds": 4.5},
+    {"text": "When the defense commits to the ball, the screener rolls hard toward the rim and gets the pass.", "durationSeconds": 5},
+    {"text": "The screener catches in stride and finishes at the basket.", "durationSeconds": 4.5}
+  ],
+  "props": {
+    "title": "The *pick and roll*",
+    "kicker": "Basketball playbook",
+    "field": "basketball",
+    "players": [
+      {"id": "1", "side": "attack", "x": 50, "y": 80},
+      {"id": "5", "side": "attack", "x": 72, "y": 46},
+      {"id": "2", "side": "attack", "x": 12, "y": 36},
+      {"id": "3", "side": "attack", "x": 88, "y": 30},
+      {"id": "X1", "side": "defense", "x": 50, "y": 70},
+      {"id": "X5", "side": "defense", "x": 66, "y": 40},
+      {"id": "X2", "side": "defense", "x": 19, "y": 34},
+      {"id": "X3", "side": "defense", "x": 81, "y": 28}
+    ],
+    "ballWith": "1",
+    "steps": [
+      {"label": "Set the screen", "headline": "The big sets a *solid screen*", "tip": "5 plants both feet beside the ball handler's defender and stays still.", "icon": "person", "moves": [{"player": "5", "x": 41, "y": 72, "kind": "run"}], "passTo": ""},
+      {"label": "Use the screen", "headline": "Drive *off the shoulder*", "tip": "1 dribbles tight past the screen so X1 is caught behind it.", "icon": "arrow", "moves": [{"player": "1", "x": 30, "y": 56, "kind": "dribble"}, {"player": "X1", "x": 46, "y": 66, "kind": "run"}, {"player": "X5", "x": 36, "y": 60, "kind": "run"}], "passTo": ""},
+      {"label": "Roll to the rim", "headline": "The screener *rolls* to the rim", "tip": "With two defenders on the ball, 5 is open: roll hard and show a target.", "icon": "target", "moves": [{"player": "5", "x": 54, "y": 30, "kind": "run"}, {"player": "X5", "x": 38, "y": 49, "kind": "run"}], "passTo": "5"},
+      {"label": "Finish", "headline": "Catch and *finish* at the rim", "tip": "Catch in stride, one dribble, and lay it in.", "icon": "check", "moves": [{"player": "5", "x": 52, "y": 19, "kind": "dribble"}], "passTo": "goal"}
+    ],
+    "palette": "clean",
+    "showCaptions": true
+  }
+}

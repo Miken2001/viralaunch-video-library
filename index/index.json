@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 21,
+ "count": 22,
  "entries": [
   {
    "schemaVersion": 1,
@@ -4593,6 +4593,346 @@
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-eras.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "tutorial-sports-play-steps",
+   "name": "Sports Play Steps",
+   "version": "1.0.0",
+   "summary": "Step-by-step sports tutorial on an animated tactics board: players move along drawn run, dribble and pass arrows while a chaptered headline and a coaching-cue card explain each step. Basketball, soccer, football or a blank board.",
+   "genres": [
+    "tutorial",
+    "explainer"
+   ],
+   "domains": [
+    "sports",
+    "education"
+   ],
+   "roles": [
+    "explanation",
+    "context",
+    "evidence"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "paper",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "ui-mockup",
+    "captions-voiceover",
+    "camera-motion"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/elliot_garreffa/status/2104213514944446825",
+     "author": "elliot_garreffa",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-elliot-garreffa-446825"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "ecd3ff74af5a20b0c832c4debe1375c65fd2bc21536d16e8770a8921fc5278fd",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "01ab25ae292d1a9f604864272dffb8c15b93a439569dc8416060396b477b53fe",
+     "bytes": 2712
+    },
+    {
+     "path": "meta.json",
+     "sha256": "b71af29d138e2a54fcf8b5e4b84cd2dbc082c342faabe04f61f6b56f6b3e5e00",
+     "bytes": 1464
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "b6901932afc189ea340e1beb7924a935881670bdd9fa39e7bc567c2c4c00dbbc",
+     "bytes": 2567
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "0a3dafc9cded91a9c4bd234e9c6dadae38abea04a2c3d07aceb265a1eef9f8c6",
+     "bytes": 32094
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "b3bc3768a7d23ab8882082cca0dfa614063e91e258dd87030b3d350a942c67ba",
+     "bytes": 3311
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "Name of the play or drill, e.g. \"The *pick and roll*\". Wrap 1–2 words in *asterisks* to highlight them."
+     },
+     "kicker": {
+      "default": "",
+      "description": "Small label shown above the title and in the top bar, e.g. \"Basketball playbook\".",
+      "type": "string",
+      "maxLength": 32
+     },
+     "field": {
+      "default": "basketball",
+      "description": "Which playing surface the board draws (attacking end at the top). \"plain\" = a blank tactics board for any sport.",
+      "type": "string",
+      "enum": [
+       "basketball",
+       "soccer",
+       "american-football",
+       "plain"
+      ]
+     },
+     "players": {
+      "minItems": 1,
+      "maxItems": 12,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 3,
+         "description": "Short marker label, unique, e.g. \"1\", \"PG\", \"C\", \"X1\"."
+        },
+        "side": {
+         "default": "attack",
+         "description": "attack = filled accent marker; defense = outlined marker.",
+         "type": "string",
+         "enum": [
+          "attack",
+          "defense"
+         ]
+        },
+        "x": {
+         "type": "number",
+         "minimum": 0,
+         "maximum": 100,
+         "description": "Start position: 0 = left sideline, 50 = centre, 100 = right sideline."
+        },
+        "y": {
+         "type": "number",
+         "minimum": 0,
+         "maximum": 100,
+         "description": "Start position: 0 = the goal / hoop end at the top, 100 = the far end at the bottom."
+        }
+       },
+       "required": [
+        "id",
+        "x",
+        "y"
+       ]
+      },
+      "description": "Everyone on the board at the start. Keep it readable: 2–10 markers."
+     },
+     "ballWith": {
+      "default": "",
+      "description": "id of the player holding the ball at the start, or \"\" for no ball.",
+      "type": "string",
+      "maxLength": 3
+     },
+     "steps": {
+      "minItems": 1,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 26,
+         "description": "Short step name shown as \"01 / LABEL\", e.g. \"Set the screen\"."
+        },
+        "headline": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 48,
+         "description": "The instruction for this step, e.g. \"Plant a *solid screen*\". *Asterisks* highlight words."
+        },
+        "tip": {
+         "default": "",
+         "description": "One coaching cue in plain words, e.g. \"Feet wide, arms in, stay still.\"",
+         "type": "string",
+         "maxLength": 90
+        },
+        "icon": {
+         "default": "target",
+         "description": "Line icon on the cue card, e.g. target, arrow, person, people, ball, check, clock, star, trophy.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        },
+        "moves": {
+         "default": [],
+         "description": "Movements in this step. Positions carry over to the next step.",
+         "maxItems": 6,
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "player": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3,
+            "description": "id of the player who moves."
+           },
+           "x": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Where they end up (0–100)."
+           },
+           "y": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Where they end up (0–100)."
+           },
+           "kind": {
+            "default": "run",
+            "description": "run = curved solid arrow; dribble = wavy arrow (use for the ball carrier).",
+            "type": "string",
+            "enum": [
+             "run",
+             "dribble"
+            ]
+           }
+          },
+          "required": [
+           "player",
+           "x",
+           "y"
+          ]
+         }
+        },
+        "passTo": {
+         "default": "",
+         "description": "After the moves, the ball carrier passes to this player id. \"goal\" = shot / score. \"\" = no pass.",
+         "type": "string",
+         "maxLength": 4
+        }
+       },
+       "required": [
+        "label",
+        "headline"
+       ]
+      },
+      "description": "The play in order, 2–6 steps. Narration scene i+1 explains step i (scene 1 is the title)."
+     },
+     "palette": {
+      "default": "clean",
+      "description": "clean = white studio with blue accent; night = dark green floodlight; court = warm hardwood.",
+      "type": "string",
+      "enum": [
+       "clean",
+       "night",
+       "court"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions at the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "players",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "tutorial-sports-play-steps.mp4",
+    "poster": "tutorial-sports-play-steps.jpg",
+    "sha256": "c70cd18b446dd0a1ffcc57bd346bdc0ab13aee8ed2324e9c00ad5ba35d150538",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-sports-play-steps.mp4"
    }
   }
  ]

@@ -108,5 +108,10 @@
     "file": "timeline-eras.mp4",
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0"
+  },
+  "tutorial-sports-play-steps": {
+    "file": "tutorial-sports-play-steps.mp4",
+    "poster": "tutorial-sports-play-steps.jpg",
+    "sha256": "c70cd18b446dd0a1ffcc57bd346bdc0ab13aee8ed2324e9c00ad5ba35d150538"
   }
 }

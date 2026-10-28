@@ -13,7 +13,8 @@
   "story-pixel-arcade",
   "timeline-company-history",
   "timeline-deep-time",
-  "timeline-eras"
+  "timeline-eras",
+  "tutorial-sports-play-steps"
  ],
  "documentary": [
   "documentary-archival-street",
@@ -66,7 +67,8 @@
  ],
  "tutorial": [
   "explainer-steps-diagram",
-  "story-cartoon-explainer"
+  "story-cartoon-explainer",
+  "tutorial-sports-play-steps"
  ],
  "news-recap": [
   "data-story-bars",

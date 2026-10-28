@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial-sports-play-steps",
+  "name": "Sports Play Steps",
+  "version": "1.0.0",
+  "summary": "Step-by-step sports tutorial on an animated tactics board: players move along drawn run, dribble and pass arrows while a chaptered headline and a coaching-cue card explain each step. Basketball, soccer, football or a blank board.",
+  "genres": [
+    "tutorial",
+    "explainer"
+  ],
+  "domains": [
+    "sports",
+    "education"
+  ],
+  "roles": [
+    "explanation",
+    "context",
+    "evidence"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "paper",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "ui-mockup",
+    "captions-voiceover",
+    "camera-motion"
+  ],
+  "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/elliot_garreffa/status/2104213514944446825",
+      "author": "elliot_garreffa",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-elliot-garreffa-446825"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}
