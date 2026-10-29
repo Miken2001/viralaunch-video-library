@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "showreel-sports-highlight",
+  "name": "Sports App Showreel",
+  "version": "1.0.0",
+  "summary": "Fast showreel for a sports app or fan product: a phone flies in and launches the app, then each shot swings the camera to a new screen (live scores, stat bars, fan vote, comments, a big highlight number) under a kinetic headline.",
+  "genres": [
+    "showreel",
+    "product-demo"
+  ],
+  "domains": [
+    "sports",
+    "tech",
+    "culture-entertainment"
+  ],
+  "roles": [
+    "hook",
+    "evidence",
+    "payoff"
+  ],
+  "segmentable": true,
+  "look": "dark",
+  "lookPreset": "broadcast",
+  "themeable": true,
+  "adWeave": [
+    "native-integrated",
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "ui-mockup",
+    "kinetic-type",
+    "camera-motion",
+    "transitions",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 60
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/SeanTiffonnet/status/2102518598736675262",
+      "author": "SeanTiffonnet",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-seantiffonnet-675262"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}

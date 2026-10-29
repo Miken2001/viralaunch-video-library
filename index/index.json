@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 32,
+ "count": 33,
  "entries": [
   {
    "schemaVersion": 1,
@@ -3927,6 +3927,296 @@
     "poster": "quote-kinetic-serif.jpg",
     "sha256": "b3a782dca9a0372967c30985ad6684c62f34f192f14aca1a1c670c224a72fcb6",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/quote-kinetic-serif.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "showreel-sports-highlight",
+   "name": "Sports App Showreel",
+   "version": "1.0.0",
+   "summary": "Fast showreel for a sports app or fan product: a phone flies in and launches the app, then each shot swings the camera to a new screen (live scores, stat bars, fan vote, comments, a big highlight number) under a kinetic headline.",
+   "genres": [
+    "showreel",
+    "product-demo"
+   ],
+   "domains": [
+    "sports",
+    "tech",
+    "culture-entertainment"
+   ],
+   "roles": [
+    "hook",
+    "evidence",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "dark",
+   "lookPreset": "broadcast",
+   "themeable": true,
+   "adWeave": [
+    "native-integrated",
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "ui-mockup",
+    "kinetic-type",
+    "camera-motion",
+    "transitions",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 60
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/SeanTiffonnet/status/2102518598736675262",
+     "author": "SeanTiffonnet",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-seantiffonnet-675262"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "15f2cd694f460031c4c4cc27488d9018be51e91d97be9a4e3599447bcdcac32c",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "c4f5b4b099c38044c8704506aa08e09aac58e336253298285789139be5e86d5e",
+     "bytes": 3030
+    },
+    {
+     "path": "meta.json",
+     "sha256": "5adb04922921303d0814520a6b00376bb2fbe983e6eb0e2ff5f8d3255549d63e",
+     "bytes": 1498
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "08c261e582efc0a8cdf805811bdd9ca2297ebd0eabd9afe2cd3f811b059f772c",
+     "bytes": 3084
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "24525cdac3b876dba2ede6f525222cec476a46717c5e7656f86dd2743b9309d5",
+     "bytes": 41503
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "85c2bde6feb287ffe24730ffc907869c6d34048876da304adbf470e9e60b218d",
+     "bytes": 2706
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "appName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 18,
+      "description": "Product or app name shown in the app header and on the launch splash."
+     },
+     "icon": {
+      "default": "ball",
+      "description": "App icon glyph (ball, trophy, flag, target, chart...).",
+      "type": "string",
+      "enum": [
+       "sun",
+       "cloud",
+       "rain",
+       "globe",
+       "gear",
+       "person",
+       "people",
+       "bulb",
+       "chart",
+       "bars",
+       "book",
+       "rocket",
+       "heart",
+       "lock",
+       "search",
+       "phone",
+       "money",
+       "clock",
+       "leaf",
+       "drop",
+       "flask",
+       "atom",
+       "building",
+       "house",
+       "car",
+       "check",
+       "cross",
+       "arrow",
+       "cycle",
+       "star",
+       "flag",
+       "mountain",
+       "wave",
+       "fire",
+       "brain",
+       "chip",
+       "shield",
+       "chat",
+       "mail",
+       "camera",
+       "music",
+       "trophy",
+       "ball",
+       "planet",
+       "map",
+       "pin",
+       "target",
+       "spark",
+       "code",
+       "cart",
+       "calendar"
+      ]
+     },
+     "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 48,
+      "description": "Opening hook while the app launches, ≤ 7 words. *asterisks* colour a word."
+     },
+     "tagline": {
+      "default": "",
+      "description": "Optional product line that slides in under the phone on the last shot.",
+      "type": "string",
+      "maxLength": 40
+     },
+     "shots": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "headline": {
+         "type": "string",
+         "minLength": 2,
+         "maxLength": 48,
+         "description": "Kinetic headline above the phone, ≤ 7 words. Wrap 1–2 words in *asterisks* to colour them."
+        },
+        "screen": {
+         "default": "scores",
+         "description": "App screen shown in the phone: scores = live/result list, stats = ranked bars, vote = pick tiles + button, feed = fan comments, highlight = one big number over a pitch or the scene image.",
+         "type": "string",
+         "enum": [
+          "scores",
+          "stats",
+          "vote",
+          "feed",
+          "highlight"
+         ]
+        },
+        "heading": {
+         "default": "",
+         "description": "Title of the app screen, e.g. \"Results\", \"Golden Boot\", \"Your pick\".",
+         "type": "string",
+         "maxLength": 22
+        },
+        "rows": {
+         "minItems": 1,
+         "maxItems": 5,
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "description": "Main text of the row. scores: \"Team A vs Team B\"; stats/vote: a player or team name; feed: the user name; highlight: what the number counts (\"Fans at the final\")."
+           },
+           "sub": {
+            "default": "",
+            "description": "Second line. scores: stage or status (\"Final\", \"78'\"); vote: team or award; feed: the message itself; highlight: where/when.",
+            "type": "string",
+            "maxLength": 60
+           },
+           "value": {
+            "default": "",
+            "description": "Short value shown on the right or as the big number: \"3–3\", \"8\", \"88,966\", \"now\". Plain numbers count up.",
+            "type": "string",
+            "maxLength": 14
+           },
+           "bar": {
+            "description": "Optional 0–100 bar length (share, progress, rating). Leave out when there is nothing to compare.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+           }
+          },
+          "required": [
+           "label"
+          ]
+         },
+         "description": "1–5 rows of the screen, most important first (the first row is the one the finger taps)."
+        },
+        "button": {
+         "default": "",
+         "description": "Optional button at the bottom of the screen (\"Vote\", \"Follow team\"); best on vote screens.",
+         "type": "string",
+         "maxLength": 18
+        }
+       },
+       "required": [
+        "headline",
+        "rows"
+       ]
+      },
+      "description": "One shot per narration scene. With one more scene than shots, scene 0 is the launch intro."
+     },
+     "palette": {
+      "default": "volt",
+      "description": "volt = lime on black, court = orange, ice = cyan, turf = green.",
+      "type": "string",
+      "enum": [
+       "volt",
+       "court",
+       "ice",
+       "turf"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions under the phone.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "appName",
+     "title",
+     "shots"
+    ]
+   },
+   "preview": {
+    "file": "showreel-sports-highlight.mp4",
+    "poster": "showreel-sports-highlight.jpg",
+    "sha256": "445aa7c0715b05d3e4dc6e838d0b81ff45751710e285981c78eb73791b8f0dd5",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/showreel-sports-highlight.mp4"
    }
   },
   {

@@ -89,6 +89,11 @@
     "poster": "quote-kinetic-serif.jpg",
     "sha256": "b3a782dca9a0372967c30985ad6684c62f34f192f14aca1a1c670c224a72fcb6"
   },
+  "showreel-sports-highlight": {
+    "file": "showreel-sports-highlight.mp4",
+    "poster": "showreel-sports-highlight.jpg",
+    "sha256": "445aa7c0715b05d3e4dc6e838d0b81ff45751710e285981c78eb73791b8f0dd5"
+  },
   "space-scale-ladder": {
     "file": "space-scale-ladder.mp4",
     "poster": "space-scale-ladder.jpg",
@@ -148,6 +153,11 @@
     "file": "timeline-eras.mp4",
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0"
+  },
+  "tutorial-app-walkthrough": {
+    "file": "tutorial-app-walkthrough.mp4",
+    "poster": "tutorial-app-walkthrough.jpg",
+    "sha256": "ea5edc5208d31ef8c2095b476c3c040d2818b2b20caa9467fc848c71bdc4182c"
   },
   "tutorial-creator-howto": {
     "file": "tutorial-creator-howto.mp4",

@@ -1,0 +1,75 @@
+{
+  "media": {"adWeave": "native-integrated", "brand": {"name": "Matchday", "tagline": "Scores, stats and fan votes"}},
+  "scenes": [
+    {"text": "Relive the 2022 World Cup in one app.", "durationSeconds": 3},
+    {"text": "Every result from the last four, down to Argentina's win on penalties.", "durationSeconds": 4},
+    {"text": "The Golden Boot race: Mbappé eight goals, Messi seven.", "durationSeconds": 4},
+    {"text": "Messi took the Golden Ball, ahead of Mbappé and Modrić.", "durationSeconds": 4},
+    {"text": "Fans talk through every moment, live.", "durationSeconds": 3.5},
+    {"text": "And the final drew 88,966 fans to Lusail. Matchday. Every match, in your pocket.", "durationSeconds": 5}
+  ],
+  "props": {
+    "appName": "Matchday",
+    "icon": "ball",
+    "title": "The *World Cup* in your pocket",
+    "tagline": "Scores, stats and fan votes",
+    "palette": "volt",
+    "showCaptions": true,
+    "shots": [
+      {
+        "headline": "Every *result*, instantly",
+        "screen": "scores",
+        "heading": "Qatar 2022",
+        "rows": [
+          {"label": "Argentina vs France", "sub": "Final · 4–2 on penalties", "value": "3–3", "bar": 100},
+          {"label": "Croatia vs Morocco", "sub": "Third place", "value": "2–1"},
+          {"label": "France vs Morocco", "sub": "Semi-final", "value": "2–0"},
+          {"label": "Argentina vs Croatia", "sub": "Semi-final", "value": "3–0"}
+        ]
+      },
+      {
+        "headline": "The *Golden Boot* race",
+        "screen": "stats",
+        "heading": "Top scorers",
+        "rows": [
+          {"label": "Kylian Mbappé", "sub": "France", "value": "8", "bar": 100},
+          {"label": "Lionel Messi", "sub": "Argentina", "value": "7", "bar": 88},
+          {"label": "Julián Álvarez", "sub": "Argentina", "value": "4", "bar": 50},
+          {"label": "Olivier Giroud", "sub": "France", "value": "4", "bar": 50}
+        ]
+      },
+      {
+        "headline": "Who was the *best*?",
+        "screen": "vote",
+        "heading": "Golden Ball",
+        "button": "Cast your vote",
+        "rows": [
+          {"label": "Lionel Messi", "sub": "Golden Ball"},
+          {"label": "Kylian Mbappé", "sub": "Silver Ball"},
+          {"label": "Luka Modrić", "sub": "Bronze Ball"}
+        ]
+      },
+      {
+        "headline": "Talk it out with *fans*",
+        "screen": "feed",
+        "heading": "Final chat",
+        "button": "Post",
+        "rows": [
+          {"label": "Maya", "sub": "Best final I have ever watched.", "value": "now", "bar": 24},
+          {"label": "Jonas", "sub": "That shootout though.", "value": "1m"},
+          {"label": "Ana", "sub": "Rewatching the extra time again.", "value": "3m"}
+        ]
+      },
+      {
+        "headline": "Feel the *numbers*",
+        "screen": "highlight",
+        "heading": "The final",
+        "rows": [
+          {"label": "Fans at the final", "sub": "Lusail Stadium · 18 Dec 2022", "value": "88,966"},
+          {"label": "Goals", "value": "6"},
+          {"label": "Shootout", "value": "4–2"}
+        ]
+      }
+    ]
+  }
+}

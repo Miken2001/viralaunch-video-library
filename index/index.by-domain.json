@@ -7,6 +7,7 @@
   "news-city-blocks",
   "news-headline-highlight",
   "news-roundup-cards",
+  "showreel-sports-highlight",
   "story-character-dialogue",
   "story-dev-session-diary",
   "timeline-company-history",
@@ -93,6 +94,7 @@
   "listicle-countdown",
   "match-recap-scoreboard",
   "news-roundup-cards",
+  "showreel-sports-highlight",
   "tutorial-sports-play-steps"
  ],
  "finance": [
@@ -117,6 +119,7 @@
   "map-country-tour",
   "news-roundup-cards",
   "quote-kinetic-serif",
+  "showreel-sports-highlight",
   "story-character-dialogue",
   "story-chat-thread",
   "story-pixel-arcade",

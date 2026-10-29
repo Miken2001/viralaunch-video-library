@@ -1,6 +1,8 @@
 {
  "product-launch": [],
- "product-demo": [],
+ "product-demo": [
+  "showreel-sports-highlight"
+ ],
  "explainer": [
   "documentary-festival-moon",
   "documentary-mosaic-reveal",
@@ -71,7 +73,8 @@
   "quote-kinetic-serif"
  ],
  "showreel": [
-  "map-country-tour"
+  "map-country-tour",
+  "showreel-sports-highlight"
  ],
  "comparison": [
   "comparison-split",
