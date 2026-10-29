@@ -1,0 +1,26 @@
+{
+  "media": {"adWeave": "end-card", "brand": {"name": "Dev Notes", "tagline": "Small lessons, real code", "cta": "Get the starter repo"}},
+  "scenes": [
+    {"text": "Let's build your first Node.js API from an empty folder, one layer at a time.", "durationSeconds": 4.5},
+    {"text": "First, install Node.js. It runs JavaScript outside the browser. Check it with node dash dash version.", "durationSeconds": 5.5},
+    {"text": "Next, start a project. npm init creates package.json, which tracks your dependencies and scripts.", "durationSeconds": 5.5},
+    {"text": "Now add Express, a minimal web framework that routes HTTP requests in Node.", "durationSeconds": 5},
+    {"text": "Write the server: define a route, then call app dot listen to accept requests on a port.", "durationSeconds": 5.5},
+    {"text": "Finally, run it with node index dot js and open localhost three thousand in your browser.", "durationSeconds": 5.5},
+    {"text": "Runtime, project, framework, server, run. Five layers, and you have a working API.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "Build your first *Node.js* API",
+    "command": "mkdir hello-api && cd hello-api",
+    "steps": [
+      {"label": "Runtime", "title": "Install *Node.js*", "detail": "Node.js runs JavaScript outside the browser. Pick the LTS release.", "code": "node --version", "icon": "chip"},
+      {"label": "Project", "title": "Start a *project*", "detail": "npm init creates package.json, which lists dependencies and scripts.", "code": "npm init -y", "icon": "book"},
+      {"label": "Framework", "title": "Add *Express*", "detail": "Express is a minimal web framework for routing HTTP requests.", "code": "npm install express", "icon": "gear"},
+      {"label": "Server", "title": "Write the *server*", "detail": "Define a route, then call app.listen to accept requests on a port.", "code": "app.listen(3000)", "icon": "code"},
+      {"label": "Run", "title": "Run it *locally*", "detail": "Start the server and open localhost:3000 to see the response.", "code": "node index.js", "icon": "rocket"}
+    ],
+    "outro": "Five layers. *One* working API.",
+    "palette": "slate",
+    "showCaptions": true
+  }
+}

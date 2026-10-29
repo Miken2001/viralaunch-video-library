@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 34,
+ "count": 35,
  "entries": [
   {
    "schemaVersion": 1,
@@ -8140,6 +8140,249 @@
     "poster": "tutorial-sports-play-steps.jpg",
     "sha256": "c70cd18b446dd0a1ffcc57bd346bdc0ab13aee8ed2324e9c00ad5ba35d150538",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-sports-play-steps.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "tutorial-tech-stack-build",
+   "name": "Tech Stack Build",
+   "version": "1.0.0",
+   "summary": "Graphite-studio tech tutorial: each step's voxels fly in and snap into a new layer of an orbiting 3D stack, with typed terminal commands, layer tags and a pipeline progress rail.",
+   "genres": [
+    "tutorial",
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "education"
+   ],
+   "roles": [
+    "explanation",
+    "context",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "cinematic",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "3d",
+    "kinetic-type",
+    "ui-mockup",
+    "transitions",
+    "particles",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 10,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/mattworkman/status/2104662818742309357",
+     "author": "mattworkman",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-mattworkman-309357"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "sha256": "9e982a2267ba433848b7421fd73ecac3fbd9a01db1b4587db93a2d2339d0c42a",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "2fcfff70ec2809eb11e3c12236027b07291255807a52b7cfab20fc21465e31e2",
+     "bytes": 3777
+    },
+    {
+     "path": "meta.json",
+     "sha256": "1a629cb422857f467d3d38ed487d28e033a6431aaae595564136310900871266",
+     "bytes": 1401
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "190c27b6232f8997d1ec4fa7225b3571dbd020e372cc346f29859b78605fbfb0",
+     "bytes": 2181
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "303f3c373c8651462b0c0e865c878c47584f58e89c85830b278faab4d374a672",
+     "bytes": 25085
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "d467747e26eeb733f022e8ba8c63d2843ae6c84e8f1cf5e2952878a6745a5df6",
+     "bytes": 1863
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "What the viewer builds, max 48 characters. Wrap ONE word in *asterisks* for the accent, e.g. \"Build your first *Node.js* API\"."
+     },
+     "command": {
+      "default": "",
+      "description": "Command typed in the intro terminal, max 44 characters, e.g. \"mkdir hello-api\". \"\" shows the title only.",
+      "type": "string",
+      "maxLength": 44
+     },
+     "steps": {
+      "minItems": 2,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 12,
+         "description": "Layer name, 1-2 words, max 12 characters, e.g. \"Database\". Shown on the stack tag and the progress rail."
+        },
+        "title": {
+         "type": "string",
+         "minLength": 3,
+         "maxLength": 40,
+         "description": "The instruction, max 40 characters. Wrap 1-2 words in *asterisks* for the accent colour, e.g. \"Add a *database*\"."
+        },
+        "detail": {
+         "default": "",
+         "description": "One plain sentence on what this step does or why, max 110 characters. \"\" for none.",
+         "type": "string",
+         "maxLength": 110
+        },
+        "code": {
+         "default": "",
+         "description": "Optional command or one line of code typed into a terminal chip, max 40 characters, e.g. \"npm install express\". \"\" for none.",
+         "type": "string",
+         "maxLength": 40
+        },
+        "icon": {
+         "default": "code",
+         "description": "Line icon on the layer tag: code, chip, gear, lock, shield, globe, rocket, cloud, chart, search, bars, check.",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "label",
+        "title"
+       ]
+      },
+      "description": "2-6 steps in order. Each step adds one layer to the 3D stack."
+     },
+     "outro": {
+      "default": "",
+      "description": "Closing line on the recap scene, max 40 characters, with one *accent* word. \"\" reuses the title.",
+      "type": "string",
+      "maxLength": 40
+     },
+     "palette": {
+      "default": "slate",
+      "description": "slate = graphite studio with orange accent, midnight = deep navy with cyan, paper = light cream with red-orange.",
+      "type": "string",
+      "enum": [
+       "slate",
+       "midnight",
+       "paper"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions near the bottom.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "steps"
+    ]
+   },
+   "preview": {
+    "file": "tutorial-tech-stack-build.mp4",
+    "poster": "tutorial-tech-stack-build.jpg",
+    "sha256": "c6a95340199a96701acb0eee248d2ca42c6226de6e46ce3bfa5b48dede78da2d",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/tutorial-tech-stack-build.mp4"
    }
   }
  ]

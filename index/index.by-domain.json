@@ -14,7 +14,8 @@
   "timeline-doodle-civilization",
   "timeline-eras",
   "tutorial-creator-howto",
-  "tutorial-glow-reel-steps"
+  "tutorial-glow-reel-steps",
+  "tutorial-tech-stack-build"
  ],
  "business": [
   "data-story-bars",
@@ -159,7 +160,8 @@
   "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-glow-reel-steps",
-  "tutorial-sports-play-steps"
+  "tutorial-sports-play-steps",
+  "tutorial-tech-stack-build"
  ],
  "generic": [
   "comparison-split",

@@ -25,7 +25,8 @@
   "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-glow-reel-steps",
-  "tutorial-sports-play-steps"
+  "tutorial-sports-play-steps",
+  "tutorial-tech-stack-build"
  ],
  "documentary": [
   "documentary-archival-street",
@@ -94,7 +95,8 @@
   "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-glow-reel-steps",
-  "tutorial-sports-play-steps"
+  "tutorial-sports-play-steps",
+  "tutorial-tech-stack-build"
  ],
  "news-recap": [
   "data-story-bars",

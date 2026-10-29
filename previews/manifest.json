@@ -183,5 +183,10 @@
     "file": "tutorial-sports-play-steps.mp4",
     "poster": "tutorial-sports-play-steps.jpg",
     "sha256": "c70cd18b446dd0a1ffcc57bd346bdc0ab13aee8ed2324e9c00ad5ba35d150538"
+  },
+  "tutorial-tech-stack-build": {
+    "file": "tutorial-tech-stack-build.mp4",
+    "poster": "tutorial-tech-stack-build.jpg",
+    "sha256": "c6a95340199a96701acb0eee248d2ca42c6226de6e46ce3bfa5b48dede78da2d"
   }
 }

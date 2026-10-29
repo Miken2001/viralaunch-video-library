@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial-tech-stack-build",
+  "name": "Tech Stack Build",
+  "version": "1.0.0",
+  "summary": "Graphite-studio tech tutorial: each step's voxels fly in and snap into a new layer of an orbiting 3D stack, with typed terminal commands, layer tags and a pipeline progress rail.",
+  "genres": [
+    "tutorial",
+    "explainer"
+  ],
+  "domains": [
+    "tech",
+    "education"
+  ],
+  "roles": [
+    "explanation",
+    "context",
+    "payoff"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "cinematic",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "sponsor-mention",
+    "mid-roll-card",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "3d",
+    "kinetic-type",
+    "ui-mockup",
+    "transitions",
+    "particles",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "16:9",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 10,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/mattworkman/status/2104662818742309357",
+      "author": "mattworkman",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-mattworkman-309357"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5"
+}
