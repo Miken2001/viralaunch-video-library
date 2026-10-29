@@ -159,6 +159,11 @@
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0"
   },
+  "timeline-ink-gold-dynasties": {
+    "file": "timeline-ink-gold-dynasties.mp4",
+    "poster": "timeline-ink-gold-dynasties.jpg",
+    "sha256": "30d3cce59aabac7f0a9475abe51e17c4c731edb18e86173e2dbc4172c726b8b9"
+  },
   "tutorial-app-walkthrough": {
     "file": "tutorial-app-walkthrough.mp4",
     "poster": "tutorial-app-walkthrough.jpg",

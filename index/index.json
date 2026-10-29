@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 35,
+ "count": 36,
  "entries": [
   {
    "schemaVersion": 1,
@@ -7004,6 +7004,256 @@
     "poster": "timeline-eras.jpg",
     "sha256": "23c6005506bbc8cc02cbfabe085916805e4501e0fb2d87b0420339212faffdf0",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-eras.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "timeline-ink-gold-dynasties",
+   "name": "Ink and Gold Chapter Timeline",
+   "version": "1.0.0",
+   "summary": "Chaptered culture timeline alternating gold-on-black title plates with stamped seals and ink line drawings on paper, brush-wiped together over a ruler whose playhead walks the eras. For film, music, art and pop-culture history.",
+   "genres": [
+    "timeline",
+    "documentary"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "history",
+    "education"
+   ],
+   "roles": [
+    "context",
+    "explanation",
+    "evidence",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "documentary",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "kinetic-type",
+    "transitions",
+    "particles",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 12,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/dotey/status/2103964025683927166",
+     "author": "dotey",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-dotey-927166"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [],
+   "sha256": "576720c66ff86493a270d083cb1abb64ac8a1fe19329f41d1965d8ec0c1ba3f3",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "ebd0bdf8b5a304008b04931fece27123c529afb908aedca19638f7292747e5cb",
+     "bytes": 3848
+    },
+    {
+     "path": "meta.json",
+     "sha256": "c8d41f9ea79411ffa59ba26d84ab74f6565c0f4184792a9809c6aca4bb8137b6",
+     "bytes": 1404
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "2f187605758ebfd6f10ce408b57592226a88ddb7bf272c1d685540cf51aa0bdb",
+     "bytes": 2184
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "7cc88af67366c64e0dd19b8661eefafb754ea2585e664b07d7066ac3e61493d9",
+     "bytes": 27672
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "b0381a824cf4d69dcdbe0d3122c072d2ea29fbc4b6c5f46d21428417627db0b9",
+     "bytes": 1912
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 44,
+      "description": "Opening title in gold, e.g. \"A century of *cinema*\". Wrap one word in *asterisks* to colour it."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Small line under the title, e.g. \"From silent film to streaming\". Can be empty.",
+      "type": "string",
+      "maxLength": 60
+     },
+     "chapters": {
+      "minItems": 3,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "when": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 16,
+         "description": "When this era or moment happened, as shown on screen: \"1977\", \"1950s\", \"1890–1920\"."
+        },
+        "title": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 32,
+         "description": "Name of the era or moment in a few words: \"Rock and roll\", \"The silent era\", \"Star Wars\"."
+        },
+        "detail": {
+         "default": "",
+         "description": "One short plain sentence about it. Can be empty.",
+         "type": "string",
+         "maxLength": 110
+        },
+        "seal": {
+         "default": "",
+         "description": "One or two short words stamped on the red seal: \"BIRTH\", \"BOOM\", \"SOUND\". Empty = the chapter number.",
+         "type": "string",
+         "maxLength": 10
+        },
+        "icon": {
+         "default": "star",
+         "description": "Line drawing for the ink chapters: music, camera, book, star, trophy, heart, people, chat, building, globe, spark, fire, wave, mountain...",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "when",
+        "title"
+       ]
+      },
+      "description": "3–8 eras or moments in chronological order, oldest first. Each gets its own chapter scene and a tick on the timeline ruler."
+     },
+     "styleMode": {
+      "default": "alternate",
+      "description": "alternate = chapters switch between gold-on-black title plates and ink drawings on paper; gold = every chapter gold-on-black; ink = every chapter ink on paper.",
+      "type": "string",
+      "enum": [
+       "alternate",
+       "gold",
+       "ink"
+      ]
+     },
+     "sealColor": {
+      "default": "vermilion",
+      "description": "Colour of the stamped seal and the timeline playhead.",
+      "type": "string",
+      "enum": [
+       "vermilion",
+       "jade",
+       "indigo"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word-synced narration captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "chapters"
+    ]
+   },
+   "preview": {
+    "file": "timeline-ink-gold-dynasties.mp4",
+    "poster": "timeline-ink-gold-dynasties.jpg",
+    "sha256": "30d3cce59aabac7f0a9475abe51e17c4c731edb18e86173e2dbc4172c726b8b9",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-ink-gold-dynasties.mp4"
    }
   },
   {

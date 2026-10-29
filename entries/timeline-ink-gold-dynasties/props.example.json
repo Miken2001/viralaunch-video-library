@@ -1,0 +1,27 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Reel Notes", "tagline": "Film history in a minute", "cta": "Follow for more"}},
+  "scenes": [
+    {"text": "From a screening in a Paris cafe to films streamed into your living room: six turns in movie history.", "durationSeconds": 5},
+    {"text": "In 1895, the Lumiere brothers showed their films to a paying audience in Paris.", "durationSeconds": 5},
+    {"text": "In 1927, The Jazz Singer brought synchronized spoken dialogue to a feature film.", "durationSeconds": 5},
+    {"text": "In 1935, Becky Sharp became the first feature shot entirely in three-strip Technicolor.", "durationSeconds": 5},
+    {"text": "In 1977, Star Wars turned the summer blockbuster into a worldwide event.", "durationSeconds": 4.5},
+    {"text": "In 1995, Pixar's Toy Story became the first fully computer-animated feature film.", "durationSeconds": 5},
+    {"text": "And in 2007, Netflix began streaming films over the internet.", "durationSeconds": 5}
+  ],
+  "props": {
+    "title": "Six turns in *cinema*",
+    "subtitle": "From the first screenings to streaming",
+    "chapters": [
+      {"when": "1895", "title": "The first screenings", "detail": "The Lumiere brothers show films to a paying audience in Paris.", "seal": "BIRTH", "icon": "camera"},
+      {"when": "1927", "title": "The talkies", "detail": "The Jazz Singer brings synchronized dialogue to a feature film.", "seal": "SOUND", "icon": "music"},
+      {"when": "1935", "title": "Full colour", "detail": "Becky Sharp is the first feature shot fully in three-strip Technicolor.", "seal": "COLOR", "icon": "sun"},
+      {"when": "1977", "title": "The blockbuster", "detail": "Star Wars becomes a worldwide summer event.", "seal": "EPIC", "icon": "star"},
+      {"when": "1995", "title": "Computer animation", "detail": "Pixar's Toy Story is the first fully computer-animated feature.", "seal": "PIXEL", "icon": "chip"},
+      {"when": "2007", "title": "Streaming", "detail": "Netflix starts streaming films over the internet.", "seal": "HOME", "icon": "house"}
+    ],
+    "styleMode": "alternate",
+    "sealColor": "vermilion",
+    "showCaptions": true
+  }
+}

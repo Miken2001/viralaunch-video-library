@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline-ink-gold-dynasties",
+  "name": "Ink and Gold Chapter Timeline",
+  "version": "1.0.0",
+  "summary": "Chaptered culture timeline alternating gold-on-black title plates with stamped seals and ink line drawings on paper, brush-wiped together over a ruler whose playhead walks the eras. For film, music, art and pop-culture history.",
+  "genres": ["timeline", "documentary"],
+  "domains": ["culture-entertainment", "history", "education"],
+  "roles": ["context", "explanation", "evidence", "payoff"],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "documentary",
+  "themeable": true,
+  "adWeave": ["end-card", "mid-roll-card", "sponsor-mention", "native-integrated", "none-pure-brand"],
+  "techniques": ["svg-illustration", "kinetic-type", "transitions", "particles", "captions-voiceover"],
+  "aspects": ["16:9", "9:16", "1:1"],
+  "durationSeconds": {"min": 12, "max": 120},
+  "tiers": ["fill", "fork"],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": ["voiceover"],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/dotey/status/2103964025683927166",
+      "author": "dotey",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-dotey-927166"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": []
+}

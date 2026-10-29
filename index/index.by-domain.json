@@ -49,7 +49,8 @@
   "timeline-company-history",
   "timeline-deep-time",
   "timeline-doodle-civilization",
-  "timeline-eras"
+  "timeline-eras",
+  "timeline-ink-gold-dynasties"
  ],
  "geography": [
   "comparison-split",
@@ -128,6 +129,7 @@
   "story-chat-thread",
   "story-pixel-arcade",
   "story-rain-mood",
+  "timeline-ink-gold-dynasties",
   "tutorial-creator-howto",
   "tutorial-glow-reel-steps"
  ],
@@ -157,6 +159,7 @@
   "timeline-company-history",
   "timeline-deep-time",
   "timeline-doodle-civilization",
+  "timeline-ink-gold-dynasties",
   "tutorial-creator-howto",
   "tutorial-finance-money-steps",
   "tutorial-glow-reel-steps",
