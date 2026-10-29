@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 36,
+ "count": 37,
  "entries": [
   {
    "schemaVersion": 1,
@@ -3927,6 +3927,219 @@
     "poster": "quote-kinetic-serif.jpg",
     "sha256": "b3a782dca9a0372967c30985ad6684c62f34f192f14aca1a1c670c224a72fcb6",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/quote-kinetic-serif.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "showreel-culture-mix",
+   "name": "Culture Mix Showreel",
+   "version": "1.0.0",
+   "summary": "Glossy culture showreel: vertical cards for films, music, games, books, art and events swing through a 3D carousel over floating orbs, each stamped with one big word, then gather into a closing wall with a brand pill.",
+   "genres": [
+    "showreel",
+    "listicle"
+   ],
+   "domains": [
+    "culture-entertainment",
+    "history"
+   ],
+   "roles": [
+    "hook",
+    "evidence",
+    "payoff",
+    "closer"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "native-integrated",
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "kinetic-type",
+    "transitions",
+    "camera-motion",
+    "svg-illustration",
+    "stock-footage",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "durationSeconds": {
+    "min": 8,
+    "max": 90
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/georgejimenez98/status/2103650183699431559",
+     "author": "georgejimenez98",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "sk-georgejimenez98-431559"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [
+    "@remotion/paths"
+   ],
+   "sha256": "1cc0c519575f5321bb506bd8be467e45ae31eedc5f2dda643be22d4189b4151f",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "68210cfa9751f44c48a1b2f13c384b24dd0b756f024e44be1162fcce629506de",
+     "bytes": 3412
+    },
+    {
+     "path": "meta.json",
+     "sha256": "b84c4980947aed4c2f213264c4cb5b89f525a073569e7e2d1186fbef68097530",
+     "bytes": 1569
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "f04e0978fff599e0f6c21f060cc08ce1a7fe0614f0628c249fb1d01a4264a3c2",
+     "bytes": 1953
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "9d9b986073efd82dc7428cff939108ec0857e48bae92cfa78ba7811bf9d98d21",
+     "bytes": 26462
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "c2870021c0493e88ac362ee07961b6f40724e791b8ec070c44249dd0c8e13cf7",
+     "bytes": 2074
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "brandName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "description": "The channel, platform, festival or show presenting the mix. Printed on every card and on the closing pill."
+     },
+     "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 48,
+      "description": "Opening hook over the fan of cards, ≤ 7 words. Wrap one word in *asterisks* to colour it."
+     },
+     "items": {
+      "minItems": 2,
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "title": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 40,
+         "description": "Name of the work or event, e.g. \"The Great Wave off Kanagawa\", \"Tetris\"."
+        },
+        "kind": {
+         "default": "film",
+         "description": "What it is. Sets the card art, the icon and the type face of the big word: film, series, music, game, book, art, podcast, event.",
+         "type": "string",
+         "enum": [
+          "film",
+          "series",
+          "music",
+          "game",
+          "book",
+          "art",
+          "podcast",
+          "event"
+         ]
+        },
+        "word": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 14,
+         "description": "One big word stamped across the card art, e.g. \"Wave\", \"Ode\", \"Drop\". One word, ≤ 12 letters."
+        },
+        "meta": {
+         "default": "",
+         "description": "Short fact line under the title: year and maker, or date and venue, e.g. \"1984 · Alexey Pajitnov\".",
+         "type": "string",
+         "maxLength": 28
+        },
+        "status": {
+         "default": "",
+         "description": "Optional status chip on the card (\"Now showing\", \"New season\"). Empty = the kind name.",
+         "type": "string",
+         "maxLength": 16
+        }
+       },
+       "required": [
+        "title",
+        "word"
+       ]
+      },
+      "description": "The works in the reel, one per narration scene, in the order they are shown. Mix the kinds."
+     },
+     "closer": {
+      "default": "",
+      "description": "Headline over the closing wall of all cards, ≤ 7 words, one *accent* word. Empty = the title.",
+      "type": "string",
+      "maxLength": 48
+     },
+     "tagline": {
+      "default": "",
+      "description": "Text inside the closing pill, e.g. \"New picks every Friday\". Empty = the brand name.",
+      "type": "string",
+      "maxLength": 36
+     },
+     "palette": {
+      "default": "lagoon",
+      "description": "lagoon = teal glass, noir = black with cyan orbs, coral = warm red-orange, violet = purple night.",
+      "type": "string",
+      "enum": [
+       "lagoon",
+       "noir",
+       "coral",
+       "violet"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Word-synced captions under the cards.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "brandName",
+     "title",
+     "items"
+    ]
+   },
+   "preview": {
+    "file": "showreel-culture-mix.mp4",
+    "poster": "showreel-culture-mix.jpg",
+    "sha256": "01bc9a78188a82a4ae613e8e97781312ada61a711a88c1da0d99dae8c91e7198",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/showreel-culture-mix.mp4"
    }
   },
   {

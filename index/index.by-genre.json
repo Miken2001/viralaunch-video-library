@@ -52,7 +52,8 @@
  ],
  "listicle": [
   "listicle-countdown",
-  "news-roundup-cards"
+  "news-roundup-cards",
+  "showreel-culture-mix"
  ],
  "data-story": [
   "comparison-split",
@@ -80,6 +81,7 @@
  ],
  "showreel": [
   "map-country-tour",
+  "showreel-culture-mix",
   "showreel-sports-highlight"
  ],
  "comparison": [

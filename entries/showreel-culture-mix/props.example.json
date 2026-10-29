@@ -1,0 +1,29 @@
+{
+  "media": {"adWeave": "native-integrated", "brand": {"name": "Culture Mix", "tagline": "Six classics, one feed"}},
+  "scenes": [
+    {"text": "Six classics that changed culture, all in one mix.", "durationSeconds": 3.5},
+    {"text": "Hokusai's Great Wave, a woodblock print from around 1831.", "durationSeconds": 4, "asset": "samples/great-wave.jpg"},
+    {"text": "Beethoven's Ninth Symphony premiered in Vienna in 1824.", "durationSeconds": 4},
+    {"text": "Jane Austen published Pride and Prejudice in 1813.", "durationSeconds": 4},
+    {"text": "Fritz Lang's Metropolis reached cinemas in 1927.", "durationSeconds": 3.5},
+    {"text": "Alexey Pajitnov created Tetris in 1984.", "durationSeconds": 3.5},
+    {"text": "And Emanuel Leutze painted Washington Crossing the Delaware in 1851.", "durationSeconds": 4.5, "asset": "samples/washington-delaware.jpg"},
+    {"text": "Culture Mix. Six classics, one feed.", "durationSeconds": 3.5}
+  ],
+  "props": {
+    "brandName": "Culture Mix",
+    "title": "Six classics, *one* mix",
+    "closer": "Your *culture* week, planned",
+    "tagline": "Six classics, one feed",
+    "palette": "lagoon",
+    "showCaptions": true,
+    "items": [
+      {"title": "The Great Wave off Kanagawa", "kind": "art", "word": "Wave", "meta": "c. 1831 · Hokusai", "status": "Woodblock"},
+      {"title": "Symphony No. 9", "kind": "music", "word": "Ode", "meta": "1824 · Beethoven", "status": "Premiere"},
+      {"title": "Pride and Prejudice", "kind": "book", "word": "Pride", "meta": "1813 · Jane Austen", "status": "Novel"},
+      {"title": "Metropolis", "kind": "film", "word": "Machine", "meta": "1927 · Fritz Lang", "status": "Silent film"},
+      {"title": "Tetris", "kind": "game", "word": "Drop", "meta": "1984 · Alexey Pajitnov", "status": "Puzzle"},
+      {"title": "Washington Crossing the Delaware", "kind": "art", "word": "Crossing", "meta": "1851 · Emanuel Leutze", "status": "Oil painting"}
+    ]
+  }
+}

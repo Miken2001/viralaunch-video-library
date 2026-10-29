@@ -89,6 +89,11 @@
     "poster": "quote-kinetic-serif.jpg",
     "sha256": "b3a782dca9a0372967c30985ad6684c62f34f192f14aca1a1c670c224a72fcb6"
   },
+  "showreel-culture-mix": {
+    "file": "showreel-culture-mix.mp4",
+    "poster": "showreel-culture-mix.jpg",
+    "sha256": "01bc9a78188a82a4ae613e8e97781312ada61a711a88c1da0d99dae8c91e7198"
+  },
   "showreel-sports-highlight": {
     "file": "showreel-sports-highlight.mp4",
     "poster": "showreel-sports-highlight.jpg",

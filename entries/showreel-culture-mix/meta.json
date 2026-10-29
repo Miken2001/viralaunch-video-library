@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "showreel-culture-mix",
+  "name": "Culture Mix Showreel",
+  "version": "1.0.0",
+  "summary": "Glossy culture showreel: vertical cards for films, music, games, books, art and events swing through a 3D carousel over floating orbs, each stamped with one big word, then gather into a closing wall with a brand pill.",
+  "genres": [
+    "showreel",
+    "listicle"
+  ],
+  "domains": [
+    "culture-entertainment",
+    "history"
+  ],
+  "roles": [
+    "hook",
+    "evidence",
+    "payoff",
+    "closer"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "native-integrated",
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "kinetic-type",
+    "transitions",
+    "camera-motion",
+    "svg-illustration",
+    "stock-footage",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "9:16",
+    "1:1",
+    "16:9"
+  ],
+  "durationSeconds": {
+    "min": 8,
+    "max": 90
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/georgejimenez98/status/2103650183699431559",
+      "author": "georgejimenez98",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "sk-georgejimenez98-431559"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": [
+    "@remotion/paths"
+  ]
+}
