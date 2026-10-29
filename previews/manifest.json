@@ -149,6 +149,11 @@
     "poster": "timeline-deep-time.jpg",
     "sha256": "67f94958e6a906b307cb912ce2d542be2dd0890d98de8f57b68136ef1a162c17"
   },
+  "timeline-doodle-civilization": {
+    "file": "timeline-doodle-civilization.mp4",
+    "poster": "timeline-doodle-civilization.jpg",
+    "sha256": "f9a2dc30c64b147daeb6cfe3a2c9cc09f258aaf999b3a5c28e9adfd68b0c2aa3"
+  },
   "timeline-eras": {
     "file": "timeline-eras.mp4",
     "poster": "timeline-eras.jpg",

@@ -4,7 +4,7 @@
  "repo": "Miken2001/viralaunch-video-library",
  "ref": "main",
  "rawBase": "https://raw.githubusercontent.com/{repo}/{ref}/entries/{id}/{path}",
- "count": 33,
+ "count": 34,
  "entries": [
   {
    "schemaVersion": 1,
@@ -6593,6 +6593,253 @@
     "poster": "timeline-deep-time.jpg",
     "sha256": "67f94958e6a906b307cb912ce2d542be2dd0890d98de8f57b68136ef1a162c17",
     "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-deep-time.mp4"
+   }
+  },
+  {
+   "schemaVersion": 1,
+   "id": "timeline-doodle-civilization",
+   "name": "Doodle Civilization Timeline",
+   "version": "1.0.0",
+   "summary": "Storybook doodle timeline: a lantern-carrying traveller walks across night hills while each milestone grows out of the ground as a paper medallion, year counting up; the last one hatches from an egg. For tech and invention history.",
+   "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+   ],
+   "domains": [
+    "tech",
+    "history",
+    "science",
+    "education"
+   ],
+   "roles": [
+    "context",
+    "explanation",
+    "payoff"
+   ],
+   "segmentable": true,
+   "look": "adaptive",
+   "lookPreset": "midnight",
+   "themeable": true,
+   "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+   ],
+   "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "kinetic-type",
+    "particles",
+    "captions-voiceover"
+   ],
+   "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "durationSeconds": {
+    "min": 12,
+    "max": 120
+   },
+   "tiers": [
+    "fill",
+    "fork"
+   ],
+   "minModel": "small",
+   "renderCost": "low",
+   "requires": [
+    "voiceover"
+   ],
+   "location": "remote",
+   "source": "recreation",
+   "inspiredBy": [
+    {
+     "url": "https://x.com/songkeys/status/2102743212922384673",
+     "author": "songkeys",
+     "collection": "awesome-opus-5.5-video-prompts",
+     "inspirationId": "ao-songkeys-384673"
+    }
+   ],
+   "license": "MIT",
+   "status": "approved",
+   "authoredBy": "claude-opus-5-5",
+   "remotionPackages": [
+    "@remotion/paths"
+   ],
+   "sha256": "449cac8538d98bb77dcd48ce6b6e3c864b1dd0f67866efde7863de0895b2af4b",
+   "files": [
+    {
+     "path": "brief.md",
+     "sha256": "12b39802bc7af383f67824cd75b8fd5a2c0b9db56288521f1e9fdf977300727a",
+     "bytes": 3854
+    },
+    {
+     "path": "meta.json",
+     "sha256": "fa5015a8b2b6861b34d2fb87c6108ba0ed3e7580af0d22dda529c52f81d554d7",
+     "bytes": 1584
+    },
+    {
+     "path": "props.example.json",
+     "sha256": "188b63656781479b1a161dbe11c65028a56b6de44a1902abd465667331d72ebc",
+     "bytes": 2010
+    },
+    {
+     "path": "src/index.tsx",
+     "sha256": "d12e84d0563c0b1fe29282d2cd5e0fb3e641a045dad86c3702d1a1a5850af24a",
+     "bytes": 30687
+    },
+    {
+     "path": "src/schema.ts",
+     "sha256": "ac7850a48c1569519daeb0b518e2ec74e415d46276611f8089bdf03ae486984a",
+     "bytes": 1923
+    }
+   ],
+   "propsSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48,
+      "description": "Opening title written over the night sky, e.g. \"How computers *learned* to talk\". Wrap one word in *asterisks* to colour it."
+     },
+     "subtitle": {
+      "default": "",
+      "description": "Small line under the title, e.g. \"A short history of the internet\". Can be empty.",
+      "type": "string",
+      "maxLength": 60
+     },
+     "milestones": {
+      "minItems": 3,
+      "maxItems": 9,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "year": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 12,
+         "description": "When it happened, as shown on screen: \"1969\", \"1940s\", \"3000 BC\". Plain 3–4 digit years count up from the previous one."
+        },
+        "title": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 36,
+         "description": "What appeared, in a few words: \"First web page\", \"The transistor\", \"ARPANET\"."
+        },
+        "detail": {
+         "default": "",
+         "description": "One short plain sentence explaining it. Can be empty.",
+         "type": "string",
+         "maxLength": 100
+        },
+        "icon": {
+         "default": "spark",
+         "description": "Doodle drawn on the milestone: chip, code, phone, globe, mail, rocket, bulb, brain, gear, book, camera, music, chat, lock, chart, atom, spark...",
+         "type": "string",
+         "enum": [
+          "sun",
+          "cloud",
+          "rain",
+          "globe",
+          "gear",
+          "person",
+          "people",
+          "bulb",
+          "chart",
+          "bars",
+          "book",
+          "rocket",
+          "heart",
+          "lock",
+          "search",
+          "phone",
+          "money",
+          "clock",
+          "leaf",
+          "drop",
+          "flask",
+          "atom",
+          "building",
+          "house",
+          "car",
+          "check",
+          "cross",
+          "arrow",
+          "cycle",
+          "star",
+          "flag",
+          "mountain",
+          "wave",
+          "fire",
+          "brain",
+          "chip",
+          "shield",
+          "chat",
+          "mail",
+          "camera",
+          "music",
+          "trophy",
+          "ball",
+          "planet",
+          "map",
+          "pin",
+          "target",
+          "spark",
+          "code",
+          "cart",
+          "calendar"
+         ]
+        }
+       },
+       "required": [
+        "year",
+        "title"
+       ]
+      },
+      "description": "3–9 milestones in chronological order, oldest first. The traveller walks from one to the next and each one grows out of the hills."
+     },
+     "finale": {
+      "default": "hatch",
+      "description": "How the LAST milestone arrives: hatch = an egg wobbles, cracks and hatches its doodle in a burst of light (a new era, a breakthrough); glow = it lights up the whole sky; none = like the others.",
+      "type": "string",
+      "enum": [
+       "hatch",
+       "glow",
+       "none"
+      ]
+     },
+     "palette": {
+      "default": "night",
+      "description": "night = starry blue storybook night, dusk = violet evening with warm glow, paper = light sketchbook paper with ink lines.",
+      "type": "string",
+      "enum": [
+       "night",
+       "dusk",
+       "paper"
+      ]
+     },
+     "showCaptions": {
+      "default": true,
+      "description": "Show word-synced narration captions.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "title",
+     "milestones"
+    ]
+   },
+   "preview": {
+    "file": "timeline-doodle-civilization.mp4",
+    "poster": "timeline-doodle-civilization.jpg",
+    "sha256": "f9a2dc30c64b147daeb6cfe3a2c9cc09f258aaf999b3a5c28e9adfd68b0c2aa3",
+    "url": "https://github.com/Miken2001/viralaunch-video-library/releases/download/previews-v1/timeline-doodle-civilization.mp4"
    }
   },
   {

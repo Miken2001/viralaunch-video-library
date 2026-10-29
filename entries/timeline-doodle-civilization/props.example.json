@@ -1,0 +1,26 @@
+{
+  "media": {"aspectRatio": "16:9", "adWeave": "end-card", "brand": {"name": "Byte Sized", "tagline": "Tech history, one minute at a time", "cta": "Subscribe"}},
+  "scenes": [
+    {"text": "How computers went from filling a room to fitting in your pocket.", "durationSeconds": 4},
+    {"text": "In 1946, ENIAC was unveiled: thousands of vacuum tubes filling a whole room.", "durationSeconds": 5},
+    {"text": "In 1947, Bell Labs built the first transistor, a tiny switch with no glowing tubes.", "durationSeconds": 5},
+    {"text": "In 1958, Jack Kilby put a whole circuit on one piece of material: the integrated circuit.", "durationSeconds": 5},
+    {"text": "In 1969, ARPANET carried its first message between two universities in California.", "durationSeconds": 5},
+    {"text": "In 1991, the World Wide Web opened to the public.", "durationSeconds": 4.5},
+    {"text": "And in 2007, the iPhone put the internet in your pocket.", "durationSeconds": 5.5}
+  ],
+  "props": {
+    "title": "How computers *shrank* into our pockets",
+    "subtitle": "Six steps in the history of computing",
+    "milestones": [
+      {"year": "1946", "title": "ENIAC", "detail": "A room-sized electronic computer built from about 18,000 vacuum tubes.", "icon": "gear"},
+      {"year": "1947", "title": "The transistor", "detail": "Bell Labs builds the first working transistor.", "icon": "spark"},
+      {"year": "1958", "title": "Integrated circuit", "detail": "Jack Kilby at Texas Instruments puts a circuit on a single chip.", "icon": "chip"},
+      {"year": "1969", "title": "ARPANET", "detail": "The first message travels from UCLA to the Stanford Research Institute.", "icon": "chat"},
+      {"year": "1991", "title": "World Wide Web", "detail": "Tim Berners-Lee's web, built at CERN, opens to everyone.", "icon": "globe"},
+      {"year": "2007", "title": "The iPhone", "detail": "Apple puts a touchscreen computer and the web in your pocket.", "icon": "phone"}
+    ],
+    "finale": "hatch",
+    "palette": "night"
+  }
+}

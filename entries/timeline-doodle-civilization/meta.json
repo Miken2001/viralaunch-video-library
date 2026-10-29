@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline-doodle-civilization",
+  "name": "Doodle Civilization Timeline",
+  "version": "1.0.0",
+  "summary": "Storybook doodle timeline: a lantern-carrying traveller walks across night hills while each milestone grows out of the ground as a paper medallion, year counting up; the last one hatches from an egg. For tech and invention history.",
+  "genres": [
+    "timeline",
+    "documentary",
+    "explainer"
+  ],
+  "domains": [
+    "tech",
+    "history",
+    "science",
+    "education"
+  ],
+  "roles": [
+    "context",
+    "explanation",
+    "payoff"
+  ],
+  "segmentable": true,
+  "look": "adaptive",
+  "lookPreset": "midnight",
+  "themeable": true,
+  "adWeave": [
+    "end-card",
+    "mid-roll-card",
+    "sponsor-mention",
+    "native-integrated",
+    "none-pure-brand"
+  ],
+  "techniques": [
+    "svg-illustration",
+    "camera-motion",
+    "kinetic-type",
+    "particles",
+    "captions-voiceover"
+  ],
+  "aspects": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "durationSeconds": {
+    "min": 12,
+    "max": 120
+  },
+  "tiers": [
+    "fill",
+    "fork"
+  ],
+  "minModel": "small",
+  "renderCost": "low",
+  "requires": [
+    "voiceover"
+  ],
+  "location": "remote",
+  "source": "recreation",
+  "inspiredBy": [
+    {
+      "url": "https://x.com/songkeys/status/2102743212922384673",
+      "author": "songkeys",
+      "collection": "awesome-opus-5.5-video-prompts",
+      "inspirationId": "ao-songkeys-384673"
+    }
+  ],
+  "license": "MIT",
+  "status": "approved",
+  "authoredBy": "claude-opus-5-5",
+  "remotionPackages": [
+    "@remotion/paths"
+  ]
+}
